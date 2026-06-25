@@ -20,23 +20,13 @@ function renderVocab(filter) {
 
     const sec = document.createElement('div');
     sec.className = 'vocab-table-section';
-
     const title = document.createElement('div');
     title.className = 'vocab-lesson-title';
-    title.textContent = '📖 ' + lesson.lesson;
+    title.textContent = '\u{1F4D6} ' + lesson.lesson;
     sec.appendChild(title);
 
-    const table = document.createElement('table');
-    table.className = 'vocab-table';
-    table.innerHTML = '<thead><tr>' +
-      '<th class="vt-h-num">#</th>' +
-      '<th class="vt-h-zh">Chữ Hán</th>' +
-      '<th class="vt-h-py">Pinyin</th>' +
-      '<th class="vt-h-type">Loại từ</th>' +
-      '<th class="vt-h-vi">Nghĩa</th>' +
-      '<th class="vt-h-act">Nghe · Nói · Ví dụ</th>' +
-      '</tr></thead>';
-    const tbody = document.createElement('tbody');
+    const cards = document.createElement('div');
+    cards.className = 'zh-cards';
 
     words.forEach((w, wi) => {
       const exId = 'ex-' + li + '-' + wi;
@@ -47,75 +37,54 @@ function renderVocab(filter) {
       const viEsc  = w.vi.replace(/'/g, "\\'");
       const typeEsc= w.type.replace(/'/g, "\\'");
 
-      const tr = document.createElement('tr');
-      tr.className = 'vocab-row';
-      tr.innerHTML =
-        '<td class="vt-num">' + (origWi + 1) + '</td>' +
-        '<td class="vt-zh"><span class="zh" onclick="showStrokeModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',\'' + typeEsc + '\');" title="Xem nét viết" style="cursor:pointer">' + w.zh + '</span>' +
-          '<span class="mob-sub"><span class="mob-py">' + w.py + '</span><span class="mob-vi">' + w.vi + '</span></span></td>' +
-        '<td class="vt-py">' + w.py + '</td>' +
-        '<td class="vt-type"><span class="type-badge">' + w.type + '</span></td>' +
-        '<td class="vt-vi">' + w.vi + '</td>' +
-        '<td class="vt-actions">' +
-          '<button class="speak-btn vt-btn" onclick="event.stopPropagation();speak(\'' + zhEsc + '\')">🔊</button> ' +
-          '<button class="vocab-practice-btn vt-btn" onclick="event.stopPropagation();openVocabSpeak(\'' + zhEsc + '\')">🎤</button>' +
-          (hasEx ? ' <button class="ex-toggle-btn vt-btn" onclick="event.stopPropagation();toggleVtEx(\'' + exId + '\',this)">💬 Ví dụ</button>' : '') +
-        '</td>';
-      tbody.appendChild(tr);
+      const card = document.createElement('div');
+      card.className = 'zh-card vocab-card';
+      let actHtml =
+        '<button class="speak-btn vt-btn" onclick="speak(\'' + zhEsc + '\')">\u{1F50A}</button> ' +
+        '<button class="vocab-practice-btn vt-btn" onclick="openVocabSpeak(\'' + zhEsc + '\')">\u{1F3A4}</button>' +
+        (hasEx ? ' <button class="ex-toggle-btn vt-btn" onclick="toggleVtEx(\'' + exId + '\',this)">\u{1F4AC} V\xed dụ</button>' : '');
+
+      card.innerHTML =
+        '<div class="zh-card-top">' +
+          '<span class="zh-char" onclick="showStrokeModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',\'' + typeEsc + '\')" title="Xem n\xe9t viết">' + w.zh + '</span>' +
+          '<span class="type-badge">' + w.type + '</span>' +
+          '<div class="zh-card-actions-inline">' + actHtml + '</div>' +
+        '</div>' +
+        '<div class="zh-card-py">' + w.py + '</div>' +
+        '<div class="zh-card-vi">' + w.vi + '</div>';
 
       if (hasEx) {
-        const exRow = document.createElement('tr');
-        exRow.className = 'vocab-ex-row';
-        exRow.id = exId;
-        exRow.style.display = 'none';
-        let exHtml = '<div class="ex-panel open" style="margin:0 0 4px;border-top:1px dashed var(--gray2)">';
+        let exHtml = '<div class="ex-panel" id="' + exId + '" style="display:none">';
         w.ex.forEach(function(e) {
           const eZhEsc = e.zh.replace(/'/g, "\\'");
           exHtml += '<div class="ex-row">' +
             '<span class="ex-zh">' + e.zh + '</span>' +
-            '<button class="ex-speak-btn" onclick="event.stopPropagation();speak(\'' + eZhEsc + '\')">🔊</button>' +
+            '<button class="ex-speak-btn" onclick="speak(\'' + eZhEsc + '\')">\u{1F50A}</button>' +
             '<div class="ex-py">' + e.py + '</div>' +
             '<div class="ex-vi">' + e.vi + '</div>' +
             '</div>';
         });
         exHtml += '</div>';
-        exRow.innerHTML = '<td colspan="6">' + exHtml + '</td>';
-        tbody.appendChild(exRow);
+        card.innerHTML += exHtml;
       }
+      cards.appendChild(card);
     });
-
-    table.appendChild(tbody);
-    sec.appendChild(table);
+    sec.appendChild(cards);
     container.appendChild(sec);
   });
 
   if (!container.innerHTML.trim()) {
-    container.innerHTML = '<div class="card" style="text-align:center;color:var(--text-light)">Không tìm thấy từ nào.</div>';
+    container.innerHTML = '<div class="card" style="text-align:center;color:var(--text-light)">Kh\xf4ng t\xecm thấy từ n\xe0o.</div>';
   }
 }
 
 function toggleVtEx(id, btn) {
-  const row = document.getElementById(id);
-  if (!row) return;
-  const open = row.style.display === 'none';
-  row.style.display = open ? 'table-row' : 'none';
-  btn.classList.toggle('active', open);
-  btn.textContent = open ? '💬 Ẩn' : '💬 Ví dụ';
-}
-function toggleVtEx(id, btn) {
-  const row = document.getElementById(id);
-  if (!row) return;
-  const open = row.style.display === 'none';
-  row.style.display = open ? 'table-row' : 'none';
-  btn.classList.toggle('active', open);
-  btn.textContent = open ? '💬 Ẩn' : '💬 Ví dụ';
-}
-function toggleEx(id, btn) {
   const panel = document.getElementById(id);
   if (!panel) return;
-  const open = panel.classList.toggle('open');
+  const open = panel.style.display === 'none';
+  panel.style.display = open ? 'block' : 'none';
   btn.classList.toggle('active', open);
-  btn.textContent = open ? '💬 Ẩn' : '💬 Ví dụ';
+  btn.textContent = open ? '\u{1F4AC} Ẩn' : '\u{1F4AC} V\xed dụ';
 }
 
 function filterVocab(val) { renderVocab(val); }

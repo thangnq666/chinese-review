@@ -2,7 +2,6 @@
 function renderPhrases() {
   const container = document.getElementById('phraseGrid');
   container.innerHTML = '';
-  // Group by lesson
   const byLesson = {};
   PHRASES.forEach((p, i) => {
     const les = p.lesson || 0;
@@ -15,42 +14,32 @@ function renderPhrases() {
     sec.className = 'lt-section';
     const title = document.createElement('div');
     title.className = 'lt-lesson-title';
-    title.textContent = '📖 Bài ' + les + ' — Câu mẫu';
+    title.textContent = '\u{1F4D6} B\xe0i ' + les + ' — C\xe2u mẫu';
     sec.appendChild(title);
 
-    const table = document.createElement('table');
-    table.className = 'lt-table';
-    table.innerHTML = '<thead><tr>' +
-      '<th class="lt-num">#</th>' +
-      '<th style="min-width:130px">Chữ Hán</th>' +
-      '<th style="min-width:160px">Pinyin</th>' +
-      '<th>Nghĩa</th>' +
-      '<th class="lt-act">Nghe · Luyện nói</th>' +
-      '</tr></thead>';
-    const tbody = document.createElement('tbody');
+    const cards = document.createElement('div');
+    cards.className = 'zh-cards';
 
     byLesson[les].forEach(({p, i}) => {
       globalIdx++;
-      const tr = document.createElement('tr');
-      tr.className = 'lt-row';
       const zhEsc = p.zh.replace(/'/g, "\\'");
       const pyEsc = p.py.replace(/'/g, "\\'");
       const viEsc = p.vi.replace(/'/g, "\\'");
-      tr.innerHTML =
-        '<td class="lt-num">' + globalIdx + '</td>' +
-        '<td class="lt-zh" onclick="showStrokeModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',\'Câu mẫu Bài ' + les + '\')" title="Xem nét viết">' + p.zh +
-          '<span class="mob-sub"><span class="mob-py">' + p.py + '</span><span class="mob-vi">' + p.vi + '</span></span></td>' +
-        '<td class="lt-py">' + p.py + '</td>' +
-        '<td class="lt-vi">' + p.vi + '</td>' +
-        '<td class="lt-act">' +
-          '<button class="dl-btn dl-btn-speak" onclick="event.stopPropagation();speak(\'' + zhEsc + '\')">🔊</button> ' +
-          '<button class="dl-btn dl-btn-practice" onclick="event.stopPropagation();openSpeakModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',' + (+les-1) + ',-1)">🎤 Tập nói</button>' +
-        '</td>';
-      tbody.appendChild(tr);
+      const card = document.createElement('div');
+      card.className = 'zh-card lt-card';
+      card.innerHTML =
+        '<div class="zh-card-top">' +
+          '<span class="zh-char" onclick="showStrokeModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',\'C\xe2u mẫu B\xe0i ' + les + '\')" title="Xem n\xe9t viết">' + p.zh + '</span>' +
+          '<div class="zh-card-actions-inline">' +
+            '<button class="dl-btn dl-btn-speak" onclick="speak(\'' + zhEsc + '\')">\u{1F50A}</button>' +
+            '<button class="dl-btn dl-btn-practice" onclick="openSpeakModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',' + (+les-1) + ',-1)">\u{1F3A4} Tập n\xf3i</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="zh-card-py">' + p.py + '</div>' +
+        '<div class="zh-card-vi">' + p.vi + '</div>';
+      cards.appendChild(card);
     });
-
-    table.appendChild(tbody);
-    sec.appendChild(table);
+    sec.appendChild(cards);
     container.appendChild(sec);
   });
 }

@@ -119,74 +119,63 @@ function renderDialogues() {
     const sec = document.createElement('div');
     sec.className = 'lt-section';
 
-    // Collapsible header
     const bodyId = 'dlg-body-' + di;
     const collapsed = di > 0;
     const hdrDiv = document.createElement('div');
     hdrDiv.className = 'dialogue-lesson-hdr' + (collapsed ? ' collapsed' : '');
     hdrDiv.onclick = () => toggleDialogue(di);
     hdrDiv.innerHTML =
-      '<span style="font-size:1.2rem">💬</span> ' +
+      '<span style="font-size:1.2rem">\u{1F4AC}</span> ' +
       '<strong>' + dlg.lesson + '</strong>' +
       '<span style="font-size:0.82rem;opacity:0.75;margin-left:8px">' + dlg.title + '</span>' +
-      '<span class="toggle-icon" style="margin-left:auto">▼</span>';
+      '<span class="toggle-icon" style="margin-left:auto">&#9660;</span>';
     sec.appendChild(hdrDiv);
 
     const bodyDiv = document.createElement('div');
     bodyDiv.className = 'dialogue-body' + (collapsed ? ' hidden' : '');
     bodyDiv.id = bodyId;
 
-    // Table
-    const table = document.createElement('table');
-    table.className = 'lt-table';
-    table.style.marginTop = '8px';
-    table.innerHTML = '<thead><tr>' +
-      '<th class="lt-num">#</th>' +
-      '<th class="lt-spk">Vai</th>' +
-      '<th style="min-width:150px">Chữ Hán</th>' +
-      '<th style="min-width:160px">Pinyin</th>' +
-      '<th>Nghĩa</th>' +
-      '<th class="lt-act">Nghe · Luyện nói</th>' +
-      '</tr></thead>';
-    const tbody = document.createElement('tbody');
+    const cards = document.createElement('div');
+    cards.className = 'zh-cards';
+    cards.style.marginTop = '8px';
 
     dlg.lines.forEach((line, li) => {
-      const tr = document.createElement('tr');
-      tr.className = 'lt-row';
       const zhEsc = line.zh.replace(/'/g, "\\'");
       const pyEsc = line.py.replace(/'/g, "\\'");
       const viEsc = line.vi.replace(/'/g, "\\'");
       const spk = line.s || 'A';
       const spkClass = 'lt-badge spk-' + spk.toLowerCase();
-      tr.innerHTML =
-        '<td class="lt-num">' + (li+1) + '</td>' +
-        '<td class="lt-spk"><span class="' + spkClass + '">' + spk + '</span></td>' +
-        '<td class="lt-zh" onclick="showStrokeModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',\'Hội thoại\')" title="Xem nét viết">' + line.zh +
-          '<span class="mob-sub"><span class="mob-py">' + line.py + '</span><span class="mob-vi">' + line.vi + '</span></span></td>' +
-        '<td class="lt-py">' + line.py + '</td>' +
-        '<td class="lt-vi">' + line.vi + '</td>' +
-        '<td class="lt-act">' +
-          '<button class="dl-btn dl-btn-speak" onclick="event.stopPropagation();speak(\'' + zhEsc + '\')">🔊</button> ' +
-          '<button class="dl-btn dl-btn-practice" onclick="event.stopPropagation();openSpeakModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',' + di + ',' + li + ')">🎤 Luyện nói</button>' +
-        '</td>';
-      tbody.appendChild(tr);
+
+      const card = document.createElement('div');
+      card.className = 'zh-card lt-card';
+      card.innerHTML =
+        '<div class="zh-card-top">' +
+          '<span class="' + spkClass + '" style="flex-shrink:0">' + spk + '</span>' +
+          '<span class="zh-char" onclick="showStrokeModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',\'Hội thoại\')" title="Xem n\xe9t viết">' + line.zh + '</span>' +
+          '<div class="zh-card-actions-inline">' +
+            '<button class="dl-btn dl-btn-speak" onclick="speak(\'' + zhEsc + '\')">\u{1F50A}</button>' +
+            '<button class="dl-btn dl-btn-practice" onclick="openSpeakModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',' + di + ',' + li + ')">\u{1F3A4} Luyện n\xf3i</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="zh-card-py">' + line.py + '</div>' +
+        '<div class="zh-card-vi">' + line.vi + '</div>';
+      cards.appendChild(card);
     });
 
-    table.appendChild(tbody);
-    bodyDiv.appendChild(table);
+    bodyDiv.appendChild(cards);
 
-    // Action buttons
     const actions = document.createElement('div');
     actions.style.cssText = 'display:flex;gap:8px;margin-top:12px;flex-wrap:wrap';
     actions.innerHTML =
-      '<button class="stroke-ctrl-btn btn-speak-modal" onclick="playFullDialogue(' + di + ')" style="font-size:0.82rem;padding:7px 14px">▶ Nghe toàn bộ</button>' +
-      '<button class="stroke-ctrl-btn btn-quiz" onclick="practiceDialogue(' + di + ')" style="font-size:0.82rem;padding:7px 14px">🎤 Luyện nói cả đoạn</button>';
+      '<button class="stroke-ctrl-btn btn-speak-modal" onclick="playFullDialogue(' + di + ')" style="font-size:0.82rem;padding:7px 14px">&#9654; Nghe to\xe0n bộ</button>' +
+      '<button class="stroke-ctrl-btn btn-quiz" onclick="practiceDialogue(' + di + ')" style="font-size:0.82rem;padding:7px 14px">\u{1F3A4} Luyện n\xf3i cả đoạn</button>';
     bodyDiv.appendChild(actions);
 
     sec.appendChild(bodyDiv);
     container.appendChild(sec);
   });
 }
+
 function toggleDialogue(idx) {
   const body = document.getElementById('dlg-body-' + idx);
   const hdr = body.previousElementSibling;
