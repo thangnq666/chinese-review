@@ -1,0 +1,11 @@
+{
+  "name": "ontap-tiengtrung",
+  "version": "1.0.0",
+  "description": "Ứng dụng ôn tập tiếng Trung - từ vựng, ngữ pháp, ngữ âm, hội thoại",
+  "scripts": {
+    "dev": "npx live-server --port=3000 --open=index.html",
+    "start": "npx serve . -p 3000"
+  },
+  "keywords": ["tieng-trung", "chinese", "learning", "flashcard"],
+  "license": "MIT"
+}
