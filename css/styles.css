@@ -1082,21 +1082,22 @@
   .quiz-result.correct { background: #d4edda; color: #155724; }
   .quiz-result.wrong { background: #f8d7da; color: #721c24; }
 
-  /* Tooltip hint on vocab items */
-  .vocab-item::after {
-    content: '✍️ Xem nét viết';
-    position: absolute;
-    bottom: -28px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--dark);
-    color: white;
-    font-size: 0.7rem;
-    padding: 3px 8px;
-    border-radius: 5px;
-    white-space: nowrap;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s;
-    z-index: 10;
+  /* ===== EXERCISE TABS ===== */
+  .ex-tab-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
   }
+  .ex-tab-btn {
+    padding: 7px 14px;
+    border: 1.5px solid var(--gray2);
+    border-radius: 20px;
+    background: white;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .ex-tab-btn.active, .ex-tab-btn:hover { b
