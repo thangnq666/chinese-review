@@ -1191,28 +1191,32 @@
     .card { padding: 12px; border-radius: 10px; }
     .card h2 { font-size: 1rem; }
 
-    /* ===== PHONETICS: card-per-row layout ===== */
-    /* Wrap table in scrollable div via section overflow */
+    /* ===== PHONETICS: full card layout ===== */
     #phonContainer .card { overflow-x: hidden; }
-    /* Show only cols 1(empty),2(symbol),5(btn) — hide 3(desc) and 4(preview) */
-    .phon-main-table th:nth-child(3),
-    .phon-main-table th:nth-child(4),
-    .phon-row td:nth-child(3),
-    .phon-row td:nth-child(4),
-    .phon-detail-row td:nth-child(3),
-    .phon-detail-row td:nth-child(4) { display: none; }
-    /* Remove fixed widths so remaining cols fill screen */
-    .phon-main-table { table-layout: auto; width: 100%; }
-    .phon-main-table col { width: auto !important; }
-    /* Symbol cell larger */
-    .phon-sym { font-size: 1.2rem; padding: 6px 10px; }
-    /* Detail rows: show zh large, py below */
-    .phon-d-zh { font-size: 1.5rem; display: block; }
-    .phon-d-py { font-size: 0.85rem; display: block; }
-    .phon-d-vi { font-size: 0.82rem; }
-    .phon-d-num { width: 28px; }
-    /* Button compact */
+    /* Convert table to block — removes fixed column widths */
+    .phon-main-table { display: block; width: 100%; }
+    .phon-main-table colgroup,
+    .phon-main-table thead { display: none; }
+    .phon-main-table tbody { display: block; }
+    /* Summary row: card with symbol → description → button stacked */
+    .phon-row { display: block; border: 1px solid var(--gray2); border-radius: 10px; margin-bottom: 6px; padding: 10px 12px; background: white; cursor: pointer; }
+    .phon-row td { display: block; border: none; padding: 0; }
+    .phon-row td:nth-child(1),
+    .phon-row td:nth-child(4) { display: none; }
+    .phon-row td:nth-child(3) { font-size: 0.8rem; color: var(--text-light); line-height: 1.4; margin: 4px 0 6px; }
+    .phon-sym { font-size: 1.05rem; padding: 4px 8px; }
     .phon-ex-btn { padding: 5px 8px; font-size: 0.72rem; }
+    /* Detail rows: stacked zh / py / vi / button (toggle still controls display:none) */
+    .phon-detail-row { display: block; border: none; border-top: 1px dashed var(--gray2); padding: 8px 12px; background: #f7faff; margin: 0; }
+    .phon-detail-row td { display: block; border: none; padding: 0; }
+    .phon-detail-row td:nth-child(1) { display: none; }
+    .phon-detail-row td:nth-child(5) { margin-top: 4px; }
+    .phon-d-zh { font-size: 1.6rem; font-weight: 800; }
+    .phon-d-py { font-size: 0.88rem; }
+    .phon-d-vi { font-size: 0.82rem; }
+    /* All-zh button row */
+    .phon-all-row { padding: 8px 12px; border-top: 1px dashed var(--gray2); }
+    .phon-all-row td { display: block; padding: 0; }
 
     /* ===== VOCAB TABLE: card layout ===== */
     /* Hide #, Pinyin, Loại từ, Nghĩa columns — show via mob-sub */
@@ -1293,19 +1297,4 @@
 
     /* ===== MODALS ===== */
     .sm-zh { font-size: 2rem; }
-    .sp-btn { min-width: 80px; font-size: 0.82rem; padding: 8px 10px; }
-    #strokeModal { padding: 18px 12px; }
-    .stroke-ctrl-btn { padding: 6px 10px; font-size: 0.78rem; }
-
-    /* Scroll-to-top */
-    #totop { bottom: 14px; right: 10px; width: 38px; height: 38px; font-size: 1rem; }
-  }
-
-  /* ===== RESPONSIVE — SMALL MOBILE (≤380px) ===== */
-  @media (max-width: 380px) {
-    header h1 { font-size: 1rem; }
-    nav button { padding: 9px 8px; font-size: 0.68rem; }
-    .speed-btn { width: 26px; height: 26px; font-size: 0.66rem; }
-    .fc-zh { font-size: 1.8rem; }
-    .ex-tab-btn { font-size: 0.65rem; padding: 4px 6px; }
-  }
+    .sp-btn { min
