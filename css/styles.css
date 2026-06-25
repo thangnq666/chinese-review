@@ -1100,18 +1100,72 @@
     font-weight: 500;
     white-space: nowrap;
   }
-  .ex-tab-btn.active, .ex-tab-btn:hover { b
+
+  /* ===== EXERCISE TABS (complete) ===== */
+  .ex-tab-btn.active, .ex-tab-btn:hover { background: var(--red); color: white; border-color: var(--red); }
+  .ex-pane { display: none; }
+  .ex-pane.active { display: block; }
+  .ex-lesson-filter { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+  .ex-lesson-select { padding: 6px 10px; border-radius: 8px; border: 1px solid var(--gray2); font-size: 0.85rem; font-family: inherit; }
+  .ex-gen-btn { padding: 6px 14px; border-radius: 8px; border: none; background: var(--mid); color: white; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+  .ex-gen-btn:hover { background: var(--dark); }
+  .mc-score-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; font-size: 0.85rem; }
+  .mc-score-num { font-size: 1.1rem; font-weight: 700; color: var(--red); }
+  .mc-progress { flex: 1; min-width: 80px; background: var(--gray2); border-radius: 20px; height: 8px; overflow: hidden; }
+  .mc-progress-fill { height: 100%; background: var(--red); border-radius: 20px; transition: width 0.4s; }
+  .match-container { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .match-col { display: flex; flex-direction: column; gap: 8px; }
+  .match-item { padding: 10px 14px; border-radius: 10px; border: 2px solid var(--gray2); background: white; font-size: 0.9rem; cursor: pointer; transition: all 0.2s; text-align: center; font-weight: 600; }
+  .match-item:hover { border-color: var(--mid); background: #eef4ff; }
+  .match-item.selected { border-color: var(--mid); background: #dbeafe; }
+  .match-item.matched { border-color: #2ecc71; background: #d4edda; color: #155724; cursor: default; }
+  .match-item.wrong-flash { border-color: var(--red); background: #fdecea; animation: shake 0.3s; }
+  @keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-6px)} 75%{transform:translateX(6px)} }
+  .match-result { display: none; text-align: center; padding: 10px; background: #d4edda; border-radius: 8px; color: #155724; font-weight: 700; margin-top: 10px; }
+  .match-result.show { display: block; }
+  .listen-counter { text-align: center; font-size: 0.85rem; color: var(--text-light); margin-bottom: 10px; }
+  .listen-card { background: white; border-radius: var(--radius); padding: 24px; text-align: center; border: 1px solid var(--gray2); min-height: 120px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
+  .listen-play-btn { background: var(--mid); color: white; border: none; border-radius: 50%; width: 64px; height: 64px; font-size: 1.5rem; cursor: pointer; transition: all 0.2s; }
+  .listen-play-btn:hover { background: var(--dark); transform: scale(1.1); }
+  .listen-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
+  .listen-opt { padding: 10px; border: 2px solid var(--gray2); border-radius: 10px; background: white; cursor: pointer; font-size: 0.9rem; font-weight: 600; transition: all 0.2s; text-align: center; }
+  .listen-opt:hover { border-color: var(--mid); }
+  .listen-opt.correct { border-color: #2ecc71; background: #d4edda; }
+  .listen-opt.wrong { border-color: var(--red); background: #fdecea; }
+  .fill-sentence { background: white; border: 1px solid var(--gray2); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; font-size: 0.95rem; line-height: 1.8; }
+  .fill-blank { display: inline-block; min-width: 60px; border-bottom: 2px solid var(--mid); padding: 2px 6px; margin: 0 4px; text-align: center; font-weight: 700; color: var(--mid); cursor: pointer; border-radius: 4px; background: #eef4ff; transition: all 0.2s; }
+  .fill-blank.filled { background: var(--mid); color: white; }
+  .fill-blank.correct { background: #2ecc71; border-color: #2ecc71; color: white; }
+  .fill-blank.wrong { background: var(--red); border-color: var(--red); color: white; }
+  .word-bank { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .bank-word { padding: 6px 14px; border: 1.5px solid var(--mid); border-radius: 20px; background: white; color: var(--mid); font-weight: 700; cursor: pointer; transition: all 0.2s; font-size: 0.9rem; }
+  .bank-word:hover { background: var(--mid); color: white; }
+  .bank-word.used { opacity: 0.35; cursor: not-allowed; }
+  .mc-item { background: white; border: 1px solid var(--gray2); border-radius: 10px; padding: 16px; margin-bottom: 12px; }
+  .mc-question { font-size: 1.1rem; font-weight: 700; color: var(--dark); margin-bottom: 12px; }
+  .mc-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .mc-opt { padding: 10px 12px; border: 2px solid var(--gray2); border-radius: 10px; background: white; cursor: pointer; font-size: 0.88rem; transition: all 0.2s; text-align: center; }
+  .mc-opt:hover { border-color: var(--mid); }
+  .mc-opt.correct { border-color: #2ecc71; background: #d4edda; }
+  .mc-opt.wrong { border-color: var(--red); background: #fdecea; }
+  .mc-opt.disabled { cursor: default; }
+
   /* ===== RESPONSIVE — TABLET (≤768px) ===== */
   @media (max-width: 768px) {
     header { padding: 20px 16px 16px; }
     header h1 { font-size: 1.5rem; }
-    header p { font-size: 0.82rem; }
     main { padding: 14px 10px 60px; }
     .card { padding: 16px; }
-    #ttsBar { gap: 8px; padding: 6px 10px; }
     .speed-desc { display: none; }
-    #voiceSel { max-width: 120px; }
-    .vt-h-type, .vt-type { display: none; }
+    #voiceSel { max-width: 130px; }
+    /* Vocab: hide # and type columns */
+    .vocab-table th:nth-child(1), .vocab-table td:nth-child(1),
+    .vocab-table th:nth-child(4), .vocab-table td:nth-child(4) { display: none; }
+    /* Grammar: hide Cấu trúc column */
+    .gram-table th:nth-child(4), .gram-table td:nth-child(4) { display: none; }
+    /* Phonetics: hide description column */
+    .phon-main-table th:nth-child(3), .phon-main-table td:nth-child(3) { display: none; }
+    /* Lesson table: hide source and actions */
     .lt-src, .lt-act { display: none; }
     .mc-options { grid-template-columns: 1fr; }
     .listen-options { grid-template-columns: 1fr; }
@@ -1119,105 +1173,92 @@
 
   /* ===== RESPONSIVE — MOBILE (≤600px) ===== */
   @media (max-width: 600px) {
+    /* Header */
     header { padding: 14px 12px 12px; }
     header h1 { font-size: 1.2rem; letter-spacing: 0; }
     header::before { font-size: 60px; }
     header::after { font-size: 40px; }
     header p { font-size: 0.78rem; }
 
+    /* Main */
     main { padding: 10px 8px 80px; }
 
-    nav button { padding: 11px 11px; font-size: 0.75rem; }
+    /* Nav */
+    nav button { padding: 10px 11px; font-size: 0.76rem; }
 
-    /* TTS Bar: stack on mobile */
+    /* TTS Bar: 2-row compact layout */
     #ttsBar {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 5px;
-      padding: 8px 12px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 6px 10px;
+      padding: 7px 10px;
     }
-    .speed-btn { width: 32px; height: 32px; font-size: 0.78rem; }
+    .speed-label { font-size: 0.75rem; }
+    .speed-btn { width: 28px; height: 28px; font-size: 0.72rem; }
     .speed-desc { display: none; }
-    #voiceSel { max-width: 100%; width: 100%; font-size: 0.82rem; }
-    #vocabTypeSelect { max-width: 100%; width: 100%; font-size: 0.82rem; }
-    .speed-preview-btn { width: 100%; }
+    #voiceSel { font-size: 0.75rem; max-width: 140px; }
+    #vocabTypeSelect { font-size: 0.75rem; }
+    .speed-preview-btn { font-size: 0.72rem; padding: 3px 8px; }
 
     /* Cards */
     .card { padding: 12px; border-radius: 10px; }
     .card h2 { font-size: 1rem; }
 
-    /* Vocab table: card layout */
-    .vocab-table thead { display: none; }
-    .vocab-table, .vocab-table tbody { display: block; }
-    .vocab-row {
-      display: flex !important;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 4px;
-      padding: 10px 12px;
-      border: 1px solid var(--gray2);
-      border-radius: 10px;
-      margin-bottom: 8px;
-      background: white;
-    }
-    .vocab-row td { display: block; border: none; padding: 0; }
-    .vt-num { display: none !important; }
-    .vt-zh { font-size: 1.6rem; margin-right: 8px; }
-    .vt-py { color: var(--red); font-size: 0.82rem; flex-basis: 100%; }
-    .vt-vi { font-size: 0.85rem; flex-basis: 100%; }
-    .vt-h-type, .vt-type { display: none !important; }
-    .vt-actions { flex-basis: 100%; margin-top: 4px; }
-    .vocab-ex-row { display: none !important; }
+    /* === VOCAB TABLE: hide cols 1(#), 4(type), 6(actions shrink) === */
+    .vocab-table th:nth-child(1), .vocab-table td:nth-child(1),
+    .vocab-table th:nth-child(4), .vocab-table td:nth-child(4) { display: none; }
+    /* Make table scroll horizontally */
+    .vocab-table-section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .vocab-table { min-width: 320px; }
+    .vt-h-zh { width: 70px; }
+    .vt-h-py { width: 100px; }
+    .vt-h-act { width: 110px; }
+    .vt-zh { font-size: 1.2rem; }
 
-    /* Phonetics: hide columns 4 & 5 */
-    .phon-main-table thead th:nth-child(4),
-    .phon-main-table thead th:nth-child(5),
-    .phon-row td:nth-child(4),
-    .phon-row td:nth-child(5),
-    .phon-detail-row td:nth-child(4),
-    .phon-detail-row td:nth-child(5) { display: none; }
+    /* === PHONETICS TABLE === */
+    /* Hide description (col3) and preview (col4), keep symbol + button */
+    .phon-main-table th:nth-child(3), .phon-main-table td:nth-child(3),
+    .phon-main-table th:nth-child(4), .phon-main-table td:nth-child(4) { display: none; }
+    .phon-main-table { min-width: unset; }
+    /* Detail rows: hide col3, col4 */
+    .phon-detail-row td:nth-child(3), .phon-detail-row td:nth-child(4) { display: none; }
+    /* Reduce preview spacing */
+    .phon-preview-zh { font-size: 0.95rem; margin: 0 1px; }
 
-    /* Lesson/dialogue table: card layout */
-    .lt-table thead { display: none; }
-    .lt-table, .lt-table tbody { display: block; }
-    .lt-row {
-      display: block !important;
-      border: 1px solid var(--gray2);
-      border-radius: 10px;
-      margin-bottom: 8px;
-      padding: 10px 12px;
-      background: white;
-    }
-    .lt-row td { display: block; border: none; padding: 2px 0; }
-    .lt-num { display: none !important; }
-    .lt-spk { float: right; }
-    .lt-zh { font-size: 1.1rem; }
-    .lt-src, .lt-act { display: none !important; }
-
-    /* Grammar */
+    /* === GRAMMAR TABLE === */
+    .gram-table th:nth-child(4), .gram-table td:nth-child(4) { display: none; }
+    .gram-body { overflow-x: auto; -webkit-overflow-scrolling: touch; padding: 10px; }
+    .gram-table { min-width: 280px; }
     .gram-filter { gap: 4px; }
     .gram-filter-btn { padding: 4px 9px; font-size: 0.72rem; }
     .gram-hdr { padding: 10px 12px; }
-    .gram-body { padding: 10px; }
-    .gram-table thead th:nth-child(4) { display: none; }
-    .gram-table tbody td:nth-child(4) { display: none; }
+    .gram-hdr-text strong { font-size: 0.88rem; }
+
+    /* === LESSON / DIALOGUE TABLE === */
+    .lt-src, .lt-act { display: none; }
+    /* Make scrollable */
+    .lt-section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .lt-table { min-width: 280px; }
+    .lt-zh { font-size: 1rem; }
 
     /* Flashcard */
-    .flashcard-wrap { height: 180px; }
+    .flashcard-wrap { height: 175px; }
     .fc-zh { font-size: 2.2rem; }
-    .fc-btn { padding: 7px 14px; font-size: 0.82rem; }
+    .fc-btn { padding: 7px 12px; font-size: 0.82rem; }
 
     /* Exercise tabs */
-    .ex-tab-btn { padding: 5px 9px; font-size: 0.73rem; }
-
-    /* Match: stack */
+    .ex-tab-bar { gap: 5px; }
+    .ex-tab-btn { padding: 5px 8px; font-size: 0.72rem; }
+    .mc-options { grid-template-columns: 1fr; }
+    .listen-options { grid-template-columns: 1fr; }
     .match-container { grid-template-columns: 1fr; }
 
-    /* Speak cards */
+    /* Speak section */
     .speak-card { flex-direction: column; align-items: flex-start; }
     .speak-card-actions { width: 100%; display: flex; }
     .speak-card-actions button { flex: 1; }
-    .speak-filter-btn { padding: 5px 10px; font-size: 0.76rem; }
+    .speak-filter-btn { padding: 5px 9px; font-size: 0.75rem; }
 
     /* Modals */
     .sm-zh { font-size: 2rem; }
@@ -1225,18 +1266,19 @@
     #strokeModal { padding: 18px 12px; }
     .stroke-ctrl-btn { padding: 6px 10px; font-size: 0.78rem; }
 
-    /* Dialogue lines */
-    .dialogue-zh { font-size: 0.98rem; }
+    /* Phrase grid */
+    .phrase-grid { grid-template-columns: 1fr; }
+    .tone-grid { grid-template-columns: repeat(3, 1fr); }
 
     /* Scroll-to-top */
-    #totop { bottom: 16px; right: 12px; width: 38px; height: 38px; font-size: 1rem; }
+    #totop { bottom: 14px; right: 10px; width: 38px; height: 38px; font-size: 1rem; }
   }
 
   /* ===== RESPONSIVE — SMALL MOBILE (≤380px) ===== */
   @media (max-width: 380px) {
     header h1 { font-size: 1rem; }
-    nav button { padding: 10px 9px; font-size: 0.68rem; }
-    .speed-btn { width: 28px; height: 28px; }
+    nav button { padding: 9px 9px; font-size: 0.68rem; }
+    .speed-btn { width: 26px; height: 26px; font-size: 0.68rem; }
     .fc-zh { font-size: 1.8rem; }
-    .ex-tab-btn { font-size: 0.68rem; padding: 4px 7px; }
+    .ex-tab-btn { font-size: 0.66rem; padding: 4px 6px; }
   }
