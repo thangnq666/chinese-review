@@ -39,13 +39,21 @@ function renderPhrases() {
       tr.innerHTML =
         '<td class="lt-num">' + globalIdx + '</td>' +
         '<td class="lt-zh" onclick="showStrokeModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',\'Câu mẫu Bài ' + les + '\')" title="Xem nét viết">' + p.zh +
-          '<span class="mob-sub"><span class="mob-py">' + p.py + '</span><span class="mob-vi">' + p.vi + '</span></span>' +
-        '</td>' +
+          '<span class="mob-sub"><span class="mob-py">' + p.py + '</span><span class="mob-vi">' + p.vi + '</span></span></td>' +
         '<td class="lt-py">' + p.py + '</td>' +
         '<td class="lt-vi">' + p.vi + '</td>' +
         '<td class="lt-act">' +
           '<button class="dl-btn dl-btn-speak" onclick="event.stopPropagation();speak(\'' + zhEsc + '\')">🔊</button> ' +
-          '<button class="dl-btn dl-btn-practice" onclick="event.stopPropagation();openSpeakModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',' + (+les-1) + ',-1)">🎤</button>' +
+          '<button class="dl-btn dl-btn-practice" onclick="event.stopPropagation();openSpeakModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',' + (+les-1) + ',-1)">🎤 Tập nói</button>' +
         '</td>';
       tbody.appendChild(tr);
     });
+
+    table.appendChild(tbody);
+    sec.appendChild(table);
+    container.appendChild(sec);
+  });
+}
+
+// ===================================================
+// FLASHCARD

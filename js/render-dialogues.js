@@ -162,13 +162,12 @@ function renderDialogues() {
         '<td class="lt-num">' + (li+1) + '</td>' +
         '<td class="lt-spk"><span class="' + spkClass + '">' + spk + '</span></td>' +
         '<td class="lt-zh" onclick="showStrokeModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',\'Hội thoại\')" title="Xem nét viết">' + line.zh +
-          '<span class="mob-sub"><span class="mob-py">' + line.py + '</span><span class="mob-vi">' + line.vi + '</span></span>' +
-        '</td>' +
+          '<span class="mob-sub"><span class="mob-py">' + line.py + '</span><span class="mob-vi">' + line.vi + '</span></span></td>' +
         '<td class="lt-py">' + line.py + '</td>' +
         '<td class="lt-vi">' + line.vi + '</td>' +
         '<td class="lt-act">' +
           '<button class="dl-btn dl-btn-speak" onclick="event.stopPropagation();speak(\'' + zhEsc + '\')">🔊</button> ' +
-          '<button class="dl-btn dl-btn-practice" onclick="event.stopPropagation();openSpeakModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',' + di + ',' + li + ')">🎤</button>' +
+          '<button class="dl-btn dl-btn-practice" onclick="event.stopPropagation();openSpeakModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',' + di + ',' + li + ')">🎤 Luyện nói</button>' +
         '</td>';
       tbody.appendChild(tr);
     });
@@ -207,4 +206,11 @@ function playFullDialogue(di) {
     utt.rate = 0.85;
     if (ttsVoice) utt.voice = ttsVoice;
     utt.rate = getRate();
-    utt.onend = (
+    utt.onend = () => { idx++; setTimeout(playOne, 600); };
+    window.speechSynthesis.speak(utt);
+  }
+  playOne();
+}
+
+// ===================================================
+// SPEAK PRACTICE CARDS RENDER
