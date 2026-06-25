@@ -1101,6 +1101,9 @@
     white-space: nowrap;
   }
 
+  /* ===== MOB-SUB: py+vi inside zh cell (hidden on desktop) ===== */
+  .mob-sub { display: none; }
+
   /* ===== EXERCISE TABS (complete) ===== */
   .ex-tab-btn.active, .ex-tab-btn:hover { background: var(--red); color: white; border-color: var(--red); }
   .ex-pane { display: none; }
@@ -1126,10 +1129,8 @@
   .listen-counter { text-align: center; font-size: 0.85rem; color: var(--text-light); margin-bottom: 10px; }
   .listen-card { background: white; border-radius: var(--radius); padding: 24px; text-align: center; border: 1px solid var(--gray2); min-height: 120px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
   .listen-play-btn { background: var(--mid); color: white; border: none; border-radius: 50%; width: 64px; height: 64px; font-size: 1.5rem; cursor: pointer; transition: all 0.2s; }
-  .listen-play-btn:hover { background: var(--dark); transform: scale(1.1); }
   .listen-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
   .listen-opt { padding: 10px; border: 2px solid var(--gray2); border-radius: 10px; background: white; cursor: pointer; font-size: 0.9rem; font-weight: 600; transition: all 0.2s; text-align: center; }
-  .listen-opt:hover { border-color: var(--mid); }
   .listen-opt.correct { border-color: #2ecc71; background: #d4edda; }
   .listen-opt.wrong { border-color: var(--red); background: #fdecea; }
   .fill-sentence { background: white; border: 1px solid var(--gray2); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; font-size: 0.95rem; line-height: 1.8; }
@@ -1158,15 +1159,7 @@
     .card { padding: 16px; }
     .speed-desc { display: none; }
     #voiceSel { max-width: 130px; }
-    /* Vocab: hide # and type columns */
-    .vocab-table th:nth-child(1), .vocab-table td:nth-child(1),
-    .vocab-table th:nth-child(4), .vocab-table td:nth-child(4) { display: none; }
-    /* Grammar: hide Cấu trúc column */
-    .gram-table th:nth-child(4), .gram-table td:nth-child(4) { display: none; }
-    /* Phonetics: hide description column */
-    .phon-main-table th:nth-child(3), .phon-main-table td:nth-child(3) { display: none; }
-    /* Lesson table: hide source and actions */
-    .lt-src, .lt-act { display: none; }
+    .lt-act { width: 110px; }
     .mc-options { grid-template-columns: 1fr; }
     .listen-options { grid-template-columns: 1fr; }
   }
@@ -1184,91 +1177,125 @@
     main { padding: 10px 8px 80px; }
 
     /* Nav */
-    nav button { padding: 10px 11px; font-size: 0.76rem; }
+    nav button { padding: 10px 10px; font-size: 0.74rem; }
 
-    /* TTS Bar: 2-row compact layout */
-    #ttsBar {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      gap: 6px 10px;
-      padding: 7px 10px;
-    }
-    .speed-label { font-size: 0.75rem; }
+    /* TTS Bar compact */
+    #ttsBar { flex-wrap: wrap; justify-content: flex-start; gap: 5px 8px; padding: 6px 10px; }
     .speed-btn { width: 28px; height: 28px; font-size: 0.72rem; }
     .speed-desc { display: none; }
-    #voiceSel { font-size: 0.75rem; max-width: 140px; }
-    #vocabTypeSelect { font-size: 0.75rem; }
+    #voiceSel { font-size: 0.74rem; max-width: 130px; }
+    #vocabTypeSelect { font-size: 0.74rem; max-width: 150px; }
     .speed-preview-btn { font-size: 0.72rem; padding: 3px 8px; }
 
     /* Cards */
     .card { padding: 12px; border-radius: 10px; }
     .card h2 { font-size: 1rem; }
 
-    /* === VOCAB TABLE: hide cols 1(#), 4(type), 6(actions shrink) === */
+    /* ===== PHONETICS: card-per-row layout ===== */
+    /* Wrap table in scrollable div via section overflow */
+    #phonContainer .card { overflow-x: hidden; }
+    /* Show only cols 1(empty),2(symbol),5(btn) — hide 3(desc) and 4(preview) */
+    .phon-main-table th:nth-child(3),
+    .phon-main-table th:nth-child(4),
+    .phon-row td:nth-child(3),
+    .phon-row td:nth-child(4),
+    .phon-detail-row td:nth-child(3),
+    .phon-detail-row td:nth-child(4) { display: none; }
+    /* Remove fixed widths so remaining cols fill screen */
+    .phon-main-table { table-layout: auto; width: 100%; }
+    .phon-main-table col { width: auto !important; }
+    /* Symbol cell larger */
+    .phon-sym { font-size: 1.2rem; padding: 6px 10px; }
+    /* Detail rows: show zh large, py below */
+    .phon-d-zh { font-size: 1.5rem; display: block; }
+    .phon-d-py { font-size: 0.85rem; display: block; }
+    .phon-d-vi { font-size: 0.82rem; }
+    .phon-d-num { width: 28px; }
+    /* Button compact */
+    .phon-ex-btn { padding: 5px 8px; font-size: 0.72rem; }
+
+    /* ===== VOCAB TABLE: card layout ===== */
+    /* Hide #, Pinyin, Loại từ, Nghĩa columns — show via mob-sub */
     .vocab-table th:nth-child(1), .vocab-table td:nth-child(1),
-    .vocab-table th:nth-child(4), .vocab-table td:nth-child(4) { display: none; }
-    /* Make table scroll horizontally */
-    .vocab-table-section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .vocab-table { min-width: 320px; }
-    .vt-h-zh { width: 70px; }
-    .vt-h-py { width: 100px; }
-    .vt-h-act { width: 110px; }
-    .vt-zh { font-size: 1.2rem; }
+    .vocab-table th:nth-child(3), .vocab-table td:nth-child(3),
+    .vocab-table th:nth-child(4), .vocab-table td:nth-child(4),
+    .vocab-table th:nth-child(5), .vocab-table td:nth-child(5) { display: none; }
+    /* Convert rows to block cards */
+    .vocab-table { display: block; width: 100%; }
+    .vocab-table thead { display: none; }
+    .vocab-table tbody { display: block; }
+    .vocab-row { display: flex !important; flex-wrap: wrap; align-items: flex-start; gap: 6px; padding: 10px 12px; border: 1px solid var(--gray2); border-radius: 10px; margin-bottom: 8px; background: white; }
+    .vocab-row td { display: block; border: none; padding: 0; }
+    .vt-zh { font-size: 1.5rem; font-weight: 800; }
+    .vt-actions { flex-basis: 100%; display: flex; gap: 6px; margin-top: 2px; }
+    /* Show mob-sub (py + vi) on mobile */
+    .mob-sub { display: flex; flex-direction: column; gap: 1px; margin-top: 2px; }
+    .mob-py { font-size: 0.8rem; color: var(--red); font-weight: 600; }
+    .mob-vi { font-size: 0.82rem; color: var(--text-light); }
+    /* Vocab example rows: keep visible, make full width */
+    .vocab-ex-row { display: table-row !important; }
+    .vocab-ex-row td { display: block !important; padding: 6px 8px !important; }
 
-    /* === PHONETICS TABLE === */
-    /* Hide description (col3) and preview (col4), keep symbol + button */
-    .phon-main-table th:nth-child(3), .phon-main-table td:nth-child(3),
-    .phon-main-table th:nth-child(4), .phon-main-table td:nth-child(4) { display: none; }
-    .phon-main-table { min-width: unset; }
-    /* Detail rows: hide col3, col4 */
-    .phon-detail-row td:nth-child(3), .phon-detail-row td:nth-child(4) { display: none; }
-    /* Reduce preview spacing */
-    .phon-preview-zh { font-size: 0.95rem; margin: 0 1px; }
+    /* ===== LT-TABLE (Câu mẫu / Hội thoại / Tập nói): card layout ===== */
+    .lt-section { overflow-x: unset; }
+    .lt-table { display: block; width: 100%; }
+    .lt-table thead { display: none; }
+    .lt-table tbody { display: block; }
+    .lt-row { display: block !important; border: 1px solid var(--gray2); border-radius: 10px; margin-bottom: 8px; padding: 10px 12px; background: white; position: relative; }
+    .lt-row td { display: block !important; border: none; padding: 1px 0; }
+    .lt-num { display: none !important; }
+    /* Speaker badge: top right */
+    .lt-spk { position: absolute; top: 10px; right: 10px; padding: 0; }
+    /* Chinese text: large */
+    .lt-zh { font-size: 1.1rem; font-weight: 800; color: var(--dark); padding-right: 44px !important; }
+    /* Hide separate py/vi columns — shown via mob-sub */
+    .lt-py, .lt-vi { display: none !important; }
+    /* mob-sub shows py + vi below zh */
+    .lt-zh .mob-sub { display: flex; flex-direction: column; gap: 1px; margin-top: 3px; }
+    .lt-zh .mob-py { font-size: 0.8rem; color: var(--red); font-weight: 600; }
+    .lt-zh .mob-vi { font-size: 0.82rem; color: var(--text-light); }
+    /* Actions row */
+    .lt-act { display: flex !important; gap: 6px; margin-top: 6px; flex-wrap: wrap; width: auto; }
+    .lt-src { display: none !important; }
 
-    /* === GRAMMAR TABLE === */
-    .gram-table th:nth-child(4), .gram-table td:nth-child(4) { display: none; }
-    .gram-body { overflow-x: auto; -webkit-overflow-scrolling: touch; padding: 10px; }
-    .gram-table { min-width: 280px; }
+    /* ===== GRAMMAR ===== */
     .gram-filter { gap: 4px; }
     .gram-filter-btn { padding: 4px 9px; font-size: 0.72rem; }
     .gram-hdr { padding: 10px 12px; }
     .gram-hdr-text strong { font-size: 0.88rem; }
+    .gram-body { padding: 10px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    /* gram-table: hide Cấu trúc (col4) */
+    .gram-table th:nth-child(4), .gram-table td:nth-child(4) { display: none; }
+    .gram-table { font-size: 0.82rem; }
+    .gt-zh { font-size: 1rem; }
 
-    /* === LESSON / DIALOGUE TABLE === */
-    .lt-src, .lt-act { display: none; }
-    /* Make scrollable */
-    .lt-section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .lt-table { min-width: 280px; }
-    .lt-zh { font-size: 1rem; }
+    /* ===== PHRASE GRID ===== */
+    .phrase-grid { grid-template-columns: 1fr; }
+    .tone-grid { grid-template-columns: repeat(3, 1fr); }
 
-    /* Flashcard */
+    /* ===== FLASHCARD ===== */
     .flashcard-wrap { height: 175px; }
     .fc-zh { font-size: 2.2rem; }
     .fc-btn { padding: 7px 12px; font-size: 0.82rem; }
 
-    /* Exercise tabs */
+    /* ===== EXERCISE TABS ===== */
     .ex-tab-bar { gap: 5px; }
     .ex-tab-btn { padding: 5px 8px; font-size: 0.72rem; }
     .mc-options { grid-template-columns: 1fr; }
     .listen-options { grid-template-columns: 1fr; }
     .match-container { grid-template-columns: 1fr; }
 
-    /* Speak section */
+    /* ===== SPEAK SECTION ===== */
     .speak-card { flex-direction: column; align-items: flex-start; }
     .speak-card-actions { width: 100%; display: flex; }
     .speak-card-actions button { flex: 1; }
     .speak-filter-btn { padding: 5px 9px; font-size: 0.75rem; }
 
-    /* Modals */
+    /* ===== MODALS ===== */
     .sm-zh { font-size: 2rem; }
     .sp-btn { min-width: 80px; font-size: 0.82rem; padding: 8px 10px; }
     #strokeModal { padding: 18px 12px; }
     .stroke-ctrl-btn { padding: 6px 10px; font-size: 0.78rem; }
-
-    /* Phrase grid */
-    .phrase-grid { grid-template-columns: 1fr; }
-    .tone-grid { grid-template-columns: repeat(3, 1fr); }
 
     /* Scroll-to-top */
     #totop { bottom: 14px; right: 10px; width: 38px; height: 38px; font-size: 1rem; }
@@ -1277,8 +1304,8 @@
   /* ===== RESPONSIVE — SMALL MOBILE (≤380px) ===== */
   @media (max-width: 380px) {
     header h1 { font-size: 1rem; }
-    nav button { padding: 9px 9px; font-size: 0.68rem; }
-    .speed-btn { width: 26px; height: 26px; font-size: 0.68rem; }
+    nav button { padding: 9px 8px; font-size: 0.68rem; }
+    .speed-btn { width: 26px; height: 26px; font-size: 0.66rem; }
     .fc-zh { font-size: 1.8rem; }
-    .ex-tab-btn { font-size: 0.66rem; padding: 4px 6px; }
+    .ex-tab-btn { font-size: 0.65rem; padding: 4px 6px; }
   }

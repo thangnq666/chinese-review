@@ -51,7 +51,9 @@ function renderVocab(filter) {
       tr.className = 'vocab-row';
       tr.innerHTML =
         '<td class="vt-num">' + (origWi + 1) + '</td>' +
-        '<td class="vt-zh"><span class="zh" onclick="showStrokeModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',\'' + typeEsc + '\');" title="Xem nét viết" style="cursor:pointer">' + w.zh + '</span></td>' +
+        '<td class="vt-zh"><span class="zh" onclick="showStrokeModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',\'' + typeEsc + '\');" title="Xem nét viết" style="cursor:pointer">' + w.zh + '</span>' +
+          '<span class="mob-sub"><span class="mob-py">' + w.py + '</span><span class="mob-vi">' + w.vi + '</span></span>' +
+        '</td>' +
         '<td class="vt-py">' + w.py + '</td>' +
         '<td class="vt-type"><span class="type-badge">' + w.type + '</span></td>' +
         '<td class="vt-vi">' + w.vi + '</td>' +
@@ -114,10 +116,4 @@ function toggleEx(id, btn) {
   if (!panel) return;
   const open = panel.classList.toggle('open');
   btn.classList.toggle('active', open);
-  btn.textContent = open ? '💬 Ẩn' : '💬 Ví dụ';
-}
-
-function filterVocab(val) { renderVocab(val); }
-
-// ===================================================
-// PHRASES RENDER
+  btn.textContent = open ? '💬 Ẩn' : '💬

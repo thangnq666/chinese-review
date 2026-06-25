@@ -73,20 +73,16 @@ function renderSpeakCards() {
       const realIdx = allSpeakItems.indexOf(item);
       tr.innerHTML =
         '<td class="lt-num">' + globalN + '</td>' +
-        '<td class="lt-zh" onclick="showStrokeModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',\'Tập nói\')" title="Xem nét viết">' + item.zh + '</td>' +
+        '<td class="lt-zh" onclick="showStrokeModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',\'Tập nói\')" title="Xem nét viết">' + item.zh +
+          '<span class="mob-sub"><span class="mob-py">' + item.py + '</span><span class="mob-vi">' + item.vi + '</span></span>' +
+        '</td>' +
         '<td class="lt-py">' + item.py + '</td>' +
         '<td class="lt-vi">' + item.vi + '</td>' +
         '<td class="lt-act">' +
-          '<button class="dl-btn dl-btn-speak" onclick="speak(\'' + zhEsc + '\')">🔊</button> ' +
-          '<button class="dl-btn dl-btn-practice" onclick="openSpeakModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',' + item.lessonIdx + ',' + realIdx + ')">🎤 Tập nói</button>' +
+          '<button class="dl-btn dl-btn-speak" onclick="event.stopPropagation();speak(\'' + zhEsc + '\')">🔊</button> ' +
+          '<button class="dl-btn dl-btn-practice" onclick="event.stopPropagation();openSpeakModal(\'' + zhEsc + '\',\'' + pyEsc + '\',\'' + viEsc + '\',' + item.lessonIdx + ',' + realIdx + ')">🎤</button>' +
         '</td>';
       tbody.appendChild(tr);
     });
 
-    table.appendChild(tbody);
-    sec.appendChild(table);
-    container.appendChild(sec);
-  });
-}
-// ===================================================
-// SPEECH RECOGNITION & SCORING
+    table.
