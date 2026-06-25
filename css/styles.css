@@ -1101,3 +1101,142 @@
     white-space: nowrap;
   }
   .ex-tab-btn.active, .ex-tab-btn:hover { b
+  /* ===== RESPONSIVE — TABLET (≤768px) ===== */
+  @media (max-width: 768px) {
+    header { padding: 20px 16px 16px; }
+    header h1 { font-size: 1.5rem; }
+    header p { font-size: 0.82rem; }
+    main { padding: 14px 10px 60px; }
+    .card { padding: 16px; }
+    #ttsBar { gap: 8px; padding: 6px 10px; }
+    .speed-desc { display: none; }
+    #voiceSel { max-width: 120px; }
+    .vt-h-type, .vt-type { display: none; }
+    .lt-src, .lt-act { display: none; }
+    .mc-options { grid-template-columns: 1fr; }
+    .listen-options { grid-template-columns: 1fr; }
+  }
+
+  /* ===== RESPONSIVE — MOBILE (≤600px) ===== */
+  @media (max-width: 600px) {
+    header { padding: 14px 12px 12px; }
+    header h1 { font-size: 1.2rem; letter-spacing: 0; }
+    header::before { font-size: 60px; }
+    header::after { font-size: 40px; }
+    header p { font-size: 0.78rem; }
+
+    main { padding: 10px 8px 80px; }
+
+    nav button { padding: 11px 11px; font-size: 0.75rem; }
+
+    /* TTS Bar: stack on mobile */
+    #ttsBar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      padding: 8px 12px;
+    }
+    .speed-btn { width: 32px; height: 32px; font-size: 0.78rem; }
+    .speed-desc { display: none; }
+    #voiceSel { max-width: 100%; width: 100%; font-size: 0.82rem; }
+    #vocabTypeSelect { max-width: 100%; width: 100%; font-size: 0.82rem; }
+    .speed-preview-btn { width: 100%; }
+
+    /* Cards */
+    .card { padding: 12px; border-radius: 10px; }
+    .card h2 { font-size: 1rem; }
+
+    /* Vocab table: card layout */
+    .vocab-table thead { display: none; }
+    .vocab-table, .vocab-table tbody { display: block; }
+    .vocab-row {
+      display: flex !important;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px;
+      padding: 10px 12px;
+      border: 1px solid var(--gray2);
+      border-radius: 10px;
+      margin-bottom: 8px;
+      background: white;
+    }
+    .vocab-row td { display: block; border: none; padding: 0; }
+    .vt-num { display: none !important; }
+    .vt-zh { font-size: 1.6rem; margin-right: 8px; }
+    .vt-py { color: var(--red); font-size: 0.82rem; flex-basis: 100%; }
+    .vt-vi { font-size: 0.85rem; flex-basis: 100%; }
+    .vt-h-type, .vt-type { display: none !important; }
+    .vt-actions { flex-basis: 100%; margin-top: 4px; }
+    .vocab-ex-row { display: none !important; }
+
+    /* Phonetics: hide columns 4 & 5 */
+    .phon-main-table thead th:nth-child(4),
+    .phon-main-table thead th:nth-child(5),
+    .phon-row td:nth-child(4),
+    .phon-row td:nth-child(5),
+    .phon-detail-row td:nth-child(4),
+    .phon-detail-row td:nth-child(5) { display: none; }
+
+    /* Lesson/dialogue table: card layout */
+    .lt-table thead { display: none; }
+    .lt-table, .lt-table tbody { display: block; }
+    .lt-row {
+      display: block !important;
+      border: 1px solid var(--gray2);
+      border-radius: 10px;
+      margin-bottom: 8px;
+      padding: 10px 12px;
+      background: white;
+    }
+    .lt-row td { display: block; border: none; padding: 2px 0; }
+    .lt-num { display: none !important; }
+    .lt-spk { float: right; }
+    .lt-zh { font-size: 1.1rem; }
+    .lt-src, .lt-act { display: none !important; }
+
+    /* Grammar */
+    .gram-filter { gap: 4px; }
+    .gram-filter-btn { padding: 4px 9px; font-size: 0.72rem; }
+    .gram-hdr { padding: 10px 12px; }
+    .gram-body { padding: 10px; }
+    .gram-table thead th:nth-child(4) { display: none; }
+    .gram-table tbody td:nth-child(4) { display: none; }
+
+    /* Flashcard */
+    .flashcard-wrap { height: 180px; }
+    .fc-zh { font-size: 2.2rem; }
+    .fc-btn { padding: 7px 14px; font-size: 0.82rem; }
+
+    /* Exercise tabs */
+    .ex-tab-btn { padding: 5px 9px; font-size: 0.73rem; }
+
+    /* Match: stack */
+    .match-container { grid-template-columns: 1fr; }
+
+    /* Speak cards */
+    .speak-card { flex-direction: column; align-items: flex-start; }
+    .speak-card-actions { width: 100%; display: flex; }
+    .speak-card-actions button { flex: 1; }
+    .speak-filter-btn { padding: 5px 10px; font-size: 0.76rem; }
+
+    /* Modals */
+    .sm-zh { font-size: 2rem; }
+    .sp-btn { min-width: 80px; font-size: 0.82rem; padding: 8px 10px; }
+    #strokeModal { padding: 18px 12px; }
+    .stroke-ctrl-btn { padding: 6px 10px; font-size: 0.78rem; }
+
+    /* Dialogue lines */
+    .dialogue-zh { font-size: 0.98rem; }
+
+    /* Scroll-to-top */
+    #totop { bottom: 16px; right: 12px; width: 38px; height: 38px; font-size: 1rem; }
+  }
+
+  /* ===== RESPONSIVE — SMALL MOBILE (≤380px) ===== */
+  @media (max-width: 380px) {
+    header h1 { font-size: 1rem; }
+    nav button { padding: 10px 9px; font-size: 0.68rem; }
+    .speed-btn { width: 28px; height: 28px; }
+    .fc-zh { font-size: 1.8rem; }
+    .ex-tab-btn { font-size: 0.68rem; padding: 4px 7px; }
+  }
