@@ -439,6 +439,94 @@ const VOCAB_DATA = [
         {zh:'请介绍一下你自己。',py:'Qǐng jièshào yīxià nǐ zìjǐ.',vi:'Xin hãy tự giới thiệu bản thân bạn.'}
       ]}
     ]
+  }  ,
+  {
+    lesson: 'Buổi 14 (b15): 我们都是留学生 – Ch\xfang ta đều l\xe0 lưu học sinh',
+    words: [
+      {zh:'秘书',  py:'m\xecshū',     type:'Danh từ',     vi:'thư k\xfd',
+        ex:[{zh:'她是公司的秘书。',py:'Tā sh\xec gōngdē m\xecshū.',vi:'C\xf4 ấy l\xe0 thư k\xfd của c\xf4ng ty.'},
+            {zh:'她是一个中国公司的秘书。',py:'Tā sh\xec yī g\xe8 Zhōnggu\xf3 gōngdē m\xecshū.',vi:'C\xf4 ấy l\xe0 thư k\xfd của một c\xf4ng ty Trung Quốc.'},
+            {zh:'请问秘书在吗？',py:'Qǐngw\xe8n m\xecshū z\xe0i ma?',vi:'Xin hỏi thư k\xfd c\xf3 ở đ\xe2y kh\xf4ng?'}]},
+      {zh:'先',    py:'xiān',       type:'Ph\xf3 từ',     vi:'trước, trước ti\xean',
+        ex:[{zh:'我先介绍一下儿。',py:'Wǒ xiān ji\xe8sh\xe0o y\xedxi\xe0r.',vi:'Để t\xf4i giới thiệu trước một ch\xfat.'},
+            {zh:'你先去，我随后。',py:'Nǐ xiān q\xf9, wǒ su\xedh\xf2u.',vi:'Bạn đi trước, t\xf4i theo sau.'},
+            {zh:'先吃饭，后学习。',py:'Xiān chīf\xe0n, h\xf2u xu\xe9x\xed.',vi:'Ăn cơm trước, học sau.'}]},
+      {zh:'首先',  py:'shǒuxiān',  type:'Ph\xf3 từ',     vi:'đầu ti\xean, trước ti\xean',
+        ex:[{zh:'首先，欢迎大家！',py:'Shǒuxiān, huāny\xedng d\xe0jiā!',vi:'Đầu ti\xean, ch\xe0o mừng tất cả mọi người!'},
+            {zh:'首先我介绍一下自己。',py:'Shǒuxiān wǒ ji\xe8sh\xe0o y\xedxi\xe0 z\xecjǐ.',vi:'Trước ti\xean t\xf4i tự giới thiệu bản th\xe2n.'}]},
+      {zh:'介绍',  py:'ji\xe8sh\xe0o',    type:'Động từ',    vi:'giới thiệu',
+        ex:[{zh:'我先介绍一下儿，这位是王教授。',py:'Wǒ xiān ji\xe8sh\xe0o y\xedxi\xe0r, zh\xe8 w\xe8i sh\xec W\xe1ng ji\xe0osh\xf2u.',vi:'Để t\xf4i giới thiệu một ch\xfat, đ\xe2y l\xe0 gi\xe1o sư Vương.'},
+            {zh:'我给大家介绍一下。',py:'Wǒ gěi d\xe0jiā ji\xe8sh\xe0o y\xedxi\xe0.',vi:'Để t\xf4i giới thiệu với mọi người.'},
+            {zh:'你介绍一下吧。',py:'Nǐ ji\xe8sh\xe0o y\xedxi\xe0 ba.',vi:'Bạn giới thiệu một ch\xfat đi.'}]},
+      {zh:'一下儿',py:'y\xedxi\xe0r',    type:'Số lượng từ', vi:'một ch\xfat, thử l\xe0m',
+        ex:[{zh:'请等一下儿。',py:'Qǐng děng y\xedxi\xe0r.',vi:'Xin đợi một ch\xfat.'},
+            {zh:'你介绍一下儿吧。',py:'Nǐ ji\xe8sh\xe0o y\xedxi\xe0r ba.',vi:'Bạn giới thiệu một ch\xfat đi.'},
+            {zh:'我想一下儿。',py:'Wǒ xiǎ ng y\xedxi\xe0r.',vi:'T\xf4i nghĩ một ch\xfat.'}]},
+      {zh:'位',    py:'w\xe8i',         type:'Lượng từ',   vi:'vị (chỉ người, lịch sự)',
+        ex:[{zh:'这位是王教授。',py:'Zh\xe8 w\xe8i sh\xec W\xe1ng ji\xe0osh\xf2u.',vi:'Đ\xe2y l\xe0 gi\xe1o sư Vương.'},
+            {zh:'一位老师',py:'yī w\xe8i lǎ oshī',vi:'một vị gi\xe1o vi\xean'},
+            {zh:'这位是我们的校长。',py:'Zh\xe8 w\xe8i sh\xec wǒmen de xi\xe0ozhǎ ng.',vi:'Đ\xe2y l\xe0 hiệu trưởng của ch\xfang t\xf4i.'}]},
+      {zh:'教授',  py:'ji\xe0osh\xf2u',  type:'Danh từ',     vi:'gi\xe1o sư',
+        ex:[{zh:'这位是王教授。',py:'Zh\xe8 w\xe8i sh\xec W\xe1ng ji\xe0osh\xf2u.',vi:'Đ\xe2y l\xe0 gi\xe1o sư Vương.'},
+            {zh:'他是大学教授。',py:'Tā sh\xec d\xe0xu\xe9 ji\xe0osh\xf2u.',vi:'Ông ấy l\xe0 gi\xe1o sư đại học.'},
+            {zh:'王教授教汉语。',py:'W\xe1ng ji\xe0osh\xf2u jiāo H\xe0nyǔ.',vi:'Gi\xe1o sư Vương dạy tiếng H\xe1n.'}]},
+      {zh:'校长',  py:'xi\xe0ozhǎ ng', type:'Danh từ',     vi:'hiệu trưởng',
+        ex:[{zh:'这是我们学校的校长。',py:'Zh\xe8 sh\xec wǒmen xu\xe9xi\xe0o de xi\xe0ozhǎ ng.',vi:'Đ\xe2y l\xe0 hiệu trưởng trường ch\xfang t\xf4i.'},
+            {zh:'马校长很好。',py:'Mǎ xi\xe0ozhǎ ng hěn hǎ o.',vi:'Hiệu trưởng Mǎ rất tốt.'}]},
+      {zh:'欢迎',  py:'huāny\xedng',  type:'Động từ',    vi:'hoan ngh\xeanh, ch\xe0o đ\xf3n',
+        ex:[{zh:'欢迎您，王教授！',py:'Huāny\xedng n\xedn, W\xe1ng ji\xe0osh\xf2u!',vi:'Hoan ngh\xeanh ng\xe0i, gi\xe1o sư Vương!'},
+            {zh:'欢迎光临！',py:'Huāny\xedng guāngl\xedn!',vi:'Hoan ngh\xeanh qu\xfd kh\xe1ch!'},
+            {zh:'欢迎来中国！',py:'Huāny\xedng l\xe1i Zhōnggu\xf3!',vi:'Ch\xe0o mừng đến Trung Quốc!'}]},
+      {zh:'留学生',py:'li\xfaxu\xe9shēng',type:'Danh từ',  vi:'lưu học sinh, du học sinh',
+        ex:[{zh:'我是留学生。',py:'Wǒ sh\xec li\xfaxi\xe9shēng.',vi:'T\xf4i l\xe0 lưu học sinh.'},
+            {zh:'我们都是留学生。',py:'Wǒmen dōu sh\xec li\xfaxi\xe9shēng.',vi:'Ch\xfang ta đều l\xe0 lưu học sinh.'},
+            {zh:'你们中国留学生经常去哪里？',py:'Nǐmen Zhōnggu\xf3 li\xfaxi\xe9shēng jīngch\xe1ng q\xf9 nǎ lǐ?',vi:'C\xe1c bạn lưu học sinh Trung Quốc thường hay đi đ\xe2u?'}]},
+      {zh:'留学',  py:'li\xfaxi\xe9',     type:'Động từ',    vi:'du học',
+        ex:[{zh:'我去中国留学。',py:'Wǒ q\xf9 Zhōnggu\xf3 li\xfaxi\xe9.',vi:'T\xf4i đi du học ở Trung Quốc.'},
+            {zh:'她去美国留学了。',py:'Tā q\xf9 Měi gu\xf3 li\xfaxi\xe9 le.',vi:'C\xf4 ấy đi du học ở Mỹ rồi.'}]},
+      {zh:'学生',  py:'xu\xe9sheng',    type:'Danh từ',     vi:'học sinh, sinh vi\xean',
+        ex:[{zh:'你是学生吗？',py:'Nǐ sh\xec xu\xe9sheng ma?',vi:'Bạn c\xf3 phải l\xe0 học sinh kh\xf4ng?'},
+            {zh:'我是学生，不是老师。',py:'Wǒ sh\xec xu\xe9sheng, b\xfa sh\xec lǎ oshī.',vi:'T\xf4i l\xe0 học sinh, kh\xf4ng phải gi\xe1o vi\xean.'},
+            {zh:'他们都是中国学生。',py:'Tāmen dōu sh\xec Zhōnggu\xf3 xu\xe9sheng.',vi:'Họ đều l\xe0 học sinh Trung Quốc.'}]},
+      {zh:'也',    py:'yě',         type:'Ph\xf3 từ',     vi:'cũng',
+        ex:[{zh:'她也是留学生。',py:'Tā yě sh\xec li\xfaxi\xe9shēng.',vi:'C\xf4 ấy cũng l\xe0 lưu học sinh.'},
+            {zh:'我也是越南人。',py:'Wǒ yě sh\xec Yu\xe8n\xe1n r\xe9n.',vi:'T\xf4i cũng l\xe0 người Việt Nam.'},
+            {zh:'你也是中国人吗？',py:'Nǐ yě sh\xec Zhōnggu\xf3 r\xe9n ma?',vi:'Bạn cũng l\xe0 người Trung Quốc \xe0?'}]},
+      {zh:'都',    py:'dōu',        type:'Ph\xf3 từ',     vi:'đều',
+        ex:[{zh:'我们都是留学生。',py:'Wǒmen dōu sh\xec li\xfaxi\xe9shēng.',vi:'Ch\xfang ta đều l\xe0 lưu học sinh.'},
+            {zh:'他们都是中国学生。',py:'Tāmen dōu sh\xec Zhōnggu\xf3 xu\xe9sheng.',vi:'Họ đều l\xe0 học sinh Trung Quốc.'},
+            {zh:'吧吧妈妈都很好。',py:'B\xe0ba māma dōu hěn hǎ o.',vi:'Bố mẹ đều rất khỏe.'}]},
+      {zh:'俩',    py:'liǎ ',        type:'Số từ',      vi:'hai (người), cả hai',
+        ex:[{zh:'他们俩都是留学生。',py:'Tāmen liǎ dōu sh\xec li\xfaxi\xe9shēng.',vi:'Cả hai họ đều l\xe0 lưu học sinh.'},
+            {zh:'我们俩是好朗友。',py:'Wǒmen liǎ sh\xec hǎ o p\xe9ngyou.',vi:'Cả hai ch\xfang t\xf4i l\xe0 bạn tốt.'},
+            {zh:'你们俩也都是留学生吗？',py:'Nǐmen liǎ yě dōu sh\xec li\xfaxi\xe9shēng ma?',vi:'Cả hai c\xe1c bạn cũng đều l\xe0 lưu học sinh \xe0?'}]},
+      {zh:'没什么',py:'m\xe9i sh\xe9nme', type:'Cụm từ',    vi:'kh\xf4ng c\xf3 g\xec, kh\xf4ng sao',
+        ex:[{zh:'对不起！—没什么。',py:'Du\xedb\xf9qǐ! — M\xe9i sh\xe9nme.',vi:'Xin lỗi! — Kh\xf4ng c\xf3 g\xec.'},
+            {zh:'没什么，没关系。',py:'M\xe9i sh\xe9nme, m\xe9i guānxi.',vi:'Kh\xf4ng c\xf3 g\xec, kh\xf4ng sao.'}]},
+      {zh:'经理',  py:'jīnglǐ',   type:'Danh từ',     vi:'gi\xe1m đốc, quản l\xfd',
+        ex:[{zh:'我们的经理是一个好人。',py:'Wǒmen de jīnglǐ sh\xec yī g\xe8 hǎ o r\xe9n.',vi:'Gi\xe1m đốc của ch\xfang t\xf4i l\xe0 người tốt.'},
+            {zh:'王经理在吗？',py:'W\xe1ng jīnglǐ z\xe0i ma?',vi:'Gi\xe1m đốc Vương c\xf3 ở đ\xe2y kh\xf4ng?'}]},
+      {zh:'大夫',  py:'d\xe0ifu',      type:'Danh từ',     vi:'thầy thuốc, b\xe1c sĩ',
+        ex:[{zh:'他是大夫。',py:'Tā sh\xec d\xe0ifu.',vi:'Ông ấy l\xe0 b\xe1c sĩ.'},
+            {zh:'我爸爸妈妈都是大夫。',py:'Wǒ b\xe0ba māma dōu sh\xec d\xe0ifu.',vi:'Bố mẹ t\xf4i đều l\xe0 b\xe1c sĩ.'}]},
+      {zh:'护士',  py:'h\xf9shi',      type:'Danh từ',     vi:'y t\xe1, hộ l\xfd',
+        ex:[{zh:'她是护士。',py:'Tā sh\xec h\xf9shi.',vi:'C\xf4 ấy l\xe0 y t\xe1.'},
+            {zh:'护士很忙。',py:'H\xf9shi hěn m\xe1ng.',vi:'Y t\xe1 rất bận.'}]},
+      {zh:'律师',  py:'l\xfcsī',      type:'Danh từ',     vi:'luật sư',
+        ex:[{zh:'他是律师。',py:'Tā sh\xec l\xfasī.',vi:'Anh ấy l\xe0 luật sư.'},
+            {zh:'你是律师吗？',py:'Nǐ sh\xec l\xfasī ma?',vi:'Bạn c\xf3 phải luật sư kh\xf4ng?'}]},
+      {zh:'记者',  py:'j\xeczhě',    type:'Danh từ',     vi:'nh\xe0 b\xe1o, ph\xf3ng vi\xean',
+        ex:[{zh:'她是记者。',py:'Tā sh\xec j\xeczhě.',vi:'C\xf4 ấy l\xe0 nh\xe0 b\xe1o.'},
+            {zh:'你们都是记者吗？',py:'Nǐmen dōu sh\xec j\xeczhě ma?',vi:'C\xe1c bạn đều l\xe0 nh\xe0 b\xe1o \xe0?'}]},
+      {zh:'经常',  py:'jīngch\xe1ng', type:'Ph\xf3 từ',     vi:'thường xuy\xean, hay',
+        ex:[{zh:'我早上经常吃包子。',py:'Wǒ zǎ oshang jīngch\xe1ng chī bāozi.',vi:'S\xe1ng t\xf4i thường ăn b\xe1nh bao.'},
+            {zh:'你经常来这里吗？',py:'Nǐ jīngch\xe1ng l\xe1i zh\xe8lǐ ma?',vi:'Bạn c\xf3 hay đến đ\xe2y kh\xf4ng?'},
+            {zh:'他经常学习到很晚。',py:'Tā jīngch\xe1ng xu\xe9x\xed d\xe0o hěn wǎ n.',vi:'Anh ấy thường học đến rất khuya.'}]},
+      {zh:'大家',  py:'d\xe0jiā',    type:'Đại từ',    vi:'mọi người, tất cả',
+        ex:[{zh:'大家好！',py:'D\xe0jiā hǎ o!',vi:'Xin ch\xe0o mọi người!'},
+            {zh:'我给大家介绍一下。',py:'Wǒ gěi d\xe0jiā ji\xe8sh\xe0o y\xedxi\xe0.',vi:'Để t\xf4i giới thiệu với mọi người.'},
+            {zh:'大家都来了吗？',py:'D\xe0jiā dōu l\xe1i le ma?',vi:'Mọi người đều đến rồi chư?'}]},
+    ]
   }
 ];
 
@@ -633,6 +721,36 @@ const DIALOGUE_DATA = [
       {s:'A',zh:'谢谢您。',py:'Xièxiè nín.',vi:'Cảm ơn ngài.'},
       {s:'B',zh:'不客气。',py:'Bú kèqi.',vi:'Không có gì.'}
     ]
+  }  ,
+  {
+    lesson:'B\xe0i 11: 我们都是留学生 – Ch\xfang ta đều l\xe0 lưu học sinh', title:'Giới thiệu gi\xe1o sư – 介绍教授', lessonIdx:10,
+    lines:[
+      {s:'B',zh:'我先介绍一下儿，这位是王教授。这是马校长。',py:'Wǒ xiān ji\xe8sh\xe0o y\xedxi\xe0r, zh\xe8 w\xe8i sh\xec W\xe1ng ji\xe0osh\xf2u. Zh\xe8 sh\xec Mǎ xi\xe0ozhǎ ng.',vi:'T\xf4i xin giới thiệu, đ\xe2y l\xe0 gi\xe1o sư Vương. Đ\xe2y l\xe0 hiệu trưởng Mǎ.'},
+      {s:'A',zh:'欢迎您，王教授。',py:'Huāny\xedng n\xedn, W\xe1ng ji\xe0osh\xf2u.',vi:'Hoan ngh\xeanh ng\xe0i, gi\xe1o sư Vương.'},
+      {s:'B',zh:'谢谢！',py:'Xi\xe8xie!',vi:'Cảm ơn!'},
+    ]
+  },
+  {
+    lesson:'B\xe0i 11: 我们都是留学生 – Ch\xfang ta đều l\xe0 lưu học sinh', title:'Ch\xfang ta đều l\xe0 lưu học sinh – 我们都是留学生', lessonIdx:10,
+    lines:[
+      {s:'A',zh:'你是留学生吗？',py:'Nǐ sh\xec li\xfaxi\xe9shēng ma?',vi:'Bạn c\xf3 phải l\xe0 lưu học sinh kh\xf4ng?'},
+      {s:'B',zh:'是。',py:'Sh\xec.',vi:'Phải.'},
+      {s:'A',zh:'她也是留学生吗？',py:'Tā yě sh\xec li\xfaxi\xe9shēng ma?',vi:'C\xf4 ấy cũng l\xe0 lưu học sinh \xe0?'},
+      {s:'B',zh:'她也是留学生。我们都是留学生。',py:'Tā yě sh\xec li\xfaxi\xe9shēng. Wǒmen dōu sh\xec li\xfaxi\xe9shēng.',vi:'C\xf4 ấy cũng l\xe0 lưu học sinh. Ch\xfang ta đều l\xe0 lưu học sinh.'},
+      {s:'A',zh:'他们俩也都是留学生吗？',py:'Tāmen liǎ yě dōu sh\xec li\xfaxi\xe9shēng ma?',vi:'Cả hai họ cũng đều l\xe0 lưu học sinh \xe0?'},
+      {s:'B',zh:'不，他们俩不是留学生。他们都是中国学生。',py:'B\xf9, tāmen liǎ b\xfa sh\xec li\xfaxi\xe9shēng. Tāmen dōu sh\xec Zhōnggu\xf3 xu\xe9shēng.',vi:'Kh\xf4ng, cả hai họ kh\xf4ng phải lưu học sinh. Họ đều l\xe0 học sinh Trung Quốc.'},
+    ]
+  },
+  {
+    lesson:'B\xe0i 11: 我们都是留学生 – Ch\xfang ta đều l\xe0 lưu học sinh', title:'Bạn cũng l\xe0 người Trung Quốc \xe0? – 你也是中国人吗', lessonIdx:10,
+    lines:[
+      {s:'A',zh:'他是中国人吗？',py:'Tā sh\xec Zhōnggu\xf3 r\xe9n ma?',vi:'Ông ấy l\xe0 người Trung Quốc \xe0?'},
+      {s:'B',zh:'是。',py:'Sh\xec.',vi:'Phải.'},
+      {s:'A',zh:'你也是中国人吗？',py:'Nǐ yě sh\xec Zhōnggu\xf3 r\xe9n ma?',vi:'Bạn cũng l\xe0 người Trung Quốc \xe0?'},
+      {s:'B',zh:'不是。我是韩国人。',py:'B\xfa sh\xec. Wǒ sh\xec H\xe1ngu\xf3 r\xe9n.',vi:'Kh\xf4ng phải. T\xf4i l\xe0 người H\xe0n Quốc.'},
+      {s:'A',zh:'对不起。',py:'Du\xedb\xf9qǐ.',vi:'Xin lỗi.'},
+      {s:'B',zh:'没什么。',py:'M\xe9i sh\xe9nme.',vi:'Kh\xf4ng c\xf3 g\xec.'},
+    ]
   }
 ];
 
@@ -754,6 +872,19 @@ const PHRASES = [
   {zh:'我不知道。',py:'Wǒ bù zhīdào.',vi:'Tôi không biết.',lesson:10},
   {zh:'你住在哪儿？',py:'Nǐ zhù zài nǎr?',vi:'Bạn sống ở đâu?',lesson:10},
   {zh:'我在吃饭呢。',py:'Wǒ zài chīfàn ne.',vi:'Tôi đang ăn cơm đấy.',lesson:10},
-  {zh:'我要换五百美元的人民币。',py:'Wǒ yào huàn wǔbǎi měiyuán de rénmínbì.',vi:'Tôi muốn đổi năm trăm đô sang nhân dân tệ.',lesson:9}
+  {zh:'我要换五百美元的人民币。',py:'Wǒ yào huàn wǔbǎi měiyuán de rénmínbì.',vi:'Tôi muốn đổi năm trăm đô sang nhân dân tệ.',lesson:9}  ,
+  // B\xe0i 11
+  {zh:'我先介绍一下儿，这位是王教授。',py:'Wǒ xiān ji\xe8sh\xe0o y\xedxi\xe0r, zh\xe8 w\xe8i sh\xec W\xe1ng ji\xe0osh\xf2u.',vi:'Để t\xf4i giới thiệu, đ\xe2y l\xe0 gi\xe1o sư Vương.',lesson:11},
+  {zh:'欢迎您，王教授！',py:'Huāny\xedng n\xedn, W\xe1ng ji\xe0osh\xf2u!',vi:'Hoan ngh\xeanh ng\xe0i, gi\xe1o sư Vương!',lesson:11},
+  {zh:'你是留学生吗？',py:'Nǐ sh\xec li\xfaxi\xe9shēng ma?',vi:'Bạn c\xf3 phải l\xe0 lưu học sinh kh\xf4ng?',lesson:11},
+  {zh:'她也是留学生吗？',py:'Tā yě sh\xec li\xfaxi\xe9shēng ma?',vi:'C\xf4 ấy cũng l\xe0 lưu học sinh \xe0?',lesson:11},
+  {zh:'我们都是留学生。',py:'Wǒmen dōu sh\xec li\xfaxi\xe9shēng.',vi:'Ch\xfang ta đều l\xe0 lưu học sinh.',lesson:11},
+  {zh:'他们俩也都是留学生吗？',py:'Tāmen liǎ yě dōu sh\xec li\xfaxi\xe9shēng ma?',vi:'Cả hai họ cũng đều l\xe0 lưu học sinh \xe0?',lesson:11},
+  {zh:'不，他们都是中国学生。',py:'B\xf9, tāmen dōu sh\xec Zhōnggu\xf3 xu\xe9sheng.',vi:'Kh\xf4ng, họ đều l\xe0 học sinh Trung Quốc.',lesson:11},
+  {zh:'你也是中国人吗？',py:'Nǐ yě sh\xec Zhōnggu\xf3 r\xe9n ma?',vi:'Bạn cũng l\xe0 người Trung Quốc \xe0?',lesson:11},
+  {zh:'不是。我是韩国人。',py:'B\xfa sh\xec. Wǒ sh\xec H\xe1ngu\xf3 r\xe9n.',vi:'Kh\xf4ng phải. T\xf4i l\xe0 người H\xe0n Quốc.',lesson:11},
+  {zh:'对不起。—没什么。',py:'Du\xedb\xf9qǐ. — M\xe9i sh\xe9nme.',vi:'Xin lỗi. — Kh\xf4ng c\xf3 g\xec.',lesson:11},
+  {zh:'大家好！我先介绍一下。',py:'D\xe0jiā hǎ o! Wǒ xiān ji\xe8sh\xe0o y\xedxi\xe0.',vi:'Xin ch\xe0o mọi người! Để t\xf4i giới thiệu một ch\xfat.',lesson:11},
+  {zh:'他们都是中国学生。',py:'Tāmen dōu sh\xec Zhōnggu\xf3 xu\xe9sheng.',vi:'Họ đều l\xe0 học sinh Trung Quốc.',lesson:11}
 ];
 
