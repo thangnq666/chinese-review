@@ -1505,3 +1505,94 @@
   padding-top: 6px;
   border-top: 1px dashed var(--gray2);
 }
+
+/* ===== LUYỆN VIẾT – Two-panel layout ===== */
+.ww-two-panels {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.ww-panel {
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid var(--gray2);
+  border-radius: 12px;
+  padding: 12px;
+  background: #fafcff;
+}
+.ww-panel-guide  { border-color: #b3ccf5; background: #f0f5ff; }
+.ww-panel-practice { border-color: #f5b3b3; background: #fff5f5; }
+.ww-panel-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ww-guide-badge {
+  background: #1a73e8;
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 20px;
+}
+.ww-practice-badge {
+  background: var(--red);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 20px;
+}
+.ww-stroke-label {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #1a73e8;
+  font-weight: 600;
+  min-height: 20px;
+  margin: 6px 0 8px;
+}
+.ww-guide-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ww-speed-label { font-size: 0.78rem; color: var(--text-light); }
+.ww-speed-btn {
+  padding: 4px 8px;
+  border: 1px solid var(--gray2);
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.15s;
+}
+.ww-speed-btn.active { background: #1a73e8; border-color: #1a73e8; }
+.ww-btn-sm { padding: 6px 12px; font-size: 0.85rem; }
+.ww-practice-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.ww-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--gray2);
+}
+@media (max-width: 500px) {
+  .ww-two-panels { flex-direction: column; }
+  .ww-panel { min-width: 0; width: 100%; }
+}
