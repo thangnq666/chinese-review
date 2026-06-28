@@ -25,6 +25,7 @@
   <button onclick="showSection('s-flashcard', this)">🃏 Flashcard</button>
   <button onclick="showSection('s-exercise', this)">📝 Bài Tập</button>
   <button onclick="showSection('s-tips', this)">💡 Lời Khuyên</button>
+  <button onclick="showSection('s-write', this); onWriteTabOpen()">✍️ Luyện Viết</button>
 </nav>
 
 <div id="ttsBar">
@@ -490,33 +491,24 @@
 </div>
 
 
-  <!-- External libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
+<!-- ============================================================ -->
+<!--  LUYỆN VIẾT                                                  -->
+<!-- ============================================================ -->
+<div class="section" id="s-write">
+  <div class="card">
+    <h2>✍️ Luyện Viết Chữ Hán</h2>
 
-  <!-- Data (must load before render/feature scripts) -->
-  <script src="js/data/vocab-data.js"></script>
+    <!-- Top bar: lesson selector + progress -->
+    <div class="ww-topbar">
+      <select id="writeLessonSel" onchange="initWriteLesson()" class="ww-lesson-sel">
+        <option value="">— Chọn bài học —</option>
+      </select>
+      <span id="writeProgress" class="ww-progress-text"></span>
+    </div>
 
-  <!-- Core utilities -->
-  <script src="js/tts.js"></script>
-  <script src="js/navigation.js"></script>
+    <!-- Word chips grid -->
+    <div class="ww-word-grid" id="writeWordGrid"></div>
 
-  <!-- Render functions -->
-  <script src="js/render-vocab.js"></script>
-  <script src="js/render-phrases.js"></script>
-  <script src="js/render-dialogues.js"></script>
-  <script src="js/render-speak.js"></script>
-  <script src="js/phonetics.js"></script>
-  <script src="js/grammar.js"></script>
-
-  <!-- Feature modules -->
-  <script src="js/flashcard.js"></script>
-  <script src="js/stroke.js"></script>
-  <script src="js/speech.js"></script>
-  <script src="js/speak-modal.js"></script>
-  <script src="js/exercises.js"></script>
-
-  <!-- App init -->
-  <script src="js/main.js"></script>
-
-</body>
-</html>
+    <!-- Writing area (hidden until word selected) -->
+    <div id="writeArea" style="display:none">
+      <!-- Character info -->
