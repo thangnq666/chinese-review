@@ -491,6 +491,7 @@
 </div>
 
 
+
 <!-- ============================================================ -->
 <!--  LUYỆN VIẾT                                                  -->
 <!-- ============================================================ -->
@@ -512,3 +513,90 @@
     <!-- Writing area (hidden until word selected) -->
     <div id="writeArea" style="display:none">
       <!-- Character info -->
+      <div class="ww-info">
+        <div class="ww-zh" id="writeCharZh"></div>
+        <div class="ww-py" id="writeCharPy"></div>
+        <div class="ww-vi" id="writeCharVi"></div>
+      </div>
+
+      <!-- Two-panel: Guide (left) + Practice (right) -->
+      <div class="ww-two-panels">
+
+        <!-- LEFT: Guide panel -->
+        <div class="ww-panel ww-panel-guide">
+          <div class="ww-panel-title">📖 Hướng dẫn nét <span class="ww-guide-badge">Tự động</span></div>
+          <div class="ww-canvases" id="guideCanvases"></div>
+          <div class="ww-stroke-label" id="guideStrokeLabel">—</div>
+          <!-- Guide controls -->
+          <div class="ww-guide-controls">
+            <button class="ww-btn ww-btn-sm" id="btnGuidePause" onclick="toggleGuidePause()">⏸ Dừng</button>
+            <button class="ww-btn ww-btn-sm" onclick="restartGuide()">↺ Lại</button>
+            <span class="ww-speed-label">Tốc độ:</span>
+            <button class="ww-speed-btn" data-sp="0.6" onclick="setGuideSpeed(0.6)">🐢</button>
+            <button class="ww-speed-btn active" data-sp="1" onclick="setGuideSpeed(1)">🏃</button>
+            <button class="ww-speed-btn" data-sp="2" onclick="setGuideSpeed(2)">🚀</button>
+          </div>
+        </div>
+
+        <!-- RIGHT: Practice panel -->
+        <div class="ww-panel ww-panel-practice">
+          <div class="ww-panel-title">✏️ Luyện viết <span class="ww-practice-badge">Chuột / Tay / Bút</span></div>
+          <div class="ww-canvases" id="writeCanvases"></div>
+          <div class="ww-practice-actions">
+            <button class="ww-btn ww-btn-primary ww-btn-sm" onclick="writeQuiz()">✍️ Bắt đầu viết</button>
+            <button class="ww-btn ww-btn-sm" onclick="writeClear()">🔄 Xóa</button>
+          </div>
+        </div>
+
+      </div><!-- /.ww-two-panels -->
+
+      <!-- Hint / feedback -->
+      <div class="ww-hint" id="writeHintBox">
+        💡 Xem ô <strong>Hướng dẫn</strong> để học thứ tự nét, rồi nhấn <strong>✍️ Bắt đầu viết</strong> để luyện.
+      </div>
+
+      <!-- Nav + tips -->
+      <div class="ww-bottom-bar">
+        <div class="ww-actions">
+          <button class="ww-btn ww-btn-nav" onclick="writePrev()">◀ Trước</button>
+          <button class="ww-btn ww-btn-nav" onclick="writeNext()">Tiếp ▶</button>
+        </div>
+        <div class="ww-tips">
+          <span>🖱️ Chuột</span><span>👆 Cảm ứng</span><span>🖊️ Bút stylus</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- External libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
+
+  <!-- Data (must load before render/feature scripts) -->
+  <script src="js/data/vocab-data.js"></script>
+
+  <!-- Core utilities -->
+  <script src="js/tts.js"></script>
+  <script src="js/navigation.js"></script>
+
+  <!-- Render functions -->
+  <script src="js/render-vocab.js"></script>
+  <script src="js/render-phrases.js"></script>
+  <script src="js/render-dialogues.js"></script>
+  <script src="js/render-speak.js"></script>
+  <script src="js/phonetics.js"></script>
+  <script src="js/grammar.js"></script>
+
+  <!-- Feature modules -->
+  <script src="js/flashcard.js"></script>
+  <script src="js/stroke.js"></script>
+  <script src="js/speech.js"></script>
+  <script src="js/speak-modal.js"></script>
+  <script src="js/exercises.js"></script>
+  <script src="js/render-write.js"></script>
+
+  <!-- App init -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
