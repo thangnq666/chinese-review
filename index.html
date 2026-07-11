@@ -26,6 +26,7 @@
   <button onclick="showSection('s-exercise', this)">📝 Bài Tập</button>
   <button onclick="showSection('s-tips', this)">💡 Lời Khuyên</button>
   <button onclick="showSection('s-write', this); onWriteTabOpen()">✍️ Luyện Viết</button>
+  <button onclick="showSection('s-claude', this); onClaudeTabOpen()">🤖 Claude</button>
 </nav>
 
 <div id="ttsBar">
@@ -575,6 +576,98 @@
   </div>
 </div>
 
+
+<!-- ===== CLAUDE CHAT ===== -->
+<div class="section hidden" id="s-claude">
+  <div class="card">
+
+    <!-- Header -->
+    <div class="cc-header">
+      <div class="cc-header-left">
+        <span class="cc-hicon">🤖</span>
+        <div>
+          <div class="cc-title">Claude – Trợ Lý Tiếng Trung</div>
+          <div class="cc-subtitle" id="ccKeyInfo">Chưa cấu hình API Key</div>
+        </div>
+      </div>
+      <div class="cc-header-right">
+        <button class="cc-icon-btn" onclick="clearCCHistory()" title="Xóa lịch sử chat">🗑️</button>
+        <button class="cc-icon-btn" onclick="toggleCCSettings()" title="Cài đặt API Key">⚙️</button>
+      </div>
+    </div>
+
+    <!-- Settings panel (collapsible) -->
+    <div class="cc-settings-panel" id="ccSettingsPanel" style="display:none">
+      <div class="cc-settings-inner">
+        <div class="cc-settings-title">🔑 Cập nhật Anthropic API Key</div>
+        <input type="password" id="ccApiKeyInputSettings" placeholder="sk-ant-api03-..." class="cc-key-input">
+        <div class="cc-settings-actions">
+          <button class="cc-btn cc-btn-primary" onclick="saveCCApiKeyFromSettings()">Lưu Key mới</button>
+          <button class="cc-btn cc-btn-danger" onclick="clearCCApiKey()">Xóa Key</button>
+        </div>
+        <div class="cc-key-note">Key chỉ lưu trong trình duyệt (localStorage) – không gửi lên server nào ngoài api.anthropic.com</div>
+      </div>
+    </div>
+
+    <!-- Setup: shown when no API key -->
+    <div class="cc-setup" id="ccSetup">
+      <div class="cc-setup-icon">🔑</div>
+      <div class="cc-setup-title">Cần Anthropic API Key</div>
+      <div class="cc-setup-desc">Nhập API Key để dùng Claude tra từ, dịch câu và hỗ trợ phát âm tiếng Trung</div>
+      <input type="password" id="ccApiKeyInput" placeholder="sk-ant-api03-..." class="cc-key-input">
+      <button class="cc-btn cc-btn-primary" onclick="saveCCApiKey()">Bắt đầu dùng</button>
+      <div class="cc-key-note">
+        Key lưu trong trình duyệt, không chia sẻ với bất kỳ server nào ngoài Anthropic.&nbsp;
+        <a href="https://console.anthropic.com/account/keys" target="_blank">Lấy API Key miễn phí →</a>
+      </div>
+    </div>
+
+    <!-- Chat body: shown when API key is set -->
+    <div class="cc-chat-body" id="ccChatBody" style="display:none">
+
+      <!-- Quick prompt chips -->
+      <div class="cc-quick-row">
+        <button class="cc-chip" onclick="ccQuickPrompt('dich')">🔄 Dịch câu</button>
+        <button class="cc-chip" onclick="ccQuickPrompt('tra')">🔍 Tra từ</button>
+        <button class="cc-chip" onclick="ccQuickPrompt('phatam')">🔊 Phát âm</button>
+        <button class="cc-chip" onclick="ccQuickPrompt('nguphap')">✏️ Ngữ pháp</button>
+        <button class="cc-chip" onclick="ccQuickPrompt('vi-du')">📝 Câu ví dụ</button>
+        <button class="cc-chip" onclick="ccQuickPrompt('thanh-dieu')">🎵 Thanh điệu</button>
+      </div>
+
+      <!-- Message list -->
+      <div class="cc-messages" id="ccMessages">
+        <div class="cc-msg cc-msg-assistant">
+          <div class="cc-avatar">🤖</div>
+          <div class="cc-bubble">
+            Xin chào <strong>Thắng</strong>! 你好 👋<br><br>
+            Tôi là trợ lý học tiếng Trung. Bạn có thể hỏi tôi:<br>
+            • <em>Dịch câu</em> từ tiếng Việt sang tiếng Trung<br>
+            • <em>Tra từ vựng</em> kèm pinyin và nghĩa<br>
+            • <em>Giải thích phát âm</em> và thanh điệu<br>
+            • <em>Ngữ pháp</em> và câu ví dụ<br><br>
+            Nhấn các nút gợi ý ở trên hoặc gõ câu hỏi bên dưới! 👆
+          </div>
+        </div>
+      </div>
+
+      <!-- Input bar -->
+      <div class="cc-input-bar">
+        <textarea id="ccInput" class="cc-textarea" rows="1"
+          placeholder="Nhập câu hỏi (VD: dịch 'tôi đi học' sang tiếng Trung)..."></textarea>
+        <button class="cc-send-btn" id="ccSendBtn" onclick="sendCCMessage()" title="Gửi (Enter)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </div>
+      <div class="cc-input-hint">Enter để gửi &nbsp;|&nbsp; Shift+Enter để xuống dòng</div>
+
+    </div><!-- /.cc-chat-body -->
+  </div><!-- /.card -->
+</div><!-- /#s-claude -->
+
   <!-- External libraries -->
   <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
 
@@ -603,6 +696,7 @@
 
   <!-- App init -->
   <script src="js/main.js"></script>
+  <script src="js/claude-chat.js"></script>
 
 </body>
 </html>
