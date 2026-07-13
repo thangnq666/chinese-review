@@ -1622,11 +1622,11 @@
 /* ===== TRỢ LÝ TIẾNG TRUNG CHAT ===== */
 .cc-header {
   display:flex; align-items:center; justify-content:space-between;
-  padding:14px 18px; border-bottom:1px solid var(--gray2);
+  padding:5px 12px; border-bottom:1px solid var(--gray2);
   background:white;
 }
 .cc-header-left { display:flex; align-items:center; gap:12px; }
-.cc-hicon { font-size:28px; }
+.cc-hicon { font-size:20px; }
 .cc-title { font-size:16px; font-weight:700; color:var(--dark); }
 .cc-subtitle { font-size:11.5px; color:var(--text-light); margin-top:1px; }
 .cc-header-right { display:flex; gap:6px; }
@@ -1682,8 +1682,12 @@
 /* Chat body */
 .cc-chat-body {
   display:flex; flex-direction:column;
-  height:calc(100vh - 185px); min-height:480px;
+  height:calc(100vh - 168px); min-height:480px;
 }
+
+/* Tab Trợ Lý: bỏ khoảng trắng dọc thừa để fit màn hình */
+main:has(#s-claude.active) { padding-top:8px; padding-bottom:8px; }
+#s-claude .card { padding:8px 12px; margin-bottom:0; }
 
 /* Tab Trợ Lý: nới rộng card vượt khung main 960px */
 @media (min-width: 1000px) {
@@ -1698,7 +1702,7 @@
 /* Quick chips */
 .cc-quick-row {
   display:flex; flex-wrap:wrap; gap:6px;
-  padding:9px 14px; border-bottom:1px solid var(--gray2);
+  padding:5px 10px; border-bottom:1px solid var(--gray2);
   background:#fafafa;
 }
 .cc-chip {
@@ -1710,8 +1714,8 @@
 
 /* Messages area */
 .cc-messages {
-  flex:1; overflow-y:auto; padding:18px 20px;
-  display:flex; flex-direction:column; gap:16px;
+  flex:1; overflow-y:auto; padding:12px 18px;
+  display:flex; flex-direction:column; gap:12px;
   background:#fffefb;
 }
 
@@ -1789,7 +1793,7 @@
 
 /* Input bar */
 .cc-input-bar {
-  display:flex; gap:8px; padding:10px 14px 6px;
+  display:flex; gap:8px; padding:8px 12px 4px;
   border-top:1px solid var(--gray2); align-items:flex-end;
   background:white;
 }
@@ -1810,6 +1814,6 @@
 .cc-send-btn:hover { background:var(--red-light); transform:scale(1.07); }
 .cc-send-btn:disabled { background:var(--gray2); color:#bbb; transform:none; cursor:not-allowed; }
 .cc-input-hint {
-  font-size:11px; color:var(--text-light);
-  text-align:center; padding:0 14px 8px; background:white;
+  font-size:10.5px; color:var(--text-light);
+  text-align:center; padding:0 12px 3px; background:white;
 }
