@@ -25,7 +25,8 @@
     '**Tiếng Việt:** [từ/câu gốc]\n' +
     '**Tiếng Trung:** [bản dịch tiếng Trung]\n' +
     '**Phiên âm:** [pinyin có dấu thanh đầy đủ]\n' +
-    '**Cách đọc:** [giải thích phát âm từng âm tiết, thanh điệu, so sánh với âm tiếng Việt]\n\n' +
+    '**Cách đọc (theo tiếng Việt):** [phiên âm bồi bằng chữ tiếng Việt mô phỏng cách đọc, ví dụ: 你好 → "ní hảo", 谢谢 → "xiê xiệ"]\n' +
+    '**Giải thích phát âm:** [giải thích từng âm tiết, thanh điệu, so sánh với âm tiếng Việt]\n\n' +
     '---\n' +
     '[Giải thích thêm nếu cần: loại từ, ví dụ câu, mẹo nhớ]\n\n' +
     'KHI người dùng hỏi về ngữ pháp, văn hóa, hoặc câu hỏi khác → trả lời trực tiếp, ngắn gọn, dễ hiểu.\n' +
