@@ -1716,7 +1716,7 @@ main:has(#s-claude.active) { padding-top:8px; padding-bottom:8px; }
 .cc-messages {
   flex:1; overflow-y:auto; padding:12px 18px;
   display:flex; flex-direction:column; gap:12px;
-  background:#fffefb;
+  background:#faf9f5;
 }
 
 /* Message rows */
@@ -1793,27 +1793,35 @@ main:has(#s-claude.active) { padding-top:8px; padding-bottom:8px; }
 
 /* Input bar */
 .cc-input-bar {
-  display:flex; gap:8px; padding:8px 12px 4px;
-  border-top:1px solid var(--gray2); align-items:flex-end;
+  display:flex; gap:10px; align-items:flex-end;
+  margin:6px 14px 4px;
+  padding:12px 12px 12px 20px;
   background:white;
+  border:1px solid #e8e5de;
+  border-radius:24px;
+  box-shadow:0 2px 12px rgba(0,0,0,.06);
+  transition:box-shadow .2s, border-color .2s;
+}
+.cc-input-bar:focus-within {
+  border-color:#d8d4ca;
+  box-shadow:0 4px 18px rgba(0,0,0,.09);
 }
 .cc-textarea {
-  flex:1; resize:none; border:1.5px solid var(--gray2);
-  border-radius:8px; padding:9px 12px;
-  font-size:13.5px; font-family:inherit; line-height:1.5;
+  flex:1; resize:none; border:none;
+  padding:8px 0;
+  font-size:15px; font-family:inherit; line-height:1.5;
   outline:none; max-height:120px; overflow-y:auto;
-  transition:border-color .2s;
+  background:transparent;
 }
-.cc-textarea:focus { border-color:var(--red); }
 .cc-send-btn {
-  width:40px; height:40px; border-radius:50%;
-  background:var(--red); color:white; border:none;
+  width:38px; height:38px; border-radius:12px;
+  background:#e8a087; color:white; border:none;
   cursor:pointer; display:flex; align-items:center;
   justify-content:center; flex-shrink:0; transition:all .2s;
 }
-.cc-send-btn:hover { background:var(--red-light); transform:scale(1.07); }
+.cc-send-btn:hover { background:var(--red); transform:scale(1.05); }
 .cc-send-btn:disabled { background:var(--gray2); color:#bbb; transform:none; cursor:not-allowed; }
 .cc-input-hint {
-  font-size:10.5px; color:var(--text-light);
-  text-align:center; padding:0 12px 3px; background:white;
+  font-size:10.5px; color:#a8a49a;
+  text-align:center; padding:2px 12px 6px; background:transparent;
 }
