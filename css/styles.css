@@ -1682,23 +1682,17 @@
 /* Chat body */
 .cc-chat-body {
   display:flex; flex-direction:column;
-  height:calc(100vh - 168px); min-height:480px;
+  height:calc(100vh - 175px); min-height:420px;
   background:#faf9f5;
 }
+
+/* Khi mở tab Trợ Lý: khóa cuộn cả trang, chỉ vùng tin nhắn cuộn */
+body:has(#s-claude.active) { overflow:hidden; }
 
 /* Tab Trợ Lý: bỏ khoảng trắng dọc thừa để fit màn hình */
 main:has(#s-claude.active) { padding-top:8px; padding-bottom:8px; }
 #s-claude .card { padding:8px 12px; margin-bottom:0; }
 
-/* Tab Trợ Lý: nới rộng card vượt khung main 960px */
-@media (min-width: 1000px) {
-  #s-claude .card {
-    width: min(1280px, 96vw);
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
 
 /* Quick chips */
 .cc-quick-row {
