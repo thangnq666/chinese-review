@@ -316,8 +316,18 @@
           self.innerHTML = '✅ Đã copy'; setTimeout(function () { self.innerHTML = '📋 Copy'; }, 1500);
         });
     }));
-    bw.appendChild(acts);
+    // Chèn hàng nút ngay DƯỚI dòng "Cách đọc (theo tiếng Việt)" nếu có
+    var anchor = null;
+    var lines = bub.querySelectorAll('.cc-line');
+    for (var li = 0; li < lines.length; li++) {
+      if (/Cách đọc\s*\(theo tiếng Việt\)/i.test(lines[li].textContent)) { anchor = lines[li]; break; }
+    }
     bw.appendChild(bub);
+    if (anchor) {
+      anchor.insertAdjacentElement('afterend', acts);
+    } else {
+      bw.insertBefore(acts, bub);
+    }
     div.appendChild(bw);
   }
 
