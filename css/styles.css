@@ -1717,7 +1717,7 @@
 
 /* Message rows */
 .cc-msg { display:flex; gap:8px; align-items:flex-start; }
-.cc-msg-user { flex-direction:row-reverse; }
+.cc-msg-user { flex-direction:row; }
 .cc-msg-sys { justify-content:center; }
 
 .cc-avatar-wrap { display:none; }
@@ -1735,17 +1735,18 @@
   padding:11px 14px; border-radius:14px;
   font-size:15px; line-height:1.8;
 }
-/* AI: văn bản phẳng kiểu markdown, không đóng khung */
+/* AI: văn bản phẳng kiểu markdown, không đóng khung, giãn dòng 1.2 */
 .cc-bubble-ai {
   background:none; border:none; box-shadow:none;
   padding:2px 0; color:#1a1a18;
+  line-height:1.2;
 }
-/* User: bong bóng xám nhạt bên phải */
+/* User: bong bóng xám nhạt bên trái */
 .cc-bubble-user {
   background:#f0eee7; color:#1a1a18;
   border-radius:16px;
   padding:10px 16px;
-  align-self:flex-end;
+  align-self:flex-start;
   max-width:80%;
   font-weight:500;
 }
@@ -1756,13 +1757,13 @@
 }
 
 /* Markdown inside bubble */
-.cc-bubble-ai .cc-line { margin:3px 0; }
-.cc-bubble-ai .cc-gap  { height:10px; }
+.cc-bubble-ai .cc-line { margin:2px 0; }
+.cc-bubble-ai .cc-gap  { height:7px; }
 .cc-bubble-ai .cc-h2   { font-size:17px; font-weight:700; margin:10px 0 4px; color:var(--dark); }
 .cc-bubble-ai .cc-h3   { font-size:15.5px; font-weight:700; margin:8px 0 3px; color:var(--mid); }
 .cc-bubble-ai .cc-hr   { border:none; border-top:1px solid #e5e2da; margin:12px 0; }
 .cc-bubble-ai .cc-ul   { margin:8px 0 8px 24px; padding:0; }
-.cc-bubble-ai .cc-ul li{ margin:7px 0; padding-left:4px; }
+.cc-bubble-ai .cc-ul li{ margin:3px 0; padding-left:4px; }
 .cc-bubble-ai code     { background:rgba(0,0,0,.07); padding:1px 6px; border-radius:4px; font-size:13.5px; }
 .cc-bubble-ai strong   { font-weight:700; color:var(--dark); }
 .cc-error { color:#c0392b; }
