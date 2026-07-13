@@ -1,15 +1,14 @@
-window.addEventListener('load', function() {
+// ===================================================
+// APP INIT — chỉ render tab đang mở, các tab khác
+// được render lười (lazy) ở navigation.js khi mở lần đầu
+// ===================================================
+document.addEventListener('DOMContentLoaded', function() {
   initTTS();
   initMicPermission();
-  renderPhonetics();
-  renderGrammar();
-  renderVocab();
-  renderPhrases();
-  renderDialogues();
-  buildSpeakData();
-  renderSpeakCards();
+  buildSpeakData();        // dữ liệu nhẹ, cần cho modal Tập nói ở mọi tab
+  renderPhonetics();       // tab mặc định (Ngữ Âm)
+  markRendered('s-phonetics');
   initSpeechRecognition();
-  initExercises();
   const ttsBar = document.getElementById('ttsBar');
   if (ttsBar) ttsBar.style.display = 'flex';
 });

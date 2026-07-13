@@ -276,7 +276,7 @@ function renderListenQuestion() {
   options.forEach(function(opt) {
     const optSpeak = opt.zh.replace(/'/g, "\\'");
     const qSpeak = q.zh.replace(/'/g, "\\'");
-    optHTML += '<div class="listen-option" onclick="answerListen(this, \'' + optSpeak + '\', \'' + qSpeak + '\')">'
+    optHTML += '<div class="listen-option" data-zh="' + opt.zh.replace(/"/g, '&quot;') + '" onclick="answerListen(this, \'' + optSpeak + '\', \'' + qSpeak + '\')">'
       + opt.zh
       + '<span class="listen-opt-py">' + opt.py + '</span>'
       + '</div>';
@@ -305,7 +305,7 @@ function answerListen(el, chosen, correct) {
   } else {
     el.classList.add('wrong');
     document.querySelectorAll('.listen-option').forEach(o => {
-      if (o.textContent.trim().startsWith(correct.substring(0,1))) o.classList.add('reveal');
+      if (o.dataset.zh === correct) o.classList.add('reveal');
     });
   }
   setTimeout(() => { listenCurrent++; renderListenQuestion(); }, 1300);

@@ -192,7 +192,6 @@ function playFullDialogue(di) {
     if (idx >= lines.length) return;
     const utt = new SpeechSynthesisUtterance(lines[idx].zh);
     utt.lang = 'zh-CN';
-    utt.rate = 0.85;
     if (ttsVoice) utt.voice = ttsVoice;
     utt.rate = getRate();
     utt.onend = () => { idx++; setTimeout(playOne, 600); };

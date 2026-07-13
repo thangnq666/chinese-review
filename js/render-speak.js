@@ -15,6 +15,23 @@ function buildSpeakData() {
   });
 }
 
+// Tạo nút lọc bài tự động theo dữ liệu thực tế (không bị thiếu bài mới)
+function populateSpeakFilter() {
+  const wrap = document.getElementById('speakFilter');
+  if (!wrap || wrap.dataset.loaded) return;
+  wrap.dataset.loaded = '1';
+  const maxIdx = allSpeakItems.reduce((m, i) => Math.max(m, i.lessonIdx), -1);
+  wrap.innerHTML = '<button class="speak-filter-btn active" onclick="filterSpeakCards(\'all\',this)">Tất cả</button>';
+  for (let i = 0; i <= maxIdx; i++) {
+    if (!allSpeakItems.some(it => it.lessonIdx === i)) continue;
+    const b = document.createElement('button');
+    b.className = 'speak-filter-btn';
+    b.textContent = 'Bài ' + (i + 1);
+    b.onclick = function() { filterSpeakCards(i, this); };
+    wrap.appendChild(b);
+  }
+}
+
 function filterSpeakCards(filter, btn) {
   currentSpeakFilter = filter;
   document.querySelectorAll('.speak-filter-btn').forEach(b => b.classList.remove('active'));

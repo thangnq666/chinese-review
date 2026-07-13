@@ -87,7 +87,12 @@ function toggleVtEx(id, btn) {
   btn.textContent = open ? '\u{1F4AC} Ẩn' : '\u{1F4AC} V\xed dụ';
 }
 
-function filterVocab(val) { renderVocab(val); }
+// Debounce: chỉ render lại sau khi ngừng gõ 200ms (tránh giật khi gõ nhanh)
+let _vocabSearchTimer = null;
+function filterVocab(val) {
+  clearTimeout(_vocabSearchTimer);
+  _vocabSearchTimer = setTimeout(() => renderVocab(val), 200);
+}
 
 // ===================================================
 // PHRASES RENDER

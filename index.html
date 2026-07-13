@@ -10,7 +10,7 @@
 
 <header>
   <h1>🎋 Ôn Tập <span>Tiếng Trung</span></h1>
-  <p>汉语初级 第一课 — 第八课 总复习 &nbsp;|&nbsp; Học viên: Thắng</p>
+  <p>汉语初级 总复习 · Buổi 1 – 14 &nbsp;|&nbsp; Học viên: Thắng</p>
   <div class="tts-status" id="ttsStatus" style="display:none"></div>
 </header>
 
@@ -403,8 +403,6 @@
   </div>
 </div>
 
-</main>
-
 <button id="totop" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
 
 <!-- ============================================================ -->
@@ -578,7 +576,7 @@
 
 
 <!-- ===== TRỢ LÝ TIẾNG TRUNG ===== -->
-<div class="section hidden" id="s-claude">
+<div class="section" id="s-claude">
   <div class="card">
 
     <!-- Header -->
@@ -604,7 +602,12 @@
         <button class="cc-btn cc-btn-primary" onclick="saveCCApiKeyFromSettings()">Lưu Key mới</button>
         <button class="cc-btn cc-btn-danger" onclick="clearCCApiKey()">Xóa Key</button>
       </div>
-      <div class="cc-key-note" style="margin-top:8px">Key lưu trong trình duyệt (localStorage) – không gửi ra ngoài Google</div>
+      <div class="cc-settings-title" style="margin-top:14px">🧠 Model</div>
+      <select id="ccModelSel" class="cc-key-input" style="max-width:280px" onchange="setCCModel(this.value)">
+        <option value="gemini-2.5-flash-lite">Gemini 2.5 Flash-Lite — nhanh, tiết kiệm (mặc định)</option>
+        <option value="gemini-2.5-flash">Gemini 2.5 Flash — thông minh hơn</option>
+      </select>
+      <div class="cc-key-note" style="margin-top:8px">Key lưu trong trình duyệt (localStorage) – chỉ gửi trực tiếp tới Google. Nếu model lỗi, hệ thống tự chuyển model dự phòng.</div>
     </div>
 
     <!-- Setup screen (shown khi chưa có key) -->
@@ -621,7 +624,7 @@
       <input type="password" id="ccApiKeyInput" placeholder="AIzaSy..." class="cc-key-input">
       <div class="cc-key-error" id="ccKeyError"></div>
       <button class="cc-btn cc-btn-primary" onclick="saveCCApiKey()">Bắt đầu</button>
-      <div class="cc-key-note">Miễn phí · 1500 request/ngày · Key chỉ lưu trên máy bạn</div>
+      <div class="cc-key-note">Miễn phí · Key chỉ lưu trên máy bạn · Dùng Gemini 2.5 Flash</div>
     </div>
 
     <!-- Chat body -->
@@ -671,6 +674,8 @@
   </div>
 </div><!-- /#s-claude -->
 
+</main>
+
   <!-- External libraries -->
   <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
 
@@ -699,7 +704,7 @@
 
   <!-- App init -->
   <script src="js/main.js"></script>
-  <script src="js/claude-chat.js?v=5"></script>
+  <script src="js/claude-chat.js?v=6"></script>
 
 </body>
 </html>
