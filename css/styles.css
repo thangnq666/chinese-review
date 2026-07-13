@@ -1775,6 +1775,7 @@ main:has(#s-claude.active) { padding-top:8px; padding-bottom:8px; }
 
 /* Speak button */
 .cc-msg-actions { display:flex; gap:6px; padding-left:2px; }
+.cc-msg-actions-top { margin-bottom:2px; padding-bottom:6px; border-bottom:1px dashed #e5e2da; }
 .cc-speak-btn {
   background:none; border:1.5px solid var(--gray2);
   border-radius:20px; padding:3px 10px;

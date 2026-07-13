@@ -297,10 +297,10 @@
     }
 
     bub.innerHTML = renderMarkdown(rawText);
-    bw.appendChild(bub);
 
+    // Hàng nút hành động đặt TRÊN nội dung trả lời
     var acts = document.createElement('div');
-    acts.className = 'cc-msg-actions';
+    acts.className = 'cc-msg-actions cc-msg-actions-top';
     var cn = extractChinese(rawText);
     if (cn) {
       acts.appendChild(makeActionBtn('🔊 Phát âm', 'Phát âm tiếng Trung', function () { ccSpeakText(cn); }));
@@ -317,6 +317,7 @@
         });
     }));
     bw.appendChild(acts);
+    bw.appendChild(bub);
     div.appendChild(bw);
   }
 
