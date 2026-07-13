@@ -587,7 +587,7 @@
         <span class="cc-hicon">🤖</span>
         <div>
           <div class="cc-title">Claude – Trợ Lý Tiếng Trung</div>
-          <div class="cc-subtitle" id="ccKeyInfo">Chưa cấu hình API Key</div>
+          <div class="cc-subtitle" id="ccKeyInfo">Chưa cấu hình Gemini API Key</div>
         </div>
       </div>
       <div class="cc-header-right">
@@ -599,8 +599,8 @@
     <!-- Settings panel (collapsible) -->
     <div class="cc-settings-panel" id="ccSettingsPanel" style="display:none">
       <div class="cc-settings-inner">
-        <div class="cc-settings-title">🔑 Cập nhật Anthropic API Key</div>
-        <input type="password" id="ccApiKeyInputSettings" placeholder="sk-ant-api03-..." class="cc-key-input">
+        <div class="cc-settings-title">🔑 Cập nhật Gemini API Key</div>
+        <input type="password" id="ccApiKeyInputSettings" placeholder="AIzaSy..." class="cc-key-input">
         <div class="cc-settings-actions">
           <button class="cc-btn cc-btn-primary" onclick="saveCCApiKeyFromSettings()">Lưu Key mới</button>
           <button class="cc-btn cc-btn-danger" onclick="clearCCApiKey()">Xóa Key</button>
@@ -612,13 +612,13 @@
     <!-- Setup: shown when no API key -->
     <div class="cc-setup" id="ccSetup">
       <div class="cc-setup-icon">🔑</div>
-      <div class="cc-setup-title">Cần Anthropic API Key</div>
-      <div class="cc-setup-desc">Nhập API Key để dùng Claude tra từ, dịch câu và hỗ trợ phát âm tiếng Trung</div>
-      <input type="password" id="ccApiKeyInput" placeholder="sk-ant-api03-..." class="cc-key-input">
+      <div class="cc-setup-title">Cần Google Gemini API Key</div>
+      <div class="cc-setup-desc">Nhập Gemini API Key để tra từ, dịch câu và hỗ trợ phát âm tiếng Trung (miễn phí)</div>
+      <input type="password" id="ccApiKeyInput" placeholder="AIzaSy..." class="cc-key-input">
       <button class="cc-btn cc-btn-primary" onclick="saveCCApiKey()">Bắt đầu dùng</button>
       <div class="cc-key-note">
-        Key lưu trong trình duyệt, không chia sẻ với bất kỳ server nào ngoài Anthropic.&nbsp;
-        <a href="https://console.anthropic.com/account/keys" target="_blank">Lấy API Key miễn phí →</a>
+        Key lưu trong trình duyệt, không chia sẻ với bất kỳ server nào ngoài Google.&nbsp;
+        <a href="https://aistudio.google.com/app/apikey" target="_blank">Lấy Gemini API Key miễn phí →</a>
       </div>
     </div>
 

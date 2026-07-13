@@ -1,11 +1,12 @@
-// claude-chat.js — Claude AI Chat for Chinese Learning
-// Calls Anthropic API directly from browser using user's own API key
+// claude-chat.js — Gemini AI Chat for Chinese Learning
+// Uses Google Gemini 1.5 Flash API (free tier) — key from aistudio.google.com
 (function () {
   'use strict';
 
-  var CC_MODEL = 'claude-haiku-4-5-20251001';
+  var GEMINI_MODEL = 'gemini-1.5-flash';
+  var GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/' + GEMINI_MODEL + ':generateContent';
   var CC_MAX_TOKENS = 1024;
-  var CC_HISTORY = [];
+  var CC_HISTORY = []; // [{role:'user'|'model', parts:[{text}]}]
   var CC_SENDING = false;
   var msgCounter = 0;
 
@@ -26,41 +27,41 @@
 
   /* ────── API Key ────── */
   function getApiKey() {
-    return localStorage.getItem('cc_api_key') || '';
+    return localStorage.getItem('gemini_api_key') || '';
   }
 
   function doSaveKey(key) {
     key = (key || '').trim();
     if (!key) { alert('Vui lòng nhập API Key'); return false; }
-    if (!key.startsWith('sk-ant-')) {
-      alert('API Key không hợp lệ. Key phải bắt đầu bằng sk-ant-'); return false;
+    if (!key.startsWith('AIza')) {
+      alert('API Key không hợp lệ. Gemini key phải bắt đầu bằng AIza'); return false;
     }
-    localStorage.setItem('cc_api_key', key);
+    localStorage.setItem('gemini_api_key', key);
     return true;
   }
 
   window.saveCCApiKey = function () {
-    var key = document.getElementById('ccApiKeyInput') && document.getElementById('ccApiKeyInput').value;
-    if (doSaveKey(key)) {
-      document.getElementById('ccApiKeyInput').value = '';
+    var el = document.getElementById('ccApiKeyInput');
+    if (doSaveKey(el && el.value)) {
+      el.value = '';
       refreshCCView();
-      addSystemMsg('✅ Đã lưu API Key. Sẵn sàng hỗ trợ học tiếng Trung!');
+      addSystemMsg('✅ Đã lưu Gemini API Key. Sẵn sàng hỗ trợ học tiếng Trung!');
     }
   };
 
   window.saveCCApiKeyFromSettings = function () {
-    var key = document.getElementById('ccApiKeyInputSettings') && document.getElementById('ccApiKeyInputSettings').value;
-    if (doSaveKey(key)) {
-      document.getElementById('ccApiKeyInputSettings').value = '';
+    var el = document.getElementById('ccApiKeyInputSettings');
+    if (doSaveKey(el && el.value)) {
+      el.value = '';
       toggleCCSettings();
       refreshCCView();
-      addSystemMsg('✅ Đã cập nhật API Key mới.');
+      addSystemMsg('✅ Đã cập nhật Gemini API Key mới.');
     }
   };
 
   window.clearCCApiKey = function () {
     if (!confirm('Xóa API Key đã lưu?')) return;
-    localStorage.removeItem('cc_api_key');
+    localStorage.removeItem('gemini_api_key');
     CC_HISTORY = [];
     var msgs = document.getElementById('ccMessages');
     if (msgs) msgs.innerHTML = '';
@@ -77,7 +78,7 @@
     if (key) {
       setup.style.display = 'none';
       chatBody.style.display = 'flex';
-      if (keyInfo) keyInfo.textContent = 'Key: ' + key.substring(0, 14) + '···';
+      if (keyInfo) keyInfo.textContent = 'Gemini · ' + key.substring(0, 10) + '···';
     } else {
       setup.style.display = 'flex';
       chatBody.style.display = 'none';
@@ -103,7 +104,6 @@
     s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
     s = s.replace(/\*(.+?)\*/g,     '<em>$1</em>');
     s = s.replace(/`([^`\n]+)`/g,   '<code>$1</code>');
-    // bullet lines → keep as-is with spacing
     s = s.replace(/^(•|-|–)\s/gm,   '<br>&bull; ');
     s = s.replace(/\n\n/g, '<br><br>');
     s = s.replace(/\n/g,   '<br>');
@@ -118,7 +118,7 @@
     div.id = id;
     div.className = 'cc-msg cc-msg-' + role;
     if (role === 'assistant') {
-      div.innerHTML = '<div class="cc-avatar">🤖</div><div class="cc-bubble">' + htmlContent + '</div>';
+      div.innerHTML = '<div class="cc-avatar">✨</div><div class="cc-bubble">' + htmlContent + '</div>';
     } else if (role === 'user') {
       div.innerHTML = '<div class="cc-bubble">' + htmlContent + '</div>';
     } else {
@@ -135,7 +135,7 @@
     var el = document.getElementById(id);
     if (!el) return;
     if (role === 'assistant') {
-      el.innerHTML = '<div class="cc-avatar">🤖</div><div class="cc-bubble">' + htmlContent + '</div>';
+      el.innerHTML = '<div class="cc-avatar">✨</div><div class="cc-bubble">' + htmlContent + '</div>';
     }
     var msgs = document.getElementById('ccMessages');
     if (msgs) msgs.scrollTop = msgs.scrollHeight;
@@ -157,46 +157,41 @@
     CC_SENDING = true;
 
     var btn = document.getElementById('ccSendBtn');
-    if (btn) { btn.disabled = true; }
+    if (btn) btn.disabled = true;
 
     // Keep last 20 messages (10 exchanges)
     if (CC_HISTORY.length > 20) CC_HISTORY = CC_HISTORY.slice(-20);
 
-    CC_HISTORY.push({ role: 'user', content: text });
+    CC_HISTORY.push({ role: 'user', parts: [{ text: text }] });
     appendMsg('user', esc(text));
 
     var loadId = appendMsg('assistant', '<span class="cc-loading">⏳</span> Đang xử lý...');
 
     try {
-      var res = await fetch('https://api.anthropic.com/v1/messages', {
+      var body = {
+        system_instruction: { parts: [{ text: CC_SYSTEM }] },
+        contents: CC_HISTORY,
+        generationConfig: { maxOutputTokens: CC_MAX_TOKENS }
+      };
+
+      var res = await fetch(GEMINI_URL + '?key=' + encodeURIComponent(key), {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-api-key': key,
-          'anthropic-version': '2023-06-01',
-          'anthropic-dangerous-direct-browser-access': 'true'
-        },
-        body: JSON.stringify({
-          model: CC_MODEL,
-          max_tokens: CC_MAX_TOKENS,
-          system: CC_SYSTEM,
-          messages: CC_HISTORY
-        })
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
       });
 
       if (!res.ok) {
         var ed = {};
         try { ed = await res.json(); } catch(e) {}
         var em = (ed.error && ed.error.message) || ('HTTP ' + res.status);
-        if (res.status === 401) em = 'API Key không hợp lệ hoặc hết hạn. Vui lòng kiểm tra lại.';
+        if (res.status === 400) em = 'API Key không hợp lệ. Kiểm tra lại key từ aistudio.google.com';
         else if (res.status === 429) em = 'Quá nhiều yêu cầu. Vui lòng đợi rồi thử lại.';
-        else if (res.status === 403) em = 'API Key không có quyền. Kiểm tra lại tài khoản Anthropic.';
         throw new Error(em);
       }
 
       var data = await res.json();
-      var reply = data.content[0].text;
-      CC_HISTORY.push({ role: 'assistant', content: reply });
+      var reply = data.candidates[0].content.parts[0].text;
+      CC_HISTORY.push({ role: 'model', parts: [{ text: reply }] });
       updateMsgContent(loadId, fmt(reply), 'assistant');
 
     } catch (e) {
@@ -211,12 +206,12 @@
   /* ────── Quick prompts ────── */
   window.ccQuickPrompt = function (type) {
     var map = {
-      'dich':      'Dịch sang tiếng Trung: ',
-      'tra':       'Tra từ và giải thích: ',
-      'phatam':    'Giải thích phát âm của từ: ',
-      'nguphap':   'Giải thích ngữ pháp câu: ',
-      'vi-du':     'Đặt câu ví dụ với từ: ',
-      'thanh-dieu':'Giải thích 4 thanh điệu tiếng Trung cho tôi'
+      'dich':       'Dịch sang tiếng Trung: ',
+      'tra':        'Tra từ và giải thích: ',
+      'phatam':     'Giải thích phát âm của từ: ',
+      'nguphap':    'Giải thích ngữ pháp câu: ',
+      'vi-du':      'Đặt câu ví dụ với từ: ',
+      'thanh-dieu': 'Giải thích 4 thanh điệu tiếng Trung cho tôi'
     };
     var input = document.getElementById('ccInput');
     if (!input) return;
@@ -224,12 +219,8 @@
     input.value = txt;
     autoResizeInput(input);
     input.focus();
-    if (!txt || txt.endsWith(' ')) {
-      input.selectionStart = input.selectionEnd = txt.length;
-    } else {
-      // Send immediately for self-contained prompts
-      sendCCMessage();
-    }
+    input.selectionStart = input.selectionEnd = txt.length;
+    if (!txt.endsWith(' ')) sendCCMessage();
   };
 
   /* ────── Clear history ────── */

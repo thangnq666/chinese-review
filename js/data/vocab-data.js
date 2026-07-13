@@ -751,6 +751,39 @@ const DIALOGUE_DATA = [
       {s:'A',zh:'对不起。',py:'Du\xedb\xf9qǐ.',vi:'Xin lỗi.'},
       {s:'B',zh:'没什么。',py:'M\xe9i sh\xe9nme.',vi:'Kh\xf4ng c\xf3 g\xec.'},
     ]
+  },
+
+  // ── Bài 12 ──────────────────────────────────────────────────────────────
+  {
+    lessonIdx: 11,
+    title: 'Bài 12 – 第十二课',
+    dialogues: [
+      {
+        title: '（一）你在哪儿学习汉语',
+        lines: [
+          {zh:'你在哪儿学习汉语？',   py:'Nǐ zài nǎr xuéxí Hànyǔ?',   vi:'Bạn học tiếng Trung ở đâu?',      speaker:'A'},
+          {zh:'在北京语言大学。',     py:'Zài Běijīng Yǔyán Dàxué.',   vi:'Ở Đại học Ngôn ngữ Bắc Kinh.',    speaker:'B'},
+          {zh:'你们的老师怎么样？',   py:'Nǐmen de lǎoshī zěnmeyàng?', vi:'Thầy/cô của các bạn thế nào?',    speaker:'A'},
+          {zh:'很好！',              py:'Hěn hǎo!',                    vi:'Rất tốt!',                         speaker:'B'},
+          {zh:'你觉得学习汉语难吗？', py:'Nǐ juéde xuéxí Hànyǔ nán ma?',vi:'Bạn thấy học tiếng Trung khó không?',speaker:'A'},
+          {zh:'我觉得语法不太难。听和说也比较容易，但是读和写很难。',
+              py:'Wǒ juéde yǔfǎ bú tài nán. Tīng hé shuō yě bǐjiào róngyì, dànshì dú hé xiě hěn nán.',
+              vi:'Tôi thấy ngữ pháp không quá khó. Nghe và nói cũng tương đối dễ, nhưng đọc và viết rất khó.',speaker:'B'},
+        ]
+      },
+      {
+        title: '（二）你们的老师是谁',
+        lines: [
+          {zh:'我给你们介绍一下儿，这位是新同学，是我的同屋。',
+              py:'Wǒ gěi nǐmen jièshào yíxiàr, zhè wèi shì xīn tóngxué, shì wǒ de tóngwū.',
+              vi:'Để tôi giới thiệu một chút, đây là bạn học mới, là bạn cùng phòng của tôi.',speaker:'A'},
+          {zh:'你在哪个班学习？', py:'Nǐ zài nǎ ge bān xuéxí?', vi:'Bạn học ở lớp nào?',             speaker:'B'},
+          {zh:'在103班。',        py:'Zài yāo líng sān bān.',   vi:'Ở lớp 103.',                       speaker:'A'},
+          {zh:'你们的老师是谁？', py:'Nǐmen de lǎoshī shì shéi?',vi:'Thầy/cô của các bạn là ai?',      speaker:'B'},
+          {zh:'我们的老师是林老师。',py:'Wǒmen de lǎoshī shì Lín lǎoshī.',vi:'Thầy/cô của chúng tôi là thầy/cô Lâm.',speaker:'A'},
+        ]
+      },
+    ]
   }
 ];
 
@@ -775,7 +808,33 @@ const SPEAK_DATA = [  ,
       {zh:'对了。谢谢！',py:'Duì le. Xièxie!',vi:'Đúng rồi. Cảm ơn!',speaker:'麦克'},
       {zh:'不客气！',py:'Bú kèqi!',vi:'Không có gì!',speaker:'营业员'},
     ]
-  }
+  },
+  // ── Bài 12 ──────────────────────────────────────────────────────────────
+  {
+    lesson: 12,
+    title: '第十二课',
+    titleVi: 'Bài 12 – 你在哪儿学习',
+    words: [
+      {zh:'语言', py:'yǔyán',      vi:'ngôn ngữ',              type:'Danh từ'},
+      {zh:'语法', py:'yǔfǎ',       vi:'ngữ pháp',              type:'Danh từ'},
+      {zh:'大学', py:'dàxué',      vi:'đại học',               type:'Danh từ'},
+      {zh:'怎么样',py:'zěnmeyàng', vi:'như thế nào',           type:'Đại từ'},
+      {zh:'觉得', py:'juéde',      vi:'cảm thấy, cho rằng',    type:'Động từ'},
+      {zh:'听',   py:'tīng',       vi:'nghe',                  type:'Động từ'},
+      {zh:'和',   py:'hé',         vi:'và',                    type:'Liên từ'},
+      {zh:'说',   py:'shuō',       vi:'nói, kể',               type:'Động từ'},
+      {zh:'比较', py:'bǐjiào',     vi:'so sánh, tương đối',    type:'Động từ / Phó từ'},
+      {zh:'容易', py:'róngyì',     vi:'dễ, dễ dàng',           type:'Tính từ'},
+      {zh:'读',   py:'dú',         vi:'đọc',                   type:'Động từ'},
+      {zh:'写',   py:'xiě',        vi:'viết',                  type:'Động từ'},
+      {zh:'给',   py:'gěi',        vi:'cho, tới (đối tượng)',  type:'Giới từ'},
+      {zh:'新',   py:'xīn',        vi:'mới',                   type:'Tính từ'},
+      {zh:'但是', py:'dànshì',     vi:'nhưng',                 type:'Liên từ'},
+      {zh:'同学', py:'tóngxué',    vi:'bạn học, bạn cùng lớp', type:'Danh từ'},
+      {zh:'同屋', py:'tóngwū',     vi:'bạn cùng phòng',        type:'Danh từ'},
+      {zh:'班',   py:'bān',        vi:'lớp học',               type:'Danh từ'},
+    ]
+  },
 ];
 
 const PHRASES = [
@@ -885,6 +944,19 @@ const PHRASES = [
   {zh:'不是。我是韩国人。',py:'B\xfa sh\xec. Wǒ sh\xec H\xe1ngu\xf3 r\xe9n.',vi:'Kh\xf4ng phải. T\xf4i l\xe0 người H\xe0n Quốc.',lesson:11},
   {zh:'对不起。—没什么。',py:'Du\xedb\xf9qǐ. — M\xe9i sh\xe9nme.',vi:'Xin lỗi. — Kh\xf4ng c\xf3 g\xec.',lesson:11},
   {zh:'大家好！我先介绍一下。',py:'D\xe0jiā hǎ o! Wǒ xiān ji\xe8sh\xe0o y\xedxi\xe0.',vi:'Xin ch\xe0o mọi người! Để t\xf4i giới thiệu một ch\xfat.',lesson:11},
-  {zh:'他们都是中国学生。',py:'Tāmen dōu sh\xec Zhōnggu\xf3 xu\xe9sheng.',vi:'Họ đều l\xe0 học sinh Trung Quốc.',lesson:11}
+  {zh:'他们都是中国学生。',py:'Tāmen dōu sh\xec Zhōnggu\xf3 xu\xe9sheng.',vi:'Họ đều l\xe0 học sinh Trung Quốc.',lesson:11},
+  // Bài 12
+  {zh:'你在哪儿学习汉语？',     py:'Nǐ zài nǎr xuéxí Hànyǔ?',            vi:'Bạn học tiếng Trung ở đâu?',                     lesson:12},
+  {zh:'在北京语言大学。',       py:'Zài Běijīng Yǔyán Dàxué.',            vi:'Ở Đại học Ngôn ngữ Bắc Kinh.',                  lesson:12},
+  {zh:'你们的老师怎么样？',     py:'Nǐmen de lǎoshī zěnmeyàng?',          vi:'Thầy/cô của các bạn thế nào?',                  lesson:12},
+  {zh:'你觉得学习汉语难吗？',   py:'Nǐ juéde xuéxí Hànyǔ nán ma?',       vi:'Bạn thấy học tiếng Trung khó không?',            lesson:12},
+  {zh:'我觉得语法不太难。',     py:'Wǒ juéde yǔfǎ bú tài nán.',           vi:'Tôi thấy ngữ pháp không quá khó.',              lesson:12},
+  {zh:'听和说也比较容易，但是读和写很难。',py:'Tīng hé shuō yě bǐjiào róngyì, dànshì dú hé xiě hěn nán.',vi:'Nghe và nói cũng tương đối dễ, nhưng đọc và viết rất khó.',lesson:12},
+  {zh:'我在北京语言大学学习。', py:'Wǒ zài Běijīng Yǔyán Dàxué xuéxí.',  vi:'Tôi học ở Đại học Ngôn ngữ Bắc Kinh.',          lesson:12},
+  {zh:'我给你们介绍一下儿。',   py:'Wǒ gěi nǐmen jièshào yíxiàr.',       vi:'Để tôi giới thiệu một chút.',                   lesson:12},
+  {zh:'这位是新同学，是我的同屋。',py:'Zhè wèi shì xīn tóngxué, shì wǒ de tóngwū.',vi:'Đây là bạn học mới, là bạn cùng phòng của tôi.',lesson:12},
+  {zh:'你在哪个班学习？',       py:'Nǐ zài nǎ ge bān xuéxí?',             vi:'Bạn học ở lớp nào?',                            lesson:12},
+  {zh:'你们的老师是谁？',       py:'Nǐmen de lǎoshī shì shéi?',           vi:'Thầy/cô của các bạn là ai?',                    lesson:12},
+  {zh:'汉语比较难。',           py:'Hànyǔ bǐjiào nán.',                   vi:'Tiếng Trung khá khó.',                          lesson:12},
+  {zh:'汉语是一个有意思的语言。',py:'Hànyǔ shì yí gè yǒu yìsi de yǔyán.',vi:'Tiếng Trung là một ngôn ngữ thú vị.',           lesson:12},
 ];
-
