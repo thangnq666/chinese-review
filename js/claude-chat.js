@@ -24,8 +24,7 @@
 
   function validateKey(k) {
     k = (k || '').trim();
-    if (!k) return 'Vui long nhap API Key';
-    if (k.indexOf('AIza') !== 0) return 'Key khong hop le - Gemini key bat dau bang AIza...';
+    if (!k || k.length < 10) return 'Vui long nhap API Key';
     return null;
   }
 
