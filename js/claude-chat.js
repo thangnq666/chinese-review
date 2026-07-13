@@ -1,8 +1,8 @@
-// assistant-chat.js — Tro Ly Tieng Trung (Google Gemini 1.5 Flash)
+// assistant-chat.js — Tro Ly Tieng Trung (Google Gemini 2.0 Flash)
 (function () {
   'use strict';
 
-  var GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
+  var GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
   var CC_HISTORY = [];
   var CC_SENDING = false;
   var msgId = 0;
