@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  var GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+  var GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent';
   var CC_HISTORY = [];
   var CC_SENDING = false;
   var msgId = 0;
@@ -240,8 +240,6 @@
         var em = (ed.error && ed.error.message) || ('HTTP ' + res.status);
         if (res.status === 400 || res.status === 401) {
           em = 'API Key khong hop le. Kiem tra lai key tu aistudio.google.com';
-        } else if (res.status === 429) {
-          em = 'Qua nhieu yeu cau — vui long doi roi thu lai.';
         }
         throw new Error(em);
       }
@@ -312,3 +310,4 @@
   }
 
 })();
+                                                                                                      
