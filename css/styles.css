@@ -32,7 +32,7 @@
   header {
     background: linear-gradient(135deg, var(--dark) 0%, var(--mid) 60%, var(--red) 100%);
     color: white;
-    padding: 32px 24px 24px;
+    padding: 14px 20px 10px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -55,13 +55,13 @@
     font-weight: 900;
   }
   header h1 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 800;
     letter-spacing: 1px;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
   }
   header h1 span { color: var(--gold-light); }
-  header p { opacity: 0.85; font-size: 0.95rem; }
+  header p { opacity: 0.85; font-size: 0.8rem; }
   .tts-status {
     display: inline-block;
     margin-top: 12px;
@@ -161,12 +161,12 @@
     background: none;
     border: none;
     color: rgba(255,255,255,0.65);
-    padding: 14px 18px;
-    font-size: 0.85rem;
+    padding: 8px 12px;
+    font-size: 0.78rem;
     cursor: pointer;
     white-space: nowrap;
     transition: all 0.2s;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
     font-weight: 500;
   }
   nav button:hover { color: white; background: rgba(255,255,255,0.05); }
@@ -1682,7 +1682,17 @@
 /* Chat body */
 .cc-chat-body {
   display:flex; flex-direction:column;
-  height:calc(100vh - 290px); min-height:380px;
+  height:calc(100vh - 185px); min-height:480px;
+}
+
+/* Tab Trợ Lý: nới rộng card vượt khung main 960px */
+@media (min-width: 1000px) {
+  #s-claude .card {
+    width: min(1280px, 96vw);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /* Quick chips */
@@ -1718,7 +1728,7 @@
   font-size:14px;
 }
 
-.cc-bubble-wrap { display:flex; flex-direction:column; gap:6px; max-width:84%; }
+.cc-bubble-wrap { display:flex; flex-direction:column; gap:6px; max-width:94%; }
 
 /* Bubbles */
 .cc-bubble {
