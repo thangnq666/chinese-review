@@ -10,7 +10,7 @@
 
 <header>
   <h1>🎋 Ôn Tập <span>Tiếng Trung</span></h1>
-  <p>汉语初级 总复习 · Buổi 1 – 15 &nbsp;|&nbsp; Học viên: Thắng</p>
+  <p>汉语初级 总复习 · Buổi 1 – 16 &nbsp;|&nbsp; Học viên: Thắng</p>
   <div class="tts-status" id="ttsStatus" style="display:none"></div>
 </header>
 
@@ -46,6 +46,9 @@
     <option value="">🎙 Giọng mặc định</option>
   </select>
   <button class="speed-preview-btn" onclick="previewSpeed()">▶ Nghe thử</button>
+  <select id="vocabLessonSelect" onchange="setVocabLesson(this.value)" title="Lọc theo bài học" style="display:none">
+    <option value="all">📖 Tất cả bài</option>
+  </select>
   <select id="vocabTypeSelect" onchange="setVocabType(this.value)" title="Lọc theo loại từ" style="display:none">
     <option value="all">📂 Tất cả loại từ</option>
     <option value="Động từ">🔵 Động từ</option>
@@ -74,7 +77,7 @@
 <!-- ============================================================ -->
 <div class="section" id="s-vocab">
   <div class="card">
-    <h2>📚 Từ Vựng Theo Buổi Học (Buổi 1 – 11)</h2>
+    <h2>📚 Từ Vựng Theo Buổi Học (Buổi 1 – 16)</h2>
     <div class="alert alert-info">Bấm 🔊 để nghe phát âm. Nhấp vào ô từ vựng bất kỳ cũng có thể nghe.</div>
     <input type="text" id="vocabSearch" placeholder="🔍 Tìm từ (tiếng Trung / pinyin / tiếng Việt)..." style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid #ddd;font-size:0.95rem;margin-bottom:8px;font-family:inherit" oninput="filterVocab(this.value)">
   </div>
@@ -680,14 +683,14 @@
   <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
 
   <!-- Data (must load before render/feature scripts) -->
-  <script src="js/data/vocab-data.js?v=2"></script>
+  <script src="js/data/vocab-data.js?v=3"></script>
 
   <!-- Core utilities -->
   <script src="js/tts.js?v=2"></script>
-  <script src="js/navigation.js?v=2"></script>
+  <script src="js/navigation.js?v=3"></script>
 
   <!-- Render functions -->
-  <script src="js/render-vocab.js?v=2"></script>
+  <script src="js/render-vocab.js?v=3"></script>
   <script src="js/render-phrases.js?v=2"></script>
   <script src="js/render-dialogues.js?v=2"></script>
   <script src="js/render-speak.js?v=2"></script>

@@ -1,18 +1,39 @@
 // ===================================================
 let _vocabTypeFilter = 'all';
+let _vocabLessonFilter = 'all';
 
 function setVocabType(type) {
   _vocabTypeFilter = type;
   renderVocab(document.getElementById('vocabSearch').value);
 }
 
+function setVocabLesson(v) {
+  _vocabLessonFilter = v;
+  renderVocab(document.getElementById('vocabSearch').value);
+}
+
+// Điền danh sách bài học vào ô lọc (chạy 1 lần)
+function populateVocabLessonSelect() {
+  const sel = document.getElementById('vocabLessonSelect');
+  if (!sel || sel.dataset.loaded) return;
+  sel.dataset.loaded = '1';
+  VOCAB_DATA.forEach((l, i) => {
+    const opt = document.createElement('option');
+    opt.value = i;
+    opt.textContent = '📖 ' + l.lesson.split(':')[0].trim();
+    sel.appendChild(opt);
+  });
+}
+
 function renderVocab(filter) {
+  populateVocabLessonSelect();
   const container = document.getElementById('vocabContainer');
   container.innerHTML = '';
   const fl = filter ? filter.toLowerCase() : '';
   const typeF = _vocabTypeFilter;
 
   VOCAB_DATA.forEach((lesson, li) => {
+    if (_vocabLessonFilter !== 'all' && li !== parseInt(_vocabLessonFilter)) return;
     let words = lesson.words;
     if (fl) words = words.filter(w => w.zh.includes(filter) || w.py.toLowerCase().includes(fl) || w.vi.toLowerCase().includes(fl) || w.type.toLowerCase().includes(fl));
     if (typeF !== 'all') words = words.filter(w => w.type === typeF || w.type.includes(typeF));

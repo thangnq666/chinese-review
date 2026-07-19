@@ -40,5 +40,7 @@ function showSection(id, btn) {
   }
   const vts = document.getElementById('vocabTypeSelect');
   if (vts) vts.style.display = (id === 's-vocab') ? '' : 'none';
+  const vls = document.getElementById('vocabLessonSelect');
+  if (vls) vls.style.display = (id === 's-vocab') ? '' : 'none';
   window.scrollTo({top: 0, behavior: 'smooth'});
 }

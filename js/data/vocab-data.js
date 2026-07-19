@@ -8138,6 +8138,284 @@ const VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "lesson": "Buổi 16 (b17): 买东西 – Mua đồ dùng",
+    "words": [
+      {
+        "zh": "箱子",
+        "py": "xiāngzi",
+        "vi": "cái vali, cái rương",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "我有一个比较大的箱子。",
+            "py": "Wǒ yǒu yí ge bǐjiào dà de xiāngzi.",
+            "vi": "Tôi có một cái vali khá to."
+          },
+          {
+            "zh": "这是我昨天买的箱子。",
+            "py": "Zhè shì wǒ zuótiān mǎi de xiāngzi.",
+            "vi": "Đây là cái vali tôi mua hôm qua."
+          }
+        ]
+      },
+      {
+        "zh": "重",
+        "py": "zhòng",
+        "vi": "nặng",
+        "type": "Tính từ",
+        "ex": [
+          {
+            "zh": "这个箱子比较重。",
+            "py": "Zhège xiāngzi bǐjiào zhòng.",
+            "vi": "Cái vali này khá nặng."
+          }
+        ]
+      },
+      {
+        "zh": "轻",
+        "py": "qīng",
+        "vi": "nhẹ",
+        "type": "Tính từ",
+        "ex": [
+          {
+            "zh": "那个箱子比较轻。",
+            "py": "Nàge xiāngzi bǐjiào qīng.",
+            "vi": "Cái vali kia khá nhẹ."
+          }
+        ]
+      },
+      {
+        "zh": "红色",
+        "py": "hóngsè",
+        "vi": "màu đỏ",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "我想买一个红色的箱子。",
+            "py": "Wǒ xiǎng mǎi yí ge hóngsè de xiāngzi.",
+            "vi": "Tôi muốn mua một cái vali màu đỏ."
+          }
+        ]
+      },
+      {
+        "zh": "黑色",
+        "py": "hēisè",
+        "vi": "màu đen",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "黑色的箱子是我的。",
+            "py": "Hēisè de xiāngzi shì wǒ de.",
+            "vi": "Cái vali màu đen là của tôi."
+          }
+        ]
+      },
+      {
+        "zh": "药",
+        "py": "yào",
+        "vi": "thuốc",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "今天我要喝一些药。",
+            "py": "Jīntiān wǒ yào hē yìxiē yào.",
+            "vi": "Hôm nay tôi phải uống một ít thuốc."
+          }
+        ]
+      },
+      {
+        "zh": "中药",
+        "py": "zhōngyào",
+        "vi": "thuốc bắc",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "这是一些中药。",
+            "py": "Zhè shì yìxiē zhōngyào.",
+            "vi": "Đây là một ít thuốc bắc."
+          }
+        ]
+      },
+      {
+        "zh": "西药",
+        "py": "xīyào",
+        "vi": "thuốc tây",
+        "type": "Danh từ"
+      },
+      {
+        "zh": "茶叶",
+        "py": "cháyè",
+        "vi": "lá trà, chè",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "我要买一斤茶叶。",
+            "py": "Wǒ yào mǎi yì jīn cháyè.",
+            "vi": "Tôi muốn mua một cân lá trà."
+          },
+          {
+            "zh": "这些茶叶都是我买的。",
+            "py": "Zhèxiē cháyè dōu shì wǒ mǎi de.",
+            "vi": "Những lá trà này đều là tôi mua."
+          }
+        ]
+      },
+      {
+        "zh": "里",
+        "py": "lǐ",
+        "vi": "trong, bên trong",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "房间里有三个人。",
+            "py": "Fángjiān lǐ yǒu sān ge rén.",
+            "vi": "Trong phòng có ba người."
+          },
+          {
+            "zh": "箱子里有一些中药。",
+            "py": "Xiāngzi lǐ yǒu yìxiē zhōngyào.",
+            "vi": "Trong vali có một ít thuốc bắc."
+          }
+        ]
+      },
+      {
+        "zh": "日用品",
+        "py": "rìyòngpǐn",
+        "vi": "đồ dùng hằng ngày",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "我想买一些日用品。",
+            "py": "Wǒ xiǎng mǎi yìxiē rìyòngpǐn.",
+            "vi": "Tôi muốn mua một ít đồ dùng hằng ngày."
+          }
+        ]
+      },
+      {
+        "zh": "衣服",
+        "py": "yīfu",
+        "vi": "quần áo",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "我要买一件新衣服。",
+            "py": "Wǒ yào mǎi yí jiàn xīn yīfu.",
+            "vi": "Tôi muốn mua một bộ quần áo mới."
+          }
+        ]
+      },
+      {
+        "zh": "件",
+        "py": "jiàn",
+        "vi": "chiếc, bộ (lượng từ quần áo, việc)",
+        "type": "Lượng từ",
+        "ex": [
+          {
+            "zh": "一件衣服",
+            "py": "yí jiàn yīfu",
+            "vi": "một bộ quần áo"
+          }
+        ]
+      },
+      {
+        "zh": "雨伞",
+        "py": "yǔsǎn",
+        "vi": "ô, dù che mưa",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "一把雨伞",
+            "py": "yì bǎ yǔsǎn",
+            "vi": "một chiếc ô"
+          }
+        ]
+      },
+      {
+        "zh": "雨",
+        "py": "yǔ",
+        "vi": "mưa",
+        "type": "Danh từ"
+      },
+      {
+        "zh": "下雨",
+        "py": "xià yǔ",
+        "vi": "trời mưa",
+        "type": "Động từ"
+      },
+      {
+        "zh": "把",
+        "py": "bǎ",
+        "vi": "cái, chiếc (lượng từ: ô, dao, ghế)",
+        "type": "Lượng từ",
+        "ex": [
+          {
+            "zh": "一把伞",
+            "py": "yì bǎ sǎn",
+            "vi": "một chiếc ô"
+          }
+        ]
+      },
+      {
+        "zh": "香水",
+        "py": "xiāngshuǐ",
+        "vi": "nước hoa",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "一瓶香水",
+            "py": "yì píng xiāngshuǐ",
+            "vi": "một chai nước hoa"
+          }
+        ]
+      },
+      {
+        "zh": "香",
+        "py": "xiāng",
+        "vi": "thơm",
+        "type": "Tính từ"
+      },
+      {
+        "zh": "词典",
+        "py": "cídiǎn",
+        "vi": "từ điển",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "一本词典",
+            "py": "yì běn cídiǎn",
+            "vi": "một quyển từ điển"
+          }
+        ]
+      },
+      {
+        "zh": "想",
+        "py": "xiǎng",
+        "vi": "muốn, nghĩ, nhớ",
+        "type": "Động từ",
+        "ex": [
+          {
+            "zh": "我想买一个红色的箱子。",
+            "py": "Wǒ xiǎng mǎi yí ge hóngsè de xiāngzi.",
+            "vi": "Tôi muốn mua một cái vali màu đỏ."
+          }
+        ]
+      },
+      {
+        "zh": "老公",
+        "py": "lǎogōng",
+        "vi": "chồng",
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "老公给我买一些新日用品。",
+            "py": "Lǎogōng gěi wǒ mǎi yìxiē xīn rìyòngpǐn.",
+            "vi": "Chồng mua cho tôi một ít đồ dùng mới."
+          }
+        ]
+      }
+    ]
   }
 ];
 
