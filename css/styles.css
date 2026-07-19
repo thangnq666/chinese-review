@@ -1184,7 +1184,7 @@
     .speed-btn { width: 28px; height: 28px; font-size: 0.72rem; }
     .speed-desc { display: none; }
     #voiceSel { font-size: 0.74rem; max-width: 130px; }
-    #vocabTypeSelect { font-size: 0.74rem; max-width: 150px; }
+    #vocabTypeSelect, #vocabLessonSelect { font-size: 0.74rem; max-width: 150px; }
     .speed-preview-btn { font-size: 0.72rem; padding: 3px 8px; }
 
     /* Cards */
