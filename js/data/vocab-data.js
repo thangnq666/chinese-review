@@ -531,37 +531,79 @@ const VOCAB_DATA = [
         "zh": "六",
         "py": "liù",
         "vi": "sáu",
-        "type": "Số đếm"
+        "type": "Số đếm",
+        "ex": [
+          {
+            "zh": "我家有六口人。",
+            "py": "Wǒ jiā yǒu liù kǒu rén.",
+            "vi": "Nhà tôi có sáu người."
+          }
+        ]
       },
       {
         "zh": "七",
         "py": "qī",
         "vi": "bảy",
-        "type": "Số đếm"
+        "type": "Số đếm",
+        "ex": [
+          {
+            "zh": "我要七个包子。",
+            "py": "Wǒ yào qī ge bāozi.",
+            "vi": "Tôi muốn bảy cái bánh bao."
+          }
+        ]
       },
       {
         "zh": "九",
         "py": "jiǔ",
         "vi": "chín",
-        "type": "Số đếm"
+        "type": "Số đếm",
+        "ex": [
+          {
+            "zh": "我儿子九岁。",
+            "py": "Wǒ érzi jiǔ suì.",
+            "vi": "Con trai tôi chín tuổi."
+          }
+        ]
       },
       {
         "zh": "我们",
         "py": "wǒmen",
         "vi": "chúng tôi, chúng ta",
-        "type": "Đại từ"
+        "type": "Đại từ",
+        "ex": [
+          {
+            "zh": "我们都是留学生。",
+            "py": "Wǒmen dōu shì liúxuéshēng.",
+            "vi": "Chúng tôi đều là du học sinh."
+          }
+        ]
       },
       {
         "zh": "你们",
         "py": "nǐmen",
         "vi": "các bạn",
-        "type": "Đại từ"
+        "type": "Đại từ",
+        "ex": [
+          {
+            "zh": "你们学汉语吗？",
+            "py": "Nǐmen xué Hànyǔ ma?",
+            "vi": "Các bạn học tiếng Trung không?"
+          }
+        ]
       },
       {
         "zh": "他们",
         "py": "tāmen",
         "vi": "bọn họ, các anh ấy",
-        "type": "Đại từ"
+        "type": "Đại từ",
+        "ex": [
+          {
+            "zh": "他们是我的朋友。",
+            "py": "Tāmen shì wǒ de péngyou.",
+            "vi": "Họ là bạn của tôi."
+          }
+        ]
       }
     ]
   },
@@ -3333,7 +3375,14 @@ const VOCAB_DATA = [
         "zh": "吴",
         "py": "Wú",
         "vi": "họ Ngô",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "请问您贵姓？— 我姓吴。",
+            "py": "Qǐngwèn nín guìxìng? — Wǒ xìng Wú.",
+            "vi": "Xin hỏi quý danh? — Tôi họ Ngô."
+          }
+        ]
       }
     ]
   },
@@ -4042,7 +4091,14 @@ const VOCAB_DATA = [
         "zh": "俄国",
         "py": "Éguó",
         "vi": "nước Nga",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "他是俄国人。",
+            "py": "Tā shì Éguó rén.",
+            "vi": "Anh ấy là người Nga."
+          }
+        ]
       },
       {
         "zh": "还是",
@@ -5069,7 +5125,14 @@ const VOCAB_DATA = [
         "zh": "多大年纪",
         "py": "duō dà niánjì",
         "vi": "bao nhiêu tuổi (hỏi người lớn tuổi)",
-        "type": "Cụm từ"
+        "type": "Cụm từ",
+        "ex": [
+          {
+            "zh": "您多大年纪？",
+            "py": "Nín duō dà niánjì?",
+            "vi": "Ngài bao nhiêu tuổi ạ? (hỏi người lớn tuổi)"
+          }
+        ]
       },
       {
         "zh": "河内",
@@ -6675,7 +6738,14 @@ const VOCAB_DATA = [
         "zh": "亿",
         "py": "yì",
         "vi": "trăm triệu (100.000.000)",
-        "type": "Số đếm"
+        "type": "Số đếm",
+        "ex": [
+          {
+            "zh": "中国有十四亿人。",
+            "py": "Zhōngguó yǒu shísì yì rén.",
+            "vi": "Trung Quốc có 1,4 tỷ người."
+          }
+        ]
       }
     ]
   },
@@ -7149,31 +7219,66 @@ const VOCAB_DATA = [
         "zh": "省",
         "py": "shěng",
         "vi": "tỉnh",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "我家在清化省。",
+            "py": "Wǒ jiā zài Qīnghuà shěng.",
+            "vi": "Nhà tôi ở tỉnh Thanh Hóa."
+          }
+        ]
       },
       {
         "zh": "市",
         "py": "shì",
         "vi": "thành phố",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "我住在清化市。",
+            "py": "Wǒ zhù zài Qīnghuà shì.",
+            "vi": "Tôi sống ở thành phố Thanh Hóa."
+          }
+        ]
       },
       {
         "zh": "县",
         "py": "xiàn",
         "vi": "huyện",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "我家在东山县。",
+            "py": "Wǒ jiā zài Dōngshān xiàn.",
+            "vi": "Nhà tôi ở huyện Đông Sơn."
+          }
+        ]
       },
       {
         "zh": "路",
         "py": "lù",
         "vi": "đường (giao thông)",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "这是什么路？",
+            "py": "Zhè shì shénme lù?",
+            "vi": "Đây là đường gì?"
+          }
+        ]
       },
       {
         "zh": "街",
         "py": "jiē",
         "vi": "phố",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "这是什么街？",
+            "py": "Zhè shì shénme jiē?",
+            "vi": "Đây là phố gì?"
+          }
+        ]
       }
     ]
   },
@@ -7776,19 +7881,40 @@ const VOCAB_DATA = [
         "zh": "听",
         "py": "tīng",
         "vi": "nghe",
-        "type": "Động từ"
+        "type": "Động từ",
+        "ex": [
+          {
+            "zh": "我每天听汉语。",
+            "py": "Wǒ měitiān tīng Hànyǔ.",
+            "vi": "Tôi nghe tiếng Trung mỗi ngày."
+          }
+        ]
       },
       {
         "zh": "说",
         "py": "shuō",
         "vi": "nói, kể",
-        "type": "Động từ"
+        "type": "Động từ",
+        "ex": [
+          {
+            "zh": "你说什么？",
+            "py": "Nǐ shuō shénme?",
+            "vi": "Bạn nói gì?"
+          }
+        ]
       },
       {
         "zh": "读",
         "py": "dú",
         "vi": "đọc",
-        "type": "Động từ"
+        "type": "Động từ",
+        "ex": [
+          {
+            "zh": "我读汉语书。",
+            "py": "Wǒ dú Hànyǔ shū.",
+            "vi": "Tôi đọc sách tiếng Trung."
+          }
+        ]
       },
       {
         "zh": "写",
@@ -7807,19 +7933,40 @@ const VOCAB_DATA = [
         "zh": "和",
         "py": "hé",
         "vi": "và, với",
-        "type": "Liên từ"
+        "type": "Liên từ",
+        "ex": [
+          {
+            "zh": "我和他都是越南人。",
+            "py": "Wǒ hé tā dōu shì Yuènán rén.",
+            "vi": "Tôi và anh ấy đều là người Việt Nam."
+          }
+        ]
       },
       {
         "zh": "比较",
         "py": "bǐjiào",
         "vi": "tương đối, so sánh",
-        "type": "Phó từ"
+        "type": "Phó từ",
+        "ex": [
+          {
+            "zh": "汉语语法比较容易。",
+            "py": "Hànyǔ yǔfǎ bǐjiào róngyì.",
+            "vi": "Ngữ pháp tiếng Trung tương đối dễ."
+          }
+        ]
       },
       {
         "zh": "但是",
         "py": "dànshì",
         "vi": "nhưng, nhưng mà",
-        "type": "Liên từ"
+        "type": "Liên từ",
+        "ex": [
+          {
+            "zh": "汉语很难，但是很有意思。",
+            "py": "Hànyǔ hěn nán, dànshì hěn yǒu yìsi.",
+            "vi": "Tiếng Trung rất khó nhưng rất thú vị."
+          }
+        ]
       },
       {
         "zh": "有意思",
@@ -7838,55 +7985,118 @@ const VOCAB_DATA = [
         "zh": "新",
         "py": "xīn",
         "vi": "mới",
-        "type": "Tính từ"
+        "type": "Tính từ",
+        "ex": [
+          {
+            "zh": "这是我的新书。",
+            "py": "Zhè shì wǒ de xīn shū.",
+            "vi": "Đây là quyển sách mới của tôi."
+          }
+        ]
       },
       {
         "zh": "同学",
         "py": "tóngxué",
         "vi": "bạn học, bạn cùng lớp",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "她是我的同学。",
+            "py": "Tā shì wǒ de tóngxué.",
+            "vi": "Cô ấy là bạn học của tôi."
+          }
+        ]
       },
       {
         "zh": "同屋",
         "py": "tóngwū",
         "vi": "bạn cùng phòng",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "给你介绍一下，这是我同屋。",
+            "py": "Gěi nǐ jièshào yíxià, zhè shì wǒ tóngwū.",
+            "vi": "Giới thiệu với bạn một chút, đây là bạn cùng phòng của tôi."
+          }
+        ]
       },
       {
         "zh": "班",
         "py": "bān",
         "vi": "lớp, lớp học",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "我们班有十个学生。",
+            "py": "Wǒmen bān yǒu shí ge xuéshēng.",
+            "vi": "Lớp chúng tôi có mười học sinh."
+          }
+        ]
       },
       {
         "zh": "听力",
         "py": "tīnglì",
         "vi": "kỹ năng nghe",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "我的听力不太好。",
+            "py": "Wǒ de tīnglì bú tài hǎo.",
+            "vi": "Kỹ năng nghe của tôi không tốt lắm."
+          }
+        ]
       },
       {
         "zh": "口语",
         "py": "kǒuyǔ",
         "vi": "khẩu ngữ, kỹ năng nói",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "他的口语很好。",
+            "py": "Tā de kǒuyǔ hěn hǎo.",
+            "vi": "Khẩu ngữ của anh ấy rất tốt."
+          }
+        ]
       },
       {
         "zh": "阅读",
         "py": "yuèdú",
         "vi": "đọc hiểu",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "我觉得阅读比较容易。",
+            "py": "Wǒ juéde yuèdú bǐjiào róngyì.",
+            "vi": "Tôi thấy đọc hiểu tương đối dễ."
+          }
+        ]
       },
       {
         "zh": "写作",
         "py": "xiězuò",
         "vi": "viết văn, kỹ năng viết",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "写作很难。",
+            "py": "Xiězuò hěn nán.",
+            "vi": "Viết văn rất khó."
+          }
+        ]
       },
       {
         "zh": "技能",
         "py": "jìnéng",
         "vi": "kỹ năng",
-        "type": "Danh từ"
+        "type": "Danh từ",
+        "ex": [
+          {
+            "zh": "听、说、读、写是四个技能。",
+            "py": "Tīng, shuō, dú, xiě shì sì ge jìnéng.",
+            "vi": "Nghe, nói, đọc, viết là bốn kỹ năng."
+          }
+        ]
       },
       {
         "zh": "好看",
@@ -7905,7 +8115,14 @@ const VOCAB_DATA = [
         "zh": "好吃",
         "py": "hǎochī",
         "vi": "ngon (đồ ăn)",
-        "type": "Tính từ"
+        "type": "Tính từ",
+        "ex": [
+          {
+            "zh": "公司食堂的包子很好吃。",
+            "py": "Gōngsī shítáng de bāozi hěn hǎochī.",
+            "vi": "Bánh bao ở nhà ăn công ty rất ngon."
+          }
+        ]
       },
       {
         "zh": "好喝",
