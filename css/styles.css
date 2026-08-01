@@ -1366,6 +1366,45 @@
 }
 .zh-card .lt-badge { font-size: 0.72rem; padding: 2px 7px; flex-shrink: 0; }
 
+/* ===== BÀI ĐỌC TAB ===== */
+.reading-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.reading-header h3 { color: var(--dark); font-size: 1.05rem; }
+.reading-header-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.reading-lines { display: flex; flex-direction: column; gap: 10px; }
+.reading-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: white;
+  border: 1px solid var(--gray2);
+  border-radius: 10px;
+  padding: 12px 14px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.reading-line:hover { box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+.reading-line.active { background: var(--red-pale); border-color: var(--red); }
+.reading-line-num {
+  flex-shrink: 0;
+  min-width: 22px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-light);
+  padding-top: 3px;
+}
+.reading-line-body { flex: 1; min-width: 0; }
+.reading-zh { font-size: 1.15rem; font-weight: 700; color: var(--dark); line-height: 1.5; }
+.reading-py { font-size: 0.87rem; color: var(--red); font-style: italic; margin-top: 4px; }
+.reading-vi { font-size: 0.9rem; color: var(--text); margin-top: 3px; }
+.reading-speak-btn { flex-shrink: 0; align-self: center; }
+
 /* ===== LUYỆN VIẾT TAB ===== */
 .ww-topbar {
   display: flex;

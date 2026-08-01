@@ -10,7 +10,7 @@
 
 <header>
   <h1>🎋 Ôn Tập <span>Tiếng Trung</span></h1>
-  <p>汉语初级 总复习 · Buổi 1 – 16 &nbsp;|&nbsp; Học viên: Thắng</p>
+  <p>汉语初级 总复习 · Buổi 1 – 17 &nbsp;|&nbsp; Học viên: Thắng</p>
   <div class="tts-status" id="ttsStatus" style="display:none"></div>
 </header>
 
@@ -21,6 +21,7 @@
   <button onclick="showSection('s-grammar', this)">✏️ Ngữ Pháp</button>
   <button onclick="showSection('s-sentences', this)">💬 Câu Mẫu 30</button>
   <button onclick="showSection('s-dialogue', this)">🗣️ Hội Thoại</button>
+  <button onclick="showSection('s-reading', this)">📖 Bài Đọc</button>
   <button onclick="showSection('s-speak', this)">🎤 Tập Nói</button>
   <button onclick="showSection('s-flashcard', this)">🃏 Flashcard</button>
   <button onclick="showSection('s-exercise', this)">📝 Bài Tập</button>
@@ -77,7 +78,7 @@
 <!-- ============================================================ -->
 <div class="section" id="s-vocab">
   <div class="card">
-    <h2>📚 Từ Vựng Theo Buổi Học (Buổi 1 – 16)</h2>
+    <h2>📚 Từ Vựng Theo Buổi Học (Buổi 1 – 17)</h2>
     <div class="alert alert-info">Bấm 🔊 để nghe phát âm. Nhấp vào ô từ vựng bất kỳ cũng có thể nghe.</div>
     <input type="text" id="vocabSearch" placeholder="🔍 Tìm từ (tiếng Trung / pinyin / tiếng Việt)..." style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid #ddd;font-size:0.95rem;margin-bottom:8px;font-family:inherit" oninput="filterVocab(this.value)">
   </div>
@@ -118,6 +119,17 @@
     <div class="alert alert-info">Nhấp vào từng câu để nghe phát âm. Nhấn <strong>🎤 Luyện nói</strong> để tập phát âm có chấm điểm.</div>
   </div>
   <div id="dialogueContainer"></div>
+</div>
+
+<!-- ============================================================ -->
+<!--  BÀI ĐỌC                                                     -->
+<!-- ============================================================ -->
+<div class="section" id="s-reading">
+  <div class="card">
+    <h2>📖 Bài Đọc</h2>
+    <div class="alert alert-info">Mỗi dòng có phiên âm và bản dịch tiếng Việt. Nhấn 🔊 để nghe từng câu, hoặc <strong>▶ Đọc cả bài</strong> để nghe liên tục cả đoạn văn.</div>
+  </div>
+  <div id="readingContainer"></div>
 </div>
 
 <!-- ============================================================ -->
@@ -180,6 +192,7 @@
         <option value="10">Buổi 11: 我换人民币</option>
         <option value="11">Buổi 12: 他住哪儿？</option>
         <option value="12">Buổi 13: 今天中午我要吃面条</option>
+        <option value="16">Buổi 17: 这是不是中药</option>
       </select>
       <button class="check-btn" onclick="shuffleFlashcard()" style="margin:0">🔀 Xáo trộn</button>
     </div>
@@ -683,16 +696,18 @@
   <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
 
   <!-- Data (must load before render/feature scripts) -->
-  <script src="js/data/vocab-data.js?v=4"></script>
+  <script src="js/data/vocab-data.js?v=5"></script>
+  <script src="js/data/reading-data.js?v=1"></script>
 
   <!-- Core utilities -->
   <script src="js/tts.js?v=2"></script>
-  <script src="js/navigation.js?v=3"></script>
+  <script src="js/navigation.js?v=4"></script>
 
   <!-- Render functions -->
   <script src="js/render-vocab.js?v=3"></script>
   <script src="js/render-phrases.js?v=2"></script>
   <script src="js/render-dialogues.js?v=2"></script>
+  <script src="js/render-reading.js?v=1"></script>
   <script src="js/render-speak.js?v=2"></script>
   <script src="js/phonetics.js?v=2"></script>
   <script src="js/grammar.js?v=2"></script>

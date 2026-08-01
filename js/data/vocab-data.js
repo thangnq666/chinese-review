@@ -8909,6 +8909,319 @@ const VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "lesson": "Buổi 17 (b18): 这是不是中药 – Đây có phải là thuốc đông y không?",
+    "words": [
+      {
+        "zh": "没（有）",
+        "py": "méi (yǒu)",
+        "vi": "không có, chưa có",
+        "type": "Phó từ",
+        "ex": [
+          { "zh": "我没有箱子。", "py": "Wǒ méiyǒu xiāngzi.", "vi": "Tôi không có vali." },
+          { "zh": "你没有箱子吗？", "py": "Nǐ méiyǒu xiāngzi ma?", "vi": "Bạn không có vali à?" },
+          { "zh": "桌子上没有词典。", "py": "Zhuōzi shàng méiyǒu cídiǎn.", "vi": "Trên bàn không có từ điển." }
+        ]
+      },
+      {
+        "zh": "有",
+        "py": "yǒu",
+        "vi": "có",
+        "type": "Động từ",
+        "ex": [
+          { "zh": "有啊，我的在这儿呢。", "py": "Yǒu a, wǒ de zài zhèr ne.", "vi": "Có chứ, của tôi ở đây này." },
+          { "zh": "箱子里有什么？", "py": "Xiāngzi lǐ yǒu shénme?", "vi": "Trong vali có gì?" },
+          { "zh": "我有一个红色的箱子。", "py": "Wǒ yǒu yí ge hóngsè de xiāngzi.", "vi": "Tôi có một cái vali màu đỏ." }
+        ]
+      },
+      {
+        "zh": "箱子",
+        "py": "xiāngzi",
+        "vi": "cái hòm, vali, rương",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "你没有箱子吗？", "py": "Nǐ méiyǒu xiāngzi ma?", "vi": "Bạn không có vali à?" },
+          { "zh": "我的箱子很重。", "py": "Wǒ de xiāngzi hěn zhòng.", "vi": "Vali của tôi rất nặng." },
+          { "zh": "那个箱子是谁的？", "py": "Nàge xiāngzi shì shéi de?", "vi": "Cái vali kia là của ai?" }
+        ]
+      },
+      {
+        "zh": "这儿",
+        "py": "zhèr",
+        "vi": "đây, ở đây",
+        "type": "Đại từ",
+        "ex": [
+          { "zh": "我的在这儿呢。", "py": "Wǒ de zài zhèr ne.", "vi": "Của tôi ở đây này." },
+          { "zh": "你的书在这儿。", "py": "Nǐ de shū zài zhèr.", "vi": "Sách của bạn ở đây." },
+          { "zh": "这儿有很多人。", "py": "Zhèr yǒu hěn duō rén.", "vi": "Ở đây có rất nhiều người." }
+        ]
+      },
+      {
+        "zh": "重",
+        "py": "zhòng",
+        "vi": "nặng",
+        "type": "Tính từ",
+        "ex": [
+          { "zh": "我的很重，你的重不重？", "py": "Wǒ de hěn zhòng, nǐ de zhòng bu zhòng?", "vi": "Của tôi rất nặng, của bạn có nặng không?" },
+          { "zh": "这个箱子很重。", "py": "Zhège xiāngzi hěn zhòng.", "vi": "Cái vali này rất nặng." },
+          { "zh": "我的箱子太重了。", "py": "Wǒ de xiāngzi tài zhòng le.", "vi": "Vali của tôi nặng quá." }
+        ]
+      },
+      {
+        "zh": "黑",
+        "py": "hēi",
+        "vi": "đen",
+        "type": "Tính từ",
+        "ex": [
+          { "zh": "这个黑的很重。", "py": "Zhège hēi de hěn zhòng.", "vi": "Cái màu đen này rất nặng." },
+          { "zh": "那些黑的是什么东西？", "py": "Nàxiē hēi de shì shénme dōngxi?", "vi": "Những cái màu đen kia là thứ gì?" },
+          { "zh": "我喜欢黑色的箱子。", "py": "Wǒ xǐhuan hēisè de xiāngzi.", "vi": "Tôi thích vali màu đen." }
+        ]
+      },
+      {
+        "zh": "红",
+        "py": "hóng",
+        "vi": "đỏ",
+        "type": "Tính từ",
+        "ex": [
+          { "zh": "那个红的比较轻。", "py": "Nàge hóng de bǐjiào qīng.", "vi": "Cái màu đỏ kia nhẹ hơn." },
+          { "zh": "她喜欢红色。", "py": "Tā xǐhuan hóngsè.", "vi": "Cô ấy thích màu đỏ." },
+          { "zh": "这是红的还是黑的？", "py": "Zhè shì hóng de háishi hēi de?", "vi": "Đây là màu đỏ hay màu đen?" }
+        ]
+      },
+      {
+        "zh": "轻",
+        "py": "qīng",
+        "vi": "nhẹ",
+        "type": "Tính từ",
+        "ex": [
+          { "zh": "那个红的比较轻。", "py": "Nàge hóng de bǐjiào qīng.", "vi": "Cái màu đỏ kia nhẹ hơn." },
+          { "zh": "这件衣服很轻。", "py": "Zhè jiàn yīfu hěn qīng.", "vi": "Bộ quần áo này rất nhẹ." },
+          { "zh": "你的箱子轻不轻？", "py": "Nǐ de xiāngzi qīng bu qīng?", "vi": "Vali của bạn có nhẹ không?" }
+        ]
+      },
+      {
+        "zh": "中药",
+        "py": "zhōngyào",
+        "vi": "thuốc bắc, thuốc đông y",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "这是中药。", "py": "Zhè shì zhōngyào.", "vi": "Đây là thuốc đông y." },
+          { "zh": "这是不是中药？", "py": "Zhè shì bu shì zhōngyào?", "vi": "Đây có phải thuốc đông y không?" },
+          { "zh": "中药一般不太贵。", "py": "Zhōngyào yìbān bú tài guì.", "vi": "Thuốc đông y nói chung không đắt lắm." }
+        ]
+      },
+      {
+        "zh": "药",
+        "py": "yào",
+        "vi": "thuốc",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "这是一些药。", "py": "Zhè shì yìxiē yào.", "vi": "Đây là một ít thuốc." },
+          { "zh": "什么药？", "py": "Shénme yào?", "vi": "Thuốc gì vậy?" },
+          { "zh": "这不是药，这是茶叶。", "py": "Zhè bú shì yào, zhè shì cháyè.", "vi": "Đây không phải thuốc, đây là lá chè." }
+        ]
+      },
+      {
+        "zh": "西药",
+        "py": "xīyào",
+        "vi": "thuốc tây",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "这是西药，不是中药。", "py": "Zhè shì xīyào, bú shì zhōngyào.", "vi": "Đây là thuốc tây, không phải thuốc đông y." },
+          { "zh": "我不太喜欢吃西药。", "py": "Wǒ bú tài xǐhuan chī xīyào.", "vi": "Tôi không thích uống thuốc tây lắm." },
+          { "zh": "药店里有中药也有西药。", "py": "Yàodiàn lǐ yǒu zhōngyào yě yǒu xīyào.", "vi": "Trong hiệu thuốc có cả thuốc đông y và thuốc tây." }
+        ]
+      },
+      {
+        "zh": "茶叶",
+        "py": "cháyè",
+        "vi": "lá chè",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "这不是药，这是茶叶。", "py": "Zhè bú shì yào, zhè shì cháyè.", "vi": "Đây không phải thuốc, đây là lá chè." },
+          { "zh": "中国茶叶很有名。", "py": "Zhōngguó cháyè hěn yǒumíng.", "vi": "Trà (lá chè) Trung Quốc rất nổi tiếng." },
+          { "zh": "我想买一些茶叶。", "py": "Wǒ xiǎng mǎi yìxiē cháyè.", "vi": "Tôi muốn mua một ít lá chè." }
+        ]
+      },
+      {
+        "zh": "里",
+        "py": "lǐ",
+        "vi": "trong, bên trong",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "那个箱子里是什么？", "py": "Nàge xiāngzi lǐ shì shénme?", "vi": "Trong vali kia là gì?" },
+          { "zh": "箱子里都是日用品。", "py": "Xiāngzi lǐ dōu shì rìyòngpǐn.", "vi": "Trong vali đều là đồ dùng hàng ngày." },
+          { "zh": "教室里有很多学生。", "py": "Jiàoshì lǐ yǒu hěn duō xuésheng.", "vi": "Trong lớp học có rất nhiều học sinh." }
+        ]
+      },
+      {
+        "zh": "日用品",
+        "py": "rìyòngpǐn",
+        "vi": "đồ dùng hàng ngày",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "都是日用品。", "py": "Dōu shì rìyòngpǐn.", "vi": "Đều là đồ dùng hàng ngày." },
+          { "zh": "这些都是日用品，不是药。", "py": "Zhèxiē dōu shì rìyòngpǐn, bú shì yào.", "vi": "Những thứ này đều là đồ dùng hàng ngày, không phải thuốc." },
+          { "zh": "商店里有很多日用品。", "py": "Shāngdiàn lǐ yǒu hěn duō rìyòngpǐn.", "vi": "Trong cửa hàng có rất nhiều đồ dùng hàng ngày." }
+        ]
+      },
+      {
+        "zh": "件",
+        "py": "jiàn",
+        "vi": "cái, chiếc (lượng từ cho quần áo, sự việc)",
+        "type": "Lượng từ",
+        "ex": [
+          { "zh": "有两件衣服。", "py": "Yǒu liǎng jiàn yīfu.", "vi": "Có hai bộ quần áo." },
+          { "zh": "这件衣服是新的。", "py": "Zhè jiàn yīfu shì xīn de.", "vi": "Bộ quần áo này là mới." },
+          { "zh": "我要买一件衣服。", "py": "Wǒ yào mǎi yí jiàn yīfu.", "vi": "Tôi muốn mua một bộ quần áo." }
+        ]
+      },
+      {
+        "zh": "把",
+        "py": "bǎ",
+        "vi": "cái, chiếc (lượng từ cho ô, ghế, dao...)",
+        "type": "Lượng từ",
+        "ex": [
+          { "zh": "一把雨伞。", "py": "Yì bǎ yǔsǎn.", "vi": "Một cái ô." },
+          { "zh": "这把雨伞是我的。", "py": "Zhè bǎ yǔsǎn shì wǒ de.", "vi": "Cái ô này là của tôi." },
+          { "zh": "教室里有几把椅子？", "py": "Jiàoshì lǐ yǒu jǐ bǎ yǐzi?", "vi": "Trong lớp học có mấy cái ghế?" }
+        ]
+      },
+      {
+        "zh": "衣服",
+        "py": "yīfu",
+        "vi": "quần áo",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "箱子里有两件衣服。", "py": "Xiāngzi lǐ yǒu liǎng jiàn yīfu.", "vi": "Trong vali có hai bộ quần áo." },
+          { "zh": "这件衣服很轻。", "py": "Zhè jiàn yīfu hěn qīng.", "vi": "Bộ quần áo này rất nhẹ." },
+          { "zh": "你喜欢这件衣服吗？", "py": "Nǐ xǐhuan zhè jiàn yīfu ma?", "vi": "Bạn có thích bộ quần áo này không?" }
+        ]
+      },
+      {
+        "zh": "雨伞",
+        "py": "yǔsǎn",
+        "vi": "cái ô, dù",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "一把雨伞和一瓶香水。", "py": "Yì bǎ yǔsǎn hé yì píng xiāngshuǐ.", "vi": "Một cái ô và một chai nước hoa." },
+          { "zh": "下雨了，你有雨伞吗？", "py": "Xiàyǔ le, nǐ yǒu yǔsǎn ma?", "vi": "Trời mưa rồi, bạn có ô không?" },
+          { "zh": "这把雨伞是新的。", "py": "Zhè bǎ yǔsǎn shì xīn de.", "vi": "Cái ô này là mới." }
+        ]
+      },
+      {
+        "zh": "雨",
+        "py": "yǔ",
+        "vi": "mưa",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "下雨了。", "py": "Xiàyǔ le.", "vi": "Trời mưa rồi." },
+          { "zh": "今天有雨吗？", "py": "Jīntiān yǒu yǔ ma?", "vi": "Hôm nay có mưa không?" },
+          { "zh": "冬天这儿雨不多。", "py": "Dōngtiān zhèr yǔ bù duō.", "vi": "Mùa đông ở đây ít mưa." }
+        ]
+      },
+      {
+        "zh": "瓶",
+        "py": "píng",
+        "vi": "chai, lọ",
+        "type": "Lượng từ",
+        "ex": [
+          { "zh": "一瓶香水。", "py": "Yì píng xiāngshuǐ.", "vi": "Một chai nước hoa." },
+          { "zh": "我要一瓶水。", "py": "Wǒ yào yì píng shuǐ.", "vi": "Tôi muốn một chai nước." },
+          { "zh": "这瓶是什么？", "py": "Zhè píng shì shénme?", "vi": "Cái chai này là gì?" }
+        ]
+      },
+      {
+        "zh": "香水",
+        "py": "xiāngshuǐ",
+        "vi": "nước hoa",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "一瓶香水。", "py": "Yì píng xiāngshuǐ.", "vi": "Một chai nước hoa." },
+          { "zh": "这是法国香水。", "py": "Zhè shì Fǎguó xiāngshuǐ.", "vi": "Đây là nước hoa Pháp." },
+          { "zh": "她很喜欢香水。", "py": "Tā hěn xǐhuan xiāngshuǐ.", "vi": "Cô ấy rất thích nước hoa." }
+        ]
+      },
+      {
+        "zh": "水",
+        "py": "shuǐ",
+        "vi": "nước",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "我要一瓶水。", "py": "Wǒ yào yì píng shuǐ.", "vi": "Tôi muốn một chai nước." },
+          { "zh": "这是热水还是冷水？", "py": "Zhè shì rèshuǐ háishi lěngshuǐ?", "vi": "Đây là nước nóng hay nước lạnh?" },
+          { "zh": "请给我一杯水。", "py": "Qǐng gěi wǒ yì bēi shuǐ.", "vi": "Xin cho tôi một cốc nước." }
+        ]
+      },
+      {
+        "zh": "本",
+        "py": "běn",
+        "vi": "quyển, cuốn",
+        "type": "Lượng từ",
+        "ex": [
+          { "zh": "一本书，一本词典。", "py": "Yì běn shū, yì běn cídiǎn.", "vi": "Một quyển sách, một quyển từ điển." },
+          { "zh": "这本书是谁的？", "py": "Zhè běn shū shì shéi de?", "vi": "Quyển sách này là của ai?" },
+          { "zh": "我买了两本词典。", "py": "Wǒ mǎile liǎng běn cídiǎn.", "vi": "Tôi đã mua hai quyển từ điển." }
+        ]
+      },
+      {
+        "zh": "词典",
+        "py": "cídiǎn",
+        "vi": "từ điển",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "一本词典。", "py": "Yì běn cídiǎn.", "vi": "Một quyển từ điển." },
+          { "zh": "这本词典很重。", "py": "Zhè běn cídiǎn hěn zhòng.", "vi": "Quyển từ điển này rất nặng." },
+          { "zh": "我要买一本汉语词典。", "py": "Wǒ yào mǎi yì běn Hànyǔ cídiǎn.", "vi": "Tôi muốn mua một quyển từ điển tiếng Hán." }
+        ]
+      },
+      {
+        "zh": "张",
+        "py": "zhāng",
+        "vi": "tấm, tờ, cái (bàn, ảnh, đĩa...)",
+        "type": "Lượng từ",
+        "ex": [
+          { "zh": "两张光盘。", "py": "Liǎng zhāng guāngpán.", "vi": "Hai đĩa CD." },
+          { "zh": "一张地图。", "py": "Yì zhāng dìtú.", "vi": "Một tấm bản đồ." },
+          { "zh": "一张照片。", "py": "Yì zhāng zhàopiàn.", "vi": "Một bức ảnh." }
+        ]
+      },
+      {
+        "zh": "光盘",
+        "py": "guāngpán",
+        "vi": "đĩa CD, VCD, DVD",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "两张光盘。", "py": "Liǎng zhāng guāngpán.", "vi": "Hai đĩa CD." },
+          { "zh": "一张光盘。", "py": "Yì zhāng guāngpán.", "vi": "Một cái đĩa CD." },
+          { "zh": "这张光盘是英语光盘。", "py": "Zhè zhāng guāngpán shì Yīngyǔ guāngpán.", "vi": "Đĩa CD này là đĩa tiếng Anh." }
+        ]
+      },
+      {
+        "zh": "支",
+        "py": "zhī",
+        "vi": "cây, chiếc (lượng từ cho bút)",
+        "type": "Lượng từ",
+        "ex": [
+          { "zh": "三支笔。", "py": "Sān zhī bǐ.", "vi": "Ba cây bút." },
+          { "zh": "我有一支黑色的笔。", "py": "Wǒ yǒu yì zhī hēisè de bǐ.", "vi": "Tôi có một cây bút màu đen." },
+          { "zh": "这支笔是谁的？", "py": "Zhè zhī bǐ shì shéi de?", "vi": "Cây bút này là của ai?" }
+        ]
+      },
+      {
+        "zh": "笔",
+        "py": "bǐ",
+        "vi": "bút, bút lông",
+        "type": "Danh từ",
+        "ex": [
+          { "zh": "这是我的笔。", "py": "Zhè shì wǒ de bǐ.", "vi": "Đây là bút của tôi." },
+          { "zh": "我有一支黑色的笔。", "py": "Wǒ yǒu yì zhī hēisè de bǐ.", "vi": "Tôi có một cây bút màu đen." },
+          { "zh": "三支笔和一本词典。", "py": "Sān zhī bǐ hé yì běn cídiǎn.", "vi": "Ba cây bút và một quyển từ điển." }
+        ]
+      }
+    ]
   }
 ];
 
@@ -9165,6 +9478,30 @@ const DIALOGUE_DATA = [
           {zh:'我们的老师是林老师。',py:'Wǒmen de lǎoshī shì Lín lǎoshī.',vi:'Thầy/cô của chúng tôi là thầy/cô Lâm.',speaker:'A'},
         ]
       },
+    ]
+  },
+  {
+    lesson: 'Bài 13: 这是不是中药 – Đây có phải là thuốc đông y không?', title: '在机场 – Ở sân bay', lessonIdx: 12,
+    lines: [
+      {s:'A',zh:'你没有箱子吗？',py:'Nǐ méiyǒu xiāngzi ma?',vi:'Bạn không có vali à?'},
+      {s:'B',zh:'有啊。我的在这儿呢。',py:'Yǒu a. Wǒ de zài zhèr ne.',vi:'Có chứ. Của tôi ở đây này.'},
+      {s:'A',zh:'我的很重，你的重不重？',py:'Wǒ de hěn zhòng, nǐ de zhòng bu zhòng?',vi:'Của tôi rất nặng, của bạn có nặng không?'},
+      {s:'B',zh:'这个黑的很重，那个红的比较轻。',py:'Zhège hēi de hěn zhòng, nàge hóng de bǐjiào qīng.',vi:'Cái màu đen này rất nặng, cái màu đỏ kia nhẹ hơn.'},
+      {s:'A',zh:'你的箱子很新，我的很旧。',py:'Nǐ de xiāngzi hěn xīn, wǒ de hěn jiù.',vi:'Vali của bạn rất mới, của tôi thì cũ rồi.'},
+      {s:'B',zh:'那个新的是朋友的，这个旧的是我的。',py:'Nàge xīn de shì péngyou de, zhège jiù de shì wǒ de.',vi:'Cái mới kia là của bạn tôi, cái cũ này là của tôi.'},
+    ]
+  },
+  {
+    lesson: 'Bài 13: 这是不是中药 – Đây có phải là thuốc đông y không?', title: '在海关 – Ở hải quan', lessonIdx: 12,
+    lines: [
+      {s:'A',zh:'先生，这些黑的是什么东西？',py:'Xiānsheng, zhèxiē hēi de shì shénme dōngxi?',vi:'Thưa ông, những cái màu đen này là thứ gì vậy?'},
+      {s:'B',zh:'这是一些药。',py:'Zhè shì yìxiē yào.',vi:'Đây là một ít thuốc.'},
+      {s:'A',zh:'什么药？',py:'Shénme yào?',vi:'Thuốc gì vậy?'},
+      {s:'B',zh:'中药。',py:'Zhōngyào.',vi:'Thuốc bắc (đông y).'},
+      {s:'A',zh:'这是不是药？',py:'Zhè shì bu shì yào?',vi:'Đây có phải là thuốc không?'},
+      {s:'B',zh:'这不是药，这是茶叶。',py:'Zhè bú shì yào, zhè shì cháyè.',vi:'Đây không phải thuốc, đây là lá chè.'},
+      {s:'A',zh:'那个箱子里是什么？',py:'Nàge xiāngzi lǐ shì shénme?',vi:'Trong vali kia là gì?'},
+      {s:'B',zh:'都是日用品。有两件衣服，一把雨伞和一瓶香水，还有一本书，一本词典，两张光盘和三支笔。',py:'Dōu shì rìyòngpǐn. Yǒu liǎng jiàn yīfu, yì bǎ yǔsǎn hé yì píng xiāngshuǐ, hái yǒu yì běn shū, yì běn cídiǎn, liǎng zhāng guāngpán hé sān zhī bǐ.',vi:'Đều là đồ dùng hàng ngày. Có hai bộ quần áo, một cái ô và một chai nước hoa, còn có một quyển sách, một quyển từ điển, hai đĩa CD và ba cây bút.'},
     ]
   }
 ];

@@ -10,6 +10,7 @@ const _sectionRenderers = {
   's-grammar':   () => renderGrammar(),
   's-sentences': () => renderPhrases(),
   's-dialogue':  () => renderDialogues(),
+  's-reading':   () => renderReading(),
   's-speak':     () => { populateSpeakFilter(); renderSpeakCards(); },
   's-flashcard': () => initFlashcard(),
   's-exercise':  () => { renderExercises(); initExercises(); },
