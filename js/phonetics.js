@@ -131,6 +131,33 @@ const FINALS_DATA = [
   ]},
 ];
 
+const QUICK_TIPS_DATA = [
+  { pattern: 'uo', desc: 'Đọc gần như "ua" tiếng Việt',
+    ex: [{zh:'多',py:'duō',vi:'nhiều'},{zh:'拖',py:'tuō',vi:'kéo lê'},{zh:'国',py:'guó',vi:'quốc gia'},{zh:'坐',py:'zuò',vi:'ngồi'}] },
+  { pattern: 'ou', desc: 'Đọc gần như "âu" tiếng Việt',
+    ex: [{zh:'后',py:'hòu',vi:'sau'},{zh:'走',py:'zǒu',vi:'đi bộ'},{zh:'狗',py:'gǒu',vi:'chó'},{zh:'头',py:'tóu',vi:'đầu'}] },
+  { pattern: 'ua', desc: 'Đọc gần như "oa" tiếng Việt',
+    ex: [{zh:'花',py:'huā',vi:'hoa'},{zh:'瓜',py:'guā',vi:'dưa'},{zh:'挂',py:'guà',vi:'treo'},{zh:'刷',py:'shuā',vi:'bàn chải'}] },
+  { pattern: 'iu (iou)', desc: 'Đọc gần như "iâu" tiếng Việt — chữ "o" ở giữa bị lược khi viết',
+    ex: [{zh:'九',py:'jiǔ',vi:'chín'},{zh:'留',py:'liú',vi:'ở lại'},{zh:'秋',py:'qiū',vi:'mùa thu'},{zh:'牛',py:'niú',vi:'bò'}] },
+  { pattern: 'ui (uei)', desc: 'Đọc gần như "uây" tiếng Việt — chữ "e" ở giữa bị lược khi viết',
+    ex: [{zh:'回',py:'huí',vi:'về'},{zh:'贵',py:'guì',vi:'đắt'},{zh:'水',py:'shuǐ',vi:'nước'},{zh:'对',py:'duì',vi:'đúng'}] },
+  { pattern: 'i sau z / c / s / zh / ch / sh / r', desc: 'KHÔNG đọc "i" như thường mà đọc gần như "ư" câm (chỉ giữ chỗ trên chữ viết)',
+    ex: [{zh:'只',py:'zhǐ',vi:'chỉ (từ hạn định)'},{zh:'字',py:'zì',vi:'chữ'},{zh:'是',py:'shì',vi:'là'},{zh:'四',py:'sì',vi:'bốn'}] },
+  { pattern: 'ü sau j / q / x', desc: 'Vẫn đọc tròn môi "ü" dù khi viết bị lược mất 2 dấu chấm ở trên (viết là u nhưng đọc ü)',
+    ex: [{zh:'去',py:'qù',vi:'đi'},{zh:'学',py:'xué',vi:'học'},{zh:'居',py:'jū',vi:'ở/cư trú'},{zh:'许',py:'xǔ',vi:'cho phép'}] },
+  { pattern: 'qu', desc: '"u" đứng sau "q" luôn đọc là "ü" tròn môi (không phải "u" thường)',
+    ex: [{zh:'去',py:'qù',vi:'đi'},{zh:'全',py:'quán',vi:'toàn bộ'},{zh:'群',py:'qún',vi:'nhóm'},{zh:'请',py:'qǐng',vi:'mời'}] },
+  { pattern: 'eng', desc: 'Đọc gần như "âng" tiếng Việt',
+    ex: [{zh:'冷',py:'lěng',vi:'lạnh'},{zh:'风',py:'fēng',vi:'gió'},{zh:'朋',py:'péng',vi:'bạn'},{zh:'能',py:'néng',vi:'có thể'}] },
+  { pattern: 'd', desc: 'Đọc gần như "t" tiếng Việt, KHÔNG bật hơi — KHÔNG phải âm "đ"',
+    ex: [{zh:'大',py:'dà',vi:'to'},{zh:'的',py:'de',vi:'trợ từ sở hữu'},{zh:'都',py:'dōu',vi:'đều'},{zh:'对',py:'duì',vi:'đúng'}] },
+  { pattern: 't', desc: 'Đọc gần như "th" tiếng Việt, bật hơi mạnh',
+    ex: [{zh:'他',py:'tā',vi:'anh ấy'},{zh:'天',py:'tiān',vi:'trời'},{zh:'头',py:'tóu',vi:'đầu'},{zh:'太',py:'tài',vi:'quá'}] },
+  { pattern: 'c', desc: 'Đọc gần như "ts" bật hơi mạnh (không phải "k" hay "s")',
+    ex: [{zh:'菜',py:'cài',vi:'rau/món ăn'},{zh:'从',py:'cóng',vi:'từ'},{zh:'才',py:'cái',vi:'mới'},{zh:'错',py:'cuò',vi:'sai'}] },
+];
+
 const TONE_EXAMPLES = [
   { tone:1, mark:'ā', desc:'Cao bằng — kéo dài đều, không lên không xuống', color:'#3498db',
     ex:[{zh:'妈',py:'mā',vi:'mẹ'},{zh:'书',py:'shū',vi:'sách'},{zh:'天',py:'tiān',vi:'trời'},{zh:'中',py:'zhōng',vi:'giữa'},{zh:'多',py:'duō',vi:'nhiều'},{zh:'风',py:'fēng',vi:'gió'},{zh:'开',py:'kāi',vi:'mở'},{zh:'高',py:'gāo',vi:'cao'}]},
@@ -323,6 +350,30 @@ function renderPhonetics() {
     finalCard.appendChild(gDiv);
   });
   container.appendChild(finalCard);
+
+  // ── 4. MẸO ĐỌC NHANH — GHI CHÚ CÁ NHÂN (Bài 19) ────────────────────────
+  const tipCard = document.createElement('div');
+  tipCard.className = 'card';
+  tipCard.innerHTML = '<h2>📝 Mẹo Đọc Nhanh — Ghi Chú Cá Nhân (Bài 19)</h2>' +
+    '<div class="alert alert-info" style="margin-bottom:12px">Các quy tắc phát âm hay bị nhầm nhất, tổng hợp từ ghi chú riêng. Nhấn <strong>▶ Xem ví dụ</strong> để mở từ minh hoạ.</div>';
+
+  let tipHtml = '<table class="phon-main-table">' + CG +
+    '<thead><tr><th></th><th>Quy tắc</th><th>Cách đọc</th><th>Xem trước</th><th></th></tr></thead><tbody>';
+
+  QUICK_TIPS_DATA.forEach((tip, ti) => {
+    const tpId = 'tip-' + ti;
+    const symHtml = '<span class="phon-sym" style="font-size:0.75rem;padding:4px 6px;color:#c05621;border-color:#fbd38d;background:#fffaf0">' + tip.pattern + '</span>';
+    const preview = tip.ex.slice(0,4).map(e=>'<span class="phon-preview-zh" title="'+e.py+' — '+e.vi+'">'+e.zh+'</span>').join(' ');
+    tipHtml += makeSummaryRow(tpId, symHtml, tip.desc, preview);
+    tip.ex.forEach((e,ei) => { tipHtml += makeDetailRow(tpId, ei+1, e.zh, e.py, e.vi, '#c05621'); });
+    tipHtml += makeAllRow(tpId, tip.ex.map(e=>e.zh).join(''), tip.pattern);
+  });
+  tipHtml += '</tbody></table>';
+
+  const tipDiv = document.createElement('div');
+  tipDiv.innerHTML = tipHtml;
+  tipCard.appendChild(tipDiv);
+  container.appendChild(tipCard);
 }
 
 // ===================================================
