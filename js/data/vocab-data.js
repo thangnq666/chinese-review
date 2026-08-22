@@ -6272,6 +6272,11 @@ const VOCAB_DATA = [
             "zh": "我还有一些问题。",
             "py": "Wǒ hái yǒu yīxiē wèntí.",
             "vi": "Tôi còn một số câu hỏi."
+          },
+          {
+            "zh": "我有一些书。",
+            "py": "Wǒ yǒu yìxiē shū.",
+            "vi": "Tôi có một ít sách."
           }
         ]
       },
@@ -6300,6 +6305,11 @@ const VOCAB_DATA = [
             "zh": "这些问题很难。",
             "py": "Zhèxiē wèntí hěn nán.",
             "vi": "Những câu hỏi này rất khó."
+          },
+          {
+            "zh": "这些是我的杂志。",
+            "py": "Zhèxiē shì wǒ de zázhì.",
+            "vi": "Đây là những tạp chí của tôi."
           }
         ]
       },
@@ -6323,6 +6333,16 @@ const VOCAB_DATA = [
             "zh": "那些水果新鲜吗？",
             "py": "Nàxiē shuǐguǒ xīnxiān ma?",
             "vi": "Những trái cây đó có tươi không?"
+          },
+          {
+            "zh": "那些是谁的？",
+            "py": "Nàxiē shì shéi de?",
+            "vi": "Những cái đó là của ai?"
+          },
+          {
+            "zh": "那些孩子很好。",
+            "py": "Nàxiē háizi hěn hǎo.",
+            "vi": "Những đứa trẻ đó rất ngoan."
           }
         ]
       },
@@ -6351,6 +6371,11 @@ const VOCAB_DATA = [
             "zh": "这本书很有意思。",
             "py": "Zhè běn shū hěn yǒu yìsi.",
             "vi": "Cuốn sách này rất thú vị."
+          },
+          {
+            "zh": "这本书是我的。",
+            "py": "Zhè běn shū shì wǒ de.",
+            "vi": "Cuốn sách này là của tôi."
           }
         ]
       }
@@ -6417,6 +6442,11 @@ const VOCAB_DATA = [
             "zh": "这个东西卖完了。",
             "py": "Zhège dōngxi mài wán le.",
             "vi": "Món này đã bán hết rồi."
+          },
+          {
+            "zh": "这儿卖水果。",
+            "py": "Zhèr mài shuǐguǒ.",
+            "vi": "Ở đây bán trái cây."
           }
         ]
       },
@@ -6445,6 +6475,11 @@ const VOCAB_DATA = [
             "zh": "多吃水果对身体好。",
             "py": "Duō chī shuǐguǒ duì shēntǐ hǎo.",
             "vi": "Ăn nhiều trái cây tốt cho sức khỏe."
+          },
+          {
+            "zh": "我喜欢水果。",
+            "py": "Wǒ xǐhuan shuǐguǒ.",
+            "vi": "Tôi thích trái cây."
           }
         ]
       },
@@ -6473,6 +6508,11 @@ const VOCAB_DATA = [
             "zh": "红苹果比绿苹果甜。",
             "py": "Hóng píngguǒ bǐ lǜ píngguǒ tián.",
             "vi": "Táo đỏ ngọt hơn táo xanh."
+          },
+          {
+            "zh": "我买苹果。",
+            "py": "Wǒ mǎi píngguǒ.",
+            "vi": "Tôi mua táo."
           }
         ]
       },
@@ -6496,6 +6536,16 @@ const VOCAB_DATA = [
             "zh": "冬天吃橘子很好。",
             "py": "Dōngtiān chī júzi hěn hǎo.",
             "vi": "Mùa đông ăn quýt rất tốt."
+          },
+          {
+            "zh": "她喜欢橘子。",
+            "py": "Tā xǐhuan júzi.",
+            "vi": "Cô ấy thích quýt."
+          },
+          {
+            "zh": "我买两斤橘子。",
+            "py": "Wǒ mǎi liǎng jīn júzi.",
+            "vi": "Tôi mua hai cân quýt."
           }
         ]
       },
@@ -6519,6 +6569,16 @@ const VOCAB_DATA = [
             "zh": "我买了五个橙子。",
             "py": "Wǒ mǎi le wǔ gè chéngzi.",
             "vi": "Tôi mua năm quả cam."
+          },
+          {
+            "zh": "他买橙子。",
+            "py": "Tā mǎi chéngzi.",
+            "vi": "Anh ấy mua cam."
+          },
+          {
+            "zh": "橙子多少钱一斤？",
+            "py": "Chéngzi duōshao qián yì jīn?",
+            "vi": "Cam bao nhiêu tiền một cân?"
           }
         ]
       },
@@ -6542,6 +6602,16 @@ const VOCAB_DATA = [
             "zh": "我最喜欢吃芒果。",
             "py": "Wǒ zuì xǐhuān chī mángguǒ.",
             "vi": "Tôi thích ăn xoài nhất."
+          },
+          {
+            "zh": "我喜欢芒果。",
+            "py": "Wǒ xǐhuan mángguǒ.",
+            "vi": "Tôi thích xoài."
+          },
+          {
+            "zh": "芒果很贵。",
+            "py": "Mángguǒ hěn guì.",
+            "vi": "Xoài rất đắt."
           }
         ]
       },
@@ -6565,6 +6635,16 @@ const VOCAB_DATA = [
             "zh": "葡萄一斤多少钱？",
             "py": "Pútáo yī jīn duōshao qián?",
             "vi": "Nho một cân bao nhiêu tiền?"
+          },
+          {
+            "zh": "她买葡萄。",
+            "py": "Tā mǎi pútao.",
+            "vi": "Cô ấy mua nho."
+          },
+          {
+            "zh": "葡萄很便宜。",
+            "py": "Pútao hěn piányi.",
+            "vi": "Nho rất rẻ."
           }
         ]
       },
@@ -6588,6 +6668,16 @@ const VOCAB_DATA = [
             "zh": "我买了一把香蕉。",
             "py": "Wǒ mǎi le yī bǎ xiāngjiāo.",
             "vi": "Tôi mua một nải chuối."
+          },
+          {
+            "zh": "我吃香蕉。",
+            "py": "Wǒ chī xiāngjiāo.",
+            "vi": "Tôi ăn chuối."
+          },
+          {
+            "zh": "香蕉多少钱？",
+            "py": "Xiāngjiāo duōshao qián?",
+            "vi": "Chuối bao nhiêu tiền?"
           }
         ]
       },
@@ -6616,6 +6706,11 @@ const VOCAB_DATA = [
             "zh": "越南的西瓜很甜。",
             "py": "Yuènán de xīguā hěn tián.",
             "vi": "Dưa hấu Việt Nam rất ngọt."
+          },
+          {
+            "zh": "我买一个西瓜。",
+            "py": "Wǒ mǎi yí gè xīguā.",
+            "vi": "Tôi mua một quả dưa hấu."
           }
         ]
       },
@@ -6639,6 +6734,16 @@ const VOCAB_DATA = [
             "zh": "我买了几个梨。",
             "py": "Wǒ mǎi le jǐ gè lí.",
             "vi": "Tôi mua mấy quả lê."
+          },
+          {
+            "zh": "他买梨。",
+            "py": "Tā mǎi lí.",
+            "vi": "Anh ấy mua lê."
+          },
+          {
+            "zh": "梨很便宜。",
+            "py": "Lí hěn piányi.",
+            "vi": "Lê rất rẻ."
           }
         ]
       },
@@ -6662,6 +6767,16 @@ const VOCAB_DATA = [
             "zh": "我喜欢吃水蜜桃。",
             "py": "Wǒ xǐhuān chī shuǐmìtáo.",
             "vi": "Tôi thích ăn đào mật."
+          },
+          {
+            "zh": "我喜欢桃。",
+            "py": "Wǒ xǐhuan táo.",
+            "vi": "Tôi thích đào."
+          },
+          {
+            "zh": "桃很贵。",
+            "py": "Táo hěn guì.",
+            "vi": "Đào rất đắt."
           }
         ]
       },
@@ -6685,6 +6800,16 @@ const VOCAB_DATA = [
             "zh": "我买了一盒草莓。",
             "py": "Wǒ mǎi le yī hé cǎoméi.",
             "vi": "Tôi mua một hộp dâu tây."
+          },
+          {
+            "zh": "她买草莓。",
+            "py": "Tā mǎi cǎoméi.",
+            "vi": "Cô ấy mua dâu tây."
+          },
+          {
+            "zh": "草莓不便宜。",
+            "py": "Cǎoméi bù piányi.",
+            "vi": "Dâu tây không rẻ."
           }
         ]
       },
@@ -6741,6 +6866,16 @@ const VOCAB_DATA = [
             "zh": "我要买两斤猪肉。",
             "py": "Wǒ yào mǎi liǎng jīn zhūròu.",
             "vi": "Tôi muốn mua một kg thịt lợn."
+          },
+          {
+            "zh": "我买一斤苹果。",
+            "py": "Wǒ mǎi yì jīn píngguǒ.",
+            "vi": "Tôi mua một cân táo."
+          },
+          {
+            "zh": "两斤香蕉多少钱？",
+            "py": "Liǎng jīn xiāngjiāo duōshao qián?",
+            "vi": "Hai cân chuối bao nhiêu tiền?"
           }
         ]
       },
@@ -6764,6 +6899,16 @@ const VOCAB_DATA = [
             "zh": "一公斤等于两斤。",
             "py": "Yī gōngjīn děngyú liǎng jīn.",
             "vi": "Một kilogram bằng hai cân (jīn)."
+          },
+          {
+            "zh": "我买一公斤橙子。",
+            "py": "Wǒ mǎi yì gōngjīn chéngzi.",
+            "vi": "Tôi mua một ki-lô-gam cam."
+          },
+          {
+            "zh": "一公斤是两斤。",
+            "py": "Yì gōngjīn shì liǎng jīn.",
+            "vi": "Một ki-lô-gam bằng hai cân."
           }
         ]
       },
@@ -6792,6 +6937,11 @@ const VOCAB_DATA = [
             "zh": "多少钱一斤？",
             "py": "Duōshao qián yī jīn?",
             "vi": "Bao nhiêu tiền một cân?"
+          },
+          {
+            "zh": "这个多少钱？",
+            "py": "Zhège duōshao qián?",
+            "vi": "Cái này bao nhiêu tiền?"
           }
         ]
       },
@@ -6853,6 +7003,11 @@ const VOCAB_DATA = [
             "zh": "少吃糖对身体好。",
             "py": "Shǎo chī táng duì shēntǐ hǎo.",
             "vi": "Ăn ít đường tốt cho sức khỏe."
+          },
+          {
+            "zh": "水果不少。",
+            "py": "Shuǐguǒ bù shǎo.",
+            "vi": "Trái cây không ít."
           }
         ]
       },
@@ -6881,6 +7036,11 @@ const VOCAB_DATA = [
             "zh": "你找我五块钱。",
             "py": "Nǐ zhǎo wǒ wǔ kuài qián.",
             "vi": "Bạn thối lại cho tôi năm tệ."
+          },
+          {
+            "zh": "苹果三块一斤。",
+            "py": "Píngguǒ sān kuài yì jīn.",
+            "vi": "Táo ba tệ một cân."
           }
         ]
       },
@@ -6904,6 +7064,16 @@ const VOCAB_DATA = [
             "zh": "找你两毛钱。",
             "py": "Zhǎo nǐ liǎng máo qián.",
             "vi": "Thối lại bạn hai hào."
+          },
+          {
+            "zh": "五毛钱。",
+            "py": "Wǔ máo qián.",
+            "vi": "Năm hào tiền."
+          },
+          {
+            "zh": "这是两角。",
+            "py": "Zhè shì liǎng jiǎo.",
+            "vi": "Đây là hai hào."
           }
         ]
       },
@@ -6927,6 +7097,16 @@ const VOCAB_DATA = [
             "zh": "他考了满分。",
             "py": "Tā kǎo le mǎnfēn.",
             "vi": "Anh ấy thi được điểm tuyệt đối."
+          },
+          {
+            "zh": "一分钱。",
+            "py": "Yì fēn qián.",
+            "vi": "Một xu tiền."
+          },
+          {
+            "zh": "这是五分。",
+            "py": "Zhè shì wǔ fēn.",
+            "vi": "Đây là năm xu."
           }
         ]
       },
@@ -6955,6 +7135,11 @@ const VOCAB_DATA = [
             "zh": "这里有几百个汉字。",
             "py": "Zhèlǐ yǒu jǐ bǎi gè Hànzì.",
             "vi": "Ở đây có mấy trăm chữ Hán."
+          },
+          {
+            "zh": "一百块钱。",
+            "py": "Yìbǎi kuài qián.",
+            "vi": "Một trăm tệ."
           }
         ]
       },
@@ -6983,6 +7168,11 @@ const VOCAB_DATA = [
             "zh": "这家餐厅贵不贵？",
             "py": "Zhè jiā cāntīng guì bu guì?",
             "vi": "Nhà hàng này có đắt không?"
+          },
+          {
+            "zh": "苹果太贵了。",
+            "py": "Píngguǒ tài guì le.",
+            "vi": "Táo đắt quá."
           }
         ]
       },
@@ -7011,6 +7201,11 @@ const VOCAB_DATA = [
             "zh": "越南的水果很便宜。",
             "py": "Yuènán de shuǐguǒ hěn piányí.",
             "vi": "Trái cây Việt Nam rất rẻ."
+          },
+          {
+            "zh": "这些橘子很便宜。",
+            "py": "Zhèxiē júzi hěn piányi.",
+            "vi": "Những quả quýt này rất rẻ."
           }
         ]
       },
@@ -7039,6 +7234,11 @@ const VOCAB_DATA = [
             "zh": "一起去吃饭吧！",
             "py": "Yīqǐ qù chīfàn ba!",
             "vi": "Cùng đi ăn cơm đi!"
+          },
+          {
+            "zh": "我们买香蕉吧。",
+            "py": "Wǒmen mǎi xiāngjiāo ba.",
+            "vi": "Chúng ta mua chuối đi."
           }
         ]
       },
@@ -7100,6 +7300,11 @@ const VOCAB_DATA = [
             "zh": "我不想要别的。",
             "py": "Wǒ bù xiǎng yào bié de.",
             "vi": "Tôi không muốn gì khác."
+          },
+          {
+            "zh": "还要别的吗？",
+            "py": "Hái yào biéde ma?",
+            "vi": "Còn cần gì khác không?"
           }
         ]
       },
@@ -7161,6 +7366,11 @@ const VOCAB_DATA = [
             "zh": "买两斤苹果。",
             "py": "Mǎi liǎng jīn píngguǒ.",
             "vi": "Mua hai cân táo."
+          },
+          {
+            "zh": "我买两个西瓜。",
+            "py": "Wǒ mǎi liǎng gè xīguā.",
+            "vi": "Tôi mua hai quả dưa hấu."
           }
         ]
       },
@@ -7189,6 +7399,11 @@ const VOCAB_DATA = [
             "zh": "一共二十块钱。",
             "py": "Yīgòng èrshí kuài qián.",
             "vi": "Tất cả hai mươi tệ."
+          },
+          {
+            "zh": "一共多少钱？",
+            "py": "Yígòng duōshao qián?",
+            "vi": "Tổng cộng bao nhiêu tiền?"
           }
         ]
       },
@@ -7217,6 +7432,11 @@ const VOCAB_DATA = [
             "zh": "他给我寄了一封信。",
             "py": "Tā gěi wǒ jì le yī fēng xìn.",
             "vi": "Anh ấy gửi cho tôi một bức thư."
+          },
+          {
+            "zh": "我给你钱。",
+            "py": "Wǒ gěi nǐ qián.",
+            "vi": "Tôi đưa tiền cho bạn."
           }
         ]
       },
@@ -7245,6 +7465,11 @@ const VOCAB_DATA = [
             "zh": "找我五块钱。",
             "py": "Zhǎo wǒ wǔ kuài qián.",
             "vi": "Thối lại cho tôi năm tệ."
+          },
+          {
+            "zh": "找您五块。",
+            "py": "Zhǎo nín wǔ kuài.",
+            "vi": "Trả lại ngài năm tệ."
           }
         ]
       },
@@ -7273,6 +7498,11 @@ const VOCAB_DATA = [
             "zh": "旅游可以学到很多东西。",
             "py": "Lǚyóu kěyǐ xuédào hěn duō dōngxi.",
             "vi": "Du lịch có thể học được nhiều thứ."
+          },
+          {
+            "zh": "我们去泰国旅游。",
+            "py": "Wǒmen qù Tàiguó lǚyóu.",
+            "vi": "Chúng tôi đi Thái Lan du lịch."
           }
         ]
       },
@@ -7301,6 +7531,11 @@ const VOCAB_DATA = [
             "zh": "她跟我是同班同学。",
             "py": "Tā gēn wǒ shì tóngbān tóngxué.",
             "vi": "Cô ấy và tôi là bạn cùng lớp."
+          },
+          {
+            "zh": "我跟他去买水果。",
+            "py": "Wǒ gēn tā qù mǎi shuǐguǒ.",
+            "vi": "Tôi cùng anh ấy đi mua trái cây."
           }
         ]
       }
@@ -7334,6 +7569,11 @@ const VOCAB_DATA = [
             "zh": "图书馆里不能说话。",
             "py": "Túshūguǎn lǐ bù néng shuōhuà.",
             "vi": "Trong thư viện không được nói chuyện."
+          },
+          {
+            "zh": "我在图书馆学习。",
+            "py": "Wǒ zài túshūguǎn xuéxí.",
+            "vi": "Tôi học ở thư viện."
           }
         ]
       },
@@ -7390,6 +7630,16 @@ const VOCAB_DATA = [
             "zh": "那位小姐是谁？",
             "py": "Nà wèi xiǎojie shì shuí?",
             "vi": "Cô gái đó là ai?"
+          },
+          {
+            "zh": "小姐，您要什么？",
+            "py": "Xiǎojie, nín yào shénme?",
+            "vi": "Cô ơi, cô cần gì ạ?"
+          },
+          {
+            "zh": "那个小姐是我朋友。",
+            "py": "Nàge xiǎojie shì wǒ péngyou.",
+            "vi": "Cô kia là bạn tôi."
           }
         ]
       },
@@ -7418,6 +7668,11 @@ const VOCAB_DATA = [
             "zh": "王先生在吗？",
             "py": "Wáng xiānsheng zài ma?",
             "vi": "Ông Vương có ở đó không?"
+          },
+          {
+            "zh": "先生，请问您贵姓？",
+            "py": "Xiānsheng, qǐngwèn nín guì xìng?",
+            "vi": "Thưa ông, xin hỏi quý danh ông?"
           }
         ]
       },
@@ -7441,6 +7696,16 @@ const VOCAB_DATA = [
             "zh": "营业员帮我换了钱。",
             "py": "Yíngyèyuán bāng wǒ huàn le qián.",
             "vi": "Nhân viên giúp tôi đổi tiền."
+          },
+          {
+            "zh": "她是营业员。",
+            "py": "Tā shì yíngyèyuán.",
+            "vi": "Cô ấy là nhân viên bán hàng."
+          },
+          {
+            "zh": "营业员很忙。",
+            "py": "Yíngyèyuán hěn máng.",
+            "vi": "Nhân viên bán hàng rất bận."
           }
         ]
       },
@@ -7469,6 +7734,11 @@ const VOCAB_DATA = [
             "zh": "人民币是中国的货币。",
             "py": "Rénmínbì shì Zhōngguó de huòbì.",
             "vi": "Nhân dân tệ là đồng tiền của Trung Quốc."
+          },
+          {
+            "zh": "我换人民币。",
+            "py": "Wǒ huàn rénmínbì.",
+            "vi": "Tôi đổi nhân dân tệ."
           }
         ]
       },
@@ -7492,6 +7762,16 @@ const VOCAB_DATA = [
             "zh": "中国人民很勤劳。",
             "py": "Zhōngguó rénmín hěn qínláo.",
             "vi": "Nhân dân Trung Quốc rất cần cù."
+          },
+          {
+            "zh": "中国人民很多。",
+            "py": "Zhōngguó rénmín hěn duō.",
+            "vi": "Người dân Trung Quốc rất đông."
+          },
+          {
+            "zh": "人民币是中国的钱。",
+            "py": "Rénmínbì shì Zhōngguó de qián.",
+            "vi": "Nhân dân tệ là tiền của Trung Quốc."
           }
         ]
       },
@@ -7520,6 +7800,11 @@ const VOCAB_DATA = [
             "zh": "上午好！",
             "py": "Shàngwǔ hǎo!",
             "vi": "Chào buổi sáng!"
+          },
+          {
+            "zh": "上午我去图书馆。",
+            "py": "Shàngwǔ wǒ qù túshūguǎn.",
+            "vi": "Buổi sáng tôi đi thư viện."
           }
         ]
       },
@@ -7548,6 +7833,11 @@ const VOCAB_DATA = [
             "zh": "这件衣服一千元。",
             "py": "Zhè jiàn yīfu yīqiān yuán.",
             "vi": "Bộ quần áo này một nghìn tệ."
+          },
+          {
+            "zh": "一千块钱。",
+            "py": "Yìqiān kuài qián.",
+            "vi": "Một nghìn tệ."
           }
         ]
       },
@@ -7576,6 +7866,11 @@ const VOCAB_DATA = [
             "zh": "北京有二千万人口。",
             "py": "Běijīng yǒu liǎngqiān wàn rénkǒu.",
             "vi": "Bắc Kinh có hai mươi triệu dân."
+          },
+          {
+            "zh": "十万越南盾。",
+            "py": "Shíwàn Yuènán dùn.",
+            "vi": "Mười vạn đồng Việt Nam."
           }
         ]
       },
@@ -7599,6 +7894,16 @@ const VOCAB_DATA = [
             "zh": "我有一百美元。",
             "py": "Wǒ yǒu yībǎi měiyuán.",
             "vi": "Tôi có một trăm đô la Mỹ."
+          },
+          {
+            "zh": "我换一百美元。",
+            "py": "Wǒ huàn yìbǎi měiyuán.",
+            "vi": "Tôi đổi một trăm đô Mỹ."
+          },
+          {
+            "zh": "美元很贵。",
+            "py": "Měiyuán hěn guì.",
+            "vi": "Đô la Mỹ rất đắt."
           }
         ]
       },
@@ -7622,6 +7927,16 @@ const VOCAB_DATA = [
             "zh": "一万日元换多少钱？",
             "py": "Yīwàn rìyuán huàn duōshao qián?",
             "vi": "Một vạn yên Nhật đổi được bao nhiêu tiền?"
+          },
+          {
+            "zh": "我有一些日元。",
+            "py": "Wǒ yǒu yìxiē rìyuán.",
+            "vi": "Tôi có một ít yên Nhật."
+          },
+          {
+            "zh": "他换日元。",
+            "py": "Tā huàn rìyuán.",
+            "vi": "Anh ấy đổi yên Nhật."
           }
         ]
       },
@@ -7645,6 +7960,16 @@ const VOCAB_DATA = [
             "zh": "一百港币换多少人民币？",
             "py": "Yībǎi gǎngbì huàn duōshao rénmínbì?",
             "vi": "Một trăm đô Hồng Kông đổi được bao nhiêu nhân dân tệ?"
+          },
+          {
+            "zh": "她有港币。",
+            "py": "Tā yǒu gǎngbì.",
+            "vi": "Cô ấy có đô la Hồng Kông."
+          },
+          {
+            "zh": "我换港币。",
+            "py": "Wǒ huàn gǎngbì.",
+            "vi": "Tôi đổi đô la Hồng Kông."
           }
         ]
       },
@@ -7668,6 +7993,16 @@ const VOCAB_DATA = [
             "zh": "我有五十欧元。",
             "py": "Wǒ yǒu wǔshí ōuyuán.",
             "vi": "Tôi có năm mươi euro."
+          },
+          {
+            "zh": "他换欧元。",
+            "py": "Tā huàn ōuyuán.",
+            "vi": "Anh ấy đổi euro."
+          },
+          {
+            "zh": "欧元很贵。",
+            "py": "Ōuyuán hěn guì.",
+            "vi": "Đồng euro rất đắt."
           }
         ]
       },
@@ -7691,6 +8026,16 @@ const VOCAB_DATA = [
             "zh": "一万越南盾等于多少人民币？",
             "py": "Yīwàn Yuènán dùn děngyú duōshao rénmínbì?",
             "vi": "Một vạn đồng Việt Nam bằng bao nhiêu nhân dân tệ?"
+          },
+          {
+            "zh": "我换越南盾。",
+            "py": "Wǒ huàn Yuènán dùn.",
+            "vi": "Tôi đổi tiền đồng Việt Nam."
+          },
+          {
+            "zh": "一美元换多少越南盾？",
+            "py": "Yì měiyuán huàn duōshao Yuènán dùn?",
+            "vi": "Một đô la Mỹ đổi được bao nhiêu đồng Việt Nam?"
           }
         ]
       },
@@ -7752,6 +8097,11 @@ const VOCAB_DATA = [
             "zh": "一会儿见！",
             "py": "Yīhuìr jiàn!",
             "vi": "Lát gặp lại!"
+          },
+          {
+            "zh": "请等一会儿。",
+            "py": "Qǐng děng yíhuìr.",
+            "vi": "Xin chờ một lát."
           }
         ]
       },
@@ -7780,6 +8130,11 @@ const VOCAB_DATA = [
             "zh": "他在数苹果。",
             "py": "Tā zài shǔ píngguǒ.",
             "vi": "Anh ấy đang đếm táo."
+          },
+          {
+            "zh": "请数一数。",
+            "py": "Qǐng shǔ yi shǔ.",
+            "vi": "Xin hãy đếm thử."
           }
         ]
       },
@@ -7793,6 +8148,26 @@ const VOCAB_DATA = [
             "zh": "这个字怎么读？",
             "py": "Zhège zì zěnme dú?",
             "vi": "Chữ này đọc thế nào?"
+          },
+          {
+            "zh": "你怎么去图书馆？",
+            "py": "Nǐ zěnme qù túshūguǎn?",
+            "vi": "Bạn đi thư viện bằng cách nào?"
+          },
+          {
+            "zh": "他怎么了？",
+            "py": "Tā zěnme le?",
+            "vi": "Anh ấy làm sao vậy?"
+          },
+          {
+            "zh": "怎么换人民币？",
+            "py": "Zěnme huàn rénmínbì?",
+            "vi": "Làm thế nào để đổi nhân dân tệ?"
+          },
+          {
+            "zh": "你怎么知道？",
+            "py": "Nǐ zěnme zhīdào?",
+            "vi": "Sao bạn biết được?"
           }
         ]
       },
@@ -7839,6 +8214,26 @@ const VOCAB_DATA = [
             "zh": "中国有十四亿人。",
             "py": "Zhōngguó yǒu shísì yì rén.",
             "vi": "Trung Quốc có 1,4 tỷ người."
+          },
+          {
+            "zh": "中国有十四亿人。",
+            "py": "Zhōngguó yǒu shísì yì rén.",
+            "vi": "Trung Quốc có 1,4 tỷ người."
+          },
+          {
+            "zh": "一亿是一万万。",
+            "py": "Yí yì shì yí wàn wàn.",
+            "vi": "Một trăm triệu bằng một vạn vạn."
+          },
+          {
+            "zh": "这是一亿越南盾。",
+            "py": "Zhè shì yí yì Yuènán dùn.",
+            "vi": "Đây là một trăm triệu đồng Việt Nam."
+          },
+          {
+            "zh": "一亿美元很多钱。",
+            "py": "Yí yì měiyuán hěn duō qián.",
+            "vi": "Một trăm triệu đô la Mỹ là rất nhiều tiền."
           }
         ]
       }
