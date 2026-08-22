@@ -749,6 +749,44 @@
     border-left:4px solid var(--red);
     border-radius:0 6px 6px 0;
   }
+  /* ── Luyện Đọc Theo Nhóm Âm / Cặp Âm Dễ Nhầm ── */
+  .drill-row {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    background: white; border: 1px solid var(--gray2); border-radius: 10px;
+    padding: 10px 14px; margin-bottom: 8px;
+  }
+  .drill-fin {
+    flex-shrink: 0; min-width: 56px; text-align: center;
+    font-weight: 800; font-size: 0.95rem; color: var(--mid);
+    background: #ebf8ff; border: 1.5px solid #bee3f8; border-radius: 8px;
+    padding: 5px 8px;
+  }
+  .drill-items { display: flex; gap: 8px; flex-wrap: wrap; flex: 1; }
+  .drill-item {
+    display: flex; flex-direction: column; align-items: center;
+    background: #fff8f8; border: 1.5px solid var(--red-pale); border-radius: 8px;
+    padding: 5px 10px; cursor: pointer; transition: all 0.15s; min-width: 52px;
+  }
+  .drill-item:hover { background: var(--red); border-color: var(--red); }
+  .drill-item:hover .drill-zh, .drill-item:hover .drill-py, .drill-item:hover .drill-vi { color: white; }
+  .drill-zh { font-size: 1.15rem; font-weight: 800; color: var(--dark); }
+  .drill-py { font-size: 0.72rem; color: var(--red); font-style: italic; }
+  .drill-vi { font-size: 0.7rem; color: var(--text-light); margin-top: 1px; }
+  .drill-all-btn { flex-shrink: 0; font-size: 0.75rem !important; padding: 5px 10px !important; }
+
+  .minpair-group {
+    background: white; border: 1px solid var(--gray2); border-radius: 10px;
+    padding: 12px 14px; margin-bottom: 10px;
+  }
+  .minpair-header { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+  .minpair-desc { font-size: 0.82rem; color: var(--text-light); line-height: 1.4; }
+  .minpair-rows { display: flex; flex-direction: column; gap: 8px; }
+  .minpair-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .minpair-item { min-width: 84px; }
+  .minpair-row .minpair-item:first-child { border-color: #90cdf4; background: #ebf8ff; }
+  .minpair-row .minpair-item:first-child .drill-py { color: var(--mid); }
+  .minpair-row .minpair-item:first-child:hover { background: var(--mid); border-color: var(--mid); }
+
   .dialogue-body {
     background: white; border: 1px solid var(--gray2);
     border-radius: 0 0 var(--radius) var(--radius);

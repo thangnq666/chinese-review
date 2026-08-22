@@ -158,6 +158,73 @@ const QUICK_TIPS_DATA = [
     ex: [{zh:'菜',py:'cài',vi:'rau/món ăn'},{zh:'从',py:'cóng',vi:'từ'},{zh:'才',py:'cái',vi:'mới'},{zh:'错',py:'cuò',vi:'sai'}] },
 ];
 
+const SYLLABLE_DRILLS = [
+  { fin:'a',  items:[{zh:'八',py:'bā',vi:'tám'},{zh:'爬',py:'pá',vi:'leo trèo'},{zh:'打',py:'dǎ',vi:'đánh'},{zh:'他',py:'tā',vi:'anh ấy'},{zh:'妈',py:'mā',vi:'mẹ'}] },
+  { fin:'e',  items:[{zh:'喝',py:'hē',vi:'uống'},{zh:'哥',py:'gē',vi:'anh trai'},{zh:'可',py:'kě',vi:'có thể'},{zh:'饿',py:'è',vi:'đói'},{zh:'车',py:'chē',vi:'xe'}] },
+  { fin:'ai', items:[{zh:'来',py:'lái',vi:'đến'},{zh:'白',py:'bái',vi:'trắng'},{zh:'开',py:'kāi',vi:'mở'},{zh:'外',py:'wài',vi:'ngoài'},{zh:'才',py:'cái',vi:'mới'}] },
+  { fin:'ao', items:[{zh:'好',py:'hǎo',vi:'tốt'},{zh:'猫',py:'māo',vi:'mèo'},{zh:'高',py:'gāo',vi:'cao'},{zh:'跑',py:'pǎo',vi:'chạy'},{zh:'早',py:'zǎo',vi:'sớm'}] },
+  { fin:'ei', items:[{zh:'飞',py:'fēi',vi:'bay'},{zh:'美',py:'měi',vi:'đẹp'},{zh:'被',py:'bèi',vi:'bị'},{zh:'黑',py:'hēi',vi:'đen'},{zh:'累',py:'lèi',vi:'mệt'}] },
+  { fin:'ou', items:[{zh:'后',py:'hòu',vi:'sau'},{zh:'走',py:'zǒu',vi:'đi bộ'},{zh:'狗',py:'gǒu',vi:'chó'},{zh:'头',py:'tóu',vi:'đầu'},{zh:'手',py:'shǒu',vi:'tay'}] },
+  { fin:'uo', items:[{zh:'多',py:'duō',vi:'nhiều'},{zh:'拖',py:'tuō',vi:'kéo lê'},{zh:'国',py:'guó',vi:'quốc gia'},{zh:'坐',py:'zuò',vi:'ngồi'},{zh:'火',py:'huǒ',vi:'lửa'}] },
+  { fin:'ua', items:[{zh:'花',py:'huā',vi:'hoa'},{zh:'瓜',py:'guā',vi:'dưa'},{zh:'刷',py:'shuā',vi:'bàn chải'},{zh:'话',py:'huà',vi:'lời nói'},{zh:'挂',py:'guà',vi:'treo'}] },
+  { fin:'ui (uei)', items:[{zh:'回',py:'huí',vi:'về'},{zh:'贵',py:'guì',vi:'đắt'},{zh:'水',py:'shuǐ',vi:'nước'},{zh:'对',py:'duì',vi:'đúng'},{zh:'醉',py:'zuì',vi:'say'}] },
+  { fin:'iu (iou)', items:[{zh:'九',py:'jiǔ',vi:'chín'},{zh:'留',py:'liú',vi:'ở lại'},{zh:'休',py:'xiū',vi:'nghỉ'},{zh:'牛',py:'niú',vi:'bò'},{zh:'秋',py:'qiū',vi:'mùa thu'}] },
+  { fin:'an', items:[{zh:'难',py:'nán',vi:'khó'},{zh:'饭',py:'fàn',vi:'cơm'},{zh:'看',py:'kàn',vi:'xem'},{zh:'班',py:'bān',vi:'lớp'},{zh:'三',py:'sān',vi:'ba'}] },
+  { fin:'en', items:[{zh:'人',py:'rén',vi:'người'},{zh:'门',py:'mén',vi:'cửa'},{zh:'很',py:'hěn',vi:'rất'},{zh:'分',py:'fēn',vi:'phút'},{zh:'身',py:'shēn',vi:'thân'}] },
+  { fin:'ang', items:[{zh:'忙',py:'máng',vi:'bận'},{zh:'帮',py:'bāng',vi:'giúp'},{zh:'上',py:'shàng',vi:'trên'},{zh:'长',py:'cháng',vi:'dài'},{zh:'王',py:'wáng',vi:'họ Vương'}] },
+  { fin:'eng', items:[{zh:'朋',py:'péng',vi:'bạn'},{zh:'冷',py:'lěng',vi:'lạnh'},{zh:'等',py:'děng',vi:'chờ'},{zh:'生',py:'shēng',vi:'sinh'},{zh:'能',py:'néng',vi:'có thể'}] },
+  { fin:'ing', items:[{zh:'星',py:'xīng',vi:'sao'},{zh:'明',py:'míng',vi:'sáng'},{zh:'听',py:'tīng',vi:'nghe'},{zh:'请',py:'qǐng',vi:'mời'},{zh:'京',py:'jīng',vi:'kinh đô'}] },
+  { fin:'ong', items:[{zh:'中',py:'zhōng',vi:'giữa'},{zh:'工',py:'gōng',vi:'công việc'},{zh:'同',py:'tóng',vi:'cùng'},{zh:'红',py:'hóng',vi:'đỏ'},{zh:'懂',py:'dǒng',vi:'hiểu'}] },
+  { fin:'ian', items:[{zh:'天',py:'tiān',vi:'trời'},{zh:'钱',py:'qián',vi:'tiền'},{zh:'点',py:'diǎn',vi:'điểm'},{zh:'面',py:'miàn',vi:'mặt'},{zh:'见',py:'jiàn',vi:'gặp'}] },
+  { fin:'uan', items:[{zh:'馆',py:'guǎn',vi:'quán'},{zh:'换',py:'huàn',vi:'đổi'},{zh:'传',py:'chuán',vi:'truyền'},{zh:'完',py:'wán',vi:'xong'},{zh:'算',py:'suàn',vi:'tính'}] },
+];
+
+const MINIMAL_PAIRS_DATA = [
+  { label:'b / p', desc:'b không bật hơi (gần "p" nhẹ tiếng Việt) — p bật hơi mạnh ("ph")',
+    pairs:[[{zh:'波',py:'bō',vi:'sóng'},{zh:'婆',py:'pó',vi:'bà/vợ'}],[{zh:'白',py:'bái',vi:'trắng'},{zh:'拍',py:'pāi',vi:'chụp/vỗ'}],[{zh:'包',py:'bāo',vi:'gói/túi'},{zh:'跑',py:'pǎo',vi:'chạy'}]] },
+  { label:'d / t', desc:'d không bật hơi (gần "t" tiếng Việt, KHÔNG phải "đ") — t bật hơi mạnh (gần "th")',
+    pairs:[[{zh:'大',py:'dà',vi:'to'},{zh:'他',py:'tā',vi:'anh ấy'}],[{zh:'都',py:'dōu',vi:'đều'},{zh:'头',py:'tóu',vi:'đầu'}],[{zh:'弟',py:'dì',vi:'em trai'},{zh:'提',py:'tí',vi:'nhấc/đề cập'}]] },
+  { label:'g / k', desc:'g không bật hơi (gần "c" tiếng Việt) — k bật hơi mạnh (gần "kh")',
+    pairs:[[{zh:'高',py:'gāo',vi:'cao'},{zh:'考',py:'kǎo',vi:'thi'}],[{zh:'关',py:'guān',vi:'đóng'},{zh:'宽',py:'kuān',vi:'rộng'}],[{zh:'贵',py:'guì',vi:'đắt'},{zh:'亏',py:'kuī',vi:'lỗ vốn'}]] },
+  { label:'j / q', desc:'j không bật hơi (gần "ch" nhẹ) — q bật hơi mạnh (gần "ch" bật hơi)',
+    pairs:[[{zh:'九',py:'jiǔ',vi:'chín'},{zh:'秋',py:'qiū',vi:'mùa thu'}],[{zh:'见',py:'jiàn',vi:'gặp'},{zh:'钱',py:'qián',vi:'tiền'}],[{zh:'教',py:'jiāo',vi:'dạy'},{zh:'桥',py:'qiáo',vi:'cây cầu'}]] },
+  { label:'zh / ch', desc:'Cả hai đều cuộn lưỡi — zh không bật hơi, ch bật hơi mạnh',
+    pairs:[[{zh:'这',py:'zhè',vi:'này'},{zh:'车',py:'chē',vi:'xe'}],[{zh:'找',py:'zhǎo',vi:'tìm'},{zh:'炒',py:'chǎo',vi:'xào/rang'}],[{zh:'住',py:'zhù',vi:'sống/ở'},{zh:'出',py:'chū',vi:'ra'}]] },
+  { label:'z / c', desc:'Cả hai đều lưỡi phẳng — z không bật hơi, c bật hơi mạnh',
+    pairs:[[{zh:'在',py:'zài',vi:'ở/đang'},{zh:'才',py:'cái',vi:'mới'}],[{zh:'早',py:'zǎo',vi:'sớm'},{zh:'草',py:'cǎo',vi:'cỏ'}],[{zh:'字',py:'zì',vi:'chữ'},{zh:'词',py:'cí',vi:'từ ngữ'}]] },
+  { label:'n / l', desc:'Người Việt hay lẫn n và l — n là âm mũi, l là âm bên (đầu lưỡi cong lên)',
+    pairs:[[{zh:'你',py:'nǐ',vi:'bạn'},{zh:'里',py:'lǐ',vi:'bên trong'}],[{zh:'男',py:'nán',vi:'nam'},{zh:'蓝',py:'lán',vi:'xanh dương'}],[{zh:'奶',py:'nǎi',vi:'sữa'},{zh:'来',py:'lái',vi:'đến'}]] },
+  { label:'f / h', desc:'f là âm răng-môi nhẹ (gần "ph") — h là âm cổ họng, mạnh hơn "h" tiếng Việt',
+    pairs:[[{zh:'飞',py:'fēi',vi:'bay'},{zh:'黑',py:'hēi',vi:'đen'}],[{zh:'分',py:'fēn',vi:'phút'},{zh:'很',py:'hěn',vi:'rất'}],[{zh:'发',py:'fā',vi:'phát'},{zh:'花',py:'huā',vi:'hoa'}]] },
+];
+
+const TONGUE_TWISTER_DATA = [
+  { title:'Phân biệt s ↔ sh', focus:'四 sì (lưỡi phẳng s) đối lập 十/是 shí/shì (cuộn lưỡi sh)',
+    zh:'四是四，十是十，十四是十四，四十是四十。',
+    py:'Sì shì sì, shí shì shí, shísì shì shísì, sìshí shì sìshí.',
+    vi:'Bốn là bốn, mười là mười, mười bốn là mười bốn, bốn mươi là bốn mươi.' },
+  { title:'Luyện 4 thanh điệu trên cùng âm "ma"', focus:'māma (thanh 1) – mǎ (thanh 3) – mà (thanh 4)',
+    zh:'妈妈骑马，马慢，妈妈骂马。',
+    py:'Māma qí mǎ, mǎ màn, māma mà mǎ.',
+    vi:'Mẹ cưỡi ngựa, ngựa đi chậm, mẹ mắng ngựa.' },
+  { title:'Phân biệt n ↔ l', focus:'奶奶/拿 (âm mũi n) đối lập 来/蓝/篮 (âm bên l)',
+    zh:'奶奶拿来蓝色的篮子。',
+    py:'Nǎinai ná lái lánsè de lánzi.',
+    vi:'Bà nội mang tới cái giỏ màu xanh dương.' },
+  { title:'Phân biệt cuộn lưỡi (zh) ↔ lưỡi phẳng (c)', focus:'知道/这/纸 (cuộn lưỡi zh) đối lập 词典 (lưỡi phẳng c)',
+    zh:'老师知道这是纸，不是词典。',
+    py:'Lǎoshī zhīdào zhè shì zhǐ, bú shì cídiǎn.',
+    vi:'Thầy giáo biết đây là giấy, không phải từ điển.' },
+  { title:'Luyện nhóm vần mũi eng / en / ing / ian', focus:'明(ing) – 天(ian) – 冷(eng) – 很(en) xen kẽ trong 1 câu',
+    zh:'明天晚上很冷，风也很大。',
+    py:'Míngtiān wǎnshang hěn lěng, fēng yě hěn dà.',
+    vi:'Ngày mai buổi tối rất lạnh, gió cũng rất to.' },
+  { title:'Luyện âm ü ẩn sau j / q / x / l', focus:'去(qù) – 旅(lǚ) – 学(xué) – 语(yǔ) đều mang âm ü tròn môi dù không có dấu chấm',
+    zh:'去年我去北京旅游，学习汉语。',
+    py:'Qùnián wǒ qù Běijīng lǚyóu, xuéxí Hànyǔ.',
+    vi:'Năm ngoái tôi đi Bắc Kinh du lịch, học tiếng Hán.' },
+];
+
 const TONE_EXAMPLES = [
   { tone:1, mark:'ā', desc:'Cao bằng — kéo dài đều, không lên không xuống', color:'#3498db',
     ex:[{zh:'妈',py:'mā',vi:'mẹ'},{zh:'书',py:'shū',vi:'sách'},{zh:'天',py:'tiān',vi:'trời'},{zh:'中',py:'zhōng',vi:'giữa'},{zh:'多',py:'duō',vi:'nhiều'},{zh:'风',py:'fēng',vi:'gió'},{zh:'开',py:'kāi',vi:'mở'},{zh:'高',py:'gāo',vi:'cao'}]},
@@ -374,6 +441,80 @@ function renderPhonetics() {
   tipDiv.innerHTML = tipHtml;
   tipCard.appendChild(tipDiv);
   container.appendChild(tipCard);
+
+  // ── 5. LUYỆN ĐỌC THEO NHÓM ÂM ──────────────────────────────────────────
+  const drillCard = document.createElement('div');
+  drillCard.className = 'card';
+  drillCard.innerHTML = '<h2>🔁 Luyện Đọc Theo Nhóm Âm</h2>' +
+    '<div class="alert alert-info" style="margin-bottom:12px">Mỗi hàng là 5 âm tiết CÙNG vần nhưng khác phụ âm đầu — đọc lần lượt từ trái sang phải nhiều lần để quen miệng với vần đó. Bấm 🔊 từng chữ hoặc "Nghe cả hàng".</div>';
+
+  SYLLABLE_DRILLS.forEach((drill, di) => {
+    const row = document.createElement('div');
+    row.className = 'drill-row';
+    const allZh = drill.items.map(it => it.zh).join('，');
+    const allZhEsc = allZh.replace(/'/g, "\\'");
+    let rowHtml = '<div class="drill-fin">' + drill.fin + '</div><div class="drill-items">';
+    drill.items.forEach(it => {
+      const zEsc = it.zh.replace(/'/g, "\\'");
+      rowHtml += '<button class="drill-item" title="' + it.py + ' — ' + it.vi + '" onclick="speak(\'' + zEsc + '\')">' +
+        '<span class="drill-zh">' + it.zh + '</span><span class="drill-py">' + it.py + '</span></button>';
+    });
+    rowHtml += '</div><button class="dl-btn dl-btn-speak drill-all-btn" title="Nghe cả hàng" onclick="speak(\'' + allZhEsc + '\')">🔊 Nghe cả hàng</button>';
+    row.innerHTML = rowHtml;
+    drillCard.appendChild(row);
+  });
+  container.appendChild(drillCard);
+
+  // ── 6. CẶP ÂM DỄ NHẦM (minimal pairs) ───────────────────────────────────
+  const pairCard = document.createElement('div');
+  pairCard.className = 'card';
+  pairCard.innerHTML = '<h2>⚖️ Cặp Âm Dễ Nhầm</h2>' +
+    '<div class="alert alert-info" style="margin-bottom:12px">So sánh trực tiếp 2 phụ âm hay bị lẫn — mỗi cặp từ có CÙNG vần, chỉ khác phụ âm đầu. Đọc luân phiên trái-phải để cảm nhận sự khác biệt.</div>';
+
+  MINIMAL_PAIRS_DATA.forEach(group => {
+    const gDiv = document.createElement('div');
+    gDiv.className = 'minpair-group';
+    let html = '<div class="minpair-header"><span class="phon-sym" style="font-size:0.85rem">' + group.label + '</span>' +
+      '<span class="minpair-desc">' + group.desc + '</span></div><div class="minpair-rows">';
+    group.pairs.forEach(pair => {
+      html += '<div class="minpair-row">';
+      pair.forEach(w => {
+        const zEsc = w.zh.replace(/'/g, "\\'");
+        html += '<button class="drill-item minpair-item" title="' + w.py + ' — ' + w.vi + '" onclick="speak(\'' + zEsc + '\')">' +
+          '<span class="drill-zh">' + w.zh + '</span><span class="drill-py">' + w.py + '</span><span class="drill-vi">' + w.vi + '</span></button>';
+      });
+      html += '</div>';
+    });
+    html += '</div>';
+    gDiv.innerHTML = html;
+    pairCard.appendChild(gDiv);
+  });
+  container.appendChild(pairCard);
+
+  // ── 7. ĐOẠN VĂN LUYỆN ĐỌC THEO VẦN ──────────────────────────────────────
+  const ttCard = document.createElement('div');
+  ttCard.className = 'card';
+  ttCard.innerHTML = '<h2>📜 Đoạn Văn Luyện Đọc Theo Vần</h2>' +
+    '<div class="alert alert-info" style="margin-bottom:12px">Câu ngắn tập trung vào 1 điểm phát âm dễ nhầm — đọc chậm rồi tăng tốc dần để luyện phản xạ.</div>';
+
+  TONGUE_TWISTER_DATA.forEach((tt, ti) => {
+    const zEsc = tt.zh.replace(/'/g, "\\'");
+    const ttDiv = document.createElement('div');
+    ttDiv.className = 'reading-line';
+    ttDiv.style.marginBottom = '10px';
+    ttDiv.innerHTML =
+      '<div class="reading-line-num">' + (ti+1) + '</div>' +
+      '<div class="reading-line-body">' +
+        '<div style="font-size:0.8rem;font-weight:700;color:var(--mid);margin-bottom:4px">' + tt.title + '</div>' +
+        '<div class="reading-zh">' + tt.zh + '</div>' +
+        '<div class="reading-py">' + tt.py + '</div>' +
+        '<div class="reading-vi">' + tt.vi + '</div>' +
+        '<div style="font-size:0.8rem;color:var(--text-light);margin-top:4px">🎯 ' + tt.focus + '</div>' +
+      '</div>' +
+      '<button class="dl-btn dl-btn-speak" title="Nghe cả câu" onclick="speak(\'' + zEsc + '\')">🔊</button>';
+    ttCard.appendChild(ttDiv);
+  });
+  container.appendChild(ttCard);
 }
 
 // ===================================================
