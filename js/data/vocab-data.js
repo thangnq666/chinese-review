@@ -9917,6 +9917,26 @@ const VOCAB_DATA = [
             "zh": "汉语是一个有意思的语言。",
             "py": "Hànyǔ shì yí ge yǒu yìsi de yǔyán.",
             "vi": "Tiếng Trung là một ngôn ngữ thú vị."
+          },
+          {
+            "zh": "我觉得语言很有意思。",
+            "py": "Wǒ juéde yǔyán hěn yǒu yìsi.",
+            "vi": "Tôi thấy ngôn ngữ rất thú vị."
+          },
+          {
+            "zh": "汉语是一种语言。",
+            "py": "Hànyǔ shì yì zhǒng yǔyán.",
+            "vi": "Tiếng Trung là một loại ngôn ngữ."
+          },
+          {
+            "zh": "学生们学习语言。",
+            "py": "Xuéshengmen xuéxí yǔyán.",
+            "vi": "Các học sinh học ngôn ngữ."
+          },
+          {
+            "zh": "语言不容易学。",
+            "py": "Yǔyán bù róngyì xué.",
+            "vi": "Ngôn ngữ không dễ học."
           }
         ]
       },
@@ -9930,6 +9950,26 @@ const VOCAB_DATA = [
             "zh": "我觉得语法不太难。",
             "py": "Wǒ juéde yǔfǎ bú tài nán.",
             "vi": "Tôi cảm thấy ngữ pháp không khó lắm."
+          },
+          {
+            "zh": "汉语语法比较容易。",
+            "py": "Hànyǔ yǔfǎ bǐjiào róngyì.",
+            "vi": "Ngữ pháp tiếng Trung khá dễ."
+          },
+          {
+            "zh": "我觉得语法很难。",
+            "py": "Wǒ juéde yǔfǎ hěn nán.",
+            "vi": "Tôi thấy ngữ pháp rất khó."
+          },
+          {
+            "zh": "这本书是语法书。",
+            "py": "Zhè běn shū shì yǔfǎ shū.",
+            "vi": "Cuốn sách này là sách ngữ pháp."
+          },
+          {
+            "zh": "我们学习语法。",
+            "py": "Wǒmen xuéxí yǔfǎ.",
+            "vi": "Chúng tôi học ngữ pháp."
           }
         ]
       },
@@ -9943,6 +9983,26 @@ const VOCAB_DATA = [
             "zh": "我在河内语言大学学习。",
             "py": "Wǒ zài Hénèi Yǔyán Dàxué xuéxí.",
             "vi": "Tôi học ở Đại học Ngôn ngữ Hà Nội."
+          },
+          {
+            "zh": "他是大学教授。",
+            "py": "Tā shì dàxué jiàoshòu.",
+            "vi": "Ông ấy là giáo sư đại học."
+          },
+          {
+            "zh": "我在大学学习汉语。",
+            "py": "Wǒ zài dàxué xuéxí Hànyǔ.",
+            "vi": "Tôi học tiếng Trung ở đại học."
+          },
+          {
+            "zh": "这个大学很大。",
+            "py": "Zhège dàxué hěn dà.",
+            "vi": "Trường đại học này rất lớn."
+          },
+          {
+            "zh": "她是大学同学。",
+            "py": "Tā shì dàxué tóngxué.",
+            "vi": "Cô ấy là bạn học đại học."
           }
         ]
       },
@@ -9961,6 +10021,21 @@ const VOCAB_DATA = [
             "zh": "我觉得汉语不太难。",
             "py": "Wǒ juéde Hànyǔ bú tài nán.",
             "vi": "Tôi cảm thấy tiếng Trung không khó lắm."
+          },
+          {
+            "zh": "我觉得汉语不难。",
+            "py": "Wǒ juéde Hànyǔ bù nán.",
+            "vi": "Tôi thấy tiếng Trung không khó."
+          },
+          {
+            "zh": "他觉得语法容易。",
+            "py": "Tā juéde yǔfǎ róngyì.",
+            "vi": "Anh ấy thấy ngữ pháp dễ."
+          },
+          {
+            "zh": "你觉得怎么样？",
+            "py": "Nǐ juéde zěnmeyàng?",
+            "vi": "Bạn thấy thế nào?"
           }
         ]
       },
@@ -9974,6 +10049,26 @@ const VOCAB_DATA = [
             "zh": "听和说比较容易。",
             "py": "Tīng hé shuō bǐjiào róngyì.",
             "vi": "Nghe và nói tương đối dễ."
+          },
+          {
+            "zh": "写汉字不容易。",
+            "py": "Xiě Hànzì bù róngyì.",
+            "vi": "Viết chữ Hán không dễ."
+          },
+          {
+            "zh": "这个语法很容易。",
+            "py": "Zhège yǔfǎ hěn róngyì.",
+            "vi": "Ngữ pháp này rất dễ."
+          },
+          {
+            "zh": "听力比较容易。",
+            "py": "Tīnglì bǐjiào róngyì.",
+            "vi": "Nghe hiểu khá dễ."
+          },
+          {
+            "zh": "口语不太容易。",
+            "py": "Kǒuyǔ bú tài róngyì.",
+            "vi": "Nói không dễ lắm."
           }
         ]
       },
@@ -9987,6 +10082,26 @@ const VOCAB_DATA = [
             "zh": "我每天听汉语。",
             "py": "Wǒ měitiān tīng Hànyǔ.",
             "vi": "Tôi nghe tiếng Trung mỗi ngày."
+          },
+          {
+            "zh": "我喜欢听汉语。",
+            "py": "Wǒ xǐhuan tīng Hànyǔ.",
+            "vi": "Tôi thích nghe tiếng Trung."
+          },
+          {
+            "zh": "请听老师说。",
+            "py": "Qǐng tīng lǎoshī shuō.",
+            "vi": "Xin hãy nghe thầy/cô nói."
+          },
+          {
+            "zh": "她在听英语。",
+            "py": "Tā zài tīng Yīngyǔ.",
+            "vi": "Cô ấy đang nghe tiếng Anh."
+          },
+          {
+            "zh": "我喜欢听，不喜欢说。",
+            "py": "Wǒ xǐhuan tīng, bù xǐhuan shuō.",
+            "vi": "Tôi thích nghe, không thích nói."
           }
         ]
       },
@@ -10000,6 +10115,26 @@ const VOCAB_DATA = [
             "zh": "你说什么？",
             "py": "Nǐ shuō shénme?",
             "vi": "Bạn nói gì?"
+          },
+          {
+            "zh": "他说汉语。",
+            "py": "Tā shuō Hànyǔ.",
+            "vi": "Anh ấy nói tiếng Trung."
+          },
+          {
+            "zh": "她说英语和法语。",
+            "py": "Tā shuō Yīngyǔ hé Fǎyǔ.",
+            "vi": "Cô ấy nói tiếng Anh và tiếng Pháp."
+          },
+          {
+            "zh": "同学们都说汉语。",
+            "py": "Tóngxuémen dōu shuō Hànyǔ.",
+            "vi": "Các bạn học đều nói tiếng Trung."
+          },
+          {
+            "zh": "说比写容易。",
+            "py": "Shuō bǐ xiě róngyì.",
+            "vi": "Nói dễ hơn viết."
           }
         ]
       },
@@ -10013,6 +10148,26 @@ const VOCAB_DATA = [
             "zh": "我读汉语书。",
             "py": "Wǒ dú Hànyǔ shū.",
             "vi": "Tôi đọc sách tiếng Trung."
+          },
+          {
+            "zh": "我读汉语书。",
+            "py": "Wǒ dú Hànyǔ shū.",
+            "vi": "Tôi đọc sách tiếng Trung."
+          },
+          {
+            "zh": "请读一下。",
+            "py": "Qǐng dú yíxià.",
+            "vi": "Xin hãy đọc thử."
+          },
+          {
+            "zh": "阅读比写作容易。",
+            "py": "Yuèdú bǐ xiězuò róngyì.",
+            "vi": "Đọc hiểu dễ hơn viết luận."
+          },
+          {
+            "zh": "他喜欢读杂志。",
+            "py": "Tā xǐhuan dú zázhì.",
+            "vi": "Anh ấy thích đọc tạp chí."
           }
         ]
       },
@@ -10026,6 +10181,26 @@ const VOCAB_DATA = [
             "zh": "但是读和写很难。",
             "py": "Dànshì dú hé xiě hěn nán.",
             "vi": "Nhưng đọc và viết rất khó."
+          },
+          {
+            "zh": "我写汉字。",
+            "py": "Wǒ xiě Hànzì.",
+            "vi": "Tôi viết chữ Hán."
+          },
+          {
+            "zh": "写作不容易。",
+            "py": "Xiězuò bù róngyì.",
+            "vi": "Viết luận không dễ."
+          },
+          {
+            "zh": "请写你的名字。",
+            "py": "Qǐng xiě nǐ de míngzi.",
+            "vi": "Xin viết tên của bạn."
+          },
+          {
+            "zh": "他写信给朋友。",
+            "py": "Tā xiě xìn gěi péngyou.",
+            "vi": "Anh ấy viết thư cho bạn bè."
           }
         ]
       },
@@ -10039,6 +10214,26 @@ const VOCAB_DATA = [
             "zh": "我和他都是越南人。",
             "py": "Wǒ hé tā dōu shì Yuènán rén.",
             "vi": "Tôi và anh ấy đều là người Việt Nam."
+          },
+          {
+            "zh": "我和他是同学。",
+            "py": "Wǒ hé tā shì tóngxué.",
+            "vi": "Tôi và anh ấy là bạn học."
+          },
+          {
+            "zh": "爸爸和妈妈都很好。",
+            "py": "Bàba hé māma dōu hěn hǎo.",
+            "vi": "Bố và mẹ đều khỏe."
+          },
+          {
+            "zh": "听和说都不容易。",
+            "py": "Tīng hé shuō dōu bù róngyì.",
+            "vi": "Nghe và nói đều không dễ."
+          },
+          {
+            "zh": "我喜欢英语和汉语。",
+            "py": "Wǒ xǐhuan Yīngyǔ hé Hànyǔ.",
+            "vi": "Tôi thích tiếng Anh và tiếng Trung."
           }
         ]
       },
@@ -10052,6 +10247,26 @@ const VOCAB_DATA = [
             "zh": "汉语语法比较容易。",
             "py": "Hànyǔ yǔfǎ bǐjiào róngyì.",
             "vi": "Ngữ pháp tiếng Trung tương đối dễ."
+          },
+          {
+            "zh": "他比较忙。",
+            "py": "Tā bǐjiào máng.",
+            "vi": "Anh ấy khá bận."
+          },
+          {
+            "zh": "这个班比较大。",
+            "py": "Zhège bān bǐjiào dà.",
+            "vi": "Lớp này khá đông."
+          },
+          {
+            "zh": "语法比较难。",
+            "py": "Yǔfǎ bǐjiào nán.",
+            "vi": "Ngữ pháp khá khó."
+          },
+          {
+            "zh": "同屋比较好。",
+            "py": "Tóngwū bǐjiào hǎo.",
+            "vi": "Bạn cùng phòng khá tốt."
           }
         ]
       },
@@ -10065,6 +10280,26 @@ const VOCAB_DATA = [
             "zh": "汉语很难，但是很有意思。",
             "py": "Hànyǔ hěn nán, dànshì hěn yǒu yìsi.",
             "vi": "Tiếng Trung rất khó nhưng rất thú vị."
+          },
+          {
+            "zh": "汉语很难，但是很有意思。",
+            "py": "Hànyǔ hěn nán, dànshì hěn yǒu yìsi.",
+            "vi": "Tiếng Trung rất khó, nhưng rất thú vị."
+          },
+          {
+            "zh": "他很忙，但是他很好。",
+            "py": "Tā hěn máng, dànshì tā hěn hǎo.",
+            "vi": "Anh ấy rất bận, nhưng anh ấy rất tốt."
+          },
+          {
+            "zh": "语法容易，但是听力难。",
+            "py": "Yǔfǎ róngyì, dànshì tīnglì nán.",
+            "vi": "Ngữ pháp dễ, nhưng nghe hiểu khó."
+          },
+          {
+            "zh": "他是新同学，但是很好。",
+            "py": "Tā shì xīn tóngxué, dànshì hěn hǎo.",
+            "vi": "Anh ấy là học sinh mới, nhưng rất tốt."
           }
         ]
       },
@@ -10078,6 +10313,26 @@ const VOCAB_DATA = [
             "zh": "汉语是一个有意思的语言。",
             "py": "Hànyǔ shì yí ge yǒu yìsi de yǔyán.",
             "vi": "Tiếng Trung là một ngôn ngữ thú vị."
+          },
+          {
+            "zh": "这本书很有意思。",
+            "py": "Zhè běn shū hěn yǒu yìsi.",
+            "vi": "Cuốn sách này rất thú vị."
+          },
+          {
+            "zh": "学汉语很有意思。",
+            "py": "Xué Hànyǔ hěn yǒu yìsi.",
+            "vi": "Học tiếng Trung rất thú vị."
+          },
+          {
+            "zh": "这个班很有意思。",
+            "py": "Zhège bān hěn yǒu yìsi.",
+            "vi": "Lớp này rất thú vị."
+          },
+          {
+            "zh": "汉字很有意思。",
+            "py": "Hànzì hěn yǒu yìsi.",
+            "vi": "Chữ Hán rất thú vị."
           }
         ]
       },
@@ -10091,6 +10346,26 @@ const VOCAB_DATA = [
             "zh": "这是我的新书。",
             "py": "Zhè shì wǒ de xīn shū.",
             "vi": "Đây là quyển sách mới của tôi."
+          },
+          {
+            "zh": "他是新学生。",
+            "py": "Tā shì xīn xuésheng.",
+            "vi": "Anh ấy là học sinh mới."
+          },
+          {
+            "zh": "这是新同学。",
+            "py": "Zhè shì xīn tóngxué.",
+            "vi": "Đây là bạn học mới."
+          },
+          {
+            "zh": "我买了新书。",
+            "py": "Wǒ mǎile xīn shū.",
+            "vi": "Tôi đã mua sách mới."
+          },
+          {
+            "zh": "这个班有新同学。",
+            "py": "Zhège bān yǒu xīn tóngxué.",
+            "vi": "Lớp này có bạn học mới."
           }
         ]
       },
@@ -10104,6 +10379,26 @@ const VOCAB_DATA = [
             "zh": "她是我的同学。",
             "py": "Tā shì wǒ de tóngxué.",
             "vi": "Cô ấy là bạn học của tôi."
+          },
+          {
+            "zh": "他是我的同学。",
+            "py": "Tā shì wǒ de tóngxué.",
+            "vi": "Anh ấy là bạn học của tôi."
+          },
+          {
+            "zh": "同学们都很好。",
+            "py": "Tóngxuémen dōu hěn hǎo.",
+            "vi": "Các bạn học đều rất tốt."
+          },
+          {
+            "zh": "她是新同学。",
+            "py": "Tā shì xīn tóngxué.",
+            "vi": "Cô ấy là bạn học mới."
+          },
+          {
+            "zh": "我们班的同学很多。",
+            "py": "Wǒmen bān de tóngxué hěn duō.",
+            "vi": "Bạn học lớp chúng tôi rất đông."
           }
         ]
       },
@@ -10117,6 +10412,26 @@ const VOCAB_DATA = [
             "zh": "给你介绍一下，这是我同屋。",
             "py": "Gěi nǐ jièshào yíxià, zhè shì wǒ tóngwū.",
             "vi": "Giới thiệu với bạn một chút, đây là bạn cùng phòng của tôi."
+          },
+          {
+            "zh": "他是我的同屋。",
+            "py": "Tā shì wǒ de tóngwū.",
+            "vi": "Anh ấy là bạn cùng phòng của tôi."
+          },
+          {
+            "zh": "我同屋很忙。",
+            "py": "Wǒ tóngwū hěn máng.",
+            "vi": "Bạn cùng phòng tôi rất bận."
+          },
+          {
+            "zh": "我和同屋都学汉语。",
+            "py": "Wǒ hé tóngwū dōu xué Hànyǔ.",
+            "vi": "Tôi và bạn cùng phòng đều học tiếng Trung."
+          },
+          {
+            "zh": "同屋是越南人。",
+            "py": "Tóngwū shì Yuènán rén.",
+            "vi": "Bạn cùng phòng là người Việt Nam."
           }
         ]
       },
@@ -10130,6 +10445,26 @@ const VOCAB_DATA = [
             "zh": "我们班有十个学生。",
             "py": "Wǒmen bān yǒu shí ge xuéshēng.",
             "vi": "Lớp chúng tôi có mười học sinh."
+          },
+          {
+            "zh": "我们班很大。",
+            "py": "Wǒmen bān hěn dà.",
+            "vi": "Lớp chúng tôi rất đông."
+          },
+          {
+            "zh": "他在哪个班？",
+            "py": "Tā zài nǎge bān?",
+            "vi": "Anh ấy học lớp nào?"
+          },
+          {
+            "zh": "这个班有留学生。",
+            "py": "Zhège bān yǒu liúxuéshēng.",
+            "vi": "Lớp này có lưu học sinh."
+          },
+          {
+            "zh": "她是我们班的同学。",
+            "py": "Tā shì wǒmen bān de tóngxué.",
+            "vi": "Cô ấy là bạn học lớp chúng tôi."
           }
         ]
       },
@@ -10143,6 +10478,26 @@ const VOCAB_DATA = [
             "zh": "我的听力不太好。",
             "py": "Wǒ de tīnglì bú tài hǎo.",
             "vi": "Kỹ năng nghe của tôi không tốt lắm."
+          },
+          {
+            "zh": "听力比较难。",
+            "py": "Tīnglì bǐjiào nán.",
+            "vi": "Nghe hiểu khá khó."
+          },
+          {
+            "zh": "听力不容易。",
+            "py": "Tīnglì bù róngyì.",
+            "vi": "Nghe hiểu không dễ."
+          },
+          {
+            "zh": "他的听力很好。",
+            "py": "Tā de tīnglì hěn hǎo.",
+            "vi": "Khả năng nghe của anh ấy rất tốt."
+          },
+          {
+            "zh": "听力和口语都不容易。",
+            "py": "Tīnglì hé kǒuyǔ dōu bù róngyì.",
+            "vi": "Nghe hiểu và nói đều không dễ."
           }
         ]
       },
@@ -10156,6 +10511,26 @@ const VOCAB_DATA = [
             "zh": "他的口语很好。",
             "py": "Tā de kǒuyǔ hěn hǎo.",
             "vi": "Khẩu ngữ của anh ấy rất tốt."
+          },
+          {
+            "zh": "他口语很好。",
+            "py": "Tā kǒuyǔ hěn hǎo.",
+            "vi": "Khả năng nói của anh ấy rất tốt."
+          },
+          {
+            "zh": "口语比较难。",
+            "py": "Kǒuyǔ bǐjiào nán.",
+            "vi": "Nói khá khó."
+          },
+          {
+            "zh": "口语很有意思。",
+            "py": "Kǒuyǔ hěn yǒu yìsi.",
+            "vi": "Nói (khẩu ngữ) rất thú vị."
+          },
+          {
+            "zh": "口语和听力都难。",
+            "py": "Kǒuyǔ hé tīnglì dōu nán.",
+            "vi": "Nói và nghe đều khó."
           }
         ]
       },
@@ -10169,6 +10544,26 @@ const VOCAB_DATA = [
             "zh": "我觉得阅读比较容易。",
             "py": "Wǒ juéde yuèdú bǐjiào róngyì.",
             "vi": "Tôi thấy đọc hiểu tương đối dễ."
+          },
+          {
+            "zh": "阅读很有意思。",
+            "py": "Yuèdú hěn yǒu yìsi.",
+            "vi": "Đọc hiểu rất thú vị."
+          },
+          {
+            "zh": "阅读比较容易。",
+            "py": "Yuèdú bǐjiào róngyì.",
+            "vi": "Đọc hiểu khá dễ."
+          },
+          {
+            "zh": "阅读不太难。",
+            "py": "Yuèdú bú tài nán.",
+            "vi": "Đọc hiểu không khó lắm."
+          },
+          {
+            "zh": "他喜欢阅读。",
+            "py": "Tā xǐhuan yuèdú.",
+            "vi": "Anh ấy thích đọc hiểu."
           }
         ]
       },
@@ -10182,6 +10577,26 @@ const VOCAB_DATA = [
             "zh": "写作很难。",
             "py": "Xiězuò hěn nán.",
             "vi": "Viết văn rất khó."
+          },
+          {
+            "zh": "写作比较难。",
+            "py": "Xiězuò bǐjiào nán.",
+            "vi": "Viết luận khá khó."
+          },
+          {
+            "zh": "我不喜欢写作。",
+            "py": "Wǒ bù xǐhuan xiězuò.",
+            "vi": "Tôi không thích viết luận."
+          },
+          {
+            "zh": "写作和听力都不容易。",
+            "py": "Xiězuò hé tīnglì dōu bù róngyì.",
+            "vi": "Viết luận và nghe hiểu đều không dễ."
+          },
+          {
+            "zh": "她的写作很好。",
+            "py": "Tā de xiězuò hěn hǎo.",
+            "vi": "Khả năng viết luận của cô ấy rất tốt."
           }
         ]
       },
@@ -10195,6 +10610,26 @@ const VOCAB_DATA = [
             "zh": "听、说、读、写是四个技能。",
             "py": "Tīng, shuō, dú, xiě shì sì ge jìnéng.",
             "vi": "Nghe, nói, đọc, viết là bốn kỹ năng."
+          },
+          {
+            "zh": "听说读写是四个技能。",
+            "py": "Tīng shuō dú xiě shì sì gè jìnéng.",
+            "vi": "Nghe nói đọc viết là bốn kỹ năng."
+          },
+          {
+            "zh": "口语是一种技能。",
+            "py": "Kǒuyǔ shì yì zhǒng jìnéng.",
+            "vi": "Nói là một loại kỹ năng."
+          },
+          {
+            "zh": "这个技能很有意思。",
+            "py": "Zhège jìnéng hěn yǒu yìsi.",
+            "vi": "Kỹ năng này rất thú vị."
+          },
+          {
+            "zh": "写作技能比较难。",
+            "py": "Xiězuò jìnéng bǐjiào nán.",
+            "vi": "Kỹ năng viết luận khá khó."
           }
         ]
       },
@@ -10208,6 +10643,26 @@ const VOCAB_DATA = [
             "zh": "她是一位好看的秘书。",
             "py": "Tā shì yí wèi hǎokàn de mìshū.",
             "vi": "Cô ấy là một thư ký xinh đẹp."
+          },
+          {
+            "zh": "这本书很好看。",
+            "py": "Zhè běn shū hěn hǎokàn.",
+            "vi": "Cuốn sách này rất hay/đẹp."
+          },
+          {
+            "zh": "她很好看。",
+            "py": "Tā hěn hǎokàn.",
+            "vi": "Cô ấy rất xinh đẹp."
+          },
+          {
+            "zh": "这个字很好看。",
+            "py": "Zhège zì hěn hǎokàn.",
+            "vi": "Chữ này viết rất đẹp."
+          },
+          {
+            "zh": "这条街很好看。",
+            "py": "Zhè tiáo jiē hěn hǎokàn.",
+            "vi": "Con phố này rất đẹp."
           }
         ]
       },
@@ -10221,6 +10676,26 @@ const VOCAB_DATA = [
             "zh": "公司食堂的包子很好吃。",
             "py": "Gōngsī shítáng de bāozi hěn hǎochī.",
             "vi": "Bánh bao ở nhà ăn công ty rất ngon."
+          },
+          {
+            "zh": "饺子很好吃。",
+            "py": "Jiǎozi hěn hǎochī.",
+            "vi": "Sủi cảo rất ngon."
+          },
+          {
+            "zh": "食堂的饭很好吃。",
+            "py": "Shítáng de fàn hěn hǎochī.",
+            "vi": "Cơm ở căng tin rất ngon."
+          },
+          {
+            "zh": "这个西瓜很好吃。",
+            "py": "Zhège xīguā hěn hǎochī.",
+            "vi": "Quả dưa hấu này rất ngon."
+          },
+          {
+            "zh": "包子不好吃。",
+            "py": "Bāozi bù hǎochī.",
+            "vi": "Bánh bao không ngon."
           }
         ]
       },
@@ -10234,6 +10709,26 @@ const VOCAB_DATA = [
             "zh": "昨天的奶茶好喝吗？",
             "py": "Zuótiān de nǎichá hǎohē ma?",
             "vi": "Trà sữa hôm qua có ngon không?"
+          },
+          {
+            "zh": "奶茶很好喝。",
+            "py": "Nǎichá hěn hǎohē.",
+            "vi": "Trà sữa rất ngon."
+          },
+          {
+            "zh": "这杯咖啡很好喝。",
+            "py": "Zhè bēi kāfēi hěn hǎohē.",
+            "vi": "Cốc cà phê này rất ngon."
+          },
+          {
+            "zh": "水果汁很好喝。",
+            "py": "Shuǐguǒzhī hěn hǎohē.",
+            "vi": "Nước ép trái cây rất ngon."
+          },
+          {
+            "zh": "白水不好喝。",
+            "py": "Báishuǐ bù hǎohē.",
+            "vi": "Nước lọc không ngon."
           }
         ]
       }
@@ -11033,6 +11528,16 @@ const VOCAB_DATA = [
             "zh": "桌子上没有词典。",
             "py": "Zhuōzi shàng méiyǒu cídiǎn.",
             "vi": "Trên bàn không có từ điển."
+          },
+          {
+            "zh": "我没有雨伞。",
+            "py": "Wǒ méiyǒu yǔsǎn.",
+            "vi": "Tôi không có ô."
+          },
+          {
+            "zh": "他没有手机。",
+            "py": "Tā méiyǒu shǒujī.",
+            "vi": "Anh ấy không có điện thoại di động."
           }
         ]
       },
@@ -11056,6 +11561,16 @@ const VOCAB_DATA = [
             "zh": "我有一个红色的箱子。",
             "py": "Wǒ yǒu yí ge hóngsè de xiāngzi.",
             "vi": "Tôi có một cái vali màu đỏ."
+          },
+          {
+            "zh": "我有一个箱子。",
+            "py": "Wǒ yǒu yí gè xiāngzi.",
+            "vi": "Tôi có một cái vali."
+          },
+          {
+            "zh": "她有很多衣服。",
+            "py": "Tā yǒu hěn duō yīfu.",
+            "vi": "Cô ấy có rất nhiều quần áo."
           }
         ]
       },
@@ -11079,6 +11594,16 @@ const VOCAB_DATA = [
             "zh": "那个箱子是谁的？",
             "py": "Nàge xiāngzi shì shéi de?",
             "vi": "Cái vali kia là của ai?"
+          },
+          {
+            "zh": "这个箱子很重。",
+            "py": "Zhège xiāngzi hěn zhòng.",
+            "vi": "Cái vali này rất nặng."
+          },
+          {
+            "zh": "箱子里有衣服。",
+            "py": "Xiāngzi lǐ yǒu yīfu.",
+            "vi": "Trong vali có quần áo."
           }
         ]
       },
@@ -11102,6 +11627,16 @@ const VOCAB_DATA = [
             "zh": "这儿有很多人。",
             "py": "Zhèr yǒu hěn duō rén.",
             "vi": "Ở đây có rất nhiều người."
+          },
+          {
+            "zh": "箱子在这儿。",
+            "py": "Xiāngzi zài zhèr.",
+            "vi": "Vali ở đây."
+          },
+          {
+            "zh": "这儿有中药。",
+            "py": "Zhèr yǒu zhōngyào.",
+            "vi": "Ở đây có thuốc đông y."
           }
         ]
       },
@@ -11125,6 +11660,16 @@ const VOCAB_DATA = [
             "zh": "我的箱子太重了。",
             "py": "Wǒ de xiāngzi tài zhòng le.",
             "vi": "Vali của tôi nặng quá."
+          },
+          {
+            "zh": "这本词典很重。",
+            "py": "Zhè běn cídiǎn hěn zhòng.",
+            "vi": "Cuốn từ điển này rất nặng."
+          },
+          {
+            "zh": "箱子不重。",
+            "py": "Xiāngzi bú zhòng.",
+            "vi": "Vali không nặng."
           }
         ]
       },
@@ -11148,6 +11693,16 @@ const VOCAB_DATA = [
             "zh": "我喜欢黑色的箱子。",
             "py": "Wǒ xǐhuan hēisè de xiāngzi.",
             "vi": "Tôi thích vali màu đen."
+          },
+          {
+            "zh": "这是黑色的笔。",
+            "py": "Zhè shì hēisè de bǐ.",
+            "vi": "Đây là cây bút màu đen."
+          },
+          {
+            "zh": "他的箱子是黑的。",
+            "py": "Tā de xiāngzi shì hēi de.",
+            "vi": "Vali của anh ấy màu đen."
           }
         ]
       },
@@ -11171,6 +11726,16 @@ const VOCAB_DATA = [
             "zh": "这是红的还是黑的？",
             "py": "Zhè shì hóng de háishi hēi de?",
             "vi": "Đây là màu đỏ hay màu đen?"
+          },
+          {
+            "zh": "她喜欢红色。",
+            "py": "Tā xǐhuan hóngsè.",
+            "vi": "Cô ấy thích màu đỏ."
+          },
+          {
+            "zh": "这把雨伞是红的。",
+            "py": "Zhè bǎ yǔsǎn shì hóng de.",
+            "vi": "Cái ô này màu đỏ."
           }
         ]
       },
@@ -11194,6 +11759,16 @@ const VOCAB_DATA = [
             "zh": "你的箱子轻不轻？",
             "py": "Nǐ de xiāngzi qīng bu qīng?",
             "vi": "Vali của bạn có nhẹ không?"
+          },
+          {
+            "zh": "这个箱子很轻。",
+            "py": "Zhège xiāngzi hěn qīng.",
+            "vi": "Cái vali này rất nhẹ."
+          },
+          {
+            "zh": "词典不轻。",
+            "py": "Cídiǎn bù qīng.",
+            "vi": "Từ điển không nhẹ."
           }
         ]
       },
@@ -11217,6 +11792,16 @@ const VOCAB_DATA = [
             "zh": "中药一般不太贵。",
             "py": "Zhōngyào yìbān bú tài guì.",
             "vi": "Thuốc đông y nói chung không đắt lắm."
+          },
+          {
+            "zh": "这是中药，不是西药。",
+            "py": "Zhè shì zhōngyào, bú shì xīyào.",
+            "vi": "Đây là thuốc đông y, không phải thuốc tây."
+          },
+          {
+            "zh": "他买中药。",
+            "py": "Tā mǎi zhōngyào.",
+            "vi": "Anh ấy mua thuốc đông y."
           }
         ]
       },
@@ -11240,6 +11825,16 @@ const VOCAB_DATA = [
             "zh": "这不是药，这是茶叶。",
             "py": "Zhè bú shì yào, zhè shì cháyè.",
             "vi": "Đây không phải thuốc, đây là lá chè."
+          },
+          {
+            "zh": "这是什么药？",
+            "py": "Zhè shì shénme yào?",
+            "vi": "Đây là thuốc gì?"
+          },
+          {
+            "zh": "箱子里有药。",
+            "py": "Xiāngzi lǐ yǒu yào.",
+            "vi": "Trong vali có thuốc."
           }
         ]
       },
@@ -11263,6 +11858,16 @@ const VOCAB_DATA = [
             "zh": "药店里有中药也有西药。",
             "py": "Yàodiàn lǐ yǒu zhōngyào yě yǒu xīyào.",
             "vi": "Trong hiệu thuốc có cả thuốc đông y và thuốc tây."
+          },
+          {
+            "zh": "他吃西药。",
+            "py": "Tā chī xīyào.",
+            "vi": "Anh ấy uống thuốc tây."
+          },
+          {
+            "zh": "这不是西药。",
+            "py": "Zhè bú shì xīyào.",
+            "vi": "Đây không phải là thuốc tây."
           }
         ]
       },
@@ -11286,6 +11891,16 @@ const VOCAB_DATA = [
             "zh": "我想买一些茶叶。",
             "py": "Wǒ xiǎng mǎi yìxiē cháyè.",
             "vi": "Tôi muốn mua một ít lá chè."
+          },
+          {
+            "zh": "我买茶叶。",
+            "py": "Wǒ mǎi cháyè.",
+            "vi": "Tôi mua trà."
+          },
+          {
+            "zh": "箱子里有茶叶。",
+            "py": "Xiāngzi lǐ yǒu cháyè.",
+            "vi": "Trong vali có trà."
           }
         ]
       },
@@ -11309,6 +11924,16 @@ const VOCAB_DATA = [
             "zh": "教室里有很多学生。",
             "py": "Jiàoshì lǐ yǒu hěn duō xuésheng.",
             "vi": "Trong lớp học có rất nhiều học sinh."
+          },
+          {
+            "zh": "房间里有词典。",
+            "py": "Fángjiān lǐ yǒu cídiǎn.",
+            "vi": "Trong phòng có từ điển."
+          },
+          {
+            "zh": "箱子里没有衣服。",
+            "py": "Xiāngzi lǐ méiyǒu yīfu.",
+            "vi": "Trong vali không có quần áo."
           }
         ]
       },
@@ -11332,6 +11957,16 @@ const VOCAB_DATA = [
             "zh": "商店里有很多日用品。",
             "py": "Shāngdiàn lǐ yǒu hěn duō rìyòngpǐn.",
             "vi": "Trong cửa hàng có rất nhiều đồ dùng hàng ngày."
+          },
+          {
+            "zh": "这些是日用品。",
+            "py": "Zhèxiē shì rìyòngpǐn.",
+            "vi": "Đây là đồ dùng hàng ngày."
+          },
+          {
+            "zh": "箱子里都是日用品。",
+            "py": "Xiāngzi lǐ dōu shì rìyòngpǐn.",
+            "vi": "Trong vali toàn là đồ dùng hàng ngày."
           }
         ]
       },
@@ -11355,6 +11990,16 @@ const VOCAB_DATA = [
             "zh": "我要买一件衣服。",
             "py": "Wǒ yào mǎi yí jiàn yīfu.",
             "vi": "Tôi muốn mua một bộ quần áo."
+          },
+          {
+            "zh": "这件衣服很好看。",
+            "py": "Zhè jiàn yīfu hěn hǎokàn.",
+            "vi": "Chiếc áo này rất đẹp."
+          },
+          {
+            "zh": "我买一件衣服。",
+            "py": "Wǒ mǎi yí jiàn yīfu.",
+            "vi": "Tôi mua một chiếc áo."
           }
         ]
       },
@@ -11378,6 +12023,16 @@ const VOCAB_DATA = [
             "zh": "教室里有几把椅子？",
             "py": "Jiàoshì lǐ yǒu jǐ bǎ yǐzi?",
             "vi": "Trong lớp học có mấy cái ghế?"
+          },
+          {
+            "zh": "这把雨伞是我的。",
+            "py": "Zhè bǎ yǔsǎn shì wǒ de.",
+            "vi": "Cái ô này là của tôi."
+          },
+          {
+            "zh": "他有两把伞。",
+            "py": "Tā yǒu liǎng bǎ sǎn.",
+            "vi": "Anh ấy có hai cái ô."
           }
         ]
       },
@@ -11401,6 +12056,16 @@ const VOCAB_DATA = [
             "zh": "你喜欢这件衣服吗？",
             "py": "Nǐ xǐhuan zhè jiàn yīfu ma?",
             "vi": "Bạn có thích bộ quần áo này không?"
+          },
+          {
+            "zh": "这些衣服很贵。",
+            "py": "Zhèxiē yīfu hěn guì.",
+            "vi": "Những bộ quần áo này rất đắt."
+          },
+          {
+            "zh": "她买了新衣服。",
+            "py": "Tā mǎile xīn yīfu.",
+            "vi": "Cô ấy đã mua quần áo mới."
           }
         ]
       },
@@ -11424,6 +12089,16 @@ const VOCAB_DATA = [
             "zh": "这把雨伞是新的。",
             "py": "Zhè bǎ yǔsǎn shì xīn de.",
             "vi": "Cái ô này là mới."
+          },
+          {
+            "zh": "下雨了，我要雨伞。",
+            "py": "Xiàyǔ le, wǒ yào yǔsǎn.",
+            "vi": "Trời mưa rồi, tôi cần ô."
+          },
+          {
+            "zh": "这是谁的雨伞？",
+            "py": "Zhè shì shéi de yǔsǎn?",
+            "vi": "Đây là ô của ai?"
           }
         ]
       },
@@ -11447,6 +12122,16 @@ const VOCAB_DATA = [
             "zh": "冬天这儿雨不多。",
             "py": "Dōngtiān zhèr yǔ bù duō.",
             "vi": "Mùa đông ở đây ít mưa."
+          },
+          {
+            "zh": "今天下雨。",
+            "py": "Jīntiān xiàyǔ.",
+            "vi": "Hôm nay trời mưa."
+          },
+          {
+            "zh": "雨很大。",
+            "py": "Yǔ hěn dà.",
+            "vi": "Mưa rất to."
           }
         ]
       },
@@ -11470,6 +12155,16 @@ const VOCAB_DATA = [
             "zh": "这瓶是什么？",
             "py": "Zhè píng shì shénme?",
             "vi": "Cái chai này là gì?"
+          },
+          {
+            "zh": "这瓶香水很贵。",
+            "py": "Zhè píng xiāngshuǐ hěn guì.",
+            "vi": "Lọ nước hoa này rất đắt."
+          },
+          {
+            "zh": "我买一瓶水。",
+            "py": "Wǒ mǎi yì píng shuǐ.",
+            "vi": "Tôi mua một chai nước."
           }
         ]
       },
@@ -11493,6 +12188,16 @@ const VOCAB_DATA = [
             "zh": "她很喜欢香水。",
             "py": "Tā hěn xǐhuan xiāngshuǐ.",
             "vi": "Cô ấy rất thích nước hoa."
+          },
+          {
+            "zh": "她喜欢香水。",
+            "py": "Tā xǐhuan xiāngshuǐ.",
+            "vi": "Cô ấy thích nước hoa."
+          },
+          {
+            "zh": "这瓶香水很香。",
+            "py": "Zhè píng xiāngshuǐ hěn xiāng.",
+            "vi": "Lọ nước hoa này rất thơm."
           }
         ]
       },
@@ -11516,6 +12221,16 @@ const VOCAB_DATA = [
             "zh": "请给我一杯水。",
             "py": "Qǐng gěi wǒ yì bēi shuǐ.",
             "vi": "Xin cho tôi một cốc nước."
+          },
+          {
+            "zh": "箱子里有一瓶水。",
+            "py": "Xiāngzi lǐ yǒu yì píng shuǐ.",
+            "vi": "Trong vali có một chai nước."
+          },
+          {
+            "zh": "这是白水，不是香水。",
+            "py": "Zhè shì báishuǐ, bú shì xiāngshuǐ.",
+            "vi": "Đây là nước lọc, không phải nước hoa."
           }
         ]
       },
@@ -11539,6 +12254,16 @@ const VOCAB_DATA = [
             "zh": "我买了两本词典。",
             "py": "Wǒ mǎile liǎng běn cídiǎn.",
             "vi": "Tôi đã mua hai quyển từ điển."
+          },
+          {
+            "zh": "我买一本词典。",
+            "py": "Wǒ mǎi yì běn cídiǎn.",
+            "vi": "Tôi mua một cuốn từ điển."
+          },
+          {
+            "zh": "箱子里有两本书。",
+            "py": "Xiāngzi lǐ yǒu liǎng běn shū.",
+            "vi": "Trong vali có hai cuốn sách."
           }
         ]
       },
@@ -11562,6 +12287,16 @@ const VOCAB_DATA = [
             "zh": "我要买一本汉语词典。",
             "py": "Wǒ yào mǎi yì běn Hànyǔ cídiǎn.",
             "vi": "Tôi muốn mua một quyển từ điển tiếng Hán."
+          },
+          {
+            "zh": "这本词典很好。",
+            "py": "Zhè běn cídiǎn hěn hǎo.",
+            "vi": "Cuốn từ điển này rất tốt."
+          },
+          {
+            "zh": "我没有汉语词典。",
+            "py": "Wǒ méiyǒu Hànyǔ cídiǎn.",
+            "vi": "Tôi không có từ điển tiếng Trung."
           }
         ]
       },
@@ -11585,6 +12320,16 @@ const VOCAB_DATA = [
             "zh": "一张照片。",
             "py": "Yì zhāng zhàopiàn.",
             "vi": "Một bức ảnh."
+          },
+          {
+            "zh": "他买一张光盘。",
+            "py": "Tā mǎi yì zhāng guāngpán.",
+            "vi": "Anh ấy mua một cái đĩa CD."
+          },
+          {
+            "zh": "箱子里有一张光盘。",
+            "py": "Xiāngzi lǐ yǒu yì zhāng guāngpán.",
+            "vi": "Trong vali có một cái đĩa CD."
           }
         ]
       },
@@ -11608,6 +12353,16 @@ const VOCAB_DATA = [
             "zh": "这张光盘是英语光盘。",
             "py": "Zhè zhāng guāngpán shì Yīngyǔ guāngpán.",
             "vi": "Đĩa CD này là đĩa tiếng Anh."
+          },
+          {
+            "zh": "这张光盘是他的。",
+            "py": "Zhè zhāng guāngpán shì tā de.",
+            "vi": "Cái đĩa CD này là của anh ấy."
+          },
+          {
+            "zh": "我买了一张光盘。",
+            "py": "Wǒ mǎile yì zhāng guāngpán.",
+            "vi": "Tôi đã mua một cái đĩa CD."
           }
         ]
       },
@@ -11631,6 +12386,16 @@ const VOCAB_DATA = [
             "zh": "这支笔是谁的？",
             "py": "Zhè zhī bǐ shì shéi de?",
             "vi": "Cây bút này là của ai?"
+          },
+          {
+            "zh": "这支笔是黑色的。",
+            "py": "Zhè zhī bǐ shì hēisè de.",
+            "vi": "Cây bút này màu đen."
+          },
+          {
+            "zh": "我有两支笔。",
+            "py": "Wǒ yǒu liǎng zhī bǐ.",
+            "vi": "Tôi có hai cây bút."
           }
         ]
       },
@@ -11654,6 +12419,16 @@ const VOCAB_DATA = [
             "zh": "三支笔和一本词典。",
             "py": "Sān zhī bǐ hé yì běn cídiǎn.",
             "vi": "Ba cây bút và một quyển từ điển."
+          },
+          {
+            "zh": "这是我的笔。",
+            "py": "Zhè shì wǒ de bǐ.",
+            "vi": "Đây là bút của tôi."
+          },
+          {
+            "zh": "箱子里有一支笔。",
+            "py": "Xiāngzi lǐ yǒu yì zhī bǐ.",
+            "vi": "Trong vali có một cây bút."
           }
         ]
       }
