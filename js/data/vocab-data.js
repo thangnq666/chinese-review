@@ -8262,6 +8262,16 @@ const VOCAB_DATA = [
             "zh": "我去办公室找他。",
             "py": "Wǒ qù bàngōngshì zhǎo tā.",
             "vi": "Tôi đến văn phòng tìm ông ấy."
+          },
+          {
+            "zh": "他在办公室工作。",
+            "py": "Tā zài bàngōngshì gōngzuò.",
+            "vi": "Anh ấy làm việc ở văn phòng."
+          },
+          {
+            "zh": "办公室在楼上。",
+            "py": "Bàngōngshì zài lóu shàng.",
+            "vi": "Văn phòng ở trên tầng."
           }
         ]
       },
@@ -8285,6 +8295,16 @@ const VOCAB_DATA = [
             "zh": "他每天八点开始办公。",
             "py": "Tā měitiān bā diǎn kāishǐ bàngōng.",
             "vi": "Ông ấy bắt đầu làm việc lúc 8 giờ mỗi ngày."
+          },
+          {
+            "zh": "他去办公室办公。",
+            "py": "Tā qù bàngōngshì bàngōng.",
+            "vi": "Anh ấy đến văn phòng làm việc."
+          },
+          {
+            "zh": "职员在这儿办公。",
+            "py": "Zhíyuán zài zhèr bàngōng.",
+            "vi": "Nhân viên làm việc ở đây."
           }
         ]
       },
@@ -8308,6 +8328,16 @@ const VOCAB_DATA = [
             "zh": "职员们正在开会。",
             "py": "Zhíyuánmen zhèngzài kāihuì.",
             "vi": "Các nhân viên đang họp."
+          },
+          {
+            "zh": "她是公司的职员。",
+            "py": "Tā shì gōngsī de zhíyuán.",
+            "vi": "Cô ấy là nhân viên công ty."
+          },
+          {
+            "zh": "职员们都很忙。",
+            "py": "Zhíyuánmen dōu hěn máng.",
+            "vi": "Các nhân viên đều rất bận."
           }
         ]
       },
@@ -8331,6 +8361,16 @@ const VOCAB_DATA = [
             "zh": "我要找汉语书。",
             "py": "Wǒ yào zhǎo Hànyǔ shū.",
             "vi": "Tôi muốn tìm sách tiếng Trung."
+          },
+          {
+            "zh": "你找谁？",
+            "py": "Nǐ zhǎo shéi?",
+            "vi": "Bạn tìm ai vậy?"
+          },
+          {
+            "zh": "他在找电话。",
+            "py": "Tā zài zhǎo diànhuà.",
+            "vi": "Anh ấy đang tìm điện thoại."
           }
         ]
       },
@@ -8354,6 +8394,16 @@ const VOCAB_DATA = [
             "zh": "我在吃饭。",
             "py": "Wǒ zài chīfàn.",
             "vi": "Tôi đang ăn cơm."
+          },
+          {
+            "zh": "他现在不在。",
+            "py": "Tā xiànzài bú zài.",
+            "vi": "Bây giờ anh ấy không có ở đây."
+          },
+          {
+            "zh": "老师在办公室。",
+            "py": "Lǎoshī zài bàngōngshì.",
+            "vi": "Thầy/cô ở văn phòng."
           }
         ]
       },
@@ -8377,6 +8427,16 @@ const VOCAB_DATA = [
             "zh": "这家学校很大。",
             "py": "Zhè jiā xuéxiào hěn dà.",
             "vi": "Trường học này rất to."
+          },
+          {
+            "zh": "我家在河内。",
+            "py": "Wǒ jiā zài Hénèi.",
+            "vi": "Nhà tôi ở Hà Nội."
+          },
+          {
+            "zh": "他不在家。",
+            "py": "Tā bú zài jiā.",
+            "vi": "Anh ấy không có ở nhà."
           }
         ]
       },
@@ -8400,6 +8460,16 @@ const VOCAB_DATA = [
             "zh": "你呢？",
             "py": "Nǐ ne?",
             "vi": "Còn bạn thì sao?"
+          },
+          {
+            "zh": "我很好，你呢？",
+            "py": "Wǒ hěn hǎo, nǐ ne?",
+            "vi": "Tôi rất khỏe, còn bạn thì sao?"
+          },
+          {
+            "zh": "他在办公室，你呢？",
+            "py": "Tā zài bàngōngshì, nǐ ne?",
+            "vi": "Anh ấy ở văn phòng, còn bạn?"
           }
         ]
       },
@@ -8423,6 +8493,16 @@ const VOCAB_DATA = [
             "zh": "现在我住在河内。",
             "py": "Xiànzài wǒ zhù zài Hénèi.",
             "vi": "Bây giờ tôi sống ở Hà Nội."
+          },
+          {
+            "zh": "您住几号房间？",
+            "py": "Nín zhù jǐ hào fángjiān?",
+            "vi": "Ngài ở phòng số mấy?"
+          },
+          {
+            "zh": "他住在酒店。",
+            "py": "Tā zhù zài jiǔdiàn.",
+            "vi": "Anh ấy ở khách sạn."
           }
         ]
       },
@@ -8446,6 +8526,16 @@ const VOCAB_DATA = [
             "zh": "这栋楼有二十层。",
             "py": "Zhè dòng lóu yǒu èrshí céng.",
             "vi": "Tòa nhà này có 20 tầng."
+          },
+          {
+            "zh": "我住在五楼。",
+            "py": "Wǒ zhù zài wǔ lóu.",
+            "vi": "Tôi ở tầng năm."
+          },
+          {
+            "zh": "办公室在二楼。",
+            "py": "Bàngōngshì zài èr lóu.",
+            "vi": "Văn phòng ở tầng hai."
           }
         ]
       },
@@ -8469,6 +8559,16 @@ const VOCAB_DATA = [
             "zh": "门开着呢。",
             "py": "Mén kāizhe ne.",
             "vi": "Cửa đang mở."
+          },
+          {
+            "zh": "请开门。",
+            "py": "Qǐng kāimén.",
+            "vi": "Xin mở cửa."
+          },
+          {
+            "zh": "他在门口等你。",
+            "py": "Tā zài ménkǒu děng nǐ.",
+            "vi": "Anh ấy đang đợi bạn ở cửa."
           }
         ]
       },
@@ -8492,6 +8592,16 @@ const VOCAB_DATA = [
             "zh": "我住18号。",
             "py": "Wǒ zhù shíbā hào.",
             "vi": "Tôi ở số 18."
+          },
+          {
+            "zh": "我住三号房间。",
+            "py": "Wǒ zhù sān hào fángjiān.",
+            "vi": "Tôi ở phòng số ba."
+          },
+          {
+            "zh": "今天几号？",
+            "py": "Jīntiān jǐ hào?",
+            "vi": "Hôm nay ngày mấy?"
           }
         ]
       },
@@ -8515,6 +8625,16 @@ const VOCAB_DATA = [
             "zh": "请问，您的房间号是多少？",
             "py": "Qǐngwèn, nín de fángjiān hào shì duōshǎo?",
             "vi": "Xin hỏi, số phòng của ngài là bao nhiêu?"
+          },
+          {
+            "zh": "这是我的房间。",
+            "py": "Zhè shì wǒ de fángjiān.",
+            "vi": "Đây là phòng của tôi."
+          },
+          {
+            "zh": "他的房间很大。",
+            "py": "Tā de fángjiān hěn dà.",
+            "vi": "Phòng của anh ấy rất to."
           }
         ]
       },
@@ -8538,6 +8658,16 @@ const VOCAB_DATA = [
             "zh": "我知道他住哪儿。",
             "py": "Wǒ zhīdào tā zhù nǎr.",
             "vi": "Tôi biết ông ấy sống ở đâu."
+          },
+          {
+            "zh": "我不知道。",
+            "py": "Wǒ bù zhīdào.",
+            "vi": "Tôi không biết."
+          },
+          {
+            "zh": "你知道他住哪儿吗？",
+            "py": "Nǐ zhīdào tā zhù nǎr ma?",
+            "vi": "Bạn có biết anh ấy ở đâu không?"
           }
         ]
       },
@@ -8561,6 +8691,16 @@ const VOCAB_DATA = [
             "zh": "电话号码是62931074。",
             "py": "Diànhuà hàomǎ shì liù èr jiǔ sān yāo líng qī sì.",
             "vi": "Số điện thoại là 62931074."
+          },
+          {
+            "zh": "这是你的电话吗？",
+            "py": "Zhè shì nǐ de diànhuà ma?",
+            "vi": "Đây có phải là điện thoại của bạn không?"
+          },
+          {
+            "zh": "他的电话号码是多少？",
+            "py": "Tā de diànhuà hàomǎ shì duōshao?",
+            "vi": "Số điện thoại của anh ấy là bao nhiêu?"
           }
         ]
       },
@@ -8584,6 +8724,16 @@ const VOCAB_DATA = [
             "zh": "我记住了你的号码。",
             "py": "Wǒ jì zhù le nǐ de hàomǎ.",
             "vi": "Tôi đã nhớ số của bạn rồi."
+          },
+          {
+            "zh": "你的号码是多少？",
+            "py": "Nǐ de hàomǎ shì duōshao?",
+            "vi": "Số của bạn là bao nhiêu?"
+          },
+          {
+            "zh": "这个号码不对。",
+            "py": "Zhège hàomǎ bú duì.",
+            "vi": "Số này không đúng."
           }
         ]
       },
@@ -8607,6 +8757,16 @@ const VOCAB_DATA = [
             "zh": "电话号码里有一个零。",
             "py": "Diànhuà hàomǎ lǐ yǒu yīgè líng.",
             "vi": "Trong số điện thoại có một số 0."
+          },
+          {
+            "zh": "我的号码有三个零。",
+            "py": "Wǒ de hàomǎ yǒu sān gè líng.",
+            "vi": "Số của tôi có ba số không."
+          },
+          {
+            "zh": "这是零，不是六。",
+            "py": "Zhè shì líng, bú shì liù.",
+            "vi": "Đây là số không, không phải sáu."
           }
         ]
       },
@@ -8630,6 +8790,16 @@ const VOCAB_DATA = [
             "zh": "你在玩手机吗？",
             "py": "Nǐ zài wán shǒujī ma?",
             "vi": "Bạn đang chơi điện thoại à?"
+          },
+          {
+            "zh": "这是我的手机。",
+            "py": "Zhè shì wǒ de shǒujī.",
+            "vi": "Đây là điện thoại di động của tôi."
+          },
+          {
+            "zh": "他的手机号码是多少？",
+            "py": "Tā de shǒujī hàomǎ shì duōshao?",
+            "vi": "Số điện thoại di động của anh ấy là bao nhiêu?"
           }
         ]
       },
@@ -8653,6 +8823,16 @@ const VOCAB_DATA = [
             "zh": "请问，你住哪儿？",
             "py": "Qǐngwèn, nǐ zhù nǎr?",
             "vi": "Cho tôi hỏi, bạn ở đâu?"
+          },
+          {
+            "zh": "请问，您的房间号码是多少？",
+            "py": "Qǐngwèn, nín de fángjiān hàomǎ shì duōshao?",
+            "vi": "Xin hỏi, số phòng của ngài là bao nhiêu?"
+          },
+          {
+            "zh": "请问，他在办公室吗？",
+            "py": "Qǐngwèn, tā zài bàngōngshì ma?",
+            "vi": "Xin hỏi, anh ấy có ở văn phòng không?"
           }
         ]
       },
@@ -8676,6 +8856,16 @@ const VOCAB_DATA = [
             "zh": "谢谢您。",
             "py": "Xièxiè nín.",
             "vi": "Cảm ơn ngài."
+          },
+          {
+            "zh": "您找谁？",
+            "py": "Nín zhǎo shéi?",
+            "vi": "Ngài tìm ai ạ?"
+          },
+          {
+            "zh": "您住哪个酒店？",
+            "py": "Nín zhù nǎge jiǔdiàn?",
+            "vi": "Ngài ở khách sạn nào?"
           }
         ]
       },
@@ -8689,6 +8879,26 @@ const VOCAB_DATA = [
             "zh": "现在我住在河内。",
             "py": "Xiànzài wǒ zhù zài Hénèi.",
             "vi": "Bây giờ tôi sống ở Hà Nội."
+          },
+          {
+            "zh": "他现在在办公室。",
+            "py": "Tā xiànzài zài bàngōngshì.",
+            "vi": "Anh ấy hiện đang ở văn phòng."
+          },
+          {
+            "zh": "现在你忙吗？",
+            "py": "Xiànzài nǐ máng ma?",
+            "vi": "Bây giờ bạn có bận không?"
+          },
+          {
+            "zh": "我现在住酒店。",
+            "py": "Wǒ xiànzài zhù jiǔdiàn.",
+            "vi": "Bây giờ tôi ở khách sạn."
+          },
+          {
+            "zh": "现在是星期几？",
+            "py": "Xiànzài shì xīngqī jǐ?",
+            "vi": "Bây giờ là thứ mấy?"
           }
         ]
       },
@@ -8702,6 +8912,26 @@ const VOCAB_DATA = [
             "zh": "你住哪个酒店？",
             "py": "Nǐ zhù nǎge jiǔdiàn?",
             "vi": "Bạn ở khách sạn nào?"
+          },
+          {
+            "zh": "这个酒店很大。",
+            "py": "Zhège jiǔdiàn hěn dà.",
+            "vi": "Khách sạn này rất to."
+          },
+          {
+            "zh": "酒店在这个市。",
+            "py": "Jiǔdiàn zài zhège shì.",
+            "vi": "Khách sạn ở thành phố này."
+          },
+          {
+            "zh": "他住在酒店的三楼。",
+            "py": "Tā zhù zài jiǔdiàn de sān lóu.",
+            "vi": "Anh ấy ở tầng ba của khách sạn."
+          },
+          {
+            "zh": "这家酒店的电话号码是多少？",
+            "py": "Zhè jiā jiǔdiàn de diànhuà hàomǎ shì duōshao?",
+            "vi": "Số điện thoại của khách sạn này là bao nhiêu?"
           }
         ]
       },
@@ -8715,6 +8945,26 @@ const VOCAB_DATA = [
             "zh": "我家在清化省。",
             "py": "Wǒ jiā zài Qīnghuà shěng.",
             "vi": "Nhà tôi ở tỉnh Thanh Hóa."
+          },
+          {
+            "zh": "我不知道这个省。",
+            "py": "Wǒ bù zhīdào zhège shěng.",
+            "vi": "Tôi không biết tỉnh này."
+          },
+          {
+            "zh": "这个省很大。",
+            "py": "Zhège shěng hěn dà.",
+            "vi": "Tỉnh này rất rộng."
+          },
+          {
+            "zh": "他住在哪个省？",
+            "py": "Tā zhù zài nǎge shěng?",
+            "vi": "Anh ấy sống ở tỉnh nào?"
+          },
+          {
+            "zh": "越南有很多省。",
+            "py": "Yuènán yǒu hěn duō shěng.",
+            "vi": "Việt Nam có rất nhiều tỉnh."
           }
         ]
       },
@@ -8728,6 +8978,26 @@ const VOCAB_DATA = [
             "zh": "我住在清化市。",
             "py": "Wǒ zhù zài Qīnghuà shì.",
             "vi": "Tôi sống ở thành phố Thanh Hóa."
+          },
+          {
+            "zh": "河内是一个市。",
+            "py": "Hénèi shì yí gè shì.",
+            "vi": "Hà Nội là một thành phố."
+          },
+          {
+            "zh": "这个市很大。",
+            "py": "Zhège shì hěn dà.",
+            "vi": "Thành phố này rất lớn."
+          },
+          {
+            "zh": "他住在这个市。",
+            "py": "Tā zhù zài zhège shì.",
+            "vi": "Anh ấy sống ở thành phố này."
+          },
+          {
+            "zh": "你知道这个市吗？",
+            "py": "Nǐ zhīdào zhège shì ma?",
+            "vi": "Bạn có biết thành phố này không?"
           }
         ]
       },
@@ -8741,6 +9011,26 @@ const VOCAB_DATA = [
             "zh": "我家在东山县。",
             "py": "Wǒ jiā zài Dōngshān xiàn.",
             "vi": "Nhà tôi ở huyện Đông Sơn."
+          },
+          {
+            "zh": "这是一个县。",
+            "py": "Zhè shì yí gè xiàn.",
+            "vi": "Đây là một huyện."
+          },
+          {
+            "zh": "他住在这个县。",
+            "py": "Tā zhù zài zhège xiàn.",
+            "vi": "Anh ấy sống ở huyện này."
+          },
+          {
+            "zh": "这个县很小。",
+            "py": "Zhège xiàn hěn xiǎo.",
+            "vi": "Huyện này rất nhỏ."
+          },
+          {
+            "zh": "你家在哪个县？",
+            "py": "Nǐ jiā zài nǎge xiàn?",
+            "vi": "Nhà bạn ở huyện nào?"
           }
         ]
       },
@@ -8754,6 +9044,26 @@ const VOCAB_DATA = [
             "zh": "这是什么路？",
             "py": "Zhè shì shénme lù?",
             "vi": "Đây là đường gì?"
+          },
+          {
+            "zh": "路上有酒店。",
+            "py": "Lù shang yǒu jiǔdiàn.",
+            "vi": "Trên đường có khách sạn."
+          },
+          {
+            "zh": "这是去图书馆的路。",
+            "py": "Zhè shì qù túshūguǎn de lù.",
+            "vi": "Đây là đường đến thư viện."
+          },
+          {
+            "zh": "他不知道路。",
+            "py": "Tā bù zhīdào lù.",
+            "vi": "Anh ấy không biết đường."
+          },
+          {
+            "zh": "这是我家的路。",
+            "py": "Zhè shì wǒ jiā de lù.",
+            "vi": "Đây là con đường về nhà tôi."
           }
         ]
       },
@@ -8767,6 +9077,26 @@ const VOCAB_DATA = [
             "zh": "这是什么街？",
             "py": "Zhè shì shénme jiē?",
             "vi": "Đây là phố gì?"
+          },
+          {
+            "zh": "他住在这条街。",
+            "py": "Tā zhù zài zhè tiáo jiē.",
+            "vi": "Anh ấy ở phố này."
+          },
+          {
+            "zh": "街上有很多人。",
+            "py": "Jiē shang yǒu hěn duō rén.",
+            "vi": "Trên phố có rất nhiều người."
+          },
+          {
+            "zh": "银行在这条街。",
+            "py": "Yínháng zài zhè tiáo jiē.",
+            "vi": "Ngân hàng ở phố này."
+          },
+          {
+            "zh": "他在街上找工作。",
+            "py": "Tā zài jiē shang zhǎo gōngzuò.",
+            "vi": "Anh ấy tìm việc trên phố."
           }
         ]
       }
@@ -8800,6 +9130,11 @@ const VOCAB_DATA = [
             "zh": "她想当秘书。",
             "py": "Tā xiǎng dāng mìshū.",
             "vi": "Cô ấy muốn làm thư ký."
+          },
+          {
+            "zh": "她是秘书。",
+            "py": "Tā shì mìshū.",
+            "vi": "Cô ấy là thư ký."
           }
         ]
       },
@@ -8828,6 +9163,11 @@ const VOCAB_DATA = [
             "zh": "你先说，我后说。",
             "py": "Nǐ xiān shuō, wǒ hòu shuō.",
             "vi": "Bạn nói trước, tôi nói sau."
+          },
+          {
+            "zh": "我先介绍一下。",
+            "py": "Wǒ xiān jièshào yíxià.",
+            "vi": "Để tôi giới thiệu trước."
           }
         ]
       },
@@ -8856,6 +9196,11 @@ const VOCAB_DATA = [
             "zh": "请介绍一下你自己。",
             "py": "Qǐng jièshào yīxià nǐ zìjǐ.",
             "vi": "Xin hãy tự giới thiệu bản thân bạn."
+          },
+          {
+            "zh": "他介绍他的公司。",
+            "py": "Tā jièshào tā de gōngsī.",
+            "vi": "Anh ấy giới thiệu công ty của mình."
           }
         ]
       },
@@ -8869,6 +9214,26 @@ const VOCAB_DATA = [
             "zh": "你的电话号码是多少？",
             "py": "Nǐ de diànhuà hàomǎ shì duōshao?",
             "vi": "Số điện thoại của bạn là bao nhiêu?"
+          },
+          {
+            "zh": "秘书的号码是多少？",
+            "py": "Mìshū de hàomǎ shì duōshao?",
+            "vi": "Số của thư ký là bao nhiêu?"
+          },
+          {
+            "zh": "这个号码是他的。",
+            "py": "Zhège hàomǎ shì tā de.",
+            "vi": "Số này là của anh ấy."
+          },
+          {
+            "zh": "请先给我号码。",
+            "py": "Qǐng xiān gěi wǒ hàomǎ.",
+            "vi": "Xin hãy cho tôi số trước."
+          },
+          {
+            "zh": "秘书知道他的号码。",
+            "py": "Mìshū zhīdào tā de hàomǎ.",
+            "vi": "Thư ký biết số của anh ấy."
           }
         ]
       }
@@ -8892,6 +9257,21 @@ const VOCAB_DATA = [
             "zh": "首先我介绍一下自己。",
             "py": "Shǒuxiān wǒ jièshào yíxià zìjǐ.",
             "vi": "Trước tiên tôi tự giới thiệu bản thân."
+          },
+          {
+            "zh": "首先，欢迎大家。",
+            "py": "Shǒuxiān, huānyíng dàjiā.",
+            "vi": "Trước tiên, chào mừng mọi người."
+          },
+          {
+            "zh": "首先是校长介绍。",
+            "py": "Shǒuxiān shì xiàozhǎng jièshào.",
+            "vi": "Đầu tiên là hiệu trưởng giới thiệu."
+          },
+          {
+            "zh": "首先，请坐。",
+            "py": "Shǒuxiān, qǐng zuò.",
+            "vi": "Trước hết, mời ngồi."
           }
         ]
       },
@@ -8915,6 +9295,16 @@ const VOCAB_DATA = [
             "zh": "我想一下儿。",
             "py": "Wǒ xiǎ ng yíxiàr.",
             "vi": "Tôi nghĩ một chút."
+          },
+          {
+            "zh": "请介绍一下儿。",
+            "py": "Qǐng jièshào yíxiàr.",
+            "vi": "Xin hãy giới thiệu một chút."
+          },
+          {
+            "zh": "请等一下儿。",
+            "py": "Qǐng děng yíxiàr.",
+            "vi": "Xin chờ một chút."
           }
         ]
       },
@@ -8938,6 +9328,16 @@ const VOCAB_DATA = [
             "zh": "这位是我们的校长。",
             "py": "Zhè wèi shì wǒmen de xiàozhǎ ng.",
             "vi": "Đây là hiệu trưởng của chúng tôi."
+          },
+          {
+            "zh": "这位是教授。",
+            "py": "Zhè wèi shì jiàoshòu.",
+            "vi": "Vị này là giáo sư."
+          },
+          {
+            "zh": "那位是校长。",
+            "py": "Nà wèi shì xiàozhǎng.",
+            "vi": "Vị đó là hiệu trưởng."
           }
         ]
       },
@@ -8961,6 +9361,16 @@ const VOCAB_DATA = [
             "zh": "王教授教汉语。",
             "py": "Wáng jiàoshòu jiāo Hànyǔ.",
             "vi": "Giáo sư Vương dạy tiếng Hán."
+          },
+          {
+            "zh": "他是大学教授。",
+            "py": "Tā shì dàxué jiàoshòu.",
+            "vi": "Ông ấy là giáo sư đại học."
+          },
+          {
+            "zh": "教授欢迎留学生。",
+            "py": "Jiàoshòu huānyíng liúxuéshēng.",
+            "vi": "Giáo sư chào đón lưu học sinh."
           }
         ]
       },
@@ -8979,6 +9389,21 @@ const VOCAB_DATA = [
             "zh": "马校长很好。",
             "py": "Mǎ xiàozhǎ ng hěn hǎ o.",
             "vi": "Hiệu trưởng Mǎ rất tốt."
+          },
+          {
+            "zh": "校长欢迎我们。",
+            "py": "Xiàozhǎng huānyíng wǒmen.",
+            "vi": "Hiệu trưởng chào đón chúng tôi."
+          },
+          {
+            "zh": "他是我们学校的校长。",
+            "py": "Tā shì wǒmen xuéxiào de xiàozhǎng.",
+            "vi": "Ông ấy là hiệu trưởng trường chúng tôi."
+          },
+          {
+            "zh": "校长经常来。",
+            "py": "Xiàozhǎng jīngcháng lái.",
+            "vi": "Hiệu trưởng thường xuyên đến."
           }
         ]
       },
@@ -9002,6 +9427,16 @@ const VOCAB_DATA = [
             "zh": "欢迎来中国！",
             "py": "Huānyíng lái Zhōngguó!",
             "vi": "Chào mừng đến Trung Quốc!"
+          },
+          {
+            "zh": "欢迎欢迎！",
+            "py": "Huānyíng huānyíng!",
+            "vi": "Chào mừng, chào mừng!"
+          },
+          {
+            "zh": "老师欢迎留学生。",
+            "py": "Lǎoshī huānyíng liúxuéshēng.",
+            "vi": "Thầy/cô chào đón lưu học sinh."
           }
         ]
       },
@@ -9025,6 +9460,16 @@ const VOCAB_DATA = [
             "zh": "你们中国留学生经常去哪里？",
             "py": "Nǐmen Zhōngguó liúxiéshēng jīngcháng qù nǎ lǐ?",
             "vi": "Các bạn lưu học sinh Trung Quốc thường hay đi đâu?"
+          },
+          {
+            "zh": "我们都是留学生。",
+            "py": "Wǒmen dōu shì liúxuéshēng.",
+            "vi": "Chúng tôi đều là lưu học sinh."
+          },
+          {
+            "zh": "留学生很多。",
+            "py": "Liúxuéshēng hěn duō.",
+            "vi": "Lưu học sinh có rất nhiều."
           }
         ]
       },
@@ -9043,6 +9488,21 @@ const VOCAB_DATA = [
             "zh": "她去美国留学了。",
             "py": "Tā qù Měi guó liúxié le.",
             "vi": "Cô ấy đi du học ở Mỹ rồi."
+          },
+          {
+            "zh": "他去中国留学。",
+            "py": "Tā qù Zhōngguó liúxué.",
+            "vi": "Anh ấy đi Trung Quốc du học."
+          },
+          {
+            "zh": "她也留学。",
+            "py": "Tā yě liúxué.",
+            "vi": "Cô ấy cũng đi du học."
+          },
+          {
+            "zh": "他在越南留学。",
+            "py": "Tā zài Yuènán liúxué.",
+            "vi": "Anh ấy du học ở Việt Nam."
           }
         ]
       },
@@ -9066,6 +9526,16 @@ const VOCAB_DATA = [
             "zh": "他们都是中国学生。",
             "py": "Tāmen dōu shì Zhōngguó xuésheng.",
             "vi": "Họ đều là học sinh Trung Quốc."
+          },
+          {
+            "zh": "他是好学生。",
+            "py": "Tā shì hǎo xuésheng.",
+            "vi": "Anh ấy là học sinh giỏi."
+          },
+          {
+            "zh": "学生们都很忙。",
+            "py": "Xuéshengmen dōu hěn máng.",
+            "vi": "Các học sinh đều rất bận."
           }
         ]
       },
@@ -9089,6 +9559,16 @@ const VOCAB_DATA = [
             "zh": "你也是中国人吗？",
             "py": "Nǐ yě shì Zhōngguó rén ma?",
             "vi": "Bạn cũng là người Trung Quốc à?"
+          },
+          {
+            "zh": "我也是学生。",
+            "py": "Wǒ yě shì xuésheng.",
+            "vi": "Tôi cũng là học sinh."
+          },
+          {
+            "zh": "她也姓吴。",
+            "py": "Tā yě xìng Wú.",
+            "vi": "Cô ấy cũng họ Ngô."
           }
         ]
       },
@@ -9112,6 +9592,16 @@ const VOCAB_DATA = [
             "zh": "吧吧妈妈都很好。",
             "py": "Bàba māma dōu hěn hǎ o.",
             "vi": "Bố mẹ đều rất khỏe."
+          },
+          {
+            "zh": "他们都是留学生。",
+            "py": "Tāmen dōu shì liúxuéshēng.",
+            "vi": "Họ đều là lưu học sinh."
+          },
+          {
+            "zh": "大家都很好。",
+            "py": "Dàjiā dōu hěn hǎo.",
+            "vi": "Mọi người đều khỏe."
           }
         ]
       },
@@ -9135,6 +9625,16 @@ const VOCAB_DATA = [
             "zh": "你们俩也都是留学生吗？",
             "py": "Nǐmen liǎ yě dōu shì liúxiéshēng ma?",
             "vi": "Cả hai các bạn cũng đều là lưu học sinh à?"
+          },
+          {
+            "zh": "我们俩是朋友。",
+            "py": "Wǒmen liǎ shì péngyou.",
+            "vi": "Hai chúng tôi là bạn bè."
+          },
+          {
+            "zh": "他们俩都姓王。",
+            "py": "Tāmen liǎ dōu xìng Wáng.",
+            "vi": "Cả hai người họ đều họ Vương."
           }
         ]
       },
@@ -9153,6 +9653,21 @@ const VOCAB_DATA = [
             "zh": "没什么，没关系。",
             "py": "Méi shénme, méi guānxi.",
             "vi": "Không có gì, không sao."
+          },
+          {
+            "zh": "没什么，别客气。",
+            "py": "Méi shénme, bié kèqi.",
+            "vi": "Không có gì, đừng khách sáo."
+          },
+          {
+            "zh": "谢谢你！——没什么。",
+            "py": "Xièxie nǐ! — Méi shénme.",
+            "vi": "Cảm ơn bạn! — Không có gì."
+          },
+          {
+            "zh": "我没什么。",
+            "py": "Wǒ méi shénme.",
+            "vi": "Tôi không sao cả."
           }
         ]
       },
@@ -9171,6 +9686,21 @@ const VOCAB_DATA = [
             "zh": "王经理在吗？",
             "py": "Wáng jīnglǐ zài ma?",
             "vi": "Giám đốc Vương có ở đây không?"
+          },
+          {
+            "zh": "他是公司经理。",
+            "py": "Tā shì gōngsī jīnglǐ.",
+            "vi": "Anh ấy là giám đốc công ty."
+          },
+          {
+            "zh": "经理在办公室。",
+            "py": "Jīnglǐ zài bàngōngshì.",
+            "vi": "Giám đốc đang ở văn phòng."
+          },
+          {
+            "zh": "她是我们的经理。",
+            "py": "Tā shì wǒmen de jīnglǐ.",
+            "vi": "Cô ấy là giám đốc của chúng tôi."
           }
         ]
       },
@@ -9189,6 +9719,21 @@ const VOCAB_DATA = [
             "zh": "我爸爸妈妈都是大夫。",
             "py": "Wǒ bàba māma dōu shì dàifu.",
             "vi": "Bố mẹ tôi đều là bác sĩ."
+          },
+          {
+            "zh": "他是大夫。",
+            "py": "Tā shì dàifu.",
+            "vi": "Ông ấy là bác sĩ."
+          },
+          {
+            "zh": "大夫很忙。",
+            "py": "Dàifu hěn máng.",
+            "vi": "Bác sĩ rất bận."
+          },
+          {
+            "zh": "我爸爸是大夫。",
+            "py": "Wǒ bàba shì dàifu.",
+            "vi": "Bố tôi là bác sĩ."
           }
         ]
       },
@@ -9207,6 +9752,21 @@ const VOCAB_DATA = [
             "zh": "护士很忙。",
             "py": "Hùshi hěn máng.",
             "vi": "Y tá rất bận."
+          },
+          {
+            "zh": "她是护士。",
+            "py": "Tā shì hùshi.",
+            "vi": "Cô ấy là y tá."
+          },
+          {
+            "zh": "护士都很好。",
+            "py": "Hùshi dōu hěn hǎo.",
+            "vi": "Các y tá đều rất tốt."
+          },
+          {
+            "zh": "我姐姐是护士。",
+            "py": "Wǒ jiějie shì hùshi.",
+            "vi": "Chị gái tôi là y tá."
           }
         ]
       },
@@ -9225,6 +9785,21 @@ const VOCAB_DATA = [
             "zh": "你是律师吗？",
             "py": "Nǐ shì lúsī ma?",
             "vi": "Bạn có phải luật sư không?"
+          },
+          {
+            "zh": "他是律师。",
+            "py": "Tā shì lǜshī.",
+            "vi": "Anh ấy là luật sư."
+          },
+          {
+            "zh": "律师很忙。",
+            "py": "Lǜshī hěn máng.",
+            "vi": "Luật sư rất bận."
+          },
+          {
+            "zh": "我朋友是律师。",
+            "py": "Wǒ péngyou shì lǜshī.",
+            "vi": "Bạn tôi là luật sư."
           }
         ]
       },
@@ -9243,6 +9818,21 @@ const VOCAB_DATA = [
             "zh": "你们都是记者吗？",
             "py": "Nǐmen dōu shì jìzhě ma?",
             "vi": "Các bạn đều là nhà báo à?"
+          },
+          {
+            "zh": "他是记者。",
+            "py": "Tā shì jìzhě.",
+            "vi": "Anh ấy là nhà báo."
+          },
+          {
+            "zh": "记者经常出去。",
+            "py": "Jìzhě jīngcháng chūqù.",
+            "vi": "Nhà báo thường xuyên ra ngoài."
+          },
+          {
+            "zh": "他是杂志的记者。",
+            "py": "Tā shì zázhì de jìzhě.",
+            "vi": "Anh ấy là nhà báo của tạp chí."
           }
         ]
       },
@@ -9266,6 +9856,16 @@ const VOCAB_DATA = [
             "zh": "他经常学习到很晚。",
             "py": "Tā jīngcháng xuéxí dào hěn wǎ n.",
             "vi": "Anh ấy thường học đến rất khuya."
+          },
+          {
+            "zh": "他经常来图书馆。",
+            "py": "Tā jīngcháng lái túshūguǎn.",
+            "vi": "Anh ấy thường xuyên đến thư viện."
+          },
+          {
+            "zh": "我经常喝咖啡。",
+            "py": "Wǒ jīngcháng hē kāfēi.",
+            "vi": "Tôi thường xuyên uống cà phê."
           }
         ]
       },
@@ -9289,6 +9889,16 @@ const VOCAB_DATA = [
             "zh": "大家都来了吗？",
             "py": "Dàjiā dōu lái le ma?",
             "vi": "Mọi người đều đến rồi chư?"
+          },
+          {
+            "zh": "大家好！",
+            "py": "Dàjiā hǎo!",
+            "vi": "Chào mọi người!"
+          },
+          {
+            "zh": "大家都是朋友。",
+            "py": "Dàjiā dōu shì péngyou.",
+            "vi": "Mọi người đều là bạn bè."
           }
         ]
       }
