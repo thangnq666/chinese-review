@@ -1,4 +1,3 @@
-// Vocab, Dialogue, Phrases data
 const VOCAB_DATA = [
   {
     "lesson": "Buổi 1 (b1): Phát âm & Từ vựng cơ bản",
@@ -12433,6 +12432,605 @@ const VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "lesson": "Buổi 18 (b20): 最近怎么样？– Dạo này thế nào?",
+    "words": [
+      {
+        "zh": "好久",
+        "py": "hǎojiǔ",
+        "type": "Tính từ",
+        "vi": "rất lâu, lâu rồi",
+        "ex": [
+          {
+            "zh": "好久不见！",
+            "py": "Hǎojiǔ bú jiàn!",
+            "vi": "Lâu rồi không gặp!"
+          },
+          {
+            "zh": "我好久没喝茶了。",
+            "py": "Wǒ hǎojiǔ méi hē chá le.",
+            "vi": "Tôi lâu rồi chưa uống trà."
+          },
+          {
+            "zh": "他好久没去学校了。",
+            "py": "Tā hǎojiǔ méi qù xuéxiào le.",
+            "vi": "Anh ấy lâu rồi không đến trường."
+          },
+          {
+            "zh": "好久没吃饺子了。",
+            "py": "Hǎojiǔ méi chī jiǎozi le.",
+            "vi": "Lâu rồi chưa ăn sủi cảo."
+          },
+          {
+            "zh": "我们好久没见了。",
+            "py": "Wǒmen hǎojiǔ méi jiàn le.",
+            "vi": "Chúng tôi lâu rồi không gặp."
+          }
+        ]
+      },
+      {
+        "zh": "回家",
+        "py": "huíjiā",
+        "type": "Động từ",
+        "vi": "về nhà",
+        "ex": [
+          {
+            "zh": "我回家了。",
+            "py": "Wǒ huíjiā le.",
+            "vi": "Tôi về nhà rồi."
+          },
+          {
+            "zh": "他回家吃饭。",
+            "py": "Tā huíjiā chīfàn.",
+            "vi": "Anh ấy về nhà ăn cơm."
+          },
+          {
+            "zh": "你今天回家吗？",
+            "py": "Nǐ jīntiān huíjiā ma?",
+            "vi": "Hôm nay bạn về nhà không?"
+          },
+          {
+            "zh": "我好久没回家了。",
+            "py": "Wǒ hǎojiǔ méi huíjiā le.",
+            "vi": "Tôi lâu rồi chưa về nhà."
+          },
+          {
+            "zh": "他明天回家。",
+            "py": "Tā míngtiān huíjiā.",
+            "vi": "Anh ấy mai về nhà."
+          }
+        ]
+      },
+      {
+        "zh": "马虎",
+        "py": "mǎhu",
+        "type": "Tính từ",
+        "vi": "cẩu thả, qua loa",
+        "ex": [
+          {
+            "zh": "他很马虎。",
+            "py": "Tā hěn mǎhu.",
+            "vi": "Anh ấy rất cẩu thả."
+          },
+          {
+            "zh": "我不马虎。",
+            "py": "Wǒ bù mǎhu.",
+            "vi": "Tôi không cẩu thả."
+          },
+          {
+            "zh": "他是一个马虎的学生。",
+            "py": "Tā shì yí gè mǎhu de xuésheng.",
+            "vi": "Anh ấy là một học sinh cẩu thả."
+          },
+          {
+            "zh": "秘书很马虎。",
+            "py": "Mìshū hěn mǎhu.",
+            "vi": "Thư ký rất cẩu thả."
+          },
+          {
+            "zh": "他工作很马虎。",
+            "py": "Tā gōngzuò hěn mǎhu.",
+            "vi": "Anh ấy làm việc rất cẩu thả."
+          }
+        ]
+      },
+      {
+        "zh": "马马虎虎",
+        "py": "mǎmǎhūhū",
+        "type": "Tính từ",
+        "vi": "tạm tạm, bình thường",
+        "ex": [
+          {
+            "zh": "他汉语马马虎虎。",
+            "py": "Tā Hànyǔ mǎmǎhūhū.",
+            "vi": "Tiếng Trung của anh ấy tạm tạm."
+          },
+          {
+            "zh": "你身体怎么样？马马虎虎。",
+            "py": "Nǐ shēntǐ zěnmeyàng? Mǎmǎhūhū.",
+            "vi": "Sức khỏe bạn thế nào? Tạm tạm."
+          },
+          {
+            "zh": "今天马马虎虎。",
+            "py": "Jīntiān mǎmǎhūhū.",
+            "vi": "Hôm nay tạm tạm."
+          },
+          {
+            "zh": "我工作马马虎虎。",
+            "py": "Wǒ gōngzuò mǎmǎhūhū.",
+            "vi": "Công việc của tôi tạm tạm."
+          },
+          {
+            "zh": "他学习马马虎虎。",
+            "py": "Tā xuéxí mǎmǎhūhū.",
+            "vi": "Anh ấy học hành tạm tạm."
+          }
+        ]
+      },
+      {
+        "zh": "刚",
+        "py": "gāng",
+        "type": "Phó từ",
+        "vi": "mới, vừa mới",
+        "ex": [
+          {
+            "zh": "我刚回家。",
+            "py": "Wǒ gāng huíjiā.",
+            "vi": "Tôi vừa mới về nhà."
+          },
+          {
+            "zh": "他刚去学校。",
+            "py": "Tā gāng qù xuéxiào.",
+            "vi": "Anh ấy vừa mới đến trường."
+          },
+          {
+            "zh": "我刚吃饭。",
+            "py": "Wǒ gāng chīfàn.",
+            "vi": "Tôi vừa mới ăn cơm."
+          },
+          {
+            "zh": "她刚买箱子。",
+            "py": "Tā gāng mǎi xiāngzi.",
+            "vi": "Cô ấy vừa mới mua vali."
+          },
+          {
+            "zh": "老师刚介绍。",
+            "py": "Lǎoshī gāng jièshào.",
+            "vi": "Thầy/cô vừa mới giới thiệu."
+          }
+        ]
+      },
+      {
+        "zh": "开学",
+        "py": "kāixué",
+        "type": "Động từ",
+        "vi": "khai giảng",
+        "ex": [
+          {
+            "zh": "我们开学了。",
+            "py": "Wǒmen kāixué le.",
+            "vi": "Chúng tôi khai giảng rồi."
+          },
+          {
+            "zh": "学校明天开学。",
+            "py": "Xuéxiào míngtiān kāixué.",
+            "vi": "Trường mai khai giảng."
+          },
+          {
+            "zh": "刚开学，工作很忙。",
+            "py": "Gāng kāixué, gōngzuò hěn máng.",
+            "vi": "Vừa khai giảng, công việc rất bận."
+          },
+          {
+            "zh": "开学了，我很忙。",
+            "py": "Kāixué le, wǒ hěn máng.",
+            "vi": "Khai giảng rồi, tôi rất bận."
+          },
+          {
+            "zh": "大学开学了。",
+            "py": "Dàxué kāixué le.",
+            "vi": "Đại học khai giảng rồi."
+          }
+        ]
+      },
+      {
+        "zh": "所以",
+        "py": "suǒyǐ",
+        "type": "Liên từ",
+        "vi": "nên, cho nên",
+        "ex": [
+          {
+            "zh": "我很忙，所以没去。",
+            "py": "Wǒ hěn máng, suǒyǐ méi qù.",
+            "vi": "Tôi rất bận nên không đi."
+          },
+          {
+            "zh": "刚开学，所以很忙。",
+            "py": "Gāng kāixué, suǒyǐ hěn máng.",
+            "vi": "Vừa khai giảng nên rất bận."
+          },
+          {
+            "zh": "汉语很难，所以我觉得有意思。",
+            "py": "Hànyǔ hěn nán, suǒyǐ wǒ juéde yǒu yìsi.",
+            "vi": "Tiếng Trung rất khó nên tôi thấy thú vị."
+          },
+          {
+            "zh": "今天下雨，所以我不去。",
+            "py": "Jīntiān xiàyǔ, suǒyǐ wǒ bú qù.",
+            "vi": "Hôm nay trời mưa nên tôi không đi."
+          },
+          {
+            "zh": "箱子很重，所以他不买。",
+            "py": "Xiāngzi hěn zhòng, suǒyǐ tā bù mǎi.",
+            "vi": "Vali rất nặng nên anh ấy không mua."
+          }
+        ]
+      },
+      {
+        "zh": "开",
+        "py": "kāi",
+        "type": "Động từ",
+        "vi": "lái (xe), mở",
+        "ex": [
+          {
+            "zh": "请开门。",
+            "py": "Qǐng kāimén.",
+            "vi": "Xin mở cửa."
+          },
+          {
+            "zh": "他开出租车。",
+            "py": "Tā kāi chūzūchē.",
+            "vi": "Anh ấy lái taxi."
+          },
+          {
+            "zh": "谁开车？",
+            "py": "Shéi kāichē?",
+            "vi": "Ai lái xe?"
+          },
+          {
+            "zh": "秘书开门。",
+            "py": "Mìshū kāimén.",
+            "vi": "Thư ký mở cửa."
+          },
+          {
+            "zh": "他开汽车去学校。",
+            "py": "Tā kāi qìchē qù xuéxiào.",
+            "vi": "Anh ấy lái ô tô đến trường."
+          }
+        ]
+      },
+      {
+        "zh": "开车",
+        "py": "kāichē",
+        "type": "Động từ",
+        "vi": "lái xe",
+        "ex": [
+          {
+            "zh": "我不开车。",
+            "py": "Wǒ bù kāichē.",
+            "vi": "Tôi không lái xe."
+          },
+          {
+            "zh": "他开车去公司。",
+            "py": "Tā kāichē qù gōngsī.",
+            "vi": "Anh ấy lái xe đến công ty."
+          },
+          {
+            "zh": "谁开车去银行？",
+            "py": "Shéi kāichē qù yínháng?",
+            "vi": "Ai lái xe đi ngân hàng?"
+          },
+          {
+            "zh": "开车不容易。",
+            "py": "Kāichē bù róngyì.",
+            "vi": "Lái xe không dễ."
+          },
+          {
+            "zh": "经理开车去邮局。",
+            "py": "Jīnglǐ kāichē qù yóujú.",
+            "vi": "Giám đốc lái xe đi bưu điện."
+          }
+        ]
+      },
+      {
+        "zh": "有点儿",
+        "py": "yǒudiǎnr",
+        "type": "Phó từ",
+        "vi": "có chút, hơi",
+        "ex": [
+          {
+            "zh": "今天有点儿忙。",
+            "py": "Jīntiān yǒudiǎnr máng.",
+            "vi": "Hôm nay hơi bận."
+          },
+          {
+            "zh": "这个箱子有点儿重。",
+            "py": "Zhège xiāngzi yǒudiǎnr zhòng.",
+            "vi": "Cái vali này hơi nặng."
+          },
+          {
+            "zh": "汉语有点儿难。",
+            "py": "Hànyǔ yǒudiǎnr nán.",
+            "vi": "Tiếng Trung hơi khó."
+          },
+          {
+            "zh": "他有点儿马虎。",
+            "py": "Tā yǒudiǎnr mǎhu.",
+            "vi": "Anh ấy hơi cẩu thả."
+          },
+          {
+            "zh": "我有点儿忙，所以没去。",
+            "py": "Wǒ yǒudiǎnr máng, suǒyǐ méi qù.",
+            "vi": "Tôi hơi bận nên không đi."
+          }
+        ]
+      },
+      {
+        "zh": "车",
+        "py": "chē",
+        "type": "Danh từ",
+        "vi": "xe",
+        "ex": [
+          {
+            "zh": "这是我的车。",
+            "py": "Zhè shì wǒ de chē.",
+            "vi": "Đây là xe của tôi."
+          },
+          {
+            "zh": "他没有车。",
+            "py": "Tā méiyǒu chē.",
+            "vi": "Anh ấy không có xe."
+          },
+          {
+            "zh": "这个车很贵。",
+            "py": "Zhège chē hěn guì.",
+            "vi": "Cái xe này rất đắt."
+          },
+          {
+            "zh": "谁的车在这儿？",
+            "py": "Shéi de chē zài zhèr?",
+            "vi": "Xe của ai ở đây?"
+          },
+          {
+            "zh": "他开车，我骑车。",
+            "py": "Tā kāichē, wǒ qí chē.",
+            "vi": "Anh ấy lái xe, tôi đi xe (đạp/máy)."
+          }
+        ]
+      },
+      {
+        "zh": "汽车",
+        "py": "qìchē",
+        "type": "Danh từ",
+        "vi": "xe hơi, xe ô tô",
+        "ex": [
+          {
+            "zh": "他有一个汽车。",
+            "py": "Tā yǒu yí gè qìchē.",
+            "vi": "Anh ấy có một chiếc ô tô."
+          },
+          {
+            "zh": "汽车很贵。",
+            "py": "Qìchē hěn guì.",
+            "vi": "Ô tô rất đắt."
+          },
+          {
+            "zh": "他开汽车去公司。",
+            "py": "Tā kāi qìchē qù gōngsī.",
+            "vi": "Anh ấy lái ô tô đến công ty."
+          },
+          {
+            "zh": "这是新汽车。",
+            "py": "Zhè shì xīn qìchē.",
+            "vi": "Đây là ô tô mới."
+          },
+          {
+            "zh": "我不喜欢开汽车。",
+            "py": "Wǒ bù xǐhuan kāi qìchē.",
+            "vi": "Tôi không thích lái ô tô."
+          }
+        ]
+      },
+      {
+        "zh": "出租车",
+        "py": "chūzūchē",
+        "type": "Danh từ",
+        "vi": "taxi",
+        "ex": [
+          {
+            "zh": "我们坐出租车吧。",
+            "py": "Wǒmen zuò chūzūchē ba.",
+            "vi": "Chúng ta đi taxi đi."
+          },
+          {
+            "zh": "出租车很贵。",
+            "py": "Chūzūchē hěn guì.",
+            "vi": "Taxi rất đắt."
+          },
+          {
+            "zh": "他开出租车。",
+            "py": "Tā kāi chūzūchē.",
+            "vi": "Anh ấy lái taxi."
+          },
+          {
+            "zh": "出租车在哪儿？",
+            "py": "Chūzūchē zài nǎr?",
+            "vi": "Taxi ở đâu?"
+          },
+          {
+            "zh": "我不喜欢坐出租车。",
+            "py": "Wǒ bù xǐhuan zuò chūzūchē.",
+            "vi": "Tôi không thích đi taxi."
+          }
+        ]
+      },
+      {
+        "zh": "摩托车",
+        "py": "mótuōchē",
+        "type": "Danh từ",
+        "vi": "xe máy",
+        "ex": [
+          {
+            "zh": "他骑摩托车。",
+            "py": "Tā qí mótuōchē.",
+            "vi": "Anh ấy đi xe máy."
+          },
+          {
+            "zh": "摩托车比汽车便宜。",
+            "py": "Mótuōchē bǐ qìchē piányi.",
+            "vi": "Xe máy rẻ hơn ô tô."
+          },
+          {
+            "zh": "这是我的摩托车。",
+            "py": "Zhè shì wǒ de mótuōchē.",
+            "vi": "Đây là xe máy của tôi."
+          },
+          {
+            "zh": "谁骑摩托车？",
+            "py": "Shéi qí mótuōchē?",
+            "vi": "Ai đi xe máy?"
+          },
+          {
+            "zh": "我买了一个摩托车。",
+            "py": "Wǒ mǎile yí gè mótuōchē.",
+            "vi": "Tôi đã mua một chiếc xe máy."
+          }
+        ]
+      },
+      {
+        "zh": "自行车",
+        "py": "zìxíngchē",
+        "type": "Danh từ",
+        "vi": "xe đạp",
+        "ex": [
+          {
+            "zh": "我骑自行车去学校。",
+            "py": "Wǒ qí zìxíngchē qù xuéxiào.",
+            "vi": "Tôi đi xe đạp đến trường."
+          },
+          {
+            "zh": "自行车很便宜。",
+            "py": "Zìxíngchē hěn piányi.",
+            "vi": "Xe đạp rất rẻ."
+          },
+          {
+            "zh": "他有一个自行车。",
+            "py": "Tā yǒu yí gè zìxíngchē.",
+            "vi": "Anh ấy có một chiếc xe đạp."
+          },
+          {
+            "zh": "这是谁的自行车？",
+            "py": "Zhè shì shéi de zìxíngchē?",
+            "vi": "Đây là xe đạp của ai?"
+          },
+          {
+            "zh": "自行车比摩托车轻。",
+            "py": "Zìxíngchē bǐ mótuōchē qīng.",
+            "vi": "Xe đạp nhẹ hơn xe máy."
+          }
+        ]
+      },
+      {
+        "zh": "脚踏车",
+        "py": "jiǎotàchē",
+        "type": "Danh từ",
+        "vi": "xe đạp",
+        "ex": [
+          {
+            "zh": "脚踏车就是自行车。",
+            "py": "Jiǎotàchē jiùshì zìxíngchē.",
+            "vi": "Xe đạp (脚踏车) cũng chính là 自行车."
+          },
+          {
+            "zh": "他骑脚踏车去学校。",
+            "py": "Tā qí jiǎotàchē qù xuéxiào.",
+            "vi": "Anh ấy đi xe đạp đến trường."
+          },
+          {
+            "zh": "这个脚踏车很轻。",
+            "py": "Zhège jiǎotàchē hěn qīng.",
+            "vi": "Chiếc xe đạp này rất nhẹ."
+          },
+          {
+            "zh": "我没有脚踏车。",
+            "py": "Wǒ méiyǒu jiǎotàchē.",
+            "vi": "Tôi không có xe đạp."
+          },
+          {
+            "zh": "脚踏车很便宜。",
+            "py": "Jiǎotàchē hěn piányi.",
+            "vi": "Xe đạp rất rẻ."
+          }
+        ]
+      },
+      {
+        "zh": "电动车",
+        "py": "diàndòngchē",
+        "type": "Danh từ",
+        "vi": "xe điện",
+        "ex": [
+          {
+            "zh": "他骑电动车。",
+            "py": "Tā qí diàndòngchē.",
+            "vi": "Anh ấy đi xe điện."
+          },
+          {
+            "zh": "电动车比摩托车便宜。",
+            "py": "Diàndòngchē bǐ mótuōchē piányi.",
+            "vi": "Xe điện rẻ hơn xe máy."
+          },
+          {
+            "zh": "这是新电动车。",
+            "py": "Zhè shì xīn diàndòngchē.",
+            "vi": "Đây là xe điện mới."
+          },
+          {
+            "zh": "电动车很轻。",
+            "py": "Diàndòngchē hěn qīng.",
+            "vi": "Xe điện rất nhẹ."
+          },
+          {
+            "zh": "我想买电动车。",
+            "py": "Wǒ xiǎng mǎi diàndòngchē.",
+            "vi": "Tôi muốn mua xe điện."
+          }
+        ]
+      },
+      {
+        "zh": "骑",
+        "py": "qí",
+        "type": "Động từ",
+        "vi": "cưỡi, đi (xe hai bánh)",
+        "ex": [
+          {
+            "zh": "我骑自行车。",
+            "py": "Wǒ qí zìxíngchē.",
+            "vi": "Tôi đi xe đạp."
+          },
+          {
+            "zh": "他骑摩托车去公司。",
+            "py": "Tā qí mótuōchē qù gōngsī.",
+            "vi": "Anh ấy đi xe máy đến công ty."
+          },
+          {
+            "zh": "你骑车吗？",
+            "py": "Nǐ qí chē ma?",
+            "vi": "Bạn có đi xe (đạp/máy) không?"
+          },
+          {
+            "zh": "她骑电动车去公司。",
+            "py": "Tā qí diàndòngchē qù gōngsī.",
+            "vi": "Cô ấy đi xe điện đến công ty."
+          },
+          {
+            "zh": "骑车比开车便宜。",
+            "py": "Qí chē bǐ kāichē piányi.",
+            "vi": "Đi xe (2 bánh) rẻ hơn lái xe (ô tô)."
+          }
+        ]
+      }
+    ]
   }
 ];
 
@@ -12889,4 +13487,12 @@ const PHRASES = [
   {zh:'你们的老师是谁？',       py:'Nǐmen de lǎoshī shì shéi?',           vi:'Thầy/cô của các bạn là ai?',                    lesson:12},
   {zh:'汉语比较难。',           py:'Hànyǔ bǐjiào nán.',                   vi:'Tiếng Trung khá khó.',                          lesson:12},
   {zh:'汉语是一个有意思的语言。',py:'Hànyǔ shì yí gè yǒu yìsi de yǔyán.',vi:'Tiếng Trung là một ngôn ngữ thú vị.',           lesson:12},
+  // Bài 18 (b20)
+  {zh:"我们的经理是一个很好的人。",py:"Wǒmen de jīnglǐ shì yí gè hěn hǎo de rén.",vi:"Giám đốc của chúng tôi là một người rất tốt.",lesson:18},
+  {zh:"最近你学习怎么样？",py:"Zuìjìn nǐ xuéxí zěnmeyàng?",vi:"Dạo này bạn học hành thế nào?",lesson:18},
+  {zh:"这是我刚买的日用品。",py:"Zhè shì wǒ gāng mǎi de rìyòngpǐn.",vi:"Đây là đồ dùng hàng ngày tôi vừa mới mua.",lesson:18},
+  {zh:"你是老师还是学生？",py:"Nǐ shì lǎoshī háishi xuésheng?",vi:"Bạn là giáo viên hay học sinh?",lesson:18},
+  {zh:"你要喝茶还是咖啡？",py:"Nǐ yào hē chá háishi kāfēi?",vi:"Bạn muốn uống trà hay cà phê?",lesson:18},
+  {zh:"我要喝一杯茶。",py:"Wǒ yào hē yì bēi chá.",vi:"Tôi muốn uống một ly trà.",lesson:18},
+  {zh:"这杯咖啡是谁的？",py:"Zhè bēi kāfēi shì shéi de?",vi:"Ly cà phê này là của ai?",lesson:18},
 ];

@@ -439,6 +439,36 @@ const GRAMMAR_DATA = [
       {zh:'这个饭馆既便宜又好吃。',py:'Zhège fànguǎn jì piányí yòu hǎochī.',vi:'Nhà hàng này vừa rẻ vừa ngon.',form:'既...又... (vừa...vừa...)'},
     ]
   },
+  // ── 31. 刚 + V ───────────────────────────────────
+  {
+    id:'trang-tu', num:31,
+    title:'刚 (gāng) + V — Hành động vừa mới xảy ra',
+    tag:'S + 刚 + V (+ O)',
+    formula:'Chủ ngữ + 刚 + Động từ (+ Tân ngữ)',
+    note:'⚠️ 刚 đứng trước động từ, diễn tả hành động vừa mới hoàn thành, gần với thời điểm nói.',
+    tip:'💡 So sánh: 刚 (vừa mới xảy ra, gần hiện tại) khác với 才 (mãi mới, muộn hơn mong đợi).',
+    rows:[
+      {zh:'我刚回家。',py:'Wǒ gāng huíjiā.',vi:'Tôi vừa mới về nhà.',form:'S + 刚 + V'},
+      {zh:'他刚去学校。',py:'Tā gāng qù xuéxiào.',vi:'Anh ấy vừa mới đến trường.',form:'S + 刚 + V + O'},
+      {zh:'刚开学，所以很忙。',py:'Gāng kāixué, suǒyǐ hěn máng.',vi:'Vừa khai giảng nên rất bận.',form:'刚 + V, 所以...'},
+      {zh:'这是我刚买的日用品。',py:'Zhè shì wǒ gāng mǎi de rìyòngpǐn.',vi:'Đây là đồ dùng hàng ngày tôi vừa mới mua.',form:'刚 + V + 的 + N'},
+    ]
+  },
+  // ── 32. 有(一)点儿 + Adj ─────────────────────────
+  {
+    id:'trang-tu', num:32,
+    title:'有(一)点儿 (yǒu(yì)diǎnr) + Adj — Hơi, có chút',
+    tag:'S + 有(一)点儿 + Adj',
+    formula:'Chủ ngữ + 有(一)点儿 + Tính từ',
+    note:'⚠️ 有点儿 thường mang sắc thái không hài lòng/không mong muốn, khác với Adj + 一点儿 đứng SAU tính từ mang nghĩa so sánh nhẹ ("...hơn một chút").',
+    tip:'💡 有点儿 = trước tính từ (hơi...); Adj + 一点儿 = sau tính từ (...hơn một chút, dùng khi so sánh).',
+    rows:[
+      {zh:'今天有点儿热。',py:'Jīntiān yǒudiǎnr rè.',vi:'Hôm nay hơi nóng.',form:'S + 有点儿 + Adj'},
+      {zh:'他的性格有点儿不好。',py:'Tā de xìnggé yǒudiǎnr bù hǎo.',vi:'Tính cách của anh ấy hơi không tốt.',form:'S + 有点儿 + Adj'},
+      {zh:'最近我有点儿忙。',py:'Zuìjìn wǒ yǒudiǎnr máng.',vi:'Dạo này tôi hơi bận.',form:'S + 有点儿 + Adj'},
+      {zh:'这个箱子有点儿重。',py:'Zhège xiāngzi yǒudiǎnr zhòng.',vi:'Cái vali này hơi nặng.',form:'S + 有点儿 + Adj'},
+    ]
+  },
 ];
 
 function filterGram(id, btn) {
