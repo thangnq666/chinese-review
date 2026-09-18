@@ -13031,6 +13031,638 @@ const VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "lesson": "Buổi 19 (b21): 全家、看病与外贸 – Cả nhà, khám bệnh & ngoại thương",
+    "words": [
+      {
+        "zh": "全",
+        "py": "quán",
+        "type": "Phó từ",
+        "vi": "toàn bộ, tất cả, cả",
+        "ex": [
+          {
+            "zh": "下个星期我全家去旅游。",
+            "py": "Xià ge xīngqī wǒ quánjiā qù lǚyóu.",
+            "vi": "Tuần sau cả nhà tôi đi du lịch."
+          },
+          {
+            "zh": "全公司都很忙。",
+            "py": "Quán gōngsī dōu hěn máng.",
+            "vi": "Cả công ty đều rất bận."
+          },
+          {
+            "zh": "我们全班都是留学生。",
+            "py": "Wǒmen quán bān dōu shì liúxuéshēng.",
+            "vi": "Cả lớp chúng tôi đều là lưu học sinh."
+          },
+          {
+            "zh": "我全家都喜欢喝茶。",
+            "py": "Wǒ quánjiā dōu xǐhuan hē chá.",
+            "vi": "Cả nhà tôi đều thích uống trà."
+          },
+          {
+            "zh": "全学校的老师都很好。",
+            "py": "Quán xuéxiào de lǎoshī dōu hěn hǎo.",
+            "vi": "Giáo viên của cả trường đều rất tốt."
+          }
+        ]
+      },
+      {
+        "zh": "照片",
+        "py": "zhàopiàn",
+        "type": "Danh từ",
+        "vi": "ảnh, bức ảnh",
+        "ex": [
+          {
+            "zh": "这是我全家的照片。",
+            "py": "Zhè shì wǒ quánjiā de zhàopiàn.",
+            "vi": "Đây là ảnh cả nhà tôi."
+          },
+          {
+            "zh": "你有全家的照片吗？",
+            "py": "Nǐ yǒu quánjiā de zhàopiàn ma?",
+            "vi": "Bạn có ảnh cả nhà không?"
+          },
+          {
+            "zh": "这张照片很好看。",
+            "py": "Zhè zhāng zhàopiàn hěn hǎokàn.",
+            "vi": "Bức ảnh này rất đẹp."
+          },
+          {
+            "zh": "这是我朋友的照片。",
+            "py": "Zhè shì wǒ péngyou de zhàopiàn.",
+            "vi": "Đây là ảnh của bạn tôi."
+          },
+          {
+            "zh": "我没有他的照片。",
+            "py": "Wǒ méiyǒu tā de zhàopiàn.",
+            "vi": "Tôi không có ảnh của anh ấy."
+          }
+        ]
+      },
+      {
+        "zh": "看",
+        "py": "kàn",
+        "type": "Động từ",
+        "vi": "nhìn, xem, đọc, thăm, khám",
+        "ex": [
+          {
+            "zh": "我孩子很喜欢看手机。",
+            "py": "Wǒ háizi hěn xǐhuan kàn shǒujī.",
+            "vi": "Con tôi rất thích xem điện thoại."
+          },
+          {
+            "zh": "我喜欢看书。",
+            "py": "Wǒ xǐhuan kàn shū.",
+            "vi": "Tôi thích đọc sách."
+          },
+          {
+            "zh": "我要去看医生。",
+            "py": "Wǒ yào qù kàn yīshēng.",
+            "vi": "Tôi cần đi khám bác sĩ."
+          },
+          {
+            "zh": "你在看什么？",
+            "py": "Nǐ zài kàn shénme?",
+            "vi": "Bạn đang xem gì vậy?"
+          },
+          {
+            "zh": "我想看这张照片。",
+            "py": "Wǒ xiǎng kàn zhè zhāng zhàopiàn.",
+            "vi": "Tôi muốn xem bức ảnh này."
+          }
+        ]
+      },
+      {
+        "zh": "看见",
+        "py": "kànjiàn",
+        "type": "Động từ",
+        "vi": "nhìn thấy, trông thấy",
+        "ex": [
+          {
+            "zh": "我看见王老师了。",
+            "py": "Wǒ kànjiàn Wáng lǎoshī le.",
+            "vi": "Tôi nhìn thấy thầy Vương rồi."
+          },
+          {
+            "zh": "你看见我的词典了吗？",
+            "py": "Nǐ kànjiàn wǒ de cídiǎn le ma?",
+            "vi": "Bạn có thấy từ điển của tôi không?"
+          },
+          {
+            "zh": "我在商店看见了他。",
+            "py": "Wǒ zài shāngdiàn kànjiàn le tā.",
+            "vi": "Tôi nhìn thấy anh ấy ở cửa hàng."
+          },
+          {
+            "zh": "我没看见你的照片。",
+            "py": "Wǒ méi kànjiàn nǐ de zhàopiàn.",
+            "vi": "Tôi không thấy ảnh của bạn."
+          },
+          {
+            "zh": "我在图书馆看见她了。",
+            "py": "Wǒ zài túshūguǎn kànjiàn tā le.",
+            "vi": "Tôi nhìn thấy cô ấy ở thư viện."
+          }
+        ]
+      },
+      {
+        "zh": "只",
+        "py": "zhǐ",
+        "type": "Phó từ",
+        "vi": "chỉ",
+        "ex": [
+          {
+            "zh": "我老婆只有一个姐姐。",
+            "py": "Wǒ lǎopo zhǐyǒu yí ge jiějie.",
+            "vi": "Vợ tôi chỉ có một chị gái."
+          },
+          {
+            "zh": "我只喝茶，不喝咖啡。",
+            "py": "Wǒ zhǐ hē chá, bù hē kāfēi.",
+            "vi": "Tôi chỉ uống trà, không uống cà phê."
+          },
+          {
+            "zh": "他只有一个孩子。",
+            "py": "Tā zhǐyǒu yí ge háizi.",
+            "vi": "Anh ấy chỉ có một đứa con."
+          },
+          {
+            "zh": "我只想看照片。",
+            "py": "Wǒ zhǐ xiǎng kàn zhàopiàn.",
+            "vi": "Tôi chỉ muốn xem ảnh."
+          },
+          {
+            "zh": "这个商店只卖水果。",
+            "py": "Zhège shāngdiàn zhǐ mài shuǐguǒ.",
+            "vi": "Cửa hàng này chỉ bán hoa quả."
+          }
+        ]
+      },
+      {
+        "zh": "做",
+        "py": "zuò",
+        "type": "Động từ",
+        "vi": "làm",
+        "ex": [
+          {
+            "zh": "你做什么工作？",
+            "py": "Nǐ zuò shénme gōngzuò?",
+            "vi": "Bạn làm công việc gì?"
+          },
+          {
+            "zh": "我朋友做律师。",
+            "py": "Wǒ péngyou zuò lǜshī.",
+            "vi": "Bạn của tôi làm luật sư."
+          },
+          {
+            "zh": "你在做什么？",
+            "py": "Nǐ zài zuò shénme?",
+            "vi": "Bạn đang làm gì?"
+          },
+          {
+            "zh": "他想做什么工作？",
+            "py": "Tā xiǎng zuò shénme gōngzuò?",
+            "vi": "Anh ấy muốn làm công việc gì?"
+          },
+          {
+            "zh": "我想做医生。",
+            "py": "Wǒ xiǎng zuò yīshēng.",
+            "vi": "Tôi muốn làm bác sĩ."
+          }
+        ]
+      },
+      {
+        "zh": "做饭",
+        "py": "zuòfàn",
+        "type": "Cụm từ",
+        "vi": "nấu cơm",
+        "ex": [
+          {
+            "zh": "我妈妈喜欢做饭。",
+            "py": "Wǒ māma xǐhuan zuòfàn.",
+            "vi": "Mẹ tôi thích nấu cơm."
+          },
+          {
+            "zh": "他经常做饭。",
+            "py": "Tā jīngcháng zuòfàn.",
+            "vi": "Anh ấy thường xuyên nấu cơm."
+          },
+          {
+            "zh": "我今天不做饭。",
+            "py": "Wǒ jīntiān bú zuòfàn.",
+            "vi": "Hôm nay tôi không nấu cơm."
+          },
+          {
+            "zh": "你在做饭吗？",
+            "py": "Nǐ zài zuòfàn ma?",
+            "vi": "Bạn đang nấu cơm à?"
+          },
+          {
+            "zh": "我老婆很喜欢做饭。",
+            "py": "Wǒ lǎopo hěn xǐhuan zuòfàn.",
+            "vi": "Vợ tôi rất thích nấu cơm."
+          }
+        ]
+      },
+      {
+        "zh": "医生",
+        "py": "yīshēng",
+        "type": "Danh từ",
+        "vi": "bác sĩ",
+        "ex": [
+          {
+            "zh": "我妈妈是这个医院的医生。",
+            "py": "Wǒ māma shì zhège yīyuàn de yīshēng.",
+            "vi": "Mẹ tôi là bác sĩ của bệnh viện này."
+          },
+          {
+            "zh": "我朋友是医生。",
+            "py": "Wǒ péngyou shì yīshēng.",
+            "vi": "Bạn tôi là bác sĩ."
+          },
+          {
+            "zh": "这位医生很好。",
+            "py": "Zhè wèi yīshēng hěn hǎo.",
+            "vi": "Vị bác sĩ này rất tốt."
+          },
+          {
+            "zh": "他是医院的医生。",
+            "py": "Tā shì yīyuàn de yīshēng.",
+            "vi": "Anh ấy là bác sĩ của bệnh viện."
+          },
+          {
+            "zh": "我姐姐想做医生。",
+            "py": "Wǒ jiějie xiǎng zuò yīshēng.",
+            "vi": "Chị tôi muốn làm bác sĩ."
+          }
+        ]
+      },
+      {
+        "zh": "医院",
+        "py": "yīyuàn",
+        "type": "Danh từ",
+        "vi": "bệnh viện",
+        "ex": [
+          {
+            "zh": "我妈妈在医院工作五年了。",
+            "py": "Wǒ māma zài yīyuàn gōngzuò wǔ nián le.",
+            "vi": "Mẹ tôi làm việc ở bệnh viện năm năm rồi."
+          },
+          {
+            "zh": "我经常去医院定期看病。",
+            "py": "Wǒ jīngcháng qù yīyuàn dìngqī kànbìng.",
+            "vi": "Tôi thường xuyên đi khám định kỳ ở bệnh viện."
+          },
+          {
+            "zh": "这个医院很大。",
+            "py": "Zhège yīyuàn hěn dà.",
+            "vi": "Bệnh viện này rất lớn."
+          },
+          {
+            "zh": "医院里有很多医生。",
+            "py": "Yīyuàn li yǒu hěn duō yīshēng.",
+            "vi": "Trong bệnh viện có rất nhiều bác sĩ."
+          },
+          {
+            "zh": "我朋友在医院工作。",
+            "py": "Wǒ péngyou zài yīyuàn gōngzuò.",
+            "vi": "Bạn tôi làm việc ở bệnh viện."
+          }
+        ]
+      },
+      {
+        "zh": "定期",
+        "py": "dìngqī",
+        "type": "Phó từ",
+        "vi": "định kỳ",
+        "ex": [
+          {
+            "zh": "我经常去医院定期看病。",
+            "py": "Wǒ jīngcháng qù yīyuàn dìngqī kànbìng.",
+            "vi": "Tôi thường xuyên đi khám định kỳ ở bệnh viện."
+          },
+          {
+            "zh": "你要定期去看医生。",
+            "py": "Nǐ yào dìngqī qù kàn yīshēng.",
+            "vi": "Bạn cần đi khám bác sĩ định kỳ."
+          },
+          {
+            "zh": "我妈妈定期去医院。",
+            "py": "Wǒ māma dìngqī qù yīyuàn.",
+            "vi": "Mẹ tôi định kỳ đi bệnh viện."
+          },
+          {
+            "zh": "我定期去商店买水果。",
+            "py": "Wǒ dìngqī qù shāngdiàn mǎi shuǐguǒ.",
+            "vi": "Tôi định kỳ đi cửa hàng mua hoa quả."
+          },
+          {
+            "zh": "我们定期去图书馆看书。",
+            "py": "Wǒmen dìngqī qù túshūguǎn kàn shū.",
+            "vi": "Chúng tôi định kỳ đi thư viện đọc sách."
+          }
+        ]
+      },
+      {
+        "zh": "商店",
+        "py": "shāngdiàn",
+        "type": "Danh từ",
+        "vi": "cửa hàng",
+        "ex": [
+          {
+            "zh": "我妈妈在一个小商店工作。",
+            "py": "Wǒ māma zài yí ge xiǎo shāngdiàn gōngzuò.",
+            "vi": "Mẹ tôi làm việc ở một cửa hàng nhỏ."
+          },
+          {
+            "zh": "这个商店卖水果。",
+            "py": "Zhège shāngdiàn mài shuǐguǒ.",
+            "vi": "Cửa hàng này bán hoa quả."
+          },
+          {
+            "zh": "商店里的衣服很贵。",
+            "py": "Shāngdiàn li de yīfu hěn guì.",
+            "vi": "Quần áo trong cửa hàng rất đắt."
+          },
+          {
+            "zh": "这家商店在哪儿？",
+            "py": "Zhè jiā shāngdiàn zài nǎr?",
+            "vi": "Cửa hàng này ở đâu?"
+          },
+          {
+            "zh": "商店几点开？",
+            "py": "Shāngdiàn jǐ diǎn kāi?",
+            "vi": "Cửa hàng mấy giờ mở cửa?"
+          }
+        ]
+      },
+      {
+        "zh": "外贸",
+        "py": "wàimào",
+        "type": "Danh từ",
+        "vi": "ngoại thương",
+        "ex": [
+          {
+            "zh": "我在河内外贸大学学习。",
+            "py": "Wǒ zài Hénèi Wàimào Dàxué xuéxí.",
+            "vi": "Tôi học ở Đại học Ngoại thương Hà Nội."
+          },
+          {
+            "zh": "他在一个外贸公司工作。",
+            "py": "Tā zài yí ge wàimào gōngsī gōngzuò.",
+            "vi": "Anh ấy làm việc ở một công ty ngoại thương."
+          },
+          {
+            "zh": "外贸公司很忙。",
+            "py": "Wàimào gōngsī hěn máng.",
+            "vi": "Công ty ngoại thương rất bận."
+          },
+          {
+            "zh": "我朋友是外贸公司的职员。",
+            "py": "Wǒ péngyou shì wàimào gōngsī de zhíyuán.",
+            "vi": "Bạn tôi là nhân viên của công ty ngoại thương."
+          },
+          {
+            "zh": "我想在外贸公司工作。",
+            "py": "Wǒ xiǎng zài wàimào gōngsī gōngzuò.",
+            "vi": "Tôi muốn làm việc ở công ty ngoại thương."
+          }
+        ]
+      },
+      {
+        "zh": "大概",
+        "py": "dàgài",
+        "type": "Phó từ",
+        "vi": "khoảng, đại khái",
+        "ex": [
+          {
+            "zh": "我公司大概有八十个人。",
+            "py": "Wǒ gōngsī dàgài yǒu bāshí ge rén.",
+            "vi": "Công ty tôi có khoảng 80 người."
+          },
+          {
+            "zh": "现在大概九点。",
+            "py": "Xiànzài dàgài jiǔ diǎn.",
+            "vi": "Bây giờ khoảng 9 giờ."
+          },
+          {
+            "zh": "这个箱子大概三斤。",
+            "py": "Zhège xiāngzi dàgài sān jīn.",
+            "vi": "Cái vali này khoảng ba cân."
+          },
+          {
+            "zh": "我们大概明天去。",
+            "py": "Wǒmen dàgài míngtiān qù.",
+            "vi": "Chúng tôi khoảng ngày mai sẽ đi."
+          },
+          {
+            "zh": "这本书大概一百块。",
+            "py": "Zhè běn shū dàgài yìbǎi kuài.",
+            "vi": "Quyển sách này khoảng một trăm đồng."
+          }
+        ]
+      },
+      {
+        "zh": "点",
+        "py": "diǎn",
+        "type": "Danh từ",
+        "vi": "giờ (đơn vị chỉ giờ)",
+        "ex": [
+          {
+            "zh": "现在大概九点。",
+            "py": "Xiànzài dàgài jiǔ diǎn.",
+            "vi": "Bây giờ khoảng 9 giờ."
+          },
+          {
+            "zh": "现在几点？",
+            "py": "Xiànzài jǐ diǎn?",
+            "vi": "Bây giờ mấy giờ?"
+          },
+          {
+            "zh": "你几点回家？",
+            "py": "Nǐ jǐ diǎn huíjiā?",
+            "vi": "Mấy giờ bạn về nhà?"
+          },
+          {
+            "zh": "我八点去公司。",
+            "py": "Wǒ bā diǎn qù gōngsī.",
+            "vi": "Tôi 8 giờ đi đến công ty."
+          },
+          {
+            "zh": "现在十二点，我们去吃饭吧。",
+            "py": "Xiànzài shí'èr diǎn, wǒmen qù chīfàn ba.",
+            "vi": "Bây giờ 12 giờ, chúng ta đi ăn cơm nhé."
+          }
+        ]
+      },
+      {
+        "zh": "小",
+        "py": "xiǎo",
+        "type": "Tính từ",
+        "vi": "nhỏ, bé",
+        "ex": [
+          {
+            "zh": "我妈妈在一个小商店工作。",
+            "py": "Wǒ māma zài yí ge xiǎo shāngdiàn gōngzuò.",
+            "vi": "Mẹ tôi làm việc ở một cửa hàng nhỏ."
+          },
+          {
+            "zh": "这个箱子很小。",
+            "py": "Zhège xiāngzi hěn xiǎo.",
+            "vi": "Cái vali này rất nhỏ."
+          },
+          {
+            "zh": "我家很小。",
+            "py": "Wǒ jiā hěn xiǎo.",
+            "vi": "Nhà tôi rất nhỏ."
+          },
+          {
+            "zh": "这条路很小。",
+            "py": "Zhè tiáo lù hěn xiǎo.",
+            "vi": "Con đường này rất nhỏ."
+          },
+          {
+            "zh": "这个房间很小。",
+            "py": "Zhège fángjiān hěn xiǎo.",
+            "vi": "Căn phòng này rất nhỏ."
+          }
+        ]
+      },
+      {
+        "zh": "高铁",
+        "py": "gāotiě",
+        "type": "Danh từ",
+        "vi": "tàu cao tốc",
+        "ex": [
+          {
+            "zh": "我坐高铁去上班。",
+            "py": "Wǒ zuò gāotiě qù shàngbān.",
+            "vi": "Tôi đi tàu cao tốc đi làm."
+          },
+          {
+            "zh": "我喜欢坐高铁。",
+            "py": "Wǒ xǐhuan zuò gāotiě.",
+            "vi": "Tôi thích đi tàu cao tốc."
+          },
+          {
+            "zh": "我们坐高铁去北京。",
+            "py": "Wǒmen zuò gāotiě qù Běijīng.",
+            "vi": "Chúng tôi đi tàu cao tốc đến Bắc Kinh."
+          },
+          {
+            "zh": "他经常坐高铁上班。",
+            "py": "Tā jīngcháng zuò gāotiě shàngbān.",
+            "vi": "Anh ấy thường xuyên đi tàu cao tốc đi làm."
+          },
+          {
+            "zh": "我不喜欢坐高铁。",
+            "py": "Wǒ bù xǐhuan zuò gāotiě.",
+            "vi": "Tôi không thích đi tàu cao tốc."
+          }
+        ]
+      },
+      {
+        "zh": "地铁",
+        "py": "dìtiě",
+        "type": "Danh từ",
+        "vi": "tàu điện ngầm",
+        "ex": [
+          {
+            "zh": "我坐地铁去公司。",
+            "py": "Wǒ zuò dìtiě qù gōngsī.",
+            "vi": "Tôi đi tàu điện ngầm đến công ty."
+          },
+          {
+            "zh": "北京有地铁。",
+            "py": "Běijīng yǒu dìtiě.",
+            "vi": "Bắc Kinh có tàu điện ngầm."
+          },
+          {
+            "zh": "我喜欢坐地铁，不喜欢坐出租车。",
+            "py": "Wǒ xǐhuan zuò dìtiě, bù xǐhuan zuò chūzūchē.",
+            "vi": "Tôi thích đi tàu điện ngầm, không thích đi taxi."
+          },
+          {
+            "zh": "我们坐地铁去学校。",
+            "py": "Wǒmen zuò dìtiě qù xuéxiào.",
+            "vi": "Chúng tôi đi tàu điện ngầm đến trường."
+          },
+          {
+            "zh": "河内没有地铁。",
+            "py": "Hénèi méiyǒu dìtiě.",
+            "vi": "Hà Nội không có tàu điện ngầm."
+          }
+        ]
+      },
+      {
+        "zh": "灰色",
+        "py": "huīsè",
+        "type": "Danh từ",
+        "vi": "màu xám (ghi)",
+        "ex": [
+          {
+            "zh": "我的车是灰色的。",
+            "py": "Wǒ de chē shì huīsè de.",
+            "vi": "Xe của tôi màu xám."
+          },
+          {
+            "zh": "他喜欢灰色的衣服。",
+            "py": "Tā xǐhuan huīsè de yīfu.",
+            "vi": "Anh ấy thích quần áo màu xám."
+          },
+          {
+            "zh": "这件衣服是灰色的，不是黑色的。",
+            "py": "Zhè jiàn yīfu shì huīsè de, bú shì hēisè de.",
+            "vi": "Chiếc áo này màu xám, không phải màu đen."
+          },
+          {
+            "zh": "你的箱子是白色还是灰色？",
+            "py": "Nǐ de xiāngzi shì báisè háishi huīsè?",
+            "vi": "Vali của bạn màu trắng hay màu xám?"
+          },
+          {
+            "zh": "灰色也很好看。",
+            "py": "Huīsè yě hěn hǎokàn.",
+            "vi": "Màu xám cũng rất đẹp."
+          }
+        ]
+      },
+      {
+        "zh": "上班",
+        "py": "shàngbān",
+        "type": "Cụm từ",
+        "vi": "đi làm",
+        "ex": [
+          {
+            "zh": "我坐高铁去上班。",
+            "py": "Wǒ zuò gāotiě qù shàngbān.",
+            "vi": "Tôi đi tàu cao tốc đi làm."
+          },
+          {
+            "zh": "你几点上班？",
+            "py": "Nǐ jǐ diǎn shàngbān?",
+            "vi": "Mấy giờ bạn đi làm?"
+          },
+          {
+            "zh": "我今天不上班。",
+            "py": "Wǒ jīntiān bú shàngbān.",
+            "vi": "Hôm nay tôi không đi làm."
+          },
+          {
+            "zh": "他经常开车上班。",
+            "py": "Tā jīngcháng kāichē shàngbān.",
+            "vi": "Anh ấy thường xuyên lái xe đi làm."
+          },
+          {
+            "zh": "我八点上班。",
+            "py": "Wǒ bā diǎn shàngbān.",
+            "vi": "Tôi 8 giờ đi làm."
+          }
+        ]
+      }
+    ]
   }
 ];
 
@@ -13495,4 +14127,12 @@ const PHRASES = [
   {zh:"你要喝茶还是咖啡？",py:"Nǐ yào hē chá háishi kāfēi?",vi:"Bạn muốn uống trà hay cà phê?",lesson:18},
   {zh:"我要喝一杯茶。",py:"Wǒ yào hē yì bēi chá.",vi:"Tôi muốn uống một ly trà.",lesson:18},
   {zh:"这杯咖啡是谁的？",py:"Zhè bēi kāfēi shì shéi de?",vi:"Ly cà phê này là của ai?",lesson:18},
+  // Bài 19
+  {zh:"这是我买的车。",py:"Zhè shì wǒ mǎi de chē.",vi:"Đây là xe tôi mua.",lesson:19},
+  {zh:"那是经理的汽车。",py:"Nà shì jīnglǐ de qìchē.",vi:"Kia là ô tô của giám đốc.",lesson:19},
+  {zh:"最近你的工作怎么样？",py:"Zuìjìn nǐ de gōngzuò zěnmeyàng?",vi:"Gần đây công việc của bạn thế nào?",lesson:19},
+  {zh:"你要喝杯咖啡吗？",py:"Nǐ yào hē bēi kāfēi ma?",vi:"Bạn muốn uống ly cà phê không?",lesson:19},
+  {zh:"这是茶还是咖啡？",py:"Zhè shì chá háishi kāfēi?",vi:"Đây là trà hay là cà phê?",lesson:19},
+  {zh:"你的车是白色还是黑色？",py:"Nǐ de chē shì báisè háishi hēisè?",vi:"Xe của bạn màu trắng hay màu đen?",lesson:19},
+  {zh:"我坐高铁去上班。",py:"Wǒ zuò gāotiě qù shàngbān.",vi:"Tôi đi tàu cao tốc đi làm.",lesson:19},
 ];

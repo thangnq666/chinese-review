@@ -469,6 +469,66 @@ const GRAMMAR_DATA = [
       {zh:'这个箱子有点儿重。',py:'Zhège xiāngzi yǒudiǎnr zhòng.',vi:'Cái vali này hơi nặng.',form:'S + 有点儿 + Adj'},
     ]
   },
+  // ── 33. 动词 + 见 ─────────────────────────────
+  {
+    id:'bo-ngu', num:33,
+    title:'动词 + 见 (jiàn) — Bổ ngữ kết quả: nhìn/nghe thấy',
+    tag:'V + 见',
+    formula:'Động từ (看/听...) + 见 (+ 了)',
+    note:'⚠️ 见 làm bổ ngữ kết quả sau các động từ giác quan như 看, 听..., diễn tả kết quả đã cảm nhận được (nhìn THẤY, nghe THẤY), khác với chỉ 看/听 đơn thuần (chỉ là hành động, chưa chắc có kết quả).',
+    tip:'💡 看 (nhìn/xem) ≠ 看见 (nhìn THẤY); tương tự 听 (nghe) ≠ 听见 (nghe THẤY).',
+    rows:[
+      {zh:'我看见王老师了。',py:'Wǒ kànjiàn Wáng lǎoshī le.',vi:'Tôi nhìn thấy thầy Vương rồi.',form:'V+见+了'},
+      {zh:'你看见我的词典了吗？',py:'Nǐ kànjiàn wǒ de cídiǎn le ma?',vi:'Bạn có thấy từ điển của tôi không?',form:'V+见+了+吗'},
+      {zh:'我没看见你的照片。',py:'Wǒ méi kànjiàn nǐ de zhàopiàn.',vi:'Tôi không thấy ảnh của bạn.',form:'没+V+见'},
+      {zh:'我在图书馆看见她了。',py:'Wǒ zài túshūguǎn kànjiàn tā le.',vi:'Tôi nhìn thấy cô ấy ở thư viện.',form:'在+địa điểm+V+见+了'},
+    ]
+  },
+  // ── 34. 只 ────────────────────────────────────
+  {
+    id:'trang-tu', num:34,
+    title:'只 (zhǐ) — Chỉ, chỉ có (giới hạn phạm vi)',
+    tag:'S + 只 + V/有 + O',
+    formula:'Chủ ngữ + 只 (+ 有) + Động từ/Tân ngữ',
+    note:'⚠️ 只 đứng trước động từ hoặc 有, nhấn mạnh phạm vi bị giới hạn — "chỉ có/chỉ làm duy nhất việc đó".',
+    tip:'💡 Phân biệt 只 (zhǐ, "chỉ") với 只 (zhī, lượng từ đếm con vật) — cùng chữ nhưng khác âm và nghĩa.',
+    rows:[
+      {zh:'我老婆只有一个姐姐。',py:'Wǒ lǎopo zhǐyǒu yí ge jiějie.',vi:'Vợ tôi chỉ có một chị gái.',form:'S+只有+O'},
+      {zh:'我只喝茶，不喝咖啡。',py:'Wǒ zhǐ hē chá, bù hē kāfēi.',vi:'Tôi chỉ uống trà, không uống cà phê.',form:'S+只+V+O'},
+      {zh:'他只有一个孩子。',py:'Tā zhǐyǒu yí ge háizi.',vi:'Anh ấy chỉ có một đứa con.',form:'S+只有+O'},
+      {zh:'这个商店只卖水果。',py:'Zhège shāngdiàn zhǐ mài shuǐguǒ.',vi:'Cửa hàng này chỉ bán hoa quả.',form:'S+只+V+O'},
+    ]
+  },
+  // ── 35. 大概 ───────────────────────────────────
+  {
+    id:'trang-tu', num:35,
+    title:'大概 (dàgài) — Khoảng, đại khái (ước lượng)',
+    tag:'大概 + Số lượng/Thời gian',
+    formula:'大概 + Số từ (+ Lượng từ/Danh từ)',
+    note:'⚠️ 大概 đứng trước con số hoặc thời gian để diễn tả sự ước lượng, không chắc chắn chính xác — tương đương "khoảng, chừng".',
+    tip:'💡 大概 có thể đứng đầu câu hoặc ngay trước phần cần ước lượng (số lượng, giờ giấc, thời gian).',
+    rows:[
+      {zh:'我公司大概有八十个人。',py:'Wǒ gōngsī dàgài yǒu bāshí ge rén.',vi:'Công ty tôi có khoảng 80 người.',form:'S+大概+有+số lượng'},
+      {zh:'现在大概九点。',py:'Xiànzài dàgài jiǔ diǎn.',vi:'Bây giờ khoảng 9 giờ.',form:'S+大概+giờ'},
+      {zh:'这个箱子大概三斤。',py:'Zhège xiāngzi dàgài sān jīn.',vi:'Cái vali này khoảng ba cân.',form:'S+大概+số lượng'},
+      {zh:'我们大概明天去。',py:'Wǒmen dàgài míngtiān qù.',vi:'Chúng tôi khoảng ngày mai sẽ đi.',form:'S+大概+thời gian+V'},
+    ]
+  },
+  // ── 36. 全 + N ─────────────────────────────────
+  {
+    id:'trang-tu', num:36,
+    title:'全 (quán) + N — Toàn bộ, cả (thường đi kèm 都)',
+    tag:'全 + N (+ 都)',
+    formula:'全 + Danh từ (+ 都 + V)',
+    note:'⚠️ 全 đứng trước danh từ để chỉ toàn bộ phạm vi (全家, 全国, 全校...), thường đi kèm 都 phía sau để nhấn mạnh "đều".',
+    tip:'💡 So sánh với 都 (đều, đứng sau chủ ngữ): 全家都喜欢 = cả nhà đều thích; có thể lược 都 nhưng có 都 câu tự nhiên hơn.',
+    rows:[
+      {zh:'下个星期我全家去旅游。',py:'Xià ge xīngqī wǒ quánjiā qù lǚyóu.',vi:'Tuần sau cả nhà tôi đi du lịch.',form:'S+全家+V'},
+      {zh:'全公司都很忙。',py:'Quán gōngsī dōu hěn máng.',vi:'Cả công ty đều rất bận.',form:'全+N+都+Adj'},
+      {zh:'我们全班都是留学生。',py:'Wǒmen quán bān dōu shì liúxuéshēng.',vi:'Cả lớp chúng tôi đều là lưu học sinh.',form:'S+全+N+都+是+O'},
+      {zh:'全学校的老师都很好。',py:'Quán xuéxiào de lǎoshī dōu hěn hǎo.',vi:'Giáo viên của cả trường đều rất tốt.',form:'全+N+的+N+都+Adj'},
+    ]
+  },
 ];
 
 function filterGram(id, btn) {
