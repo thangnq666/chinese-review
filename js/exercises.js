@@ -376,6 +376,7 @@ function renderFill() {
       return `<div class="fill-sentence" style="opacity:0.6">
         <span style="font-size:0.75rem;color:var(--text-light)">${i+1}. </span>
         <span style="font-size:1.1rem;font-weight:700">${item.zh}</span>
+        <button class="fill-speak-btn" title="Nghe câu" style="background:none;border:none;cursor:pointer;font-size:0.85rem;margin-left:6px" onclick="event.stopPropagation();speak('${item.zh.replace(/'/g,"\\'")}')">🔊</button>
         <span class="fill-py">${item.py}</span>
         <span class="fill-vi">${item.vi}</span>
       </div>`;
@@ -388,6 +389,7 @@ function renderFill() {
       <span style="font-size:1.1rem">${before}</span>
       <span class="fill-blank ${filled?'filled':''}" id="blank-${i}" onclick="clearBlank(${i})" data-idx="${i}">${filled || '___'}</span>
       <span style="font-size:1.1rem">${after}</span>
+      <button class="fill-speak-btn" title="Nghe câu" style="background:none;border:none;cursor:pointer;font-size:0.85rem;margin-left:6px" onclick="event.stopPropagation();speak('${item.zh.replace(/'/g,"\\'")}')">🔊</button>
       <span class="fill-py">${item.py}</span>
       <span class="fill-vi">${item.vi}</span>
     </div>`;
