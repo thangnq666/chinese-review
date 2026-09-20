@@ -372,9 +372,9 @@ const VOCAB_DATA = [
         "vi": "một",
         "ex": [
           {
-            "zh": "一，二，三，四，五。",
-            "py": "Yī, èr, sān, sì, wǔ.",
-            "vi": "Một, hai, ba, bốn, năm."
+            "zh": "一是一，二是二。",
+            "py": "Yī shì yī, èr shì èr.",
+            "vi": "Một là một, hai là hai (rõ ràng rành mạch)."
           },
           {
             "zh": "我有一本书。",
@@ -557,9 +557,9 @@ const VOCAB_DATA = [
             "vi": "Bốn cộng một bằng năm."
           },
           {
-            "zh": "四十。",
-            "py": "Sìshí.",
-            "vi": "Bốn mươi."
+            "zh": "四十不是五十。",
+            "py": "Sìshí bú shì wǔshí.",
+            "vi": "Bốn mươi không phải năm mươi."
           }
         ]
       },
@@ -618,14 +618,14 @@ const VOCAB_DATA = [
             "vi": "Sáu không phải là mười."
           },
           {
-            "zh": "十六。",
-            "py": "Shíliù.",
-            "vi": "Mười sáu."
+            "zh": "十六，十七，十八。",
+            "py": "Shíliù, shíqī, shíbā.",
+            "vi": "Mười sáu, mười bảy, mười tám."
           },
           {
-            "zh": "六十。",
-            "py": "Liùshí.",
-            "vi": "Sáu mươi."
+            "zh": "六十不是十六。",
+            "py": "Liùshí bú shì shíliù.",
+            "vi": "Sáu mươi không phải mười sáu."
           }
         ]
       },
@@ -651,14 +651,14 @@ const VOCAB_DATA = [
             "vi": "Bảy không phải là chín."
           },
           {
-            "zh": "十七。",
-            "py": "Shíqī.",
-            "vi": "Mười bảy."
+            "zh": "十七，十八，十九。",
+            "py": "Shíqī, shíbā, shíjiǔ.",
+            "vi": "Mười bảy, mười tám, mười chín."
           },
           {
-            "zh": "七十。",
-            "py": "Qīshí.",
-            "vi": "Bảy mươi."
+            "zh": "七十和八十都很大。",
+            "py": "Qīshí hé bāshí dōu hěn dà.",
+            "vi": "Bảy mươi và tám mươi đều rất lớn."
           }
         ]
       },
@@ -684,14 +684,14 @@ const VOCAB_DATA = [
             "vi": "Chín không phải là mười."
           },
           {
-            "zh": "十九。",
-            "py": "Shíjiǔ.",
-            "vi": "Mười chín."
+            "zh": "十九不是九十。",
+            "py": "Shíjiǔ bú shì jiǔshí.",
+            "vi": "Mười chín không phải chín mươi."
           },
           {
-            "zh": "九十。",
-            "py": "Jiǔshí.",
-            "vi": "Chín mươi."
+            "zh": "九和十都不小。",
+            "py": "Jiǔ hé shí dōu bù xiǎo.",
+            "vi": "Chín và mười đều không nhỏ."
           }
         ]
       },
@@ -811,9 +811,9 @@ const VOCAB_DATA = [
             "vi": "Hôm nay bạn có bận không?"
           },
           {
-            "zh": "你最近忙吗？",
-            "py": "Nǐ zuìjìn máng ma?",
-            "vi": "Dạo này bạn có bận không?"
+            "zh": "你哥哥忙吗？",
+            "py": "Nǐ gēge máng ma?",
+            "vi": "Anh trai bạn có bận không?"
           },
           {
             "zh": "我每天都很忙。",
@@ -3103,14 +3103,14 @@ const VOCAB_DATA = [
             "vi": "Mời vào, mời ngồi!"
           },
           {
-            "zh": "请进！",
-            "py": "Qǐng jìn!",
-            "vi": "Mời vào!"
+            "zh": "请喝水。",
+            "py": "Qǐng hē shuǐ.",
+            "vi": "Mời uống nước."
           },
           {
-            "zh": "请坐！",
-            "py": "Qǐng zuò!",
-            "vi": "Mời ngồi!"
+            "zh": "老师请我喝茶。",
+            "py": "Lǎoshī qǐng wǒ hē chá.",
+            "vi": "Thầy giáo mời tôi uống trà."
           },
           {
             "zh": "请问，银行在哪儿？",
@@ -6352,9 +6352,9 @@ const VOCAB_DATA = [
         "vi": "quyển, cuốn (lượng từ sách)",
         "ex": [
           {
-            "zh": "我有一些书，这些书是我的。",
-            "py": "Wǒ yǒu yīxiē shū, zhèxiē shū shì wǒ de.",
-            "vi": "Tôi có vài quyển sách, những quyển sách này là của tôi."
+            "zh": "那些书有几本？",
+            "py": "Nàxiē shū yǒu jǐ běn?",
+            "vi": "Những quyển sách kia có mấy quyển?"
           },
           {
             "zh": "我买了一本汉语书。",
@@ -7857,9 +7857,9 @@ const VOCAB_DATA = [
             "vi": "Một vạn tệ."
           },
           {
-            "zh": "这个手机要五千八百元。",
-            "py": "Zhège shǒujī yào wǔqiān bābǎi yuán.",
-            "vi": "Điện thoại này cần năm nghìn tám trăm tệ."
+            "zh": "一万元是很多钱。",
+            "py": "Yíwàn yuán shì hěn duō qián.",
+            "vi": "Mười nghìn đồng là rất nhiều tiền."
           },
           {
             "zh": "北京有二千万人口。",
@@ -8456,9 +8456,9 @@ const VOCAB_DATA = [
             "vi": "Sách của tôi đâu?"
           },
           {
-            "zh": "你呢？",
-            "py": "Nǐ ne?",
-            "vi": "Còn bạn thì sao?"
+            "zh": "他呢？他在哪儿？",
+            "py": "Tā ne? Tā zài nǎr?",
+            "vi": "Còn anh ấy? Anh ấy ở đâu?"
           },
           {
             "zh": "我很好，你呢？",
@@ -8466,9 +8466,9 @@ const VOCAB_DATA = [
             "vi": "Tôi rất khỏe, còn bạn thì sao?"
           },
           {
-            "zh": "他在办公室，你呢？",
-            "py": "Tā zài bàngōngshì, nǐ ne?",
-            "vi": "Anh ấy ở văn phòng, còn bạn?"
+            "zh": "你的房间号呢？",
+            "py": "Nǐ de fángjiān hào ne?",
+            "vi": "Còn số phòng của bạn thì sao?"
           }
         ]
       },
@@ -10319,9 +10319,9 @@ const VOCAB_DATA = [
             "vi": "Cuốn sách này rất thú vị."
           },
           {
-            "zh": "学汉语很有意思。",
-            "py": "Xué Hànyǔ hěn yǒu yìsi.",
-            "vi": "Học tiếng Trung rất thú vị."
+            "zh": "我觉得语法很有意思。",
+            "py": "Wǒ juéde yǔfǎ hěn yǒu yìsi.",
+            "vi": "Tôi thấy ngữ pháp rất thú vị."
           },
           {
             "zh": "这个班很有意思。",
@@ -14072,7 +14072,6 @@ const PHRASES = [
   {zh:'你还要别的吗？', py:'Nǐ hái yào biéde ma?', vi:'Bạn còn muốn thêm gì nữa không?', lesson:8},
   {zh:'一共多少钱？找你三块。', py:'Yígòng duōshao qián? Zhǎo nǐ sān kuài.', vi:'Tổng cộng bao nhiêu? Trả lại bạn ba đồng.', lesson:8},  ,
   {zh:'下午我去图书馆。',py:'Xiàwǔ wǒ qù túshūguǎn.',vi:'Chiều tôi đến thư viện.',lesson:9},
-  {zh:'你去不去？',py:'Nǐ qù bù qù?',vi:'Bạn có đi không?',lesson:9},
   {zh:'我要去银行换钱。',py:'Wǒ yào qù yínháng huàn qián.',vi:'Tôi muốn đến ngân hàng đổi tiền.',lesson:9},
   {zh:'您换什么钱？',py:'Nín huàn shénme qián?',vi:'Ngài muốn đổi loại tiền gì?',lesson:9},
   {zh:'我换人民币。',py:'Wǒ huàn rénmínbì.',vi:'Tôi muốn đổi nhân dân tệ.',lesson:9},
