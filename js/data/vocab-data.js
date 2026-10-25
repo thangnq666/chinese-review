@@ -13029,6 +13029,567 @@ const VOCAB_DATA = [
             "vi": "Đi xe (2 bánh) rẻ hơn lái xe (ô tô)."
           }
         ]
+      },
+      {
+        "zh": "旧",
+        "py": "jiù",
+        "type": "Tính từ",
+        "vi": "cũ",
+        "ex": [
+          {
+            "zh": "我的车是旧的。",
+            "py": "Wǒ de chē shì jiù de.",
+            "vi": "Xe của tôi là xe cũ."
+          },
+          {
+            "zh": "这本书很旧了。",
+            "py": "Zhè běn shū hěn jiù le.",
+            "vi": "Quyển sách này cũ lắm rồi."
+          },
+          {
+            "zh": "你的自行车是新的还是旧的？",
+            "py": "Nǐ de zìxíngchē shì xīn de háishi jiù de?",
+            "vi": "Xe đạp của bạn mới hay cũ?"
+          },
+          {
+            "zh": "这件衣服太旧了。",
+            "py": "Zhè jiàn yīfu tài jiù le.",
+            "vi": "Bộ quần áo này cũ quá rồi."
+          },
+          {
+            "zh": "旧的不贵，新的很贵。",
+            "py": "Jiù de bú guì, xīn de hěn guì.",
+            "vi": "Đồ cũ không đắt, đồ mới rất đắt."
+          }
+        ]
+      },
+      {
+        "zh": "颜色",
+        "py": "yánsè",
+        "type": "Danh từ",
+        "vi": "màu, màu sắc",
+        "ex": [
+          {
+            "zh": "你的车是什么颜色的？",
+            "py": "Nǐ de chē shì shénme yánsè de?",
+            "vi": "Xe của bạn màu gì?"
+          },
+          {
+            "zh": "这是我喜欢的颜色。",
+            "py": "Zhè shì wǒ xǐhuan de yánsè.",
+            "vi": "Đây là màu tôi thích."
+          },
+          {
+            "zh": "这件衣服的颜色很好看。",
+            "py": "Zhè jiàn yīfu de yánsè hěn hǎokàn.",
+            "vi": "Màu của bộ quần áo này rất đẹp."
+          },
+          {
+            "zh": "红色和黑色都是我喜欢的颜色。",
+            "py": "Hóngsè hé hēisè dōu shì wǒ xǐhuan de yánsè.",
+            "vi": "Màu đỏ và màu đen đều là màu tôi thích."
+          },
+          {
+            "zh": "那辆车的颜色是蓝的。",
+            "py": "Nà liàng chē de yánsè shì lán de.",
+            "vi": "Màu của chiếc xe kia là màu xanh lam."
+          }
+        ]
+      },
+      {
+        "zh": "蓝",
+        "py": "lán",
+        "type": "Tính từ",
+        "vi": "xanh lam",
+        "ex": [
+          {
+            "zh": "我的自行车是蓝的。",
+            "py": "Wǒ de zìxíngchē shì lán de.",
+            "vi": "Xe đạp của tôi màu xanh lam."
+          },
+          {
+            "zh": "那辆蓝的车是你的吗？",
+            "py": "Nà liàng lán de chē shì nǐ de ma?",
+            "vi": "Chiếc xe màu xanh kia là của bạn à?"
+          },
+          {
+            "zh": "我想买一件蓝的衣服。",
+            "py": "Wǒ xiǎng mǎi yí jiàn lán de yīfu.",
+            "vi": "Tôi muốn mua một bộ quần áo màu xanh lam."
+          },
+          {
+            "zh": "蓝的还是黑的？",
+            "py": "Lán de háishi hēi de?",
+            "vi": "Màu xanh lam hay màu đen?"
+          },
+          {
+            "zh": "这个箱子是蓝的，很好看。",
+            "py": "Zhège xiāngzi shì lán de, hěn hǎokàn.",
+            "vi": "Cái vali này màu xanh lam, rất đẹp."
+          }
+        ]
+      },
+      {
+        "zh": "辆",
+        "py": "liàng",
+        "type": "Lượng từ",
+        "vi": "chiếc (dùng cho xe)",
+        "ex": [
+          {
+            "zh": "我有一辆自行车。",
+            "py": "Wǒ yǒu yí liàng zìxíngchē.",
+            "vi": "Tôi có một chiếc xe đạp."
+          },
+          {
+            "zh": "那辆汽车是经理的。",
+            "py": "Nà liàng qìchē shì jīnglǐ de.",
+            "vi": "Chiếc ô tô kia là của giám đốc."
+          },
+          {
+            "zh": "这辆摩托车很贵。",
+            "py": "Zhè liàng mótuōchē hěn guì.",
+            "vi": "Chiếc xe máy này rất đắt."
+          },
+          {
+            "zh": "你的车是哪辆？",
+            "py": "Nǐ de chē shì nǎ liàng?",
+            "vi": "Xe của bạn là chiếc nào?"
+          },
+          {
+            "zh": "我们家有两辆车。",
+            "py": "Wǒmen jiā yǒu liǎng liàng chē.",
+            "vi": "Nhà chúng tôi có hai chiếc xe."
+          }
+        ]
+      },
+      {
+        "zh": "点儿",
+        "py": "diǎnr",
+        "type": "Lượng từ",
+        "vi": "một chút, một ít",
+        "ex": [
+          {
+            "zh": "喝点儿什么？茶还是咖啡？",
+            "py": "Hē diǎnr shénme? Chá háishi kāfēi?",
+            "vi": "Uống chút gì nhé? Trà hay cà phê?"
+          },
+          {
+            "zh": "我想喝点儿茶。",
+            "py": "Wǒ xiǎng hē diǎnr chá.",
+            "vi": "Tôi muốn uống chút trà."
+          },
+          {
+            "zh": "吃点儿水果吧。",
+            "py": "Chī diǎnr shuǐguǒ ba.",
+            "vi": "Ăn chút hoa quả đi."
+          },
+          {
+            "zh": "给我买点儿苹果。",
+            "py": "Gěi wǒ mǎi diǎnr píngguǒ.",
+            "vi": "Mua cho tôi một ít táo."
+          },
+          {
+            "zh": "请等一会儿，我喝点儿水。",
+            "py": "Qǐng děng yíhuìr, wǒ hē diǎnr shuǐ.",
+            "vi": "Xin đợi một lát, tôi uống chút nước."
+          }
+        ]
+      },
+      {
+        "zh": "啊",
+        "py": "à",
+        "type": "Thán từ",
+        "vi": "a, à (vỡ lẽ, đã hiểu ra)",
+        "ex": [
+          {
+            "zh": "啊，我知道了。",
+            "py": "À, wǒ zhīdào le.",
+            "vi": "À, tôi biết rồi."
+          },
+          {
+            "zh": "啊，我的车在那儿呢。",
+            "py": "À, wǒ de chē zài nàr ne.",
+            "vi": "À, xe của tôi ở đằng kia."
+          },
+          {
+            "zh": "啊，是你啊！",
+            "py": "À, shì nǐ a!",
+            "vi": "A, là bạn à!"
+          },
+          {
+            "zh": "啊，这是新的词典。",
+            "py": "À, zhè shì xīn de cídiǎn.",
+            "vi": "À, đây là quyển từ điển mới."
+          },
+          {
+            "zh": "啊，好久不见了。",
+            "py": "À, hǎojiǔ bú jiàn le.",
+            "vi": "A, lâu rồi không gặp."
+          }
+        ]
+      },
+      {
+        "zh": "累",
+        "py": "lèi",
+        "type": "Tính từ",
+        "vi": "mệt",
+        "ex": [
+          {
+            "zh": "今天我很累。",
+            "py": "Jīntiān wǒ hěn lèi.",
+            "vi": "Hôm nay tôi rất mệt."
+          },
+          {
+            "zh": "你累不累？",
+            "py": "Nǐ lèi bu lèi?",
+            "vi": "Bạn có mệt không?"
+          },
+          {
+            "zh": "工作太忙，所以很累。",
+            "py": "Gōngzuò tài máng, suǒyǐ hěn lèi.",
+            "vi": "Công việc bận quá nên rất mệt."
+          },
+          {
+            "zh": "我有点儿累，想喝杯茶。",
+            "py": "Wǒ yǒu diǎnr lèi, xiǎng hē bēi chá.",
+            "vi": "Tôi hơi mệt, muốn uống cốc trà."
+          },
+          {
+            "zh": "骑自行车回家很累。",
+            "py": "Qí zìxíngchē huíjiā hěn lèi.",
+            "vi": "Đạp xe về nhà rất mệt."
+          }
+        ]
+      },
+      {
+        "zh": "困",
+        "py": "kùn",
+        "type": "Tính từ",
+        "vi": "buồn ngủ",
+        "ex": [
+          {
+            "zh": "我有点儿困。",
+            "py": "Wǒ yǒu diǎnr kùn.",
+            "vi": "Tôi hơi buồn ngủ."
+          },
+          {
+            "zh": "你困吗？",
+            "py": "Nǐ kùn ma?",
+            "vi": "Bạn có buồn ngủ không?"
+          },
+          {
+            "zh": "晚上我很困。",
+            "py": "Wǎnshang wǒ hěn kùn.",
+            "vi": "Buổi tối tôi rất buồn ngủ."
+          },
+          {
+            "zh": "我不困，我很忙。",
+            "py": "Wǒ bú kùn, wǒ hěn máng.",
+            "vi": "Tôi không buồn ngủ, tôi rất bận."
+          },
+          {
+            "zh": "我太困了，喝点儿咖啡吧。",
+            "py": "Wǒ tài kùn le, hē diǎnr kāfēi ba.",
+            "vi": "Tôi buồn ngủ quá, uống chút cà phê vậy."
+          }
+        ]
+      },
+      {
+        "zh": "饿",
+        "py": "è",
+        "type": "Tính từ",
+        "vi": "đói",
+        "ex": [
+          {
+            "zh": "我很饿，想吃饭。",
+            "py": "Wǒ hěn è, xiǎng chīfàn.",
+            "vi": "Tôi rất đói, muốn ăn cơm."
+          },
+          {
+            "zh": "你饿不饿？",
+            "py": "Nǐ è bu è?",
+            "vi": "Bạn có đói không?"
+          },
+          {
+            "zh": "我有点儿饿，吃个包子吧。",
+            "py": "Wǒ yǒu diǎnr è, chī ge bāozi ba.",
+            "vi": "Tôi hơi đói, ăn cái bánh bao vậy."
+          },
+          {
+            "zh": "他饿了，去食堂吃饭。",
+            "py": "Tā è le, qù shítáng chīfàn.",
+            "vi": "Anh ấy đói rồi, đi nhà ăn ăn cơm."
+          },
+          {
+            "zh": "中午不吃饭，晚上很饿。",
+            "py": "Zhōngwǔ bù chīfàn, wǎnshang hěn è.",
+            "vi": "Trưa không ăn cơm, tối rất đói."
+          }
+        ]
+      },
+      {
+        "zh": "冷",
+        "py": "lěng",
+        "type": "Tính từ",
+        "vi": "lạnh",
+        "ex": [
+          {
+            "zh": "今天很冷。",
+            "py": "Jīntiān hěn lěng.",
+            "vi": "Hôm nay rất lạnh."
+          },
+          {
+            "zh": "你冷不冷？",
+            "py": "Nǐ lěng bu lěng?",
+            "vi": "Bạn có lạnh không?"
+          },
+          {
+            "zh": "有点儿冷，我要一件毛衣。",
+            "py": "Yǒu diǎnr lěng, wǒ yào yí jiàn máoyī.",
+            "vi": "Hơi lạnh, tôi cần một cái áo len."
+          },
+          {
+            "zh": "这杯水有点儿冷。",
+            "py": "Zhè bēi shuǐ yǒu diǎnr lěng.",
+            "vi": "Cốc nước này hơi lạnh."
+          },
+          {
+            "zh": "天冷了，我想喝点儿茶。",
+            "py": "Tiān lěng le, wǒ xiǎng hē diǎnr chá.",
+            "vi": "Trời lạnh rồi, tôi muốn uống chút trà."
+          }
+        ]
+      },
+      {
+        "zh": "渴",
+        "py": "kě",
+        "type": "Tính từ",
+        "vi": "khát",
+        "ex": [
+          {
+            "zh": "我很渴，想喝水。",
+            "py": "Wǒ hěn kě, xiǎng hē shuǐ.",
+            "vi": "Tôi rất khát, muốn uống nước."
+          },
+          {
+            "zh": "你渴吗？",
+            "py": "Nǐ kě ma?",
+            "vi": "Bạn có khát không?"
+          },
+          {
+            "zh": "我有点儿渴，喝杯奶茶吧。",
+            "py": "Wǒ yǒu diǎnr kě, hē bēi nǎichá ba.",
+            "vi": "Tôi hơi khát, uống cốc trà sữa vậy."
+          },
+          {
+            "zh": "他渴了，喝了一瓶水。",
+            "py": "Tā kě le, hē le yì píng shuǐ.",
+            "vi": "Anh ấy khát rồi, đã uống một chai nước."
+          },
+          {
+            "zh": "我不渴，我饿了。",
+            "py": "Wǒ bù kě, wǒ è le.",
+            "vi": "Tôi không khát, tôi đói rồi."
+          }
+        ]
+      },
+      {
+        "zh": "衬衣",
+        "py": "chènyī",
+        "type": "Danh từ",
+        "vi": "áo sơ mi",
+        "ex": [
+          {
+            "zh": "这件衬衣是白的。",
+            "py": "Zhè jiàn chènyī shì bái de.",
+            "vi": "Cái áo sơ mi này màu trắng."
+          },
+          {
+            "zh": "我想买一件新衬衣。",
+            "py": "Wǒ xiǎng mǎi yí jiàn xīn chènyī.",
+            "vi": "Tôi muốn mua một cái áo sơ mi mới."
+          },
+          {
+            "zh": "那件衬衣的颜色很好看。",
+            "py": "Nà jiàn chènyī de yánsè hěn hǎokàn.",
+            "vi": "Màu của cái áo sơ mi kia rất đẹp."
+          },
+          {
+            "zh": "这件衬衣有点儿贵。",
+            "py": "Zhè jiàn chènyī yǒu diǎnr guì.",
+            "vi": "Cái áo sơ mi này hơi đắt."
+          },
+          {
+            "zh": "你的衬衣是什么颜色的？",
+            "py": "Nǐ de chènyī shì shénme yánsè de?",
+            "vi": "Áo sơ mi của bạn màu gì?"
+          }
+        ]
+      },
+      {
+        "zh": "毛衣",
+        "py": "máoyī",
+        "type": "Danh từ",
+        "vi": "áo len",
+        "ex": [
+          {
+            "zh": "这是一件红毛衣。",
+            "py": "Zhè shì yí jiàn hóng máoyī.",
+            "vi": "Đây là một cái áo len màu đỏ."
+          },
+          {
+            "zh": "天冷了，我要买毛衣。",
+            "py": "Tiān lěng le, wǒ yào mǎi máoyī.",
+            "vi": "Trời lạnh rồi, tôi phải mua áo len."
+          },
+          {
+            "zh": "那件毛衣是新的还是旧的？",
+            "py": "Nà jiàn máoyī shì xīn de háishi jiù de?",
+            "vi": "Cái áo len kia mới hay cũ?"
+          },
+          {
+            "zh": "我的毛衣是蓝的。",
+            "py": "Wǒ de máoyī shì lán de.",
+            "vi": "Áo len của tôi màu xanh lam."
+          },
+          {
+            "zh": "这件毛衣有点儿重。",
+            "py": "Zhè jiàn máoyī yǒu diǎnr zhòng.",
+            "vi": "Cái áo len này hơi nặng."
+          }
+        ]
+      },
+      {
+        "zh": "黄",
+        "py": "huáng",
+        "type": "Tính từ",
+        "vi": "vàng",
+        "ex": [
+          {
+            "zh": "我喜欢黄的颜色。",
+            "py": "Wǒ xǐhuan huáng de yánsè.",
+            "vi": "Tôi thích màu vàng."
+          },
+          {
+            "zh": "那辆车是黄的。",
+            "py": "Nà liàng chē shì huáng de.",
+            "vi": "Chiếc xe kia màu vàng."
+          },
+          {
+            "zh": "这件衬衣是黄的。",
+            "py": "Zhè jiàn chènyī shì huáng de.",
+            "vi": "Cái áo sơ mi này màu vàng."
+          },
+          {
+            "zh": "黄的还是绿的？",
+            "py": "Huáng de háishi lǜ de?",
+            "vi": "Màu vàng hay màu xanh lá?"
+          },
+          {
+            "zh": "我的雨伞是黄的。",
+            "py": "Wǒ de yǔsǎn shì huáng de.",
+            "vi": "Cái ô của tôi màu vàng."
+          }
+        ]
+      },
+      {
+        "zh": "灰",
+        "py": "huī",
+        "type": "Tính từ",
+        "vi": "xám",
+        "ex": [
+          {
+            "zh": "我的箱子是灰的。",
+            "py": "Wǒ de xiāngzi shì huī de.",
+            "vi": "Cái vali của tôi màu xám."
+          },
+          {
+            "zh": "那件毛衣是灰的。",
+            "py": "Nà jiàn máoyī shì huī de.",
+            "vi": "Cái áo len kia màu xám."
+          },
+          {
+            "zh": "灰的车不太好看。",
+            "py": "Huī de chē bú tài hǎokàn.",
+            "vi": "Xe màu xám không đẹp lắm."
+          },
+          {
+            "zh": "我想买一件灰的衣服。",
+            "py": "Wǒ xiǎng mǎi yí jiàn huī de yīfu.",
+            "vi": "Tôi muốn mua một bộ quần áo màu xám."
+          },
+          {
+            "zh": "这辆自行车是灰的还是黑的？",
+            "py": "Zhè liàng zìxíngchē shì huī de háishi hēi de?",
+            "vi": "Chiếc xe đạp này màu xám hay màu đen?"
+          }
+        ]
+      },
+      {
+        "zh": "绿",
+        "py": "lǜ",
+        "type": "Tính từ",
+        "vi": "xanh lá",
+        "ex": [
+          {
+            "zh": "这件衣服是绿的。",
+            "py": "Zhè jiàn yīfu shì lǜ de.",
+            "vi": "Bộ quần áo này màu xanh lá."
+          },
+          {
+            "zh": "我不喜欢绿的颜色。",
+            "py": "Wǒ bù xǐhuan lǜ de yánsè.",
+            "vi": "Tôi không thích màu xanh lá."
+          },
+          {
+            "zh": "那辆绿的车是谁的？",
+            "py": "Nà liàng lǜ de chē shì shéi de?",
+            "vi": "Chiếc xe màu xanh lá kia là của ai?"
+          },
+          {
+            "zh": "绿的雨伞在那儿。",
+            "py": "Lǜ de yǔsǎn zài nàr.",
+            "vi": "Cái ô màu xanh lá ở đằng kia."
+          },
+          {
+            "zh": "我的词典是绿的。",
+            "py": "Wǒ de cídiǎn shì lǜ de.",
+            "vi": "Từ điển của tôi màu xanh lá."
+          }
+        ]
+      },
+      {
+        "zh": "照相机",
+        "py": "zhàoxiàngjī",
+        "type": "Danh từ",
+        "vi": "máy ảnh",
+        "ex": [
+          {
+            "zh": "这是我的照相机。",
+            "py": "Zhè shì wǒ de zhàoxiàngjī.",
+            "vi": "Đây là máy ảnh của tôi."
+          },
+          {
+            "zh": "你的照相机是新的还是旧的？",
+            "py": "Nǐ de zhàoxiàngjī shì xīn de háishi jiù de?",
+            "vi": "Máy ảnh của bạn mới hay cũ?"
+          },
+          {
+            "zh": "我想买一个新照相机。",
+            "py": "Wǒ xiǎng mǎi yí ge xīn zhàoxiàngjī.",
+            "vi": "Tôi muốn mua một cái máy ảnh mới."
+          },
+          {
+            "zh": "那个照相机很贵。",
+            "py": "Nàge zhàoxiàngjī hěn guì.",
+            "vi": "Cái máy ảnh kia rất đắt."
+          },
+          {
+            "zh": "他的照相机是黑的。",
+            "py": "Tā de zhàoxiàngjī shì hēi de.",
+            "vi": "Máy ảnh của anh ấy màu đen."
+          }
+        ]
       }
     ]
   },
@@ -13659,6 +14220,39 @@ const VOCAB_DATA = [
             "zh": "我八点上班。",
             "py": "Wǒ bā diǎn shàngbān.",
             "vi": "Tôi 8 giờ đi làm."
+          }
+        ]
+      },
+      {
+        "zh": "外国",
+        "py": "wàiguó",
+        "type": "Danh từ",
+        "vi": "nước ngoài",
+        "ex": [
+          {
+            "zh": "我们公司也有外国职员。",
+            "py": "Wǒmen gōngsī yě yǒu wàiguó zhíyuán.",
+            "vi": "Công ty chúng tôi cũng có nhân viên nước ngoài."
+          },
+          {
+            "zh": "他是外国人吗？",
+            "py": "Tā shì wàiguó rén ma?",
+            "vi": "Anh ấy là người nước ngoài phải không?"
+          },
+          {
+            "zh": "这是外国的车。",
+            "py": "Zhè shì wàiguó de chē.",
+            "vi": "Đây là xe nước ngoài."
+          },
+          {
+            "zh": "我有很多外国朋友。",
+            "py": "Wǒ yǒu hěn duō wàiguó péngyou.",
+            "vi": "Tôi có rất nhiều bạn nước ngoài."
+          },
+          {
+            "zh": "他在外国工作。",
+            "py": "Tā zài wàiguó gōngzuò.",
+            "vi": "Anh ấy làm việc ở nước ngoài."
           }
         ]
       }
@@ -14715,6 +15309,60 @@ const DIALOGUE_DATA = [
     ]
   },
   {
+    lesson:'Buổi 18 (b20): 最近怎么样？', title:'您身体好吗 – Sức khoẻ ngài thế nào? (第十四课 课文一)', lessonIdx:17,
+    lines:[
+      {s:'A',zh:'王老师，好久不见了。',py:'Wáng lǎoshī, hǎojiǔ bú jiàn le.',vi:'Thầy Vương, lâu rồi không gặp.'},
+      {s:'B',zh:'啊！关经理，欢迎，欢迎！',py:'À! Guān jīnglǐ, huānyíng, huānyíng!',vi:'A! Giám đốc Quan, hoan nghênh, hoan nghênh!'},
+      {s:'A',zh:'您身体好吗？',py:'Nín shēntǐ hǎo ma?',vi:'Sức khoẻ ngài có tốt không?'},
+      {s:'B',zh:'很好。您身体怎么样？',py:'Hěn hǎo. Nín shēntǐ zěnmeyàng?',vi:'Rất tốt. Sức khoẻ ngài thế nào?'},
+      {s:'A',zh:'马马虎虎。',py:'Mǎmahūhū.',vi:'Cũng tàm tạm.'},
+      {s:'B',zh:'最近工作忙不忙？',py:'Zuìjìn gōngzuò máng bu máng?',vi:'Gần đây công việc có bận không?'},
+      {s:'A',zh:'不太忙，您呢？',py:'Bú tài máng, nín ne?',vi:'Không bận lắm, còn ngài?'},
+      {s:'B',zh:'刚开学，有点儿忙。喝点儿什么？茶还是咖啡？',py:'Gāng kāixué, yǒu diǎnr máng. Hē diǎnr shénme? Chá háishi kāfēi?',vi:'Vừa khai giảng nên hơi bận. Uống chút gì nhé? Trà hay cà phê?'},
+      {s:'A',zh:'喝杯茶吧。',py:'Hē bēi chá ba.',vi:'Uống cốc trà vậy.'},
+    ]
+  },
+  {
+    lesson:'Buổi 18 (b20): 最近怎么样？', title:'你的自行车是新的还是旧的 – Xe đạp của bạn mới hay cũ? (第十四课 课文二)', lessonIdx:17,
+    lines:[
+      {s:'A',zh:'我的车呢？',py:'Wǒ de chē ne?',vi:'Xe của tôi đâu rồi?'},
+      {s:'B',zh:'你的车是什么颜色的？',py:'Nǐ de chē shì shénme yánsè de?',vi:'Xe của bạn màu gì?'},
+      {s:'A',zh:'蓝的。',py:'Lán de.',vi:'Màu xanh lam.'},
+      {s:'B',zh:'是新的还是旧的？',py:'Shì xīn de háishi jiù de?',vi:'Mới hay cũ?'},
+      {s:'A',zh:'新的。',py:'Xīn de.',vi:'Mới.'},
+      {s:'B',zh:'那辆蓝的是不是你的？',py:'Nà liàng lán de shì bu shì nǐ de?',vi:'Chiếc màu xanh kia có phải của bạn không?'},
+      {s:'A',zh:'哪辆？',py:'Nǎ liàng?',vi:'Chiếc nào?'},
+      {s:'B',zh:'那辆。',py:'Nà liàng.',vi:'Chiếc kia.'},
+      {s:'A',zh:'不是……啊，我的车在那儿呢。',py:'Bú shì…… À, wǒ de chē zài nàr ne.',vi:'Không phải… À, xe của tôi ở đằng kia.'},
+    ]
+  },
+  {
+    lesson:'Buổi 19 (b21): 全家、看病与外贸', title:'你家有几口人 – Nhà bạn có mấy người? (第十五课 课文一)', lessonIdx:18,
+    lines:[
+      {s:'A',zh:'你家有几口人？',py:'Nǐ jiā yǒu jǐ kǒu rén?',vi:'Nhà bạn có mấy người?'},
+      {s:'B',zh:'我家有五口人，爸爸、妈妈、哥哥、姐姐和我。',py:'Wǒ jiā yǒu wǔ kǒu rén, bàba, māma, gēge, jiějie hé wǒ.',vi:'Nhà tôi có năm người: bố, mẹ, anh trai, chị gái và tôi.'},
+      {s:'A',zh:'你有没有全家的照片？',py:'Nǐ yǒu méiyǒu quán jiā de zhàopiàn?',vi:'Bạn có ảnh cả nhà không?'},
+      {s:'B',zh:'有一张。你看，这是我们全家的照片。你有哥哥姐姐吗？',py:'Yǒu yì zhāng. Nǐ kàn, zhè shì wǒmen quán jiā de zhàopiàn. Nǐ yǒu gēge jiějie ma?',vi:'Có một tấm. Bạn xem, đây là ảnh cả nhà tôi. Bạn có anh chị không?'},
+      {s:'A',zh:'我没有哥哥，也没有姐姐，只有两个弟弟。',py:'Wǒ méiyǒu gēge, yě méiyǒu jiějie, zhǐ yǒu liǎng ge dìdi.',vi:'Tôi không có anh trai, cũng không có chị gái, chỉ có hai em trai.'},
+      {s:'B',zh:'你爸爸、妈妈做什么工作？',py:'Nǐ bàba, māma zuò shénme gōngzuò?',vi:'Bố mẹ bạn làm nghề gì?'},
+      {s:'A',zh:'我妈妈是大夫，在医院工作，爸爸是一家公司的经理。',py:'Wǒ māma shì dàifu, zài yīyuàn gōngzuò, bàba shì yì jiā gōngsī de jīnglǐ.',vi:'Mẹ tôi là bác sĩ, làm việc ở bệnh viện, bố tôi là giám đốc một công ty.'},
+      {s:'B',zh:'我妈妈在商店工作，爸爸是律师。',py:'Wǒ māma zài shāngdiàn gōngzuò, bàba shì lǜshī.',vi:'Mẹ tôi làm ở cửa hàng, bố tôi là luật sư.'},
+    ]
+  },
+  {
+    lesson:'Buổi 19 (b21): 全家、看病与外贸', title:'你们公司有多少职员 – Công ty có bao nhiêu nhân viên? (第十五课 课文二)', lessonIdx:18,
+    lines:[
+      {s:'A',zh:'你们是一家什么公司？',py:'Nǐmen shì yì jiā shénme gōngsī?',vi:'Các vị là công ty gì?'},
+      {s:'B',zh:'是一家外贸公司。',py:'Shì yì jiā wàimào gōngsī.',vi:'Là một công ty ngoại thương.'},
+      {s:'A',zh:'是一家大公司吗？',py:'Shì yì jiā dà gōngsī ma?',vi:'Là công ty lớn à?'},
+      {s:'B',zh:'不大，是一家比较小的公司。',py:'Bú dà, shì yì jiā bǐjiào xiǎo de gōngsī.',vi:'Không lớn, là một công ty khá nhỏ.'},
+      {s:'A',zh:'有多少职员？',py:'Yǒu duōshao zhíyuán?',vi:'Có bao nhiêu nhân viên?'},
+      {s:'B',zh:'大概有一百多个职员。',py:'Dàgài yǒu yì bǎi duō ge zhíyuán.',vi:'Khoảng hơn một trăm nhân viên.'},
+      {s:'A',zh:'都是中国职员吗？',py:'Dōu shì Zhōngguó zhíyuán ma?',vi:'Đều là nhân viên Trung Quốc à?'},
+      {s:'B',zh:'不都是中国职员，也有外国职员。',py:'Bù dōu shì Zhōngguó zhíyuán, yě yǒu wàiguó zhíyuán.',vi:'Không phải đều là nhân viên Trung Quốc, cũng có nhân viên nước ngoài.'},
+    ]
+  },
+  {
     lesson:'Buổi 20 (b23): 商场、日期与生日', title:'问生活与生日 – Hỏi về sinh hoạt & sinh nhật', lessonIdx:19,
     lines:[
       {s:'A',zh:'今天你忙吗？',py:'Jīntiān nǐ máng ma?',vi:'Hôm nay bạn có bận không?'},
@@ -14948,4 +15596,19 @@ const PHRASES = [
   {zh:"这个工程师是我朋友。",py:"Zhège gōngchéngshī shì wǒ péngyou.",vi:"Kỹ sư này là bạn tôi.",lesson:21},
   {zh:"你中午吃午饭了吗？",py:"Nǐ zhōngwǔ chī wǔfàn le ma?",vi:"Buổi trưa bạn ăn cơm chưa?",lesson:21},
   {zh:"老师说我写错了一个汉字。",py:"Lǎoshī shuō wǒ xiě cuò le yí ge Hànzì.",vi:"Thầy giáo nói tôi viết sai một chữ Hán.",lesson:21},
+  // Bài 18 bổ sung (第十四课)
+  {zh:"你喝茶还是喝咖啡？",py:"Nǐ hē chá háishi hē kāfēi?",vi:"Bạn uống trà hay uống cà phê?",lesson:18},
+  {zh:"你的箱子是新的还是旧的？",py:"Nǐ de xiāngzi shì xīn de háishi jiù de?",vi:"Vali của bạn mới hay cũ?",lesson:18},
+  {zh:"那件毛衣是红的。",py:"Nà jiàn máoyī shì hóng de.",vi:"Cái áo len kia màu đỏ.",lesson:18},
+  {zh:"我去银行，你呢？",py:"Wǒ qù yínháng, nǐ ne?",vi:"Tôi đi ngân hàng, còn bạn?",lesson:18},
+  {zh:"你买苹果还是买橘子？",py:"Nǐ mǎi píngguǒ háishi mǎi júzi?",vi:"Bạn mua táo hay mua quýt?",lesson:18},
+  {zh:"这辆自行车是蓝的。",py:"Zhè liàng zìxíngchē shì lán de.",vi:"Chiếc xe đạp này màu xanh lam.",lesson:18},
+  // Bài 19 bổ sung (第十五课)
+  {zh:"你们公司有多少职员？",py:"Nǐmen gōngsī yǒu duōshao zhíyuán?",vi:"Công ty các bạn có bao nhiêu nhân viên?",lesson:19},
+  {zh:"他是一家公司的经理。",py:"Tā shì yì jiā gōngsī de jīnglǐ.",vi:"Anh ấy là giám đốc của một công ty.",lesson:19},
+  {zh:"他在一家外贸公司工作。",py:"Tā zài yì jiā wàimào gōngsī gōngzuò.",vi:"Anh ấy làm việc ở một công ty ngoại thương.",lesson:19},
+  {zh:"我妈妈是大夫，在医院工作。",py:"Wǒ māma shì dàifu, zài yīyuàn gōngzuò.",vi:"Mẹ tôi là bác sĩ, làm việc ở bệnh viện.",lesson:19},
+  {zh:"我没有姐姐，只有一个弟弟。",py:"Wǒ méiyǒu jiějie, zhǐ yǒu yí ge dìdi.",vi:"Tôi không có chị gái, chỉ có một em trai.",lesson:19},
+  {zh:"他们不都是中国人，也有外国人。",py:"Tāmen bù dōu shì Zhōngguó rén, yě yǒu wàiguó rén.",vi:"Họ không phải đều là người Trung Quốc, cũng có người nước ngoài.",lesson:19},
+  {zh:"这是我们全家的照片。",py:"Zhè shì wǒmen quán jiā de zhàopiàn.",vi:"Đây là ảnh cả nhà chúng tôi.",lesson:19},
 ];

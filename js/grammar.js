@@ -578,6 +578,52 @@ const GRAMMAR_DATA = [
       {zh:'这个错误不太难。',py:'Zhège cuòwù bú tài nán.',vi:'Lỗi này không khó lắm.',form:'不太 + Adj'},
     ]
   },
+  // ── 40. Câu vị ngữ chủ vị ─────────────────────────
+  {
+    id:'co-ban', num:40,
+    title:'Câu vị ngữ chủ vị (主谓谓语句)',
+    tag:'S1 + [S2 + Adj/V] — vị ngữ là một cụm chủ-vị',
+    formula:'Chủ ngữ lớn + (Chủ ngữ nhỏ + Vị ngữ)',
+    note:'⚠️ Chủ ngữ nhỏ thường là bộ phận/thuộc tính của chủ ngữ lớn (身体, 工作, 车...). Không thêm 的 giữa hai chủ ngữ: 我身体很好 ✓ / 我的身体很好 cũng đúng nhưng nhấn mạnh khác.',
+    tip:'💡 Dạng hỏi hay gặp: 你身体怎么样？你工作忙不忙？ — trả lời giữ nguyên kết cấu: 我身体很好 / 我工作不忙.',
+    rows:[
+      {zh:'你身体怎么样？',py:'Nǐ shēntǐ zěnmeyàng?',vi:'Sức khoẻ bạn thế nào?',form:'S1 + S2 + 怎么样'},
+      {zh:'我身体很好。',py:'Wǒ shēntǐ hěn hǎo.',vi:'Sức khoẻ tôi rất tốt.',form:'S1 + S2 + 很 + Adj'},
+      {zh:'他工作忙不忙？',py:'Tā gōngzuò máng bu máng?',vi:'Công việc anh ấy có bận không?',form:'S1 + S2 + A不A'},
+      {zh:'她工作不忙。',py:'Tā gōngzuò bù máng.',vi:'Công việc cô ấy không bận.',form:'S1 + S2 + 不 + Adj'},
+      {zh:'我们学校老师很多。',py:'Wǒmen xuéxiào lǎoshī hěn duō.',vi:'Trường chúng tôi giáo viên rất nhiều.',form:'S1 + S2 + 很 + Adj'},
+    ]
+  },
+  // ── 41. 不都 vs 都不 ──────────────────────────────
+  {
+    id:'phu-dinh', num:41,
+    title:'不都 / 都不 — Phủ định một phần vs toàn bộ',
+    tag:'不都是 = không phải đều | 都不是 = đều không phải',
+    formula:'S + 不都 + V (một phần) ≠ S + 都不 + V (toàn bộ)',
+    note:'⚠️ Chỉ đổi thứ tự 不 và 都 mà nghĩa ngược hẳn nhau. 他们不都是美国人 = trong số họ có người không phải người Mỹ. 他们都不是美国人 = không ai trong số họ là người Mỹ.',
+    tip:'💡 Nhớ theo vị trí của 不: 不 đứng TRƯỚC 都 → phủ định "toàn bộ" ⇒ chỉ phủ định một phần. 不 đứng SAU 都 → phủ định lan ra tất cả.',
+    rows:[
+      {zh:'他们不都是中国人。',py:'Tāmen bù dōu shì Zhōngguó rén.',vi:'Họ không phải đều là người Trung Quốc.',form:'不都 — phủ định một phần'},
+      {zh:'他们都不是中国人。',py:'Tāmen dōu bú shì Zhōngguó rén.',vi:'Họ đều không phải người Trung Quốc.',form:'都不 — phủ định toàn bộ'},
+      {zh:'不都是中国职员，也有外国职员。',py:'Bù dōu shì Zhōngguó zhíyuán, yě yǒu wàiguó zhíyuán.',vi:'Không phải đều là nhân viên Trung Quốc, cũng có nhân viên nước ngoài.',form:'不都 + 是'},
+      {zh:'我们都不喝咖啡。',py:'Wǒmen dōu bù hē kāfēi.',vi:'Chúng tôi đều không uống cà phê.',form:'都不 + V'},
+    ]
+  },
+  // ── 42. Số + 多 ───────────────────────────────────
+  {
+    id:'co-ban', num:42,
+    title:'Số + 多 (duō) — Hơn, lẻ (ước lượng số)',
+    tag:'一百多 / 二十多 / 三十多个',
+    formula:'Số tròn + 多 (+ Lượng từ + N)',
+    note:'⚠️ 多 đặt SAU số tròn để chỉ "hơn, lẻ": 一百多个职员 = hơn một trăm nhân viên. Đừng nhầm với 多少 (bao nhiêu) hay 很多 (rất nhiều).',
+    tip:'💡 Hay đi cùng 大概 (khoảng): 大概有一百多个职员 = khoảng hơn một trăm nhân viên.',
+    rows:[
+      {zh:'大概有一百多个职员。',py:'Dàgài yǒu yì bǎi duō ge zhíyuán.',vi:'Khoảng hơn một trăm nhân viên.',form:'大概 + số + 多 + LT + N'},
+      {zh:'我们班有二十多个学生。',py:'Wǒmen bān yǒu èrshí duō ge xuésheng.',vi:'Lớp chúng tôi có hơn hai mươi học sinh.',form:'số + 多 + LT + N'},
+      {zh:'这本书三十多块钱。',py:'Zhè běn shū sānshí duō kuài qián.',vi:'Quyển sách này hơn ba mươi tệ.',form:'số + 多 + 块钱'},
+      {zh:'他有十多辆车。',py:'Tā yǒu shí duō liàng chē.',vi:'Anh ấy có hơn mười chiếc xe.',form:'số + 多 + 辆 + N'},
+    ]
+  },
 ];
 
 function filterGram(id, btn) {
