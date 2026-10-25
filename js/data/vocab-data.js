@@ -13663,6 +13663,775 @@ const VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "lesson": "Buổi 20 (b23): 商场、日期与生日 – Trung tâm thương mại, ngày tháng & sinh nhật",
+    "words": [
+      {
+        "zh": "商场",
+        "py": "shāngchǎng",
+        "type": "Danh từ",
+        "vi": "trung tâm thương mại, trung tâm mua sắm",
+        "ex": [
+          {
+            "zh": "我去商场买东西。",
+            "py": "Wǒ qù shāngchǎng mǎi dōngxi.",
+            "vi": "Tôi đi trung tâm thương mại mua đồ."
+          },
+          {
+            "zh": "你去商场做什么？",
+            "py": "Nǐ qù shāngchǎng zuò shénme?",
+            "vi": "Bạn đi trung tâm thương mại làm gì?"
+          },
+          {
+            "zh": "明天我们去商场吧。",
+            "py": "Míngtiān wǒmen qù shāngchǎng ba.",
+            "vi": "Ngày mai chúng ta đi trung tâm thương mại nhé."
+          },
+          {
+            "zh": "这个商场的东西很贵。",
+            "py": "Zhège shāngchǎng de dōngxi hěn guì.",
+            "vi": "Đồ ở trung tâm thương mại này rất đắt."
+          },
+          {
+            "zh": "昨天我在商场买了一些水果。",
+            "py": "Zuótiān wǒ zài shāngchǎng mǎi le yìxiē shuǐguǒ.",
+            "vi": "Hôm qua tôi đã mua một ít hoa quả ở trung tâm thương mại."
+          }
+        ]
+      },
+      {
+        "zh": "东西",
+        "py": "dōngxi",
+        "type": "Danh từ",
+        "vi": "đồ, đồ đạc, thứ",
+        "ex": [
+          {
+            "zh": "我去商场买一些东西。",
+            "py": "Wǒ qù shāngchǎng mǎi yìxiē dōngxi.",
+            "vi": "Tôi đi trung tâm thương mại mua một ít đồ."
+          },
+          {
+            "zh": "这些东西是谁的？",
+            "py": "Zhèxiē dōngxi shì shéi de?",
+            "vi": "Những thứ này là của ai?"
+          },
+          {
+            "zh": "你要买什么东西？",
+            "py": "Nǐ yào mǎi shénme dōngxi?",
+            "vi": "Bạn muốn mua đồ gì?"
+          },
+          {
+            "zh": "这个东西太贵了。",
+            "py": "Zhège dōngxi tài guì le.",
+            "vi": "Món đồ này đắt quá."
+          },
+          {
+            "zh": "我买的东西都在家里。",
+            "py": "Wǒ mǎi de dōngxi dōu zài jiā li.",
+            "vi": "Đồ tôi mua đều ở trong nhà."
+          }
+        ]
+      },
+      {
+        "zh": "处理",
+        "py": "chǔlǐ",
+        "type": "Động từ",
+        "vi": "xử lý, giải quyết",
+        "ex": [
+          {
+            "zh": "今天我要在家处理工作。",
+            "py": "Jīntiān wǒ yào zài jiā chǔlǐ gōngzuò.",
+            "vi": "Hôm nay tôi phải ở nhà xử lý công việc."
+          },
+          {
+            "zh": "这个错误谁处理？",
+            "py": "Zhège cuòwù shéi chǔlǐ?",
+            "vi": "Lỗi này ai xử lý?"
+          },
+          {
+            "zh": "我在公司处理一些错误。",
+            "py": "Wǒ zài gōngsī chǔlǐ yìxiē cuòwù.",
+            "vi": "Tôi xử lý một số lỗi ở công ty."
+          },
+          {
+            "zh": "经理要处理这个错误。",
+            "py": "Jīnglǐ yào chǔlǐ zhège cuòwù.",
+            "vi": "Giám đốc phải xử lý lỗi này."
+          },
+          {
+            "zh": "这些东西你怎么处理？",
+            "py": "Zhèxiē dōngxi nǐ zěnme chǔlǐ?",
+            "vi": "Mấy thứ này bạn xử lý thế nào?"
+          }
+        ]
+      },
+      {
+        "zh": "错误",
+        "py": "cuòwù",
+        "type": "Danh từ",
+        "vi": "lỗi, sai sót",
+        "ex": [
+          {
+            "zh": "处理错误是我的工作。",
+            "py": "Chǔlǐ cuòwù shì wǒ de gōngzuò.",
+            "vi": "Xử lý lỗi là công việc của tôi."
+          },
+          {
+            "zh": "这个错误不太难。",
+            "py": "Zhège cuòwù bú tài nán.",
+            "vi": "Lỗi này không khó lắm."
+          },
+          {
+            "zh": "今天我们有一些错误。",
+            "py": "Jīntiān wǒmen yǒu yìxiē cuòwù.",
+            "vi": "Hôm nay chúng tôi có một số lỗi."
+          },
+          {
+            "zh": "这个汉字有错误。",
+            "py": "Zhège Hànzì yǒu cuòwù.",
+            "vi": "Chữ Hán này có lỗi."
+          },
+          {
+            "zh": "昨天的错误经理都知道。",
+            "py": "Zuótiān de cuòwù jīnglǐ dōu zhīdào.",
+            "vi": "Lỗi hôm qua giám đốc đều biết."
+          }
+        ]
+      },
+      {
+        "zh": "天",
+        "py": "tiān",
+        "type": "Danh từ/Lượng từ",
+        "vi": "ngày",
+        "ex": [
+          {
+            "zh": "一个月有三十天。",
+            "py": "Yí ge yuè yǒu sānshí tiān.",
+            "vi": "Một tháng có ba mươi ngày."
+          },
+          {
+            "zh": "这几天我在家处理工作。",
+            "py": "Zhè jǐ tiān wǒ zài jiā chǔlǐ gōngzuò.",
+            "vi": "Mấy ngày nay tôi xử lý công việc ở nhà."
+          },
+          {
+            "zh": "我在河内住了三天。",
+            "py": "Wǒ zài Hénèi zhù le sān tiān.",
+            "vi": "Tôi đã ở Hà Nội ba ngày."
+          },
+          {
+            "zh": "我要在北京住几天。",
+            "py": "Wǒ yào zài Běijīng zhù jǐ tiān.",
+            "vi": "Tôi muốn ở Bắc Kinh mấy ngày."
+          },
+          {
+            "zh": "我在学校学习了一天汉语。",
+            "py": "Wǒ zài xuéxiào xuéxí le yì tiān Hànyǔ.",
+            "vi": "Tôi đã học tiếng Trung ở trường một ngày."
+          }
+        ]
+      },
+      {
+        "zh": "日",
+        "py": "rì",
+        "type": "Danh từ",
+        "vi": "ngày (dùng trong văn viết, = 号)",
+        "ex": [
+          {
+            "zh": "今天是五月十九日。",
+            "py": "Jīntiān shì wǔ yuè shíjiǔ rì.",
+            "vi": "Hôm nay là ngày 19 tháng 5."
+          },
+          {
+            "zh": "我的生日是七月十二日。",
+            "py": "Wǒ de shēngrì shì qī yuè shí'èr rì.",
+            "vi": "Sinh nhật của tôi là ngày 12 tháng 7."
+          },
+          {
+            "zh": "四月十日我去北京。",
+            "py": "Sì yuè shí rì wǒ qù Běijīng.",
+            "vi": "Ngày 10 tháng 4 tôi đi Bắc Kinh."
+          },
+          {
+            "zh": "星期日我不上班。",
+            "py": "Xīngqīrì wǒ bú shàngbān.",
+            "vi": "Chủ nhật tôi không đi làm."
+          },
+          {
+            "zh": "三十一日是星期几？",
+            "py": "Sānshíyī rì shì xīngqī jǐ?",
+            "vi": "Ngày 31 là thứ mấy?"
+          }
+        ]
+      },
+      {
+        "zh": "月",
+        "py": "yuè",
+        "type": "Danh từ",
+        "vi": "tháng",
+        "ex": [
+          {
+            "zh": "今天是十月四号。",
+            "py": "Jīntiān shì shí yuè sì hào.",
+            "vi": "Hôm nay là ngày 4 tháng 10."
+          },
+          {
+            "zh": "你的生日是几月几号？",
+            "py": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+            "vi": "Sinh nhật của bạn là ngày mấy tháng mấy?"
+          },
+          {
+            "zh": "四月二十三号我去旅游。",
+            "py": "Sì yuè èrshísān hào wǒ qù lǚyóu.",
+            "vi": "Ngày 23 tháng 4 tôi đi du lịch."
+          },
+          {
+            "zh": "这个月我很忙。",
+            "py": "Zhège yuè wǒ hěn máng.",
+            "vi": "Tháng này tôi rất bận."
+          },
+          {
+            "zh": "十二月十一号是他的生日。",
+            "py": "Shí'èr yuè shíyī hào shì tā de shēngrì.",
+            "vi": "Ngày 11 tháng 12 là sinh nhật của anh ấy."
+          }
+        ]
+      },
+      {
+        "zh": "星期日",
+        "py": "xīngqīrì",
+        "type": "Danh từ",
+        "vi": "chủ nhật (= 星期天)",
+        "ex": [
+          {
+            "zh": "星期日你做什么？",
+            "py": "Xīngqīrì nǐ zuò shénme?",
+            "vi": "Chủ nhật bạn làm gì?"
+          },
+          {
+            "zh": "星期日我在家吃饭。",
+            "py": "Xīngqīrì wǒ zài jiā chīfàn.",
+            "vi": "Chủ nhật tôi ăn cơm ở nhà."
+          },
+          {
+            "zh": "星期天也叫星期日。",
+            "py": "Xīngqītiān yě jiào xīngqīrì.",
+            "vi": "星期天 cũng gọi là 星期日."
+          },
+          {
+            "zh": "这个星期日是我的生日。",
+            "py": "Zhège xīngqīrì shì wǒ de shēngrì.",
+            "vi": "Chủ nhật này là sinh nhật của tôi."
+          },
+          {
+            "zh": "星期日商场的人很多。",
+            "py": "Xīngqīrì shāngchǎng de rén hěn duō.",
+            "vi": "Chủ nhật trung tâm thương mại rất đông người."
+          }
+        ]
+      },
+      {
+        "zh": "生日",
+        "py": "shēngrì",
+        "type": "Danh từ",
+        "vi": "sinh nhật, ngày sinh",
+        "ex": [
+          {
+            "zh": "今天是我儿子的生日。",
+            "py": "Jīntiān shì wǒ érzi de shēngrì.",
+            "vi": "Hôm nay là sinh nhật con trai tôi."
+          },
+          {
+            "zh": "我的生日是四月十号。",
+            "py": "Wǒ de shēngrì shì sì yuè shí hào.",
+            "vi": "Sinh nhật của tôi là ngày 10 tháng 4."
+          },
+          {
+            "zh": "你的生日是哪天？",
+            "py": "Nǐ de shēngrì shì nǎ tiān?",
+            "vi": "Sinh nhật của bạn là ngày nào?"
+          },
+          {
+            "zh": "他的生日我不知道。",
+            "py": "Tā de shēngrì wǒ bù zhīdào.",
+            "vi": "Sinh nhật của anh ấy tôi không biết."
+          },
+          {
+            "zh": "星期六是我妈妈的生日。",
+            "py": "Xīngqīliù shì wǒ māma de shēngrì.",
+            "vi": "Thứ bảy là sinh nhật mẹ tôi."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "Buổi 21 (b24): 三餐、量词与「不」的搭配 – Ba bữa ăn, lượng từ & tổ hợp với 不",
+    "words": [
+      {
+        "zh": "早饭",
+        "py": "zǎofàn",
+        "type": "Danh từ",
+        "vi": "bữa sáng, cơm sáng",
+        "ex": [
+          {
+            "zh": "我早上在家吃早饭。",
+            "py": "Wǒ zǎoshang zài jiā chī zǎofàn.",
+            "vi": "Buổi sáng tôi ăn sáng ở nhà."
+          },
+          {
+            "zh": "你吃早饭了吗？",
+            "py": "Nǐ chī zǎofàn le ma?",
+            "vi": "Bạn ăn sáng chưa?"
+          },
+          {
+            "zh": "今天的早饭是包子。",
+            "py": "Jīntiān de zǎofàn shì bāozi.",
+            "vi": "Bữa sáng hôm nay là bánh bao."
+          },
+          {
+            "zh": "我不喜欢吃早饭。",
+            "py": "Wǒ bù xǐhuan chī zǎofàn.",
+            "vi": "Tôi không thích ăn sáng."
+          },
+          {
+            "zh": "早饭我喝一杯奶茶。",
+            "py": "Zǎofàn wǒ hē yì bēi nǎichá.",
+            "vi": "Bữa sáng tôi uống một cốc trà sữa."
+          }
+        ]
+      },
+      {
+        "zh": "午饭",
+        "py": "wǔfàn",
+        "type": "Danh từ",
+        "vi": "bữa trưa, cơm trưa",
+        "ex": [
+          {
+            "zh": "中午我在公司吃午饭。",
+            "py": "Zhōngwǔ wǒ zài gōngsī chī wǔfàn.",
+            "vi": "Buổi trưa tôi ăn trưa ở công ty."
+          },
+          {
+            "zh": "我们的午饭是米饭和汤。",
+            "py": "Wǒmen de wǔfàn shì mǐfàn hé tāng.",
+            "vi": "Bữa trưa của chúng tôi là cơm và canh."
+          },
+          {
+            "zh": "你午饭吃什么？",
+            "py": "Nǐ wǔfàn chī shénme?",
+            "vi": "Bữa trưa bạn ăn gì?"
+          },
+          {
+            "zh": "今天的午饭很好吃。",
+            "py": "Jīntiān de wǔfàn hěn hǎochī.",
+            "vi": "Bữa trưa hôm nay rất ngon."
+          },
+          {
+            "zh": "午饭我吃了两个包子。",
+            "py": "Wǔfàn wǒ chī le liǎng ge bāozi.",
+            "vi": "Bữa trưa tôi đã ăn hai cái bánh bao."
+          }
+        ]
+      },
+      {
+        "zh": "晚饭",
+        "py": "wǎnfàn",
+        "type": "Danh từ",
+        "vi": "bữa tối, cơm tối",
+        "ex": [
+          {
+            "zh": "晚上我在家做晚饭。",
+            "py": "Wǎnshang wǒ zài jiā zuò wǎnfàn.",
+            "vi": "Buổi tối tôi nấu cơm tối ở nhà."
+          },
+          {
+            "zh": "你晚饭想吃什么？",
+            "py": "Nǐ wǎnfàn xiǎng chī shénme?",
+            "vi": "Bữa tối bạn muốn ăn gì?"
+          },
+          {
+            "zh": "今天的晚饭是饺子。",
+            "py": "Jīntiān de wǎnfàn shì jiǎozi.",
+            "vi": "Bữa tối hôm nay là sủi cảo."
+          },
+          {
+            "zh": "我还没吃晚饭。",
+            "py": "Wǒ hái méi chī wǎnfàn.",
+            "vi": "Tôi vẫn chưa ăn tối."
+          },
+          {
+            "zh": "晚饭我不太想吃面条。",
+            "py": "Wǎnfàn wǒ bú tài xiǎng chī miàntiáo.",
+            "vi": "Bữa tối tôi không muốn ăn mì lắm."
+          }
+        ]
+      },
+      {
+        "zh": "中文",
+        "py": "zhōngwén",
+        "type": "Danh từ",
+        "vi": "tiếng Trung, Trung văn",
+        "ex": [
+          {
+            "zh": "我有一本中文词典。",
+            "py": "Wǒ yǒu yì běn Zhōngwén cídiǎn.",
+            "vi": "Tôi có một quyển từ điển tiếng Trung."
+          },
+          {
+            "zh": "这本中文书很有意思。",
+            "py": "Zhè běn Zhōngwén shū hěn yǒu yìsi.",
+            "vi": "Quyển sách tiếng Trung này rất thú vị."
+          },
+          {
+            "zh": "他的中文很不错。",
+            "py": "Tā de Zhōngwén hěn búcuò.",
+            "vi": "Tiếng Trung của anh ấy khá tốt."
+          },
+          {
+            "zh": "我在学校学中文。",
+            "py": "Wǒ zài xuéxiào xué Zhōngwén.",
+            "vi": "Tôi học tiếng Trung ở trường."
+          },
+          {
+            "zh": "那本中文杂志是谁的？",
+            "py": "Nà běn Zhōngwén zázhì shì shéi de?",
+            "vi": "Quyển tạp chí tiếng Trung kia là của ai?"
+          }
+        ]
+      },
+      {
+        "zh": "吃药",
+        "py": "chī yào",
+        "type": "Động từ",
+        "vi": "uống thuốc",
+        "ex": [
+          {
+            "zh": "你生病了，要吃药。",
+            "py": "Nǐ shēngbìng le, yào chī yào.",
+            "vi": "Bạn ốm rồi, phải uống thuốc."
+          },
+          {
+            "zh": "他不喜欢吃药。",
+            "py": "Tā bù xǐhuan chī yào.",
+            "vi": "Anh ấy không thích uống thuốc."
+          },
+          {
+            "zh": "医生说我要吃药。",
+            "py": "Yīshēng shuō wǒ yào chī yào.",
+            "vi": "Bác sĩ nói tôi phải uống thuốc."
+          },
+          {
+            "zh": "你今天吃药了吗？",
+            "py": "Nǐ jīntiān chī yào le ma?",
+            "vi": "Hôm nay bạn uống thuốc chưa?"
+          },
+          {
+            "zh": "吃药要用白水。",
+            "py": "Chī yào yào yòng báishuǐ.",
+            "vi": "Uống thuốc phải dùng nước lọc."
+          }
+        ]
+      },
+      {
+        "zh": "不要",
+        "py": "búyào",
+        "type": "Phó từ",
+        "vi": "đừng, không được",
+        "ex": [
+          {
+            "zh": "不要吃中药。",
+            "py": "Búyào chī zhōngyào.",
+            "vi": "Đừng uống thuốc bắc."
+          },
+          {
+            "zh": "不要在这儿吃饭。",
+            "py": "Búyào zài zhèr chīfàn.",
+            "vi": "Đừng ăn cơm ở đây."
+          },
+          {
+            "zh": "不要买这个，太贵了。",
+            "py": "Búyào mǎi zhège, tài guì le.",
+            "vi": "Đừng mua cái này, đắt quá."
+          },
+          {
+            "zh": "你不要去商场了。",
+            "py": "Nǐ búyào qù shāngchǎng le.",
+            "vi": "Bạn đừng đi trung tâm thương mại nữa."
+          },
+          {
+            "zh": "不要用我的词典。",
+            "py": "Búyào yòng wǒ de cídiǎn.",
+            "vi": "Đừng dùng từ điển của tôi."
+          }
+        ]
+      },
+      {
+        "zh": "错",
+        "py": "cuò",
+        "type": "Tính từ",
+        "vi": "sai, nhầm",
+        "ex": [
+          {
+            "zh": "这个汉字写错了。",
+            "py": "Zhège Hànzì xiě cuò le.",
+            "vi": "Chữ Hán này viết sai rồi."
+          },
+          {
+            "zh": "你说错了。",
+            "py": "Nǐ shuō cuò le.",
+            "vi": "Bạn nói sai rồi."
+          },
+          {
+            "zh": "这个号码错了。",
+            "py": "Zhège hàomǎ cuò le.",
+            "vi": "Số này sai rồi."
+          },
+          {
+            "zh": "他做错了什么？",
+            "py": "Tā zuò cuò le shénme?",
+            "vi": "Anh ấy đã làm sai điều gì?"
+          },
+          {
+            "zh": "老师说我没错。",
+            "py": "Lǎoshī shuō wǒ méi cuò.",
+            "vi": "Thầy giáo nói tôi không sai."
+          }
+        ]
+      },
+      {
+        "zh": "不错",
+        "py": "búcuò",
+        "type": "Tính từ",
+        "vi": "khá tốt, không tồi",
+        "ex": [
+          {
+            "zh": "他的工作不错。",
+            "py": "Tā de gōngzuò búcuò.",
+            "vi": "Công việc của anh ấy khá tốt."
+          },
+          {
+            "zh": "这个商场不错。",
+            "py": "Zhège shāngchǎng búcuò.",
+            "vi": "Trung tâm thương mại này khá tốt."
+          },
+          {
+            "zh": "这杯咖啡很不错。",
+            "py": "Zhè bēi kāfēi hěn búcuò.",
+            "vi": "Cốc cà phê này rất ngon."
+          },
+          {
+            "zh": "你的汉语不错。",
+            "py": "Nǐ de Hànyǔ búcuò.",
+            "vi": "Tiếng Trung của bạn khá đấy."
+          },
+          {
+            "zh": "这本词典不错，不太贵。",
+            "py": "Zhè běn cídiǎn búcuò, bú tài guì.",
+            "vi": "Quyển từ điển này khá tốt, không đắt lắm."
+          }
+        ]
+      },
+      {
+        "zh": "用",
+        "py": "yòng",
+        "type": "Động từ",
+        "vi": "dùng, sử dụng",
+        "ex": [
+          {
+            "zh": "我用筷子吃饭。",
+            "py": "Wǒ yòng kuàizi chīfàn.",
+            "vi": "Tôi dùng đũa để ăn cơm."
+          },
+          {
+            "zh": "这个词典我想用一下儿。",
+            "py": "Zhège cídiǎn wǒ xiǎng yòng yíxiàr.",
+            "vi": "Quyển từ điển này tôi muốn dùng một chút."
+          },
+          {
+            "zh": "你用什么写汉字？",
+            "py": "Nǐ yòng shénme xiě Hànzì?",
+            "vi": "Bạn dùng gì để viết chữ Hán?"
+          },
+          {
+            "zh": "这支笔你用吗？",
+            "py": "Zhè zhī bǐ nǐ yòng ma?",
+            "vi": "Cây bút này bạn có dùng không?"
+          },
+          {
+            "zh": "他用中文写信。",
+            "py": "Tā yòng Zhōngwén xiě xìn.",
+            "vi": "Anh ấy dùng tiếng Trung viết thư."
+          }
+        ]
+      },
+      {
+        "zh": "不用",
+        "py": "búyòng",
+        "type": "Phó từ",
+        "vi": "không cần",
+        "ex": [
+          {
+            "zh": "不用谢。",
+            "py": "Búyòng xiè.",
+            "vi": "Không cần cảm ơn."
+          },
+          {
+            "zh": "这个错误不用处理。",
+            "py": "Zhège cuòwù búyòng chǔlǐ.",
+            "vi": "Lỗi này không cần xử lý."
+          },
+          {
+            "zh": "你不用去商场，我去。",
+            "py": "Nǐ búyòng qù shāngchǎng, wǒ qù.",
+            "vi": "Bạn không cần đi trung tâm thương mại, tôi đi."
+          },
+          {
+            "zh": "不用买东西了。",
+            "py": "Búyòng mǎi dōngxi le.",
+            "vi": "Không cần mua đồ nữa."
+          },
+          {
+            "zh": "今天不用上班。",
+            "py": "Jīntiān búyòng shàngbān.",
+            "vi": "Hôm nay không cần đi làm."
+          }
+        ]
+      },
+      {
+        "zh": "双",
+        "py": "shuāng",
+        "type": "Lượng từ",
+        "vi": "đôi (dùng cho vật có cặp)",
+        "ex": [
+          {
+            "zh": "我要一双筷子。",
+            "py": "Wǒ yào yì shuāng kuàizi.",
+            "vi": "Tôi muốn một đôi đũa."
+          },
+          {
+            "zh": "这双筷子是新的。",
+            "py": "Zhè shuāng kuàizi shì xīn de.",
+            "vi": "Đôi đũa này là đồ mới."
+          },
+          {
+            "zh": "请给我两双筷子。",
+            "py": "Qǐng gěi wǒ liǎng shuāng kuàizi.",
+            "vi": "Xin đưa cho tôi hai đôi đũa."
+          },
+          {
+            "zh": "这双筷子多少钱？",
+            "py": "Zhè shuāng kuàizi duōshao qián?",
+            "vi": "Đôi đũa này bao nhiêu tiền?"
+          },
+          {
+            "zh": "家里只有一双筷子。",
+            "py": "Jiā li zhǐ yǒu yì shuāng kuàizi.",
+            "vi": "Trong nhà chỉ có một đôi đũa."
+          }
+        ]
+      },
+      {
+        "zh": "筷子",
+        "py": "kuàizi",
+        "type": "Danh từ",
+        "vi": "đũa",
+        "ex": [
+          {
+            "zh": "中国人用筷子吃饭。",
+            "py": "Zhōngguó rén yòng kuàizi chīfàn.",
+            "vi": "Người Trung Quốc dùng đũa ăn cơm."
+          },
+          {
+            "zh": "这是谁的筷子？",
+            "py": "Zhè shì shéi de kuàizi?",
+            "vi": "Đây là đũa của ai?"
+          },
+          {
+            "zh": "两根筷子是一双。",
+            "py": "Liǎng gēn kuàizi shì yì shuāng.",
+            "vi": "Hai chiếc đũa là một đôi."
+          },
+          {
+            "zh": "我没有筷子。",
+            "py": "Wǒ méiyǒu kuàizi.",
+            "vi": "Tôi không có đũa."
+          },
+          {
+            "zh": "这双筷子很好看。",
+            "py": "Zhè shuāng kuàizi hěn hǎokàn.",
+            "vi": "Đôi đũa này rất đẹp."
+          }
+        ]
+      },
+      {
+        "zh": "根",
+        "py": "gēn",
+        "type": "Lượng từ",
+        "vi": "chiếc, cái (vật dài và nhỏ)",
+        "ex": [
+          {
+            "zh": "我要两根筷子。",
+            "py": "Wǒ yào liǎng gēn kuàizi.",
+            "vi": "Tôi muốn hai chiếc đũa."
+          },
+          {
+            "zh": "这根筷子是红色的。",
+            "py": "Zhè gēn kuàizi shì hóngsè de.",
+            "vi": "Chiếc đũa này màu đỏ."
+          },
+          {
+            "zh": "一双筷子有两根。",
+            "py": "Yì shuāng kuàizi yǒu liǎng gēn.",
+            "vi": "Một đôi đũa có hai chiếc."
+          },
+          {
+            "zh": "那根筷子不太好。",
+            "py": "Nà gēn kuàizi bú tài hǎo.",
+            "vi": "Chiếc đũa kia không tốt lắm."
+          },
+          {
+            "zh": "我买了几根筷子。",
+            "py": "Wǒ mǎi le jǐ gēn kuàizi.",
+            "vi": "Tôi đã mua mấy chiếc đũa."
+          }
+        ]
+      },
+      {
+        "zh": "工程师",
+        "py": "gōngchéngshī",
+        "type": "Danh từ",
+        "vi": "kỹ sư",
+        "ex": [
+          {
+            "zh": "我是工程师。",
+            "py": "Wǒ shì gōngchéngshī.",
+            "vi": "Tôi là kỹ sư."
+          },
+          {
+            "zh": "我们公司有很多工程师。",
+            "py": "Wǒmen gōngsī yǒu hěn duō gōngchéngshī.",
+            "vi": "Công ty chúng tôi có rất nhiều kỹ sư."
+          },
+          {
+            "zh": "他是我们经理，也是工程师。",
+            "py": "Tā shì wǒmen jīnglǐ, yě shì gōngchéngshī.",
+            "vi": "Anh ấy là giám đốc của chúng tôi, cũng là kỹ sư."
+          },
+          {
+            "zh": "这位工程师的中文很好。",
+            "py": "Zhè wèi gōngchéngshī de Zhōngwén hěn hǎo.",
+            "vi": "Vị kỹ sư này tiếng Trung rất tốt."
+          },
+          {
+            "zh": "工程师的工作很忙。",
+            "py": "Gōngchéngshī de gōngzuò hěn máng.",
+            "vi": "Công việc của kỹ sư rất bận."
+          }
+        ]
+      }
+    ]
   }
 ];
 
@@ -13944,6 +14713,35 @@ const DIALOGUE_DATA = [
       {s:'A',zh:'那个箱子里是什么？',py:'Nàge xiāngzi lǐ shì shénme?',vi:'Trong vali kia là gì?'},
       {s:'B',zh:'都是日用品。有两件衣服，一把雨伞和一瓶香水，还有一本书，一本词典，两张光盘和三支笔。',py:'Dōu shì rìyòngpǐn. Yǒu liǎng jiàn yīfu, yì bǎ yǔsǎn hé yì píng xiāngshuǐ, hái yǒu yì běn shū, yì běn cídiǎn, liǎng zhāng guāngpán hé sān zhī bǐ.',vi:'Đều là đồ dùng hàng ngày. Có hai bộ quần áo, một cái ô và một chai nước hoa, còn có một quyển sách, một quyển từ điển, hai đĩa CD và ba cây bút.'},
     ]
+  },
+  {
+    lesson:'Buổi 20 (b23): 商场、日期与生日', title:'问生活与生日 – Hỏi về sinh hoạt & sinh nhật', lessonIdx:19,
+    lines:[
+      {s:'A',zh:'今天你忙吗？',py:'Jīntiān nǐ máng ma?',vi:'Hôm nay bạn có bận không?'},
+      {s:'B',zh:'我很忙。',py:'Wǒ hěn máng.',vi:'Tôi rất bận.'},
+      {s:'A',zh:'昨天你去哪儿？',py:'Zuótiān nǐ qù nǎr?',vi:'Hôm qua bạn đi đâu?'},
+      {s:'B',zh:'我去商场买了一些东西。',py:'Wǒ qù shāngchǎng mǎi le yìxiē dōngxi.',vi:'Tôi đi trung tâm thương mại mua một ít đồ.'},
+      {s:'A',zh:'你喜欢吃水果吗？',py:'Nǐ xǐhuan chī shuǐguǒ ma?',vi:'Bạn có thích ăn hoa quả không?'},
+      {s:'B',zh:'我喜欢吃苹果和橘子。',py:'Wǒ xǐhuan chī píngguǒ hé júzi.',vi:'Tôi thích ăn táo và quýt.'},
+      {s:'A',zh:'今天星期几？',py:'Jīntiān xīngqī jǐ?',vi:'Hôm nay là thứ mấy?'},
+      {s:'B',zh:'今天星期六，明天是星期日。',py:'Jīntiān xīngqīliù, míngtiān shì xīngqīrì.',vi:'Hôm nay thứ bảy, mai là chủ nhật.'},
+      {s:'A',zh:'你的生日是几月几号？',py:'Nǐ de shēngrì shì jǐ yuè jǐ hào?',vi:'Sinh nhật của bạn là ngày mấy tháng mấy?'},
+      {s:'B',zh:'我的生日是七月十二号。',py:"Wǒ de shēngrì shì qī yuè shí'èr hào.",vi:'Sinh nhật của tôi là ngày 12 tháng 7.'},
+    ]
+  },
+  {
+    lesson:'Buổi 21 (b24): 三餐、量词与「不」的搭配', title:'吃饭与借词典 – Chuyện ăn uống & mượn từ điển', lessonIdx:20,
+    lines:[
+      {s:'A',zh:'你早饭吃什么？',py:'Nǐ zǎofàn chī shénme?',vi:'Bữa sáng bạn ăn gì?'},
+      {s:'B',zh:'我吃两个包子，喝一杯奶茶。',py:'Wǒ chī liǎng ge bāozi, hē yì bēi nǎichá.',vi:'Tôi ăn hai cái bánh bao, uống một cốc trà sữa.'},
+      {s:'A',zh:'你喜欢吃饺子吗？',py:'Nǐ xǐhuan chī jiǎozi ma?',vi:'Bạn có thích ăn sủi cảo không?'},
+      {s:'B',zh:'喜欢，饺子很好吃。',py:'Xǐhuan, jiǎozi hěn hǎochī.',vi:'Thích chứ, sủi cảo rất ngon.'},
+      {s:'A',zh:'中午我们吃饺子吧。',py:'Zhōngwǔ wǒmen chī jiǎozi ba.',vi:'Trưa nay chúng ta ăn sủi cảo nhé.'},
+      {s:'B',zh:'不错！我要一双筷子。',py:'Búcuò! Wǒ yào yì shuāng kuàizi.',vi:'Hay đấy! Tôi cần một đôi đũa.'},
+      {s:'A',zh:'那是谁的中文词典？',py:'Nà shì shéi de Zhōngwén cídiǎn?',vi:'Kia là từ điển tiếng Trung của ai?'},
+      {s:'B',zh:'那是我的，你要用吗？',py:'Nà shì wǒ de, nǐ yào yòng ma?',vi:'Kia là của tôi, bạn muốn dùng không?'},
+      {s:'A',zh:'不用，谢谢。',py:'Búyòng, xièxie.',vi:'Không cần, cảm ơn.'},
+    ]
   }
 ];
 
@@ -14134,4 +14932,20 @@ const PHRASES = [
   {zh:"这是茶还是咖啡？",py:"Zhè shì chá háishi kāfēi?",vi:"Đây là trà hay là cà phê?",lesson:19},
   {zh:"你的车是白色还是黑色？",py:"Nǐ de chē shì báisè háishi hēisè?",vi:"Xe của bạn màu trắng hay màu đen?",lesson:19},
   {zh:"我坐高铁去上班。",py:"Wǒ zuò gāotiě qù shàngbān.",vi:"Tôi đi tàu cao tốc đi làm.",lesson:19},
+  // Bài 20 (b23)
+  {zh:"今天我要在家。",py:"Jīntiān wǒ yào zài jiā.",vi:"Hôm nay tôi muốn ở nhà.",lesson:20},
+  {zh:"你喜欢吃什么水果？",py:"Nǐ xǐhuan chī shénme shuǐguǒ?",vi:"Bạn thích ăn hoa quả gì?",lesson:20},
+  {zh:"今天几月几号？",py:"Jīntiān jǐ yuè jǐ hào?",vi:"Hôm nay là ngày mấy tháng mấy?",lesson:20},
+  {zh:"我们经理有新秘书。",py:"Wǒmen jīnglǐ yǒu xīn mìshū.",vi:"Giám đốc của chúng tôi có thư ký mới.",lesson:20},
+  {zh:"我的工作很忙，所以身体不太好。",py:"Wǒ de gōngzuò hěn máng, suǒyǐ shēntǐ bú tài hǎo.",vi:"Công việc của tôi rất bận, nên sức khoẻ không tốt lắm.",lesson:20},
+  {zh:"我觉得汉语不太难。",py:"Wǒ juéde Hànyǔ bú tài nán.",vi:"Tôi thấy tiếng Trung không khó lắm.",lesson:20},
+  {zh:"这不是我们的汉语老师。",py:"Zhè bú shì wǒmen de Hànyǔ lǎoshī.",vi:"Đây không phải là giáo viên tiếng Trung của chúng tôi.",lesson:20},
+  // Bài 21 (b24)
+  {zh:"这杯奶茶好喝吗？",py:"Zhè bēi nǎichá hǎohē ma?",vi:"Cốc trà sữa này có ngon không?",lesson:21},
+  {zh:"我要吃几个中国包子。",py:"Wǒ yào chī jǐ ge Zhōngguó bāozi.",vi:"Tôi muốn ăn mấy cái bánh bao Trung Quốc.",lesson:21},
+  {zh:"苹果十块钱一斤。",py:"Píngguǒ shí kuài qián yì jīn.",vi:"Táo mười tệ một cân.",lesson:21},
+  {zh:"我有一些中文书。",py:"Wǒ yǒu yìxiē Zhōngwén shū.",vi:"Tôi có một vài quyển sách tiếng Trung.",lesson:21},
+  {zh:"这个工程师是我朋友。",py:"Zhège gōngchéngshī shì wǒ péngyou.",vi:"Kỹ sư này là bạn tôi.",lesson:21},
+  {zh:"你中午吃午饭了吗？",py:"Nǐ zhōngwǔ chī wǔfàn le ma?",vi:"Buổi trưa bạn ăn cơm chưa?",lesson:21},
+  {zh:"老师说我写错了一个汉字。",py:"Lǎoshī shuō wǒ xiě cuò le yí ge Hànzì.",vi:"Thầy giáo nói tôi viết sai một chữ Hán.",lesson:21},
 ];

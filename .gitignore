@@ -3,3 +3,6 @@ node_modules/
 Thumbs.db
 *.log
 .env
+
+# FUSE temp files (Windows mount)
+.fuse_hidden*

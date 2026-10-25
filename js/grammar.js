@@ -257,6 +257,8 @@ const GRAMMAR_DATA = [
       {zh:'六件衣服',py:'liù jiàn yīfu',vi:'sáu cái quần áo',form:'件 — quần áo, sự việc'},
       {zh:'七斤苹果',py:'qī jīn píngguǒ',vi:'bảy cân táo',form:'斤 — cân (0.5kg)'},
       {zh:'八杯茶',py:'bā bēi chá',vi:'tám cốc trà',form:'杯 — cốc, ly'},
+      {zh:'一双筷子',py:'yì shuāng kuàizi',vi:'một đôi đũa',form:'双 — đôi, cặp'},
+      {zh:'两根筷子',py:'liǎng gēn kuàizi',vi:'hai chiếc đũa',form:'根 — vật dài, nhỏ'},
     ]
   },
   // ── 18. Thời gian & Địa điểm ──────────────────────
@@ -527,6 +529,53 @@ const GRAMMAR_DATA = [
       {zh:'全公司都很忙。',py:'Quán gōngsī dōu hěn máng.',vi:'Cả công ty đều rất bận.',form:'全+N+都+Adj'},
       {zh:'我们全班都是留学生。',py:'Wǒmen quán bān dōu shì liúxuéshēng.',vi:'Cả lớp chúng tôi đều là lưu học sinh.',form:'S+全+N+都+是+O'},
       {zh:'全学校的老师都很好。',py:'Quán xuéxiào de lǎoshī dōu hěn hǎo.',vi:'Giáo viên của cả trường đều rất tốt.',form:'全+N+的+N+都+Adj'},
+    ]
+  },
+  // ── 37. Ngày tháng: 几月几号 ───────────────────────
+  {
+    id:'co-ban', num:37,
+    title:'Ngày tháng: 几月几号 — Hỏi & nói ngày tháng',
+    tag:'số + 月 + số + 号/日',
+    formula:'Tháng (số + 月) + Ngày (số + 号/日) — lớn trước, nhỏ sau',
+    note:'⚠️ Nói ngày tháng KHÔNG dùng 是 bắt buộc nhưng rất hay có: 今天是十月四号 ✓. Hỏi ngày tháng dùng 几 (không dùng 多少): 几月几号 ✓ / 多少月 ✗',
+    tip:'💡 号 (hào) dùng khi nói; 日 (rì) dùng khi viết (văn bản, giấy tờ). Thứ tự tiếng Trung ngược tiếng Việt: 十月四号 = ngày 4 tháng 10.',
+    rows:[
+      {zh:'今天几月几号？',py:'Jīntiān jǐ yuè jǐ hào?',vi:'Hôm nay là ngày mấy tháng mấy?',form:'几月几号 — hỏi ngày tháng'},
+      {zh:'今天是十月四号。',py:'Jīntiān shì shí yuè sì hào.',vi:'Hôm nay là ngày 4 tháng 10.',form:'số + 月 + số + 号'},
+      {zh:'五月十九号',py:'wǔ yuè shíjiǔ hào',vi:'ngày 19 tháng 5 (19/5)',form:'tháng trước, ngày sau'},
+      {zh:'三十一日是星期几？',py:'Sānshíyī rì shì xīngqī jǐ?',vi:'Ngày 31 là thứ mấy?',form:'日 — văn viết'},
+      {zh:'你的生日是几月几号？',py:'Nǐ de shēngrì shì jǐ yuè jǐ hào?',vi:'Sinh nhật của bạn là ngày mấy tháng mấy?',form:'S + 是 + 几月几号'},
+    ]
+  },
+  // ── 38. 不要 + V ──────────────────────────────────
+  {
+    id:'phu-dinh', num:38,
+    title:'不要 (búyào) + V — Đừng, không được',
+    tag:'不要 + V (câu cầu khiến phủ định)',
+    formula:'(主语 +) 不要 + Động từ + Tân ngữ',
+    note:'⚠️ Phân biệt 2 nghĩa: 不要 = "đừng" (ngăn cấm) ≠ 不要 = "không muốn" (phủ định của động từ 要). Ngữ cảnh quyết định: 不要吃中药 = Đừng uống thuốc bắc / 他不要吃中药 = Anh ấy không muốn uống thuốc bắc.',
+    tip:'💡 别 (bié) cũng nghĩa là "đừng", dùng thân mật hơn 不要.',
+    rows:[
+      {zh:'不要吃中药。',py:'Búyào chī zhōngyào.',vi:'Đừng uống thuốc bắc.',form:'不要 + V + O'},
+      {zh:'不要在这儿吃饭。',py:'Búyào zài zhèr chīfàn.',vi:'Đừng ăn cơm ở đây.',form:'不要 + 在 + nơi chốn + V'},
+      {zh:'不要用我的词典。',py:'Búyào yòng wǒ de cídiǎn.',vi:'Đừng dùng từ điển của tôi.',form:'不要 + V + O'},
+      {zh:'你不要去商场了。',py:'Nǐ búyào qù shāngchǎng le.',vi:'Bạn đừng đi trung tâm thương mại nữa.',form:'S + 不要 + V + 了'},
+    ]
+  },
+  // ── 39. 不错 / 不用 / 不太 ─────────────────────────
+  {
+    id:'phu-dinh', num:39,
+    title:'不错 / 不用 / 不太 — Tổ hợp với 不 mang nghĩa riêng',
+    tag:'不 + X ≠ phủ định đơn thuần',
+    formula:'不错 = khá tốt | 不用 = không cần | 不太 + Adj = không ... lắm',
+    note:'⚠️ 不错 KHÔNG có nghĩa "không sai" mà là "khá tốt, không tồi" — là lời khen. 不用 KHÔNG phải "không dùng" mà là "không cần".',
+    tip:'💡 Nhớ theo cặp: 错 (sai) → 不错 (khá tốt) | 用 (dùng) → 不用 (không cần) | 太 (quá) → 不太 (không ... lắm).',
+    rows:[
+      {zh:'你的汉语不错。',py:'Nǐ de Hànyǔ búcuò.',vi:'Tiếng Trung của bạn khá đấy.',form:'不错 — khen ngợi'},
+      {zh:'这个错误不用处理。',py:'Zhège cuòwù búyòng chǔlǐ.',vi:'Lỗi này không cần xử lý.',form:'不用 + V'},
+      {zh:'不用谢。',py:'Búyòng xiè.',vi:'Không cần cảm ơn.',form:'不用 — đáp lời cảm ơn'},
+      {zh:'我的身体不太好。',py:'Wǒ de shēntǐ bú tài hǎo.',vi:'Sức khoẻ của tôi không tốt lắm.',form:'不太 + Adj'},
+      {zh:'这个错误不太难。',py:'Zhège cuòwù bú tài nán.',vi:'Lỗi này không khó lắm.',form:'不太 + Adj'},
     ]
   },
 ];
