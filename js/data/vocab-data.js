@@ -26409,7 +26409,7 @@ const DIALOGUE_DATA = [
       {s:'B',zh:'要两斤橘子。一共多少钱？',py:'Yào liǎng jīn júzi. Yígòng duōshao qián?',vi:'Lấy hai cân quýt. Tổng cộng bao nhiêu tiền?'},
       {s:'A',zh:'一共十六块五。给您找钱。',py:'Yígòng shíliù kuài wǔ. Gěi nín zhǎo qián.',vi:'Tổng cộng 16 đồng rưỡi. Trả lại tiền thừa cho ngài.'},
     ]
-  },,
+  },
   {
     lesson:'Bài 4: Ôn tập – Đặt câu thực hành', title:'今天去哪儿 – Hôm nay đi đâu?', lessonIdx:3,
     lines:[
@@ -26418,7 +26418,7 @@ const DIALOGUE_DATA = [
       {s:'A',zh:'你去邮局做什么？',py:'Nǐ qù yóujú zuò shénme?',vi:'Bạn đến bưu điện làm gì?'},
       {s:'B',zh:'我去邮局寄信。',py:'Wǒ qù yóujú jì xìn.',vi:'Tôi đến bưu điện gửi thư.'},
       {s:'A',zh:'今天星期几？',py:'Jīntiān xīngqī jǐ?',vi:'Hôm nay thứ mấy?'},
-      {s:'B',zh:'今天星期三。',py:'Jīntiān xīngqīsān.',vi:'Hôm nay thứ Tư.'}
+      {s:'B',zh:'今天星期三。',py:'Jīntiān xīngqīsān.',vi:'Hôm nay thứ Tư.'},
     ]
   },
   {
@@ -26428,7 +26428,7 @@ const DIALOGUE_DATA = [
       {s:'B',zh:'我身体不太好，我在生病。',py:'Wǒ shēntǐ bú tài hǎo, wǒ zài shēngbìng.',vi:'Sức khỏe tôi không tốt lắm, tôi đang bị ốm.'},
       {s:'A',zh:'哦！你工作忙吗？',py:'Ō! Nǐ gōngzuò máng ma?',vi:'Ồ! Công việc của bạn bận không?'},
       {s:'B',zh:'我工作不太忙。你呢？',py:'Wǒ gōngzuò bú tài máng. Nǐ ne?',vi:'Công việc tôi không quá bận. Còn bạn?'},
-      {s:'A',zh:'我在中国工作，很忙。',py:'Wǒ zài Zhōngguó gōngzuò, hěn máng.',vi:'Tôi làm việc ở Trung Quốc, rất bận.'}
+      {s:'A',zh:'我在中国工作，很忙。',py:'Wǒ zài Zhōngguó gōngzuò, hěn máng.',vi:'Tôi làm việc ở Trung Quốc, rất bận.'},
     ]
   },
   {
@@ -26439,7 +26439,7 @@ const DIALOGUE_DATA = [
       {s:'A',zh:'我是中国人。你叫什么名字？',py:'Wǒ shì Zhōngguó rén. Nǐ jiào shénme míngzi?',vi:'Tôi là người Trung Quốc. Bạn tên là gì?'},
       {s:'B',zh:'我叫阮光胜。你贵姓？',py:'Wǒ jiào Ruǎn Guāngshèng. Nǐ guì xìng?',vi:'Tôi tên Nguyễn Quang Thắng. Quý danh của bạn là gì?'},
       {s:'A',zh:'我姓王，叫王明。认识你很高兴！',py:'Wǒ xìng Wáng, jiào Wáng Míng. Rènshi nǐ hěn gāoxìng!',vi:'Tôi họ Vương, tên Vương Minh. Rất vui được gặp bạn!'},
-      {s:'B',zh:'我也很高兴认识你！',py:'Wǒ yě hěn gāoxìng rènshi nǐ!',vi:'Tôi cũng rất vui được gặp bạn!'}
+      {s:'B',zh:'我也很高兴认识你！',py:'Wǒ yě hěn gāoxìng rènshi nǐ!',vi:'Tôi cũng rất vui được gặp bạn!'},
     ]
   },
   {
@@ -26450,7 +26450,7 @@ const DIALOGUE_DATA = [
       {s:'A',zh:'你儿子几岁？',py:'Nǐ érzi jǐ suì?',vi:'Con trai bạn mấy tuổi?'},
       {s:'B',zh:'我儿子三岁。你多大？',py:'Wǒ érzi sān suì. Nǐ duō dà?',vi:'Con trai tôi ba tuổi. Bạn bao nhiêu tuổi?'},
       {s:'A',zh:'我三十六岁。你们住在哪儿？',py:'Wǒ sānshíliù suì. Nǐmen zhù zài nǎr?',vi:'Tôi ba mươi sáu tuổi. Các bạn sống ở đâu?'},
-      {s:'B',zh:'我们住在河内。',py:'Wǒmen zhù zài Hànèi.',vi:'Chúng tôi sống ở Hà Nội.'}
+      {s:'B',zh:'我们住在河内。',py:'Wǒmen zhù zài Hànèi.',vi:'Chúng tôi sống ở Hà Nội.'},
     ]
   },
   {
@@ -26461,7 +26461,7 @@ const DIALOGUE_DATA = [
       {s:'A',zh:'我要一碗面条和一个鸡蛋。',py:'Wǒ yào yī wǎn miàntiáo hé yī gè jīdàn.',vi:'Tôi muốn một bát mì sợi và một quả trứng.'},
       {s:'B',zh:'我要一碗米饭、一盘饺子和一碗汤。',py:'Wǒ yào yī wǎn mǐfàn, yī pán jiǎozi hé yī wǎn tāng.',vi:'Tôi muốn một bát cơm, một đĩa sủi cảo và một bát canh.'},
       {s:'A',zh:'你喝啤酒吗？',py:'Nǐ hē píjiǔ ma?',vi:'Bạn uống bia không?'},
-      {s:'B',zh:'不，我要一瓶水。',py:'Bù, wǒ yào yī píng shuǐ.',vi:'Không, tôi muốn một chai nước.'}
+      {s:'B',zh:'不，我要一瓶水。',py:'Bù, wǒ yào yī píng shuǐ.',vi:'Không, tôi muốn một chai nước.'},
     ]
   },
   {
@@ -26476,12 +26476,12 @@ const DIALOGUE_DATA = [
       {s:'A',zh:'给我一斤橙子。一共多少钱？',py:'Gěi wǒ yī jīn chéngzi. Yígòng duōshao qián?',vi:'Cho tôi một cân cam. Tổng cộng bao nhiêu tiền?'},
       {s:'B',zh:'一共八块钱。',py:'Yígòng bā kuài qián.',vi:'Tổng cộng tám đồng.'},
       {s:'A',zh:'给你十块。',py:'Gěi nǐ shí kuài.',vi:'Đây, đưa bạn mười đồng.'},
-      {s:'B',zh:'找你两块。谢谢！',py:'Zhǎo nǐ liǎng kuài. Xièxie!',vi:'Trả lại bạn hai đồng. Cảm ơn!'}
+      {s:'B',zh:'找你两块。谢谢！',py:'Zhǎo nǐ liǎng kuài. Xièxie!',vi:'Trả lại bạn hai đồng. Cảm ơn!'},
     ]
   },
   {
-    title: 'Bài 10: 他住哪儿？– Ông ấy sống ở đâu?',
-    lines: [
+    lesson:'Buổi 12 (b13): 他住哪儿？– Ông ấy sống ở đâu?', title:'他住哪儿？– Ông ấy sống ở đâu?', lessonIdx:11,
+    lines:[
       {s:'A',zh:'请问，这是办公室吗？',py:'Qǐngwèn, zhè shì bàngōngshì ma?',vi:'Xin hỏi, đây có phải là văn phòng không?'},
       {s:'B',zh:'是。你找谁？',py:'Shì. Nǐ zhǎo shéi?',vi:'Đúng. Bạn tìm ai?'},
       {s:'A',zh:'王老师在吗？我是他的学生。',py:'Wáng lǎoshī zài ma? Wǒ shì tā de xuéshēng.',vi:'Thầy Vương có ở đây không? Tôi là học sinh của thầy.'},
@@ -26493,75 +26493,63 @@ const DIALOGUE_DATA = [
       {s:'A',zh:'他的手机号码是多少？',py:'Tā de shǒujī hàomǎ shì duōshǎo?',vi:'Số điện thoại di động của thầy là bao nhiêu?'},
       {s:'B',zh:'不知道。',py:'Bù zhīdào.',vi:'Không biết.'},
       {s:'A',zh:'谢谢您。',py:'Xièxiè nín.',vi:'Cảm ơn ngài.'},
-      {s:'B',zh:'不客气。',py:'Bú kèqi.',vi:'Không có gì.'}
+      {s:'B',zh:'不客气。',py:'Bú kèqi.',vi:'Không có gì.'},
     ]
-  }  ,
+  },
   {
-    lesson:'B\xe0i 11: 我们都是留学生 – Ch\xfang ta đều l\xe0 lưu học sinh', title:'Giới thiệu gi\xe1o sư – 介绍教授', lessonIdx:10,
+    lesson:'Bài 11: 我们都是留学生 – Chúng ta đều là lưu học sinh', title:'Giới thiệu giáo sư – 介绍教授', lessonIdx:10,
     lines:[
-      {s:'B',zh:'我先介绍一下儿，这位是王教授。这是马校长。',py:'Wǒ xiān ji\xe8sh\xe0o y\xedxi\xe0r, zh\xe8 w\xe8i sh\xec W\xe1ng ji\xe0osh\xf2u. Zh\xe8 sh\xec Mǎ xi\xe0ozhǎ ng.',vi:'T\xf4i xin giới thiệu, đ\xe2y l\xe0 gi\xe1o sư Vương. Đ\xe2y l\xe0 hiệu trưởng Mǎ.'},
-      {s:'A',zh:'欢迎您，王教授。',py:'Huāny\xedng n\xedn, W\xe1ng ji\xe0osh\xf2u.',vi:'Hoan ngh\xeanh ng\xe0i, gi\xe1o sư Vương.'},
-      {s:'B',zh:'谢谢！',py:'Xi\xe8xie!',vi:'Cảm ơn!'},
+      {s:'B',zh:'我先介绍一下儿，这位是王教授。这是马校长。',py:'Wǒ xiān jièshào yíxiàr, zhè wèi shì Wáng jiàoshòu. Zhè shì Mǎ xiàozhǎ ng.',vi:'Tôi xin giới thiệu, đây là giáo sư Vương. Đây là hiệu trưởng Mǎ.'},
+      {s:'A',zh:'欢迎您，王教授。',py:'Huānyíng nín, Wáng jiàoshòu.',vi:'Hoan nghênh ngài, giáo sư Vương.'},
+      {s:'B',zh:'谢谢！',py:'Xièxie!',vi:'Cảm ơn!'},
     ]
   },
   {
-    lesson:'B\xe0i 11: 我们都是留学生 – Ch\xfang ta đều l\xe0 lưu học sinh', title:'Ch\xfang ta đều l\xe0 lưu học sinh – 我们都是留学生', lessonIdx:10,
+    lesson:'Bài 11: 我们都是留学生 – Chúng ta đều là lưu học sinh', title:'Chúng ta đều là lưu học sinh – 我们都是留学生', lessonIdx:10,
     lines:[
-      {s:'A',zh:'你是留学生吗？',py:'Nǐ sh\xec li\xfaxi\xe9shēng ma?',vi:'Bạn c\xf3 phải l\xe0 lưu học sinh kh\xf4ng?'},
-      {s:'B',zh:'是。',py:'Sh\xec.',vi:'Phải.'},
-      {s:'A',zh:'她也是留学生吗？',py:'Tā yě sh\xec li\xfaxi\xe9shēng ma?',vi:'C\xf4 ấy cũng l\xe0 lưu học sinh \xe0?'},
-      {s:'B',zh:'她也是留学生。我们都是留学生。',py:'Tā yě sh\xec li\xfaxi\xe9shēng. Wǒmen dōu sh\xec li\xfaxi\xe9shēng.',vi:'C\xf4 ấy cũng l\xe0 lưu học sinh. Ch\xfang ta đều l\xe0 lưu học sinh.'},
-      {s:'A',zh:'他们俩也都是留学生吗？',py:'Tāmen liǎ yě dōu sh\xec li\xfaxi\xe9shēng ma?',vi:'Cả hai họ cũng đều l\xe0 lưu học sinh \xe0?'},
-      {s:'B',zh:'不，他们俩不是留学生。他们都是中国学生。',py:'B\xf9, tāmen liǎ b\xfa sh\xec li\xfaxi\xe9shēng. Tāmen dōu sh\xec Zhōnggu\xf3 xu\xe9shēng.',vi:'Kh\xf4ng, cả hai họ kh\xf4ng phải lưu học sinh. Họ đều l\xe0 học sinh Trung Quốc.'},
+      {s:'A',zh:'你是留学生吗？',py:'Nǐ shì liúxiéshēng ma?',vi:'Bạn có phải là lưu học sinh không?'},
+      {s:'B',zh:'是。',py:'Shì.',vi:'Phải.'},
+      {s:'A',zh:'她也是留学生吗？',py:'Tā yě shì liúxiéshēng ma?',vi:'Cô ấy cũng là lưu học sinh à?'},
+      {s:'B',zh:'她也是留学生。我们都是留学生。',py:'Tā yě shì liúxiéshēng. Wǒmen dōu shì liúxiéshēng.',vi:'Cô ấy cũng là lưu học sinh. Chúng ta đều là lưu học sinh.'},
+      {s:'A',zh:'他们俩也都是留学生吗？',py:'Tāmen liǎ yě dōu shì liúxiéshēng ma?',vi:'Cả hai họ cũng đều là lưu học sinh à?'},
+      {s:'B',zh:'不，他们俩不是留学生。他们都是中国学生。',py:'Bù, tāmen liǎ bú shì liúxiéshēng. Tāmen dōu shì Zhōngguó xuéshēng.',vi:'Không, cả hai họ không phải lưu học sinh. Họ đều là học sinh Trung Quốc.'},
     ]
   },
   {
-    lesson:'B\xe0i 11: 我们都是留学生 – Ch\xfang ta đều l\xe0 lưu học sinh', title:'Bạn cũng l\xe0 người Trung Quốc \xe0? – 你也是中国人吗', lessonIdx:10,
+    lesson:'Bài 11: 我们都是留学生 – Chúng ta đều là lưu học sinh', title:'Bạn cũng là người Trung Quốc à? – 你也是中国人吗', lessonIdx:10,
     lines:[
-      {s:'A',zh:'他是中国人吗？',py:'Tā sh\xec Zhōnggu\xf3 r\xe9n ma?',vi:'Ông ấy l\xe0 người Trung Quốc \xe0?'},
-      {s:'B',zh:'是。',py:'Sh\xec.',vi:'Phải.'},
-      {s:'A',zh:'你也是中国人吗？',py:'Nǐ yě sh\xec Zhōnggu\xf3 r\xe9n ma?',vi:'Bạn cũng l\xe0 người Trung Quốc \xe0?'},
-      {s:'B',zh:'不是。我是韩国人。',py:'B\xfa sh\xec. Wǒ sh\xec H\xe1ngu\xf3 r\xe9n.',vi:'Kh\xf4ng phải. T\xf4i l\xe0 người H\xe0n Quốc.'},
-      {s:'A',zh:'对不起。',py:'Du\xedb\xf9qǐ.',vi:'Xin lỗi.'},
-      {s:'B',zh:'没什么。',py:'M\xe9i sh\xe9nme.',vi:'Kh\xf4ng c\xf3 g\xec.'},
-    ]
-  },
-
-  // ── Bài 12 ──────────────────────────────────────────────────────────────
-  {
-    lessonIdx: 11,
-    title: 'Bài 12 – 第十二课',
-    dialogues: [
-      {
-        title: '（一）你在哪儿学习汉语',
-        lines: [
-          {zh:'你在哪儿学习汉语？',   py:'Nǐ zài nǎr xuéxí Hànyǔ?',   vi:'Bạn học tiếng Trung ở đâu?',      speaker:'A'},
-          {zh:'在北京语言大学。',     py:'Zài Běijīng Yǔyán Dàxué.',   vi:'Ở Đại học Ngôn ngữ Bắc Kinh.',    speaker:'B'},
-          {zh:'你们的老师怎么样？',   py:'Nǐmen de lǎoshī zěnmeyàng?', vi:'Thầy/cô của các bạn thế nào?',    speaker:'A'},
-          {zh:'很好！',              py:'Hěn hǎo!',                    vi:'Rất tốt!',                         speaker:'B'},
-          {zh:'你觉得学习汉语难吗？', py:'Nǐ juéde xuéxí Hànyǔ nán ma?',vi:'Bạn thấy học tiếng Trung khó không?',speaker:'A'},
-          {zh:'我觉得语法不太难。听和说也比较容易，但是读和写很难。',
-              py:'Wǒ juéde yǔfǎ bú tài nán. Tīng hé shuō yě bǐjiào róngyì, dànshì dú hé xiě hěn nán.',
-              vi:'Tôi thấy ngữ pháp không quá khó. Nghe và nói cũng tương đối dễ, nhưng đọc và viết rất khó.',speaker:'B'},
-        ]
-      },
-      {
-        title: '（二）你们的老师是谁',
-        lines: [
-          {zh:'我给你们介绍一下儿，这位是新同学，是我的同屋。',
-              py:'Wǒ gěi nǐmen jièshào yíxiàr, zhè wèi shì xīn tóngxué, shì wǒ de tóngwū.',
-              vi:'Để tôi giới thiệu một chút, đây là bạn học mới, là bạn cùng phòng của tôi.',speaker:'A'},
-          {zh:'你在哪个班学习？', py:'Nǐ zài nǎ ge bān xuéxí?', vi:'Bạn học ở lớp nào?',             speaker:'B'},
-          {zh:'在103班。',        py:'Zài yāo líng sān bān.',   vi:'Ở lớp 103.',                       speaker:'A'},
-          {zh:'你们的老师是谁？', py:'Nǐmen de lǎoshī shì shéi?',vi:'Thầy/cô của các bạn là ai?',      speaker:'B'},
-          {zh:'我们的老师是林老师。',py:'Wǒmen de lǎoshī shì Lín lǎoshī.',vi:'Thầy/cô của chúng tôi là thầy/cô Lâm.',speaker:'A'},
-        ]
-      },
+      {s:'A',zh:'他是中国人吗？',py:'Tā shì Zhōngguó rén ma?',vi:'Ông ấy là người Trung Quốc à?'},
+      {s:'B',zh:'是。',py:'Shì.',vi:'Phải.'},
+      {s:'A',zh:'你也是中国人吗？',py:'Nǐ yě shì Zhōngguó rén ma?',vi:'Bạn cũng là người Trung Quốc à?'},
+      {s:'B',zh:'不是。我是韩国人。',py:'Bú shì. Wǒ shì Hánguó rén.',vi:'Không phải. Tôi là người Hàn Quốc.'},
+      {s:'A',zh:'对不起。',py:'Duíbùqǐ.',vi:'Xin lỗi.'},
+      {s:'B',zh:'没什么。',py:'Méi shénme.',vi:'Không có gì.'},
     ]
   },
   {
-    lesson: 'Bài 13: 这是不是中药 – Đây có phải là thuốc đông y không?', title: '在机场 – Ở sân bay', lessonIdx: 12,
-    lines: [
+    lesson:'Bài 12 – 第十二课', title:'（一）你在哪儿学习汉语', lessonIdx:11,
+    lines:[
+      {s:'A',zh:'你在哪儿学习汉语？',py:'Nǐ zài nǎr xuéxí Hànyǔ?',vi:'Bạn học tiếng Trung ở đâu?'},
+      {s:'B',zh:'在北京语言大学。',py:'Zài Běijīng Yǔyán Dàxué.',vi:'Ở Đại học Ngôn ngữ Bắc Kinh.'},
+      {s:'A',zh:'你们的老师怎么样？',py:'Nǐmen de lǎoshī zěnmeyàng?',vi:'Thầy/cô của các bạn thế nào?'},
+      {s:'B',zh:'很好！',py:'Hěn hǎo!',vi:'Rất tốt!'},
+      {s:'A',zh:'你觉得学习汉语难吗？',py:'Nǐ juéde xuéxí Hànyǔ nán ma?',vi:'Bạn thấy học tiếng Trung khó không?'},
+      {s:'B',zh:'我觉得语法不太难。听和说也比较容易，但是读和写很难。',py:'Wǒ juéde yǔfǎ bú tài nán. Tīng hé shuō yě bǐjiào róngyì, dànshì dú hé xiě hěn nán.',vi:'Tôi thấy ngữ pháp không quá khó. Nghe và nói cũng tương đối dễ, nhưng đọc và viết rất khó.'},
+    ]
+  },
+  {
+    lesson:'Bài 12 – 第十二课', title:'（二）你们的老师是谁', lessonIdx:11,
+    lines:[
+      {s:'A',zh:'我给你们介绍一下儿，这位是新同学，是我的同屋。',py:'Wǒ gěi nǐmen jièshào yíxiàr, zhè wèi shì xīn tóngxué, shì wǒ de tóngwū.',vi:'Để tôi giới thiệu một chút, đây là bạn học mới, là bạn cùng phòng của tôi.'},
+      {s:'B',zh:'你在哪个班学习？',py:'Nǐ zài nǎ ge bān xuéxí?',vi:'Bạn học ở lớp nào?'},
+      {s:'A',zh:'在103班。',py:'Zài yāo líng sān bān.',vi:'Ở lớp 103.'},
+      {s:'B',zh:'你们的老师是谁？',py:'Nǐmen de lǎoshī shì shéi?',vi:'Thầy/cô của các bạn là ai?'},
+      {s:'A',zh:'我们的老师是林老师。',py:'Wǒmen de lǎoshī shì Lín lǎoshī.',vi:'Thầy/cô của chúng tôi là thầy/cô Lâm.'},
+    ]
+  },
+  {
+    lesson:'Bài 13: 这是不是中药 – Đây có phải là thuốc đông y không?', title:'在机场 – Ở sân bay', lessonIdx:12,
+    lines:[
       {s:'A',zh:'你没有箱子吗？',py:'Nǐ méiyǒu xiāngzi ma?',vi:'Bạn không có vali à?'},
       {s:'B',zh:'有啊。我的在这儿呢。',py:'Yǒu a. Wǒ de zài zhèr ne.',vi:'Có chứ. Của tôi ở đây này.'},
       {s:'A',zh:'我的很重，你的重不重？',py:'Wǒ de hěn zhòng, nǐ de zhòng bu zhòng?',vi:'Của tôi rất nặng, của bạn có nặng không?'},
@@ -26571,8 +26559,8 @@ const DIALOGUE_DATA = [
     ]
   },
   {
-    lesson: 'Bài 13: 这是不是中药 – Đây có phải là thuốc đông y không?', title: '在海关 – Ở hải quan', lessonIdx: 12,
-    lines: [
+    lesson:'Bài 13: 这是不是中药 – Đây có phải là thuốc đông y không?', title:'在海关 – Ở hải quan', lessonIdx:12,
+    lines:[
       {s:'A',zh:'先生，这些黑的是什么东西？',py:'Xiānsheng, zhèxiē hēi de shì shénme dōngxi?',vi:'Thưa ông, những cái màu đen này là thứ gì vậy?'},
       {s:'B',zh:'这是一些药。',py:'Zhè shì yìxiē yào.',vi:'Đây là một ít thuốc.'},
       {s:'A',zh:'什么药？',py:'Shénme yào?',vi:'Thuốc gì vậy?'},
@@ -26649,7 +26637,7 @@ const DIALOGUE_DATA = [
       {s:'A',zh:'今天星期几？',py:'Jīntiān xīngqī jǐ?',vi:'Hôm nay là thứ mấy?'},
       {s:'B',zh:'今天星期六，明天是星期日。',py:'Jīntiān xīngqīliù, míngtiān shì xīngqīrì.',vi:'Hôm nay thứ bảy, mai là chủ nhật.'},
       {s:'A',zh:'你的生日是几月几号？',py:'Nǐ de shēngrì shì jǐ yuè jǐ hào?',vi:'Sinh nhật của bạn là ngày mấy tháng mấy?'},
-      {s:'B',zh:'我的生日是七月十二号。',py:"Wǒ de shēngrì shì qī yuè shí'èr hào.",vi:'Sinh nhật của tôi là ngày 12 tháng 7.'},
+      {s:'B',zh:'我的生日是七月十二号。',py:'Wǒ de shēngrì shì qī yuè shí\'èr hào.',vi:'Sinh nhật của tôi là ngày 12 tháng 7.'},
     ]
   },
   {
@@ -26665,7 +26653,323 @@ const DIALOGUE_DATA = [
       {s:'B',zh:'那是我的，你要用吗？',py:'Nà shì wǒ de, nǐ yào yòng ma?',vi:'Kia là của tôi, bạn muốn dùng không?'},
       {s:'A',zh:'不用，谢谢。',py:'Búyòng, xièxie.',vi:'Không cần, cảm ơn.'},
     ]
-  }
+  },
+  {
+    lesson:'Buổi 1 (b1): Phát âm & Từ vựng cơ bản', title:'你家有几口人？– Nhà bạn có mấy người?', lessonIdx:0, tag:'reading',
+    lines:[
+      {s:'A',zh:'你好！你是小马吗？',py:'Nǐ hǎo! Nǐ shì Xiǎo Mǎ ma?',vi:'Chào bạn! Bạn là Tiểu Mã à?'},
+      {s:'B',zh:'是，我是小马。你好！',py:'Shì, wǒ shì Xiǎo Mǎ. Nǐ hǎo!',vi:'Đúng, tôi là Tiểu Mã. Chào bạn!'},
+      {s:'A',zh:'你家有几口人？',py:'Nǐ jiā yǒu jǐ kǒu rén?',vi:'Nhà bạn có mấy người?'},
+      {s:'B',zh:'五口人：爸爸、妈妈、哥哥、弟弟和我。',py:'Wǔ kǒu rén: bàba, māma, gēge, dìdi hé wǒ.',vi:'Năm người: bố, mẹ, anh trai, em trai và tôi.'},
+      {s:'A',zh:'你哥哥喜欢马吗？',py:'Nǐ gēge xǐhuan mǎ ma?',vi:'Anh trai bạn có thích ngựa không?'},
+      {s:'B',zh:'他很喜欢马。你呢？',py:'Tā hěn xǐhuan mǎ. Nǐ ne?',vi:'Anh ấy rất thích ngựa. Còn bạn?'},
+      {s:'A',zh:'我也喜欢，我喜欢白马。',py:'Wǒ yě xǐhuan, wǒ xǐhuan bái mǎ.',vi:'Tôi cũng thích, tôi thích ngựa trắng.'},
+      {s:'B',zh:'你弟弟也喜欢马吗？',py:'Nǐ dìdi yě xǐhuan mǎ ma?',vi:'Em trai bạn cũng thích ngựa à?'},
+      {s:'A',zh:'他不喜欢，他还很小。',py:'Tā bù xǐhuan, tā hái hěn xiǎo.',vi:'Nó không thích, nó còn rất nhỏ.'},
+      {s:'B',zh:'好，谢谢你！',py:'Hǎo, xièxie nǐ!',vi:'Được rồi, cảm ơn bạn!'},
+    ]
+  },
+  {
+    lesson:'Buổi 2 (b2): 忙不忙？– Bận không?', title:'你忙不忙？– Bạn có bận không?', lessonIdx:1, tag:'reading',
+    lines:[
+      {s:'A',zh:'你好！你忙不忙？',py:'Nǐ hǎo! Nǐ máng bu máng?',vi:'Chào bạn! Bạn có bận không?'},
+      {s:'B',zh:'我很忙。你呢？',py:'Wǒ hěn máng. Nǐ ne?',vi:'Tôi rất bận. Còn bạn?'},
+      {s:'A',zh:'我不太忙。你学汉语吗？',py:'Wǒ bú tài máng. Nǐ xué Hànyǔ ma?',vi:'Tôi không bận lắm. Bạn có học tiếng Hán không?'},
+      {s:'B',zh:'学，我和姐姐都学汉语。',py:'Xué, wǒ hé jiějie dōu xué Hànyǔ.',vi:'Có, tôi và chị gái đều học tiếng Hán.'},
+      {s:'A',zh:'汉语难不难？',py:'Hànyǔ nán bu nán?',vi:'Tiếng Hán có khó không?'},
+      {s:'B',zh:'不太难，我很喜欢。',py:'Bú tài nán, wǒ hěn xǐhuan.',vi:'Không khó lắm, tôi rất thích.'},
+      {s:'A',zh:'你妹妹也学汉语吗？',py:'Nǐ mèimei yě xué Hànyǔ ma?',vi:'Em gái bạn cũng học tiếng Hán à?'},
+      {s:'B',zh:'她不学，她太忙了。',py:'Tā bù xué, tā tài máng le.',vi:'Con bé không học, nó bận quá.'},
+      {s:'A',zh:'你爷爷奶奶好吗？',py:'Nǐ yéye nǎinai hǎo ma?',vi:'Ông bà bạn có khỏe không?'},
+      {s:'B',zh:'他们都很好，谢谢！',py:'Tāmen dōu hěn hǎo, xièxie!',vi:'Ông bà đều rất khỏe, cảm ơn!'},
+    ]
+  },
+  {
+    lesson:'Buổi 3 (b3): 明天见 – Ngày mai gặp', title:'去银行 – Đi ngân hàng', lessonIdx:2, tag:'reading',
+    lines:[
+      {s:'A',zh:'明天你去银行吗？',py:'Míngtiān nǐ qù yínháng ma?',vi:'Ngày mai bạn có đi ngân hàng không?'},
+      {s:'B',zh:'去，我去取钱。你呢？',py:'Qù, wǒ qù qǔ qián. Nǐ ne?',vi:'Có, tôi đi rút tiền. Còn bạn?'},
+      {s:'A',zh:'我去邮局寄信。',py:'Wǒ qù yóujú jì xìn.',vi:'Tôi đi bưu điện gửi thư.'},
+      {s:'B',zh:'你哥哥在北京吗？',py:'Nǐ gēge zài Běijīng ma?',vi:'Anh trai bạn ở Bắc Kinh à?'},
+      {s:'A',zh:'对，他在北京学汉语。',py:'Duì, tā zài Běijīng xué Hànyǔ.',vi:'Đúng, anh ấy học tiếng Hán ở Bắc Kinh.'},
+      {s:'B',zh:'汉语难不难？他喜欢吗？',py:'Hànyǔ nán bu nán? Tā xǐhuan ma?',vi:'Tiếng Hán có khó không? Anh ấy có thích không?'},
+      {s:'A',zh:'不太难，他很喜欢。',py:'Bú tài nán, tā hěn xǐhuan.',vi:'Không khó lắm, anh ấy rất thích.'},
+      {s:'B',zh:'我妹妹学韩国语，她也很喜欢。',py:'Wǒ mèimei xué Hánguóyǔ, tā yě hěn xǐhuan.',vi:'Em gái tôi học tiếng Hàn, con bé cũng rất thích.'},
+      {s:'A',zh:'好，明天见！',py:'Hǎo, míngtiān jiàn!',vi:'Được, mai gặp nhé!'},
+      {s:'B',zh:'再见！',py:'Zàijiàn!',vi:'Tạm biệt!'},
+    ]
+  },
+  {
+    lesson:'Buổi 4 (b4–b5): Ngày tháng & Thứ trong tuần', title:'周末你去哪儿？– Cuối tuần bạn đi đâu?', lessonIdx:3, tag:'reading',
+    lines:[
+      {s:'A',zh:'最近你忙吗？',py:'Zuìjìn nǐ máng ma?',vi:'Dạo này bạn có bận không?'},
+      {s:'B',zh:'不太忙。今天星期几？',py:'Bú tài máng. Jīntiān xīngqī jǐ?',vi:'Không bận lắm. Hôm nay thứ mấy?'},
+      {s:'A',zh:'今天星期五。周末你去哪儿？',py:'Jīntiān xīngqīwǔ. Zhōumò nǐ qù nǎr?',vi:'Hôm nay thứ Sáu. Cuối tuần bạn đi đâu?'},
+      {s:'B',zh:'星期六我去天安门。你呢？',py:'Xīngqīliù wǒ qù Tiān\'ānmén. Nǐ ne?',vi:'Thứ Bảy tôi đi Thiên An Môn. Còn bạn?'},
+      {s:'A',zh:'我回学校。星期天我们一起去银行，好吗？',py:'Wǒ huí xuéxiào. Xīngqītiān wǒmen yìqǐ qù yínháng, hǎo ma?',vi:'Tôi về trường. Chủ nhật chúng ta cùng đi ngân hàng nhé?'},
+      {s:'B',zh:'好！你去银行做什么？',py:'Hǎo! Nǐ qù yínháng zuò shénme?',vi:'Được! Bạn đi ngân hàng làm gì?'},
+      {s:'A',zh:'我去存钱。',py:'Wǒ qù cún qián.',vi:'Tôi đi gửi tiền.'},
+      {s:'B',zh:'银行在哪儿？',py:'Yínháng zài nǎr?',vi:'Ngân hàng ở đâu?'},
+      {s:'A',zh:'在学校那儿。',py:'Zài xuéxiào nàr.',vi:'Ở chỗ trường học ấy.'},
+      {s:'B',zh:'好，星期天见！',py:'Hǎo, xīngqītiān jiàn!',vi:'Được, Chủ nhật gặp nhé!'},
+    ]
+  },
+  {
+    lesson:'Buổi 5 (b6): 这是王老师 – Đây là thầy Vương', title:'请喝茶 – Mời uống trà', lessonIdx:4, tag:'reading',
+    lines:[
+      {s:'A',zh:'王老师，您好！好久不见！',py:'Wáng lǎoshī, nín hǎo! Hǎojiǔ bú jiàn!',vi:'Thầy Vương, em chào thầy! Lâu lắm không gặp!'},
+      {s:'B',zh:'好久不见！请进，请坐。',py:'Hǎojiǔ bú jiàn! Qǐng jìn, qǐng zuò.',vi:'Lâu rồi không gặp! Mời vào, mời ngồi.'},
+      {s:'A',zh:'谢谢！您身体好吗？',py:'Xièxie! Nín shēntǐ hǎo ma?',vi:'Cảm ơn thầy! Thầy có khỏe không ạ?'},
+      {s:'B',zh:'我最近生病了，不太好。',py:'Wǒ zuìjìn shēngbìng le, bú tài hǎo.',vi:'Dạo này thầy bị ốm, không khỏe lắm.'},
+      {s:'A',zh:'您工作太忙了。',py:'Nín gōngzuò tài máng le.',vi:'Thầy làm việc bận quá.'},
+      {s:'B',zh:'你喝什么？茶还是咖啡？',py:'Nǐ hē shénme? Chá háishì kāfēi?',vi:'Em uống gì? Trà hay cà phê?'},
+      {s:'A',zh:'我喝茶，谢谢您！',py:'Wǒ hē chá, xièxie nín!',vi:'Em uống trà, cảm ơn thầy!'},
+      {s:'B',zh:'不客气。你最近工作忙吗？',py:'Bú kèqi. Nǐ zuìjìn gōngzuò máng ma?',vi:'Không có gì. Dạo này em làm việc có bận không?'},
+      {s:'A',zh:'不太忙，我在学汉语。',py:'Bú tài máng, wǒ zài xué Hànyǔ.',vi:'Không bận lắm, em đang học tiếng Hán.'},
+      {s:'B',zh:'很好！汉语不太难。',py:'Hěn hǎo! Hànyǔ bú tài nán.',vi:'Tốt lắm! Tiếng Hán không khó lắm đâu.'},
+    ]
+  },
+  {
+    lesson:'Buổi 6 (b7): 请问贵姓？– Xin hỏi quý danh', title:'请问您贵姓？– Xin hỏi quý danh', lessonIdx:5, tag:'reading',
+    lines:[
+      {s:'A',zh:'你好！请问，您贵姓？',py:'Nǐ hǎo! Qǐngwèn, nín guìxìng?',vi:'Xin chào! Xin hỏi, anh họ gì ạ?'},
+      {s:'B',zh:'我姓吴，叫吴美。你呢？',py:'Wǒ xìng Wú, jiào Wú Měi. Nǐ ne?',vi:'Tôi họ Ngô, tên là Ngô Mỹ. Còn bạn?'},
+      {s:'A',zh:'我姓阮，我的名字叫阮文胜。',py:'Wǒ xìng Ruǎn, wǒ de míngzi jiào Ruǎn Wénshèng.',vi:'Tôi họ Nguyễn, tên tôi là Nguyễn Văn Thắng.'},
+      {s:'B',zh:'认识你很高兴！',py:'Rènshi nǐ hěn gāoxìng!',vi:'Rất vui được quen bạn!'},
+      {s:'A',zh:'我也很高兴。那是谁？',py:'Wǒ yě hěn gāoxìng. Nà shì shéi?',vi:'Tôi cũng rất vui. Kia là ai vậy?'},
+      {s:'B',zh:'那是我朋友，他叫张东。',py:'Nà shì wǒ péngyou, tā jiào Zhāng Dōng.',vi:'Đó là bạn tôi, anh ấy tên là Trương Đông.'},
+      {s:'A',zh:'他也学汉语吗？',py:'Tā yě xué Hànyǔ ma?',vi:'Anh ấy cũng học tiếng Hán à?'},
+      {s:'B',zh:'不，他学越南语。',py:'Bù, tā xué Yuènányǔ.',vi:'Không, anh ấy học tiếng Việt.'},
+      {s:'A',zh:'他是中国人吗？',py:'Tā shì Zhōngguó rén ma?',vi:'Anh ấy là người Trung Quốc à?'},
+      {s:'B',zh:'对，他是北京人。',py:'Duì, tā shì Běijīng rén.',vi:'Đúng, anh ấy là người Bắc Kinh.'},
+    ]
+  },
+  {
+    lesson:'Buổi 7 (b8): 你是哪国人？– Bạn là người nước nào?', title:'你是哪国人？– Bạn là người nước nào?', lessonIdx:6, tag:'reading',
+    lines:[
+      {s:'A',zh:'你好！你是中国人吗？',py:'Nǐ hǎo! Nǐ shì Zhōngguó rén ma?',vi:'Chào bạn! Bạn là người Trung Quốc à?'},
+      {s:'B',zh:'不是，我是日本人。你呢？',py:'Bú shì, wǒ shì Rìběn rén. Nǐ ne?',vi:'Không phải, tôi là người Nhật. Còn bạn?'},
+      {s:'A',zh:'我是越南人。她是哪国人？',py:'Wǒ shì Yuènán rén. Tā shì nǎ guó rén?',vi:'Tôi là người Việt Nam. Cô ấy là người nước nào?'},
+      {s:'B',zh:'她是加拿大人。',py:'Tā shì Jiānádà rén.',vi:'Cô ấy là người Canada.'},
+      {s:'A',zh:'这本书是你的吗？',py:'Zhè běn shū shì nǐ de ma?',vi:'Quyển sách này là của bạn à?'},
+      {s:'B',zh:'不是，是她的。那本杂志是我的。',py:'Bú shì, shì tā de. Nà běn zázhì shì wǒ de.',vi:'Không phải, là của cô ấy. Quyển tạp chí kia là của tôi.'},
+      {s:'A',zh:'你学汉语还是学英语？',py:'Nǐ xué Hànyǔ háishì xué Yīngyǔ?',vi:'Bạn học tiếng Hán hay tiếng Anh?'},
+      {s:'B',zh:'我学汉语。汉字太难了，发音不太难。',py:'Wǒ xué Hànyǔ. Hànzì tài nán le, fāyīn bú tài nán.',vi:'Tôi học tiếng Hán. Chữ Hán khó quá, phát âm thì không khó lắm.'},
+      {s:'A',zh:'中午我们一起去吃饭吧！',py:'Zhōngwǔ wǒmen yìqǐ qù chīfàn ba!',vi:'Trưa nay chúng ta cùng đi ăn cơm nhé!'},
+      {s:'B',zh:'好吧！',py:'Hǎo ba!',vi:'Được thôi!'},
+    ]
+  },
+  {
+    lesson:'Buổi 8 (b9): 年龄、家庭与吃饭 – Tuổi tác, Gia đình & Ăn uống', title:'你要什么？– Bạn gọi món gì?', lessonIdx:7, tag:'reading',
+    lines:[
+      {s:'A',zh:'中午你在哪儿吃饭？',py:'Zhōngwǔ nǐ zài nǎr chīfàn?',vi:'Buổi trưa bạn ăn cơm ở đâu?'},
+      {s:'B',zh:'我在公司食堂吃。你呢？',py:'Wǒ zài gōngsī shítáng chī. Nǐ ne?',vi:'Tôi ăn ở nhà ăn công ty. Còn bạn?'},
+      {s:'A',zh:'我也是。你要什么？',py:'Wǒ yě shì. Nǐ yào shénme?',vi:'Tôi cũng vậy. Bạn gọi món gì?'},
+      {s:'B',zh:'我要一碗面条和一个鸡蛋。',py:'Wǒ yào yì wǎn miàntiáo hé yí ge jīdàn.',vi:'Tôi gọi một bát mì và một quả trứng gà.'},
+      {s:'A',zh:'我要米饭，还要一盘饺子。',py:'Wǒ yào mǐfàn, hái yào yì pán jiǎozi.',vi:'Tôi gọi cơm, gọi thêm một đĩa sủi cảo.'},
+      {s:'B',zh:'你喝什么？啤酒吗？',py:'Nǐ hē shénme? Píjiǔ ma?',vi:'Bạn uống gì? Bia à?'},
+      {s:'A',zh:'中午不喝酒，我要一碗汤。',py:'Zhōngwǔ bù hē jiǔ, wǒ yào yì wǎn tāng.',vi:'Buổi trưa không uống rượu, tôi gọi một bát canh.'},
+      {s:'B',zh:'你孩子多大了？',py:'Nǐ háizi duō dà le?',vi:'Con bạn bao nhiêu tuổi rồi?'},
+      {s:'A',zh:'儿子六岁，女儿三岁。你有孩子吗？',py:'Érzi liù suì, nǚ\'ér sān suì. Nǐ yǒu háizi ma?',vi:'Con trai sáu tuổi, con gái ba tuổi. Bạn có con chưa?'},
+      {s:'B',zh:'有，我有一个女儿，她五岁。',py:'Yǒu, wǒ yǒu yí ge nǚ\'ér, tā wǔ suì.',vi:'Có, tôi có một con gái, cháu năm tuổi.'},
+    ]
+  },
+  {
+    lesson:'Buổi 9 (b10): 一些・这些・那些 – Một vài, những... này/kia', title:'这些是什么书？– Đây là những sách gì?', lessonIdx:8, tag:'reading',
+    lines:[
+      {s:'A',zh:'这些是什么书？',py:'Zhèxiē shì shénme shū?',vi:'Đây là những sách gì?'},
+      {s:'B',zh:'这些是汉语书。',py:'Zhèxiē shì Hànyǔ shū.',vi:'Đây là những sách tiếng Hán.'},
+      {s:'A',zh:'那些呢？',py:'Nàxiē ne?',vi:'Còn những cái kia?'},
+      {s:'B',zh:'那些是英语杂志。',py:'Nàxiē shì Yīngyǔ zázhì.',vi:'Những cái kia là tạp chí tiếng Anh.'},
+      {s:'A',zh:'这本书是谁的？',py:'Zhè běn shū shì shéi de?',vi:'Quyển sách này là của ai?'},
+      {s:'B',zh:'是我朋友的。',py:'Shì wǒ péngyou de.',vi:'Là của bạn tôi.'},
+      {s:'A',zh:'我要一些中文书，图书馆有吗？',py:'Wǒ yào yìxiē Zhōngwén shū, túshūguǎn yǒu ma?',vi:'Tôi cần một số sách tiếng Trung, thư viện có không?'},
+      {s:'B',zh:'有，图书馆有很多。我们一起去吧！',py:'Yǒu, túshūguǎn yǒu hěn duō. Wǒmen yìqǐ qù ba!',vi:'Có, thư viện có rất nhiều. Chúng ta cùng đi nhé!'},
+      {s:'A',zh:'好！明天去，好吗？',py:'Hǎo! Míngtiān qù, hǎo ma?',vi:'Được! Ngày mai đi nhé?'},
+      {s:'B',zh:'好，明天见！',py:'Hǎo, míngtiān jiàn!',vi:'Được, mai gặp nhé!'},
+    ]
+  },
+  {
+    lesson:'Buổi 10 (b11): 苹果一斤多少钱？– Mua hoa quả', title:'苹果怎么卖？– Táo bán thế nào?', lessonIdx:9, tag:'reading',
+    lines:[
+      {s:'A',zh:'你好！苹果怎么卖？',py:'Nǐ hǎo! Píngguǒ zěnme mài?',vi:'Chào chị! Táo bán thế nào ạ?'},
+      {s:'B',zh:'四块一斤。你要几斤？',py:'Sì kuài yì jīn. Nǐ yào jǐ jīn?',vi:'Bốn đồng một cân. Anh mua mấy cân?'},
+      {s:'A',zh:'太贵了！便宜一点儿吧。',py:'Tài guì le! Piányi yìdiǎnr ba.',vi:'Đắt quá! Rẻ hơn chút đi.'},
+      {s:'B',zh:'三块五，好吗？',py:'Sān kuài wǔ, hǎo ma?',vi:'Ba đồng rưỡi, được không?'},
+      {s:'A',zh:'好，我要两斤。还有香蕉吗？',py:'Hǎo, wǒ yào liǎng jīn. Hái yǒu xiāngjiāo ma?',vi:'Được, tôi lấy hai cân. Còn chuối không?'},
+      {s:'B',zh:'有，香蕉两块一斤。',py:'Yǒu, xiāngjiāo liǎng kuài yì jīn.',vi:'Có, chuối hai đồng một cân.'},
+      {s:'A',zh:'我要一斤香蕉。一共多少钱？',py:'Wǒ yào yì jīn xiāngjiāo. Yígòng duōshao qián?',vi:'Tôi lấy một cân chuối. Tổng cộng bao nhiêu tiền?'},
+      {s:'B',zh:'一共九块。',py:'Yígòng jiǔ kuài.',vi:'Tổng cộng chín đồng.'},
+      {s:'A',zh:'给你十块。',py:'Gěi nǐ shí kuài.',vi:'Gửi chị mười đồng.'},
+      {s:'B',zh:'找你一块。还要别的吗？',py:'Zhǎo nǐ yí kuài. Hái yào bié de ma?',vi:'Trả lại anh một đồng. Anh còn lấy gì nữa không?'},
+      {s:'A',zh:'不要了，谢谢！',py:'Bú yào le, xièxie!',vi:'Không lấy nữa, cảm ơn!'},
+    ]
+  },
+  {
+    lesson:'Buổi 11 (b12): 我换人民币 – Tôi đổi tiền', title:'我换人民币 – Tôi đổi nhân dân tệ', lessonIdx:10, tag:'reading',
+    lines:[
+      {s:'A',zh:'小姐，我换钱。',py:'Xiǎojiě, wǒ huàn qián.',vi:'Chị ơi, tôi muốn đổi tiền.'},
+      {s:'B',zh:'您换什么钱？',py:'Nín huàn shénme qián?',vi:'Anh đổi tiền gì ạ?'},
+      {s:'A',zh:'我换人民币。今天一美元换多少人民币？',py:'Wǒ huàn rénmínbì. Jīntiān yì měiyuán huàn duōshao rénmínbì?',vi:'Tôi đổi nhân dân tệ. Hôm nay một đô la đổi được bao nhiêu tệ?'},
+      {s:'B',zh:'一美元换七块一。您换多少？',py:'Yì měiyuán huàn qī kuài yī. Nín huàn duōshao?',vi:'Một đô la đổi được bảy tệ mốt. Anh đổi bao nhiêu?'},
+      {s:'A',zh:'我换两百美元。',py:'Wǒ huàn liǎngbǎi měiyuán.',vi:'Tôi đổi hai trăm đô la.'},
+      {s:'B',zh:'好，请等一会儿。',py:'Hǎo, qǐng děng yíhuìr.',vi:'Vâng, xin anh đợi một lát.'},
+      {s:'B',zh:'这是一千四百二十块，请数一数。',py:'Zhè shì yìqiān sìbǎi èrshí kuài, qǐng shǔ yi shǔ.',vi:'Đây là một nghìn bốn trăm hai mươi tệ, mời anh đếm lại.'},
+      {s:'A',zh:'对，谢谢您！这儿也换越南盾吗？',py:'Duì, xièxie nín! Zhèr yě huàn Yuènándùn ma?',vi:'Đúng rồi, cảm ơn chị! Ở đây có đổi tiền Việt không?'},
+      {s:'B',zh:'不换，您去那个银行吧。',py:'Bú huàn, nín qù nàge yínháng ba.',vi:'Không đổi ạ, anh đến ngân hàng kia nhé.'},
+      {s:'A',zh:'好，谢谢！',py:'Hǎo, xièxie!',vi:'Được, cảm ơn!'},
+    ]
+  },
+  {
+    lesson:'Buổi 12 (b13): 他住哪儿？– Ông ấy sống ở đâu?', title:'你住哪儿？– Bạn sống ở đâu?', lessonIdx:11, tag:'reading',
+    lines:[
+      {s:'A',zh:'请问，你现在住哪儿？',py:'Qǐngwèn, nǐ xiànzài zhù nǎr?',vi:'Cho hỏi, bây giờ bạn sống ở đâu?'},
+      {s:'B',zh:'我住在人民路，八号楼。',py:'Wǒ zhù zài Rénmín Lù, bā hào lóu.',vi:'Tôi sống ở đường Nhân Dân, tòa nhà số 8.'},
+      {s:'A',zh:'你住几号房间？',py:'Nǐ zhù jǐ hào fángjiān?',vi:'Bạn ở phòng số mấy?'},
+      {s:'B',zh:'五零二。你知道人民路吗？',py:'Wǔ líng èr. Nǐ zhīdào Rénmín Lù ma?',vi:'Phòng 502. Bạn biết đường Nhân Dân không?'},
+      {s:'A',zh:'知道，那儿有一家酒店。',py:'Zhīdào, nàr yǒu yì jiā jiǔdiàn.',vi:'Biết, ở đó có một khách sạn.'},
+      {s:'B',zh:'对，我家在酒店那儿。',py:'Duì, wǒ jiā zài jiǔdiàn nàr.',vi:'Đúng, nhà tôi ở chỗ khách sạn đó.'},
+      {s:'A',zh:'你的手机号码是多少？',py:'Nǐ de shǒujī hàomǎ shì duōshao?',vi:'Số di động của bạn là bao nhiêu?'},
+      {s:'B',zh:'零九一二三四五六七八。',py:'Líng jiǔ yī èr sān sì wǔ liù qī bā.',vi:'0912345678.'},
+      {s:'A',zh:'好，星期天我去你家。',py:'Hǎo, xīngqītiān wǒ qù nǐ jiā.',vi:'Được, Chủ nhật tôi đến nhà bạn.'},
+      {s:'B',zh:'欢迎！星期天见！',py:'Huānyíng! Xīngqītiān jiàn!',vi:'Hoan nghênh! Chủ nhật gặp nhé!'},
+    ]
+  },
+  {
+    lesson:'Buổi 13 (b14): 号码与介绍 – Số điện thoại & Giới thiệu', title:'我先介绍一下 – Để tôi giới thiệu trước', lessonIdx:12, tag:'reading',
+    lines:[
+      {s:'A',zh:'王先生，我先介绍一下，这是我的秘书阮兰。',py:'Wáng xiānsheng, wǒ xiān jièshào yíxià, zhè shì wǒ de mìshū Ruǎn Lán.',vi:'Ông Vương, để tôi giới thiệu trước, đây là thư ký Nguyễn Lan của tôi.'},
+      {s:'B',zh:'阮小姐，你好！',py:'Ruǎn xiǎojiě, nǐ hǎo!',vi:'Chào cô Nguyễn!'},
+      {s:'A',zh:'她是新秘书，会说汉语。',py:'Tā shì xīn mìshū, huì shuō Hànyǔ.',vi:'Cô ấy là thư ký mới, biết nói tiếng Hán.'},
+      {s:'B',zh:'你的汉语很好！',py:'Nǐ de Hànyǔ hěn hǎo!',vi:'Tiếng Hán của cô rất tốt!'},
+      {s:'A',zh:'王先生，您的手机号码是多少？',py:'Wáng xiānsheng, nín de shǒujī hàomǎ shì duōshao?',vi:'Ông Vương, số di động của ông là bao nhiêu?'},
+      {s:'B',zh:'我的手机号码是零九八七六五四三二一。',py:'Wǒ de shǒujī hàomǎ shì líng jiǔ bā qī liù wǔ sì sān èr yī.',vi:'Số di động của tôi là 0987654321.'},
+      {s:'A',zh:'您的办公室在几楼？',py:'Nín de bàngōngshì zài jǐ lóu?',vi:'Văn phòng của ông ở tầng mấy?'},
+      {s:'B',zh:'在八楼，八零二房间。',py:'Zài bā lóu, bā líng èr fángjiān.',vi:'Ở tầng tám, phòng 802.'},
+      {s:'A',zh:'好，明天我去您的办公室。',py:'Hǎo, míngtiān wǒ qù nín de bàngōngshì.',vi:'Vâng, ngày mai tôi đến văn phòng của ông.'},
+      {s:'B',zh:'欢迎，明天见！',py:'Huānyíng, míngtiān jiàn!',vi:'Hoan nghênh, mai gặp nhé!'},
+    ]
+  },
+  {
+    lesson:'Buổi 14 (b15): 我们都是留学生 – Chúng ta đều là lưu học sinh', title:'欢迎你们！– Chào mừng các em!', lessonIdx:13, tag:'reading',
+    lines:[
+      {s:'A',zh:'王教授，您好！我们都是留学生。',py:'Wáng jiàoshòu, nín hǎo! Wǒmen dōu shì liúxuéshēng.',vi:'Chào giáo sư Vương! Chúng em đều là lưu học sinh.'},
+      {s:'B',zh:'欢迎你们！你们俩是哪国人？',py:'Huānyíng nǐmen! Nǐmen liǎ shì nǎ guó rén?',vi:'Chào mừng các em! Hai em là người nước nào?'},
+      {s:'A',zh:'我是越南人，她是日本人。',py:'Wǒ shì Yuènán rén, tā shì Rìběn rén.',vi:'Em là người Việt Nam, bạn ấy là người Nhật.'},
+      {s:'B',zh:'你们都学汉语吗？',py:'Nǐmen dōu xué Hànyǔ ma?',vi:'Các em đều học tiếng Hán à?'},
+      {s:'A',zh:'对，我们都在三班学汉语。',py:'Duì, wǒmen dōu zài sān bān xué Hànyǔ.',vi:'Vâng, chúng em đều học tiếng Hán ở lớp ba.'},
+      {s:'B',zh:'你爸爸妈妈做什么工作？',py:'Nǐ bàba māma zuò shénme gōngzuò?',vi:'Bố mẹ em làm nghề gì?'},
+      {s:'A',zh:'我爸爸是大夫，妈妈是护士。',py:'Wǒ bàba shì dàifu, māma shì hùshi.',vi:'Bố em là bác sĩ, mẹ em là y tá.'},
+      {s:'B',zh:'很好！你们经常去图书馆吗？',py:'Hěn hǎo! Nǐmen jīngcháng qù túshūguǎn ma?',vi:'Tốt lắm! Các em có thường đến thư viện không?'},
+      {s:'A',zh:'经常去。谢谢王教授！',py:'Jīngcháng qù. Xièxie Wáng jiàoshòu!',vi:'Thường xuyên ạ. Cảm ơn giáo sư Vương!'},
+      {s:'B',zh:'没什么。欢迎你们去我的办公室。',py:'Méi shénme. Huānyíng nǐmen qù wǒ de bàngōngshì.',vi:'Không có gì. Hoan nghênh các em đến văn phòng của tôi.'},
+    ]
+  },
+  {
+    lesson:'Buổi 15 (b16): 你在哪儿学习 – Bạn học ở đâu?', title:'你的听力怎么样？– Kỹ năng nghe của bạn thế nào?', lessonIdx:14, tag:'reading',
+    lines:[
+      {s:'A',zh:'你在哪儿学习汉语？',py:'Nǐ zài nǎr xuéxí Hànyǔ?',vi:'Bạn học tiếng Hán ở đâu?'},
+      {s:'B',zh:'我在河内大学学习。你呢？',py:'Wǒ zài Hénèi Dàxué xuéxí. Nǐ ne?',vi:'Tôi học ở Đại học Hà Nội. Còn bạn?'},
+      {s:'A',zh:'我也在河内大学，我在三班。',py:'Wǒ yě zài Hénèi Dàxué, wǒ zài sān bān.',vi:'Tôi cũng ở Đại học Hà Nội, tôi học lớp ba.'},
+      {s:'B',zh:'你觉得汉语难不难？',py:'Nǐ juéde Hànyǔ nán bu nán?',vi:'Bạn thấy tiếng Hán có khó không?'},
+      {s:'A',zh:'我觉得语法不太难，汉字比较难。',py:'Wǒ juéde yǔfǎ bú tài nán, Hànzì bǐjiào nán.',vi:'Tôi thấy ngữ pháp không khó lắm, chữ Hán tương đối khó.'},
+      {s:'B',zh:'你的听力怎么样？',py:'Nǐ de tīnglì zěnmeyàng?',vi:'Kỹ năng nghe của bạn thế nào?'},
+      {s:'A',zh:'我的听力不太好，口语比较好。',py:'Wǒ de tīnglì bú tài hǎo, kǒuyǔ bǐjiào hǎo.',vi:'Nghe của tôi không tốt lắm, nói thì tương đối tốt.'},
+      {s:'B',zh:'晚上我们一起去图书馆看书，好吗？',py:'Wǎnshang wǒmen yìqǐ qù túshūguǎn kàn shū, hǎo ma?',vi:'Tối nay chúng ta cùng đến thư viện đọc sách nhé?'},
+      {s:'A',zh:'好啊！图书馆的中文杂志很有意思。',py:'Hǎo a! Túshūguǎn de Zhōngwén zázhì hěn yǒu yìsi.',vi:'Được đấy! Tạp chí tiếng Trung ở thư viện rất hay.'},
+      {s:'B',zh:'好，晚上见！',py:'Hǎo, wǎnshang jiàn!',vi:'Được, tối gặp nhé!'},
+    ]
+  },
+  {
+    lesson:'Buổi 16 (b17): 买东西 – Mua đồ dùng', title:'你想买什么？– Bạn muốn mua gì?', lessonIdx:15, tag:'reading',
+    lines:[
+      {s:'A',zh:'你的箱子很重，里面有什么？',py:'Nǐ de xiāngzi hěn zhòng, lǐmiàn yǒu shénme?',vi:'Vali của bạn nặng quá, bên trong có gì vậy?'},
+      {s:'B',zh:'有衣服、词典，还有一些药。',py:'Yǒu yīfu, cídiǎn, hái yǒu yìxiē yào.',vi:'Có quần áo, từ điển, còn có ít thuốc.'},
+      {s:'A',zh:'是中药还是西药？',py:'Shì zhōngyào háishì xīyào?',vi:'Là thuốc bắc hay thuốc tây?'},
+      {s:'B',zh:'都有，是我妈妈给我的。',py:'Dōu yǒu, shì wǒ māma gěi wǒ de.',vi:'Có cả hai, là mẹ tôi đưa cho.'},
+      {s:'A',zh:'这把雨伞是你的吗？',py:'Zhè bǎ yǔsǎn shì nǐ de ma?',vi:'Chiếc ô này là của bạn à?'},
+      {s:'B',zh:'不是，是我姐姐的。红色的是我的。',py:'Bú shì, shì wǒ jiějie de. Hóngsè de shì wǒ de.',vi:'Không phải, là của chị tôi. Cái màu đỏ là của tôi.'},
+      {s:'A',zh:'你想买什么东西？',py:'Nǐ xiǎng mǎi shénme dōngxi?',vi:'Bạn muốn mua đồ gì?'},
+      {s:'B',zh:'我想买一瓶香水和一些茶叶。',py:'Wǒ xiǎng mǎi yì píng xiāngshuǐ hé yìxiē cháyè.',vi:'Tôi muốn mua một lọ nước hoa và một ít chè.'},
+      {s:'A',zh:'这儿的香水很好，也不太贵。',py:'Zhèr de xiāngshuǐ hěn hǎo, yě bú tài guì.',vi:'Nước hoa ở đây rất tốt, cũng không đắt lắm.'},
+      {s:'B',zh:'好，我们一起去看看吧！',py:'Hǎo, wǒmen yìqǐ qù kànkan ba!',vi:'Được, chúng ta cùng đi xem nhé!'},
+    ]
+  },
+  {
+    lesson:'Buổi 17 (b18): 这是不是中药 – Đây có phải là thuốc đông y không?', title:'这支笔是不是你的？– Cây bút này có phải của bạn không?', lessonIdx:16, tag:'reading',
+    lines:[
+      {s:'A',zh:'这支笔是不是你的？',py:'Zhè zhī bǐ shì bu shì nǐ de?',vi:'Cây bút này có phải của bạn không?'},
+      {s:'B',zh:'是我的，谢谢！',py:'Shì wǒ de, xièxie!',vi:'Là của tôi, cảm ơn!'},
+      {s:'A',zh:'这张光盘呢？',py:'Zhè zhāng guāngpán ne?',vi:'Còn chiếc đĩa này?'},
+      {s:'B',zh:'那张光盘不是我的，是我同屋的。',py:'Nà zhāng guāngpán bú shì wǒ de, shì wǒ tóngwū de.',vi:'Chiếc đĩa đó không phải của tôi, là của bạn cùng phòng.'},
+      {s:'A',zh:'你有没有汉语词典？',py:'Nǐ yǒu méiyǒu Hànyǔ cídiǎn?',vi:'Bạn có từ điển tiếng Hán không?'},
+      {s:'B',zh:'有，我有两本。',py:'Yǒu, wǒ yǒu liǎng běn.',vi:'Có, tôi có hai quyển.'},
+      {s:'A',zh:'我没有词典，明天我想用一下。',py:'Wǒ méiyǒu cídiǎn, míngtiān wǒ xiǎng yòng yíxià.',vi:'Tôi không có từ điển, ngày mai tôi muốn dùng một chút.'},
+      {s:'B',zh:'好，你用吧。',py:'Hǎo, nǐ yòng ba.',vi:'Được, bạn cứ dùng đi.'},
+      {s:'A',zh:'这瓶是不是香水？很香！',py:'Zhè píng shì bu shì xiāngshuǐ? Hěn xiāng!',vi:'Lọ này có phải nước hoa không? Thơm quá!'},
+      {s:'B',zh:'对，是我姐姐的香水。',py:'Duì, shì wǒ jiějie de xiāngshuǐ.',vi:'Đúng, là nước hoa của chị tôi.'},
+    ]
+  },
+  {
+    lesson:'Buổi 18 (b20): 最近怎么样？– Dạo này thế nào?', title:'最近怎么样？– Dạo này thế nào?', lessonIdx:17, tag:'reading',
+    lines:[
+      {s:'A',zh:'好久不见！最近怎么样？',py:'Hǎojiǔ bú jiàn! Zuìjìn zěnmeyàng?',vi:'Lâu rồi không gặp! Dạo này thế nào?'},
+      {s:'B',zh:'马马虎虎。刚开学，所以有点儿忙。',py:'Mǎmǎhūhū. Gāng kāixué, suǒyǐ yǒudiǎnr máng.',vi:'Tàm tạm. Vừa khai giảng nên hơi bận.'},
+      {s:'A',zh:'你怎么去学校？',py:'Nǐ zěnme qù xuéxiào?',vi:'Bạn đến trường bằng gì?'},
+      {s:'B',zh:'我骑摩托车去。你呢？',py:'Wǒ qí mótuōchē qù. Nǐ ne?',vi:'Tôi đi xe máy. Còn bạn?'},
+      {s:'A',zh:'我坐出租车，有点儿贵。',py:'Wǒ zuò chūzūchē, yǒudiǎnr guì.',vi:'Tôi đi taxi, hơi đắt.'},
+      {s:'B',zh:'你的自行车呢？',py:'Nǐ de zìxíngchē ne?',vi:'Thế xe đạp của bạn đâu?'},
+      {s:'A',zh:'太旧了，我想买一辆新的。',py:'Tài jiù le, wǒ xiǎng mǎi yí liàng xīn de.',vi:'Cũ quá rồi, tôi muốn mua một chiếc mới.'},
+      {s:'B',zh:'你喜欢什么颜色的？',py:'Nǐ xǐhuan shénme yánsè de?',vi:'Bạn thích màu gì?'},
+      {s:'A',zh:'我喜欢绿色的，也喜欢蓝色的。',py:'Wǒ xǐhuan lǜsè de, yě xǐhuan lánsè de.',vi:'Tôi thích màu xanh lá, cũng thích màu xanh lam.'},
+      {s:'B',zh:'我累了，也饿了，我们去吃饭吧！',py:'Wǒ lèi le, yě è le, wǒmen qù chīfàn ba!',vi:'Tôi mệt rồi, cũng đói rồi, chúng ta đi ăn cơm thôi!'},
+    ]
+  },
+  {
+    lesson:'Buổi 19 (b21): 全家、看病与外贸 – Cả nhà, khám bệnh & ngoại thương', title:'你去医院做什么？– Bạn đến bệnh viện làm gì?', lessonIdx:18, tag:'reading',
+    lines:[
+      {s:'A',zh:'你去哪儿？',py:'Nǐ qù nǎr?',vi:'Bạn đi đâu đấy?'},
+      {s:'B',zh:'我去医院看医生。',py:'Wǒ qù yīyuàn kàn yīshēng.',vi:'Tôi đến bệnh viện khám bác sĩ.'},
+      {s:'A',zh:'你怎么了？生病了吗？',py:'Nǐ zěnme le? Shēngbìng le ma?',vi:'Bạn làm sao thế? Bị ốm à?'},
+      {s:'B',zh:'没有，我定期去医院看看身体。',py:'Méiyǒu, wǒ dìngqī qù yīyuàn kànkan shēntǐ.',vi:'Không, tôi đi khám sức khỏe định kỳ thôi.'},
+      {s:'A',zh:'医院在哪儿？',py:'Yīyuàn zài nǎr?',vi:'Bệnh viện ở đâu?'},
+      {s:'B',zh:'在那个商店那儿，我坐地铁去。',py:'Zài nàge shāngdiàn nàr, wǒ zuò dìtiě qù.',vi:'Ở chỗ cửa hàng kia, tôi đi tàu điện ngầm.'},
+      {s:'A',zh:'你今天不上班吗？',py:'Nǐ jīntiān bú shàngbān ma?',vi:'Hôm nay bạn không đi làm à?'},
+      {s:'B',zh:'下午上班。我在一家外贸公司工作。',py:'Xiàwǔ shàngbān. Wǒ zài yì jiā wàimào gōngsī gōngzuò.',vi:'Chiều mới đi làm. Tôi làm ở một công ty ngoại thương.'},
+      {s:'A',zh:'你们公司有外国人吗？',py:'Nǐmen gōngsī yǒu wàiguó rén ma?',vi:'Công ty bạn có người nước ngoài không?'},
+      {s:'B',zh:'有，大概有十个。',py:'Yǒu, dàgài yǒu shí ge.',vi:'Có, khoảng mười người.'},
+    ]
+  },
+  {
+    lesson:'Buổi 20 (b23): 商场、日期与生日 – Trung tâm thương mại, ngày tháng & sinh nhật', title:'你的生日是几月几号？– Sinh nhật bạn ngày mấy tháng mấy?', lessonIdx:19, tag:'reading',
+    lines:[
+      {s:'A',zh:'今天几月几号？',py:'Jīntiān jǐ yuè jǐ hào?',vi:'Hôm nay ngày mấy tháng mấy?'},
+      {s:'B',zh:'今天十月三十号，星期五。',py:'Jīntiān shí yuè sānshí hào, xīngqīwǔ.',vi:'Hôm nay ngày 30 tháng 10, thứ Sáu.'},
+      {s:'A',zh:'下个星期一是我的生日！',py:'Xià ge xīngqīyī shì wǒ de shēngrì!',vi:'Thứ Hai tuần sau là sinh nhật tôi!'},
+      {s:'B',zh:'是吗？你的生日是十一月二号？',py:'Shì ma? Nǐ de shēngrì shì shíyī yuè èr hào?',vi:'Thật à? Sinh nhật bạn là ngày 2 tháng 11?'},
+      {s:'A',zh:'对！你的生日是几月几号？',py:'Duì! Nǐ de shēngrì shì jǐ yuè jǐ hào?',vi:'Đúng! Sinh nhật bạn ngày mấy tháng mấy?'},
+      {s:'B',zh:'我的生日是五月十八号。',py:'Wǒ de shēngrì shì wǔ yuè shíbā hào.',vi:'Sinh nhật tôi là ngày 18 tháng 5.'},
+      {s:'A',zh:'周末我们一起去商场吧！',py:'Zhōumò wǒmen yìqǐ qù shāngchǎng ba!',vi:'Cuối tuần chúng ta cùng đi trung tâm thương mại nhé!'},
+      {s:'B',zh:'好啊，你想买什么东西？',py:'Hǎo a, nǐ xiǎng mǎi shénme dōngxi?',vi:'Được đấy, bạn muốn mua gì?'},
+      {s:'A',zh:'我想买一件新衣服。',py:'Wǒ xiǎng mǎi yí jiàn xīn yīfu.',vi:'Tôi muốn mua một bộ quần áo mới.'},
+      {s:'B',zh:'好，星期天上午见！',py:'Hǎo, xīngqītiān shàngwǔ jiàn!',vi:'Được, sáng Chủ nhật gặp nhé!'},
+    ]
+  },
+  {
+    lesson:'Buổi 21 (b24): 三餐、量词与「不」的搭配 – Ba bữa ăn, lượng từ & tổ hợp với 不', title:'你会用筷子吗？– Bạn biết dùng đũa không?', lessonIdx:20, tag:'reading',
+    lines:[
+      {s:'A',zh:'你吃早饭了吗？',py:'Nǐ chī zǎofàn le ma?',vi:'Bạn ăn sáng chưa?'},
+      {s:'B',zh:'吃了，我吃了两个包子。你呢？',py:'Chī le, wǒ chīle liǎng ge bāozi. Nǐ ne?',vi:'Ăn rồi, tôi ăn hai cái bánh bao. Còn bạn?'},
+      {s:'A',zh:'我没吃，我想吃午饭了。',py:'Wǒ méi chī, wǒ xiǎng chī wǔfàn le.',vi:'Tôi chưa ăn, giờ tôi muốn ăn trưa luôn.'},
+      {s:'B',zh:'我们一起去食堂吧。你会用筷子吗？',py:'Wǒmen yìqǐ qù shítáng ba. Nǐ huì yòng kuàizi ma?',vi:'Chúng ta cùng đi nhà ăn nhé. Bạn biết dùng đũa không?'},
+      {s:'A',zh:'会一点儿，但是我经常用错。',py:'Huì yìdiǎnr, dànshì wǒ jīngcháng yòng cuò.',vi:'Biết một chút, nhưng tôi hay dùng sai.'},
+      {s:'B',zh:'没关系，你用得不错！',py:'Méi guānxi, nǐ yòng de búcuò!',vi:'Không sao, bạn dùng khá tốt đấy!'},
+      {s:'A',zh:'我要一碗米饭，还要一根香蕉。',py:'Wǒ yào yì wǎn mǐfàn, hái yào yì gēn xiāngjiāo.',vi:'Tôi lấy một bát cơm, thêm một quả chuối.'},
+      {s:'B',zh:'你喝不喝酒？',py:'Nǐ hē bu hē jiǔ?',vi:'Bạn có uống rượu không?'},
+      {s:'A',zh:'不喝，我最近在吃药，医生说不要喝酒。',py:'Bù hē, wǒ zuìjìn zài chī yào, yīshēng shuō búyào hē jiǔ.',vi:'Không uống, dạo này tôi đang uống thuốc, bác sĩ dặn đừng uống rượu.'},
+      {s:'B',zh:'好，那我们喝茶吧，不用喝酒。',py:'Hǎo, nà wǒmen hē chá ba, búyòng hē jiǔ.',vi:'Được, vậy chúng ta uống trà nhé, không cần uống rượu.'},
+    ]
+  },
 ];
 
 // All sentences for speaking practice (from dialogues + phrases)

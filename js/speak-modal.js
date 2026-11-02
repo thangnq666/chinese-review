@@ -41,7 +41,7 @@ function openSpeakModal(zh, py, vi, lessonIdx, lineIdx) {
     ? getSpeakVisibleItems()
     : allSpeakItems.filter(i => i.lessonIdx === lessonIdx);
   speakQueueIdx = speakQueue.findIndex(i => i.zh === zh);
-  if (speakQueueIdx < 0) speakQueueIdx = 0;
+  if (speakQueueIdx < 0) { speakQueue = [{zh, py, vi, lessonIdx}]; speakQueueIdx = 0; }
 
   document.getElementById('spTargetZh').textContent = zh;
   document.getElementById('spTargetPy').textContent = py;
@@ -194,13 +194,26 @@ function showScore(spoken, confidence) {
     `Điểm: ${finalScore}/100${diff.length ? ' · Chữ cần luyện: ' + diff.join(' ') : ''}`;
 }
 
+// Luyện nói từ một câu trong hội thoại: hàng đợi = các câu của hội thoại đó
+function practiceDialogueLine(di, li) {
+  const dlg = DIALOGUE_DATA[di];
+  const l = dlg.lines[li];
+  openSpeakModal(l.zh, l.py, l.vi, di, li);
+  speakQueue = dlg.lines.map(x => ({zh:x.zh, py:x.py, vi:x.vi, lessonIdx:di}));
+  speakQueueIdx = li;
+  if (typeof updateSpeakCounter === 'function') updateSpeakCounter();
+}
+
 function practiceDialogue(di) {
   const dlg = DIALOGUE_DATA[di];
   if (dlg.lines.length > 0) {
-    speakQueue = dlg.lines.map(l => ({zh:l.zh, py:l.py, vi:l.vi, lessonIdx:di}));
-    speakQueueIdx = 0;
-    const first = speakQueue[0];
+    const queue = dlg.lines.map(l => ({zh:l.zh, py:l.py, vi:l.vi, lessonIdx:di}));
+    const first = queue[0];
     openSpeakModal(first.zh, first.py, first.vi, di, 0);
+    // openSpeakModal dựng hàng đợi theo bộ lọc Tập nói → thay bằng đúng các câu của hội thoại này
+    speakQueue = queue;
+    speakQueueIdx = 0;
+    if (typeof updateSpeakCounter === 'function') updateSpeakCounter();
   }
 }
 

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=4">
-  <link rel="stylesheet" href="css/theme.css?v=3">
+  <link rel="stylesheet" href="css/theme.css?v=4">
 </head>
 <body>
 
@@ -149,9 +149,18 @@
 <!--  HỘI THOẠI                                                   -->
 <!-- ============================================================ -->
 <div class="section" id="s-dialogue">
-  <div class="card">
-    <h2><span class="h-ic c-orange" data-icon="chat"></span>Hội thoại theo bài</h2>
-    <div class="alert alert-info">Nhấp vào từng câu để nghe phát âm. Nhấn <strong>🎤 Luyện nói</strong> để tập phát âm có chấm điểm.</div>
+  <div class="page-head">
+    <span class="ph-ic c-orange" data-icon="chat" data-icon-size="28"></span>
+    <div class="ph-text">
+      <h1>Hội thoại</h1>
+      <p>Hội thoại giáo trình và hội thoại theo bài đọc của từng buổi. Nhấn vào câu để nghe, 🎤 để luyện nói có chấm điểm.</p>
+    </div>
+  </div>
+  <div class="filter-bar filter-bar-1">
+    <div class="fb-field fb-wide">
+      <label for="dialogueLessonSelect">Buổi học</label>
+      <select id="dialogueLessonSelect" onchange="setDialogueLesson(this.value)"></select>
+    </div>
   </div>
   <div id="dialogueContainer"></div>
 </div>
@@ -160,9 +169,25 @@
 <!--  BÀI ĐỌC                                                     -->
 <!-- ============================================================ -->
 <div class="section" id="s-reading">
-  <div class="card">
-    <h2><span class="h-ic c-green" data-icon="read"></span>Bài đọc</h2>
-    <div class="alert alert-info">Mỗi dòng có phiên âm và bản dịch tiếng Việt. Nhấn 🔊 để nghe từng câu, hoặc <strong>▶ Đọc cả bài</strong> để nghe liên tục cả đoạn văn.</div>
+  <div class="page-head">
+    <span class="ph-ic c-green" data-icon="read" data-icon-size="28"></span>
+    <div class="ph-text">
+      <h1>Bài đọc</h1>
+      <p id="readingCount">Bài đọc theo chủ đề từng buổi học.</p>
+    </div>
+  </div>
+  <div class="filter-bar rd-filter">
+    <div class="fb-field fb-wide">
+      <label for="readingSelect">Chọn bài đọc</label>
+      <select id="readingSelect" onchange="setReading(this.value)"></select>
+    </div>
+    <div class="fb-field rd-aids">
+      <span class="fb-label">Hỗ trợ đọc</span>
+      <div class="rd-toggles">
+        <button id="rdTogglePy" class="rd-toggle active" onclick="toggleReadingAid('py')">Pinyin</button>
+        <button id="rdToggleVi" class="rd-toggle active" onclick="toggleReadingAid('vi')">Dịch nghĩa</button>
+      </div>
+    </div>
   </div>
   <div id="readingContainer"></div>
 </div>
@@ -287,157 +312,37 @@
 <!--  BÀI TẬP                                                     -->
 <!-- ============================================================ -->
 <div class="section" id="s-exercise">
-  <div class="card">
-    <h2><span class="h-ic c-sky" data-icon="target"></span>Bài tập ôn luyện</h2>
-    <p style="color:var(--text-light);font-size:0.88rem;margin-bottom:16px">Luyện tập từ vựng qua nhiều hình thức — chọn bài để bắt đầu:</p>
-
-    <!-- TAB BAR -->
-    <div class="ex-tab-bar">
-      <button class="ex-tab-btn active" onclick="switchExTab('mc',this)">🎯 Trắc nghiệm</button>
-      <button class="ex-tab-btn" onclick="switchExTab('match',this)">🔗 Nối từ</button>
-      <button class="ex-tab-btn" onclick="switchExTab('listen',this)">👂 Nghe & Chọn</button>
-      <button class="ex-tab-btn" onclick="switchExTab('fill',this)">✏️ Điền vào câu</button>
-      <button class="ex-tab-btn" onclick="switchExTab('pinyin',this)">📌 Điền Pinyin</button>
-      <button class="ex-tab-btn" onclick="switchExTab('dialog',this)">💬 Hội Thoại</button>
+  <div class="page-head">
+    <span class="ph-ic c-sky" data-icon="target" data-icon-size="28"></span>
+    <div class="ph-text">
+      <h1>Bài tập</h1>
+      <p>Chọn dạng bài và buổi học rồi bắt đầu.<span class="ex-hint"> Phím tắt: <kbd>1</kbd>–<kbd>4</kbd> chọn đáp án, <kbd>Enter</kbd> sang câu tiếp.</span></p>
     </div>
-
-    <!-- PANE 1: TRẮC NGHIỆM TỪ VỰNG -->
-    <div class="ex-pane active" id="pane-mc">
-      <div class="ex-lesson-filter">
-        <label>Bài học:</label>
-        <select class="ex-lesson-select" id="mc-lesson-sel">
-          <option value="-1">Tất cả bài</option>
-        </select>
-        <select class="ex-lesson-select" id="mc-dir-sel">
-          <option value="zh2vi">Hán → Việt</option>
-          <option value="vi2zh">Việt → Hán</option>
-        </select>
-        <button class="ex-gen-btn" onclick="generateMC()">🔄 Tạo bài mới</button>
-      </div>
-      <div class="mc-score-bar">
-        <span>Điểm:</span>
-        <span class="mc-score-num" id="mc-score">0</span>
-        <span>/</span>
-        <span id="mc-total">0</span>
-        <div class="mc-progress"><div class="mc-progress-fill" id="mc-progress-fill" style="width:0%"></div></div>
-        <span id="mc-streak" style="font-size:0.82rem">🔥 0</span>
-      </div>
-      <div id="mc-container"></div>
-    </div>
-
-    <!-- PANE 2: NỐI TỪ -->
-    <div class="ex-pane" id="pane-match">
-      <div class="ex-lesson-filter">
-        <label>Bài học:</label>
-        <select class="ex-lesson-select" id="match-lesson-sel">
-          <option value="-1">Tất cả bài</option>
-        </select>
-        <button class="ex-gen-btn" onclick="generateMatch()">🔄 Tạo bài mới</button>
-      </div>
-      <p style="font-size:0.82rem;color:var(--text-light);margin-bottom:12px">
-        Nhấp vào một chữ Hán bên trái, rồi nhấp vào nghĩa tương ứng bên phải.
-      </p>
-      <div class="match-container" id="match-container"></div>
-      <div class="match-result" id="match-result">🎉 Xuất sắc! Bạn nối đúng tất cả!</div>
-      <div style="text-align:center;margin-top:10px">
-        <span id="match-score-text" style="font-size:0.88rem;color:var(--text-light)"></span>
-      </div>
-    </div>
-
-    <!-- PANE 3: NGHE & CHỌN -->
-    <div class="ex-pane" id="pane-listen">
-      <div class="ex-lesson-filter">
-        <label>Bài học:</label>
-        <select class="ex-lesson-select" id="listen-lesson-sel">
-          <option value="-1">Tất cả bài</option>
-        </select>
-        <button class="ex-gen-btn" onclick="generateListen()">🔄 Tạo bài mới</button>
-      </div>
-      <div class="listen-counter" id="listen-counter">Câu 0 / 0</div>
-      <div class="listen-card" id="listen-card">
-        <div style="color:var(--text-light);font-size:0.9rem">Nhấn "Tạo bài mới" để bắt đầu</div>
-      </div>
-    </div>
-
-    <!-- PANE 4: ĐIỀN VÀO CÂU -->
-    <div class="ex-pane" id="pane-fill">
-      <div class="ex-lesson-filter">
-        <label>Bài học:</label>
-        <select class="ex-lesson-select" id="fill-lesson-sel">
-          <option value="-1">Tất cả bài</option>
-        </select>
-        <button class="ex-gen-btn" onclick="generateFill()">🔄 Tạo bài mới</button>
-      </div>
-      <p style="font-size:0.82rem;color:var(--text-light);margin-bottom:12px">
-        Nhấp vào từ trong <strong>Ngân hàng từ</strong> để điền vào chỗ trống trong câu.
-      </p>
-      <div id="fill-sentences"></div>
-      <div class="word-bank" id="fill-wordbank"></div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
-        <button class="check-btn" onclick="checkFill()">✅ Kiểm tra</button>
-        <button class="ex-gen-btn" onclick="resetFill()" style="background:var(--text-light)">↺ Xóa hết</button>
-        <div class="score-badge" id="fill-score" style="display:none"></div>
-      </div>
-    </div>
-
-    <!-- PANE 5: ĐIỀN PINYIN (existing ex1-3 moved here) -->
-    <div class="ex-pane" id="pane-pinyin">
-      <div class="exercise-block">
-        <h4>📌 Điền Pinyin (có thanh điệu)</h4>
-        <div id="ex1"></div>
-        <button class="check-btn" onclick="checkEx1()">✅ Kiểm tra đáp án</button>
-        <div class="score-badge" id="score1" style="display:none"></div>
-      </div>
-      <div class="exercise-block">
-        <h4>📌 Biến điệu — Đọc thực tế là gì?</h4>
-        <div id="ex2"></div>
-        <button class="check-btn" onclick="checkEx2()">✅ Kiểm tra đáp án</button>
-        <div class="score-badge" id="score2" style="display:none"></div>
-      </div>
-      <div class="exercise-block">
-        <h4>📌 Sắp xếp từ thành câu</h4>
-        <p style="font-size:0.83rem;color:var(--text-light);margin-bottom:12px">Sắp xếp các từ sau thành câu đúng ngữ pháp</p>
-        <div id="ex3"></div>
-        <button class="check-btn" onclick="checkEx3()">✅ Kiểm tra đáp án</button>
-        <div class="score-badge" id="score3" style="display:none"></div>
-      </div>
-    </div>
-
-    <!-- PANE 6: HỘI THOẠI (existing ex4 moved here) -->
-    <div class="ex-pane" id="pane-dialog">
-      <div class="exercise-block">
-        <h4>📌 Điền vào hội thoại</h4>
-        <p style="font-size:0.83rem;color:var(--text-light);margin-bottom:12px">Điền từ thích hợp vào chỗ trống</p>
-
-        <div style="background:var(--gray);border-radius:8px;padding:14px;margin-bottom:12px">
-          <div style="font-weight:700;color:var(--mid);margin-bottom:10px">Hội thoại 1 – Mua hoa quả
-            <button class="speak-btn" onclick="speak('你买什么？我买水果。苹果一斤多少钱？三块。太贵了！便宜一点儿吧。你要几斤？我要五斤。一共多少钱？')">🔊</button>
-          </div>
-          <div class="sentence-zh">A: 你买什么？</div>
-          <div style="margin:8px 0">B: 我<input id="d1_1" class="answer-input" style="width:60px;display:inline-block" placeholder="...">水果。苹果一斤<input id="d1_2" class="answer-input" style="width:80px;display:inline-block" placeholder="...">钱？</div>
-          <div class="sentence-zh">A: 三块。</div>
-          <div style="margin:8px 0">B: 太<input id="d1_3" class="answer-input" style="width:60px;display:inline-block" placeholder="...">了！便宜一点儿<input id="d1_4" class="answer-input" style="width:50px;display:inline-block" placeholder="...">。</div>
-          <div style="margin:8px 0">A: 你要几<input id="d1_5" class="answer-input" style="width:50px;display:inline-block" placeholder="...">？</div>
-          <div style="margin:8px 0">B: 我要五斤。一<input id="d1_6" class="answer-input" style="width:60px;display:inline-block" placeholder="...">多少钱？</div>
-        </div>
-
-        <div style="background:var(--gray);border-radius:8px;padding:14px">
-          <div style="font-weight:700;color:var(--mid);margin-bottom:10px">Hội thoại 2 – Giới thiệu bản thân
-            <button class="speak-btn" onclick="speak('请问您贵姓？我姓阮，叫阮文胜。你是哪国人？我是越南人。汉语难吗？汉字很难，发音不太难。')">🔊</button>
-          </div>
-          <div style="margin:8px 0">A: 请问您<input id="d2_1" class="answer-input" style="width:50px;display:inline-block" placeholder="...">姓？</div>
-          <div style="margin:8px 0">B: 我<input id="d2_2" class="answer-input" style="width:50px;display:inline-block" placeholder="...">阮，<input id="d2_3" class="answer-input" style="width:50px;display:inline-block" placeholder="...">阮文胜。</div>
-          <div style="margin:8px 0">A: 你是<input id="d2_4" class="answer-input" style="width:60px;display:inline-block" placeholder="...">国人？</div>
-          <div style="margin:8px 0">B: 我<input id="d2_5" class="answer-input" style="width:50px;display:inline-block" placeholder="...">越南人。</div>
-          <div style="margin:8px 0">A: 汉语难<input id="d2_6" class="answer-input" style="width:50px;display:inline-block" placeholder="...">？</div>
-          <div style="margin:8px 0">B: 汉字<input id="d2_7" class="answer-input" style="width:50px;display:inline-block" placeholder="...">难，发音<input id="d2_8" class="answer-input" style="width:60px;display:inline-block" placeholder="...">太难。</div>
-        </div>
-        <button class="check-btn" onclick="checkDialog()">✅ Kiểm tra đáp án</button>
-        <div class="score-badge" id="scoreDialog" style="display:none"></div>
-      </div>
-    </div>
-
   </div>
+  <div class="ex-modes" id="exModes" role="group" aria-label="Dạng bài tập"></div>
+  <div class="filter-bar ex-settings">
+    <div class="fb-field fb-wide">
+      <label for="exLesson">Buổi học</label>
+      <select id="exLesson" onchange="setExOption('lesson', this.value)"></select>
+    </div>
+    <div class="fb-field" id="exDirField">
+      <label for="exDir">Chiều hỏi</label>
+      <select id="exDir" onchange="setExOption('dir', this.value)">
+        <option value="zh2vi">Hán → Việt</option>
+        <option value="vi2zh">Việt → Hán</option>
+      </select>
+    </div>
+    <div class="fb-field" id="exSizeField">
+      <label for="exSize">Số câu</label>
+      <select id="exSize" onchange="setExOption('size', this.value)">
+        <option value="10">10 câu</option>
+        <option value="15">15 câu</option>
+        <option value="20">20 câu</option>
+      </select>
+    </div>
+    <button class="btn btn-dark ex-new" onclick="startExercise()"><span data-icon="shuffle" data-icon-size="16"></span>Bài mới</button>
+  </div>
+  <div id="exStage" aria-live="polite"></div>
 </div>
 
 
@@ -768,8 +673,8 @@
   <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
 
   <!-- Data (must load before render/feature scripts) -->
-  <script src="js/data/vocab-data.js?v=11"></script>
-  <script src="js/data/reading-data.js?v=1"></script>
+  <script src="js/data/vocab-data.js?v=12"></script>
+  <script src="js/data/reading-data.js?v=2"></script>
   <script src="js/data/word-icons.js?v=1"></script>
 
   <!-- Core utilities -->
@@ -780,8 +685,8 @@
   <!-- Render functions -->
   <script src="js/render-vocab.js?v=4"></script>
   <script src="js/render-phrases.js?v=2"></script>
-  <script src="js/render-dialogues.js?v=2"></script>
-  <script src="js/render-reading.js?v=1"></script>
+  <script src="js/render-dialogues.js?v=3"></script>
+  <script src="js/render-reading.js?v=2"></script>
   <script src="js/render-speak.js?v=4"></script>
   <script src="js/phonetics.js?v=2"></script>
   <script src="js/data/grammar-lessons.js?v=1"></script>
@@ -791,8 +696,8 @@
   <script src="js/flashcard.js?v=3"></script>
   <script src="js/stroke.js?v=2"></script>
   <script src="js/speech.js?v=2"></script>
-  <script src="js/speak-modal.js?v=3"></script>
-  <script src="js/exercises.js?v=3"></script>
+  <script src="js/speak-modal.js?v=4"></script>
+  <script src="js/exercises.js?v=4"></script>
   <script src="js/render-write.js?v=2"></script>
 
   <!-- App init -->
