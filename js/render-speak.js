@@ -5,7 +5,9 @@ let currentSpeakFilter = 'all';
 function buildSpeakData() {
   allSpeakItems = [];
   DIALOGUE_DATA.forEach((dlg, di) => {
-    dlg.lines.forEach((line, li) => {
+    // Một số bài gom nhiều hội thoại con trong "dialogues"
+    const lines = dlg.lines || (dlg.dialogues || []).flatMap(d => d.lines || []);
+    lines.forEach((line, li) => {
       allSpeakItems.push({zh: line.zh, py: line.py, vi: line.vi, lessonIdx: di, source: `Hội thoại Bài ${di+1}`});
     });
   });

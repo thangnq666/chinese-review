@@ -29,19 +29,14 @@ function ensureSectionRendered(id) {
 function showSection(id, btn) {
   ensureSectionRendered(id);
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('#mainNav button').forEach(b => b.classList.remove('active'));
   const sec = document.getElementById(id);
   if (sec) sec.classList.add('active');
-  if (btn) btn.classList.add('active');
-  // Hiện/ẩn ttsBar chỉ trên tab Ngữ Âm, Từ Vựng, Ngữ Pháp
-  const ttsBar = document.getElementById('ttsBar');
-  if (ttsBar) {
-    const showOn = ['s-phonetics','s-vocab','s-grammar'];
-    ttsBar.style.display = showOn.includes(id) ? 'flex' : 'none';
-  }
-  const vts = document.getElementById('vocabTypeSelect');
-  if (vts) vts.style.display = (id === 's-vocab') ? '' : 'none';
-  const vls = document.getElementById('vocabLessonSelect');
-  if (vls) vls.style.display = (id === 's-vocab') ? '' : 'none';
+  // Đánh dấu mục đang mở ở cả menu bên trái và thanh dưới
+  document.querySelectorAll('.nav-item, .bn-item').forEach(b => {
+    const on = b.dataset.section === id;
+    b.classList.toggle('active', on);
+    if (on) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current');
+  });
+  if (typeof closeDrawer === 'function') closeDrawer();
   window.scrollTo({top: 0, behavior: 'smooth'});
 }

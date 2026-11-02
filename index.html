@@ -3,69 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F4F5F7">
   <title>Ôn Tập Tiếng Trung</title>
-  <link rel="stylesheet" href="css/styles.css?v=3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=4">
+  <link rel="stylesheet" href="css/theme.css?v=1">
 </head>
 <body>
 
-<header>
-  <h1>🎋 Ôn Tập <span>Tiếng Trung</span></h1>
-  <p>汉语初级 总复习 · Buổi 1 – 17 &nbsp;|&nbsp; Học viên: Thắng</p>
+<div class="app">
+
+<!-- ===== MENU BÊN TRÁI (máy tính) / NGĂN KÉO (điện thoại) ===== -->
+<aside class="sidebar" id="sidebar" aria-label="Menu">
+  <div class="brand">
+    <div class="brand-mark">汉</div>
+    <div class="brand-text">
+      <div class="brand-name">Ôn Tập Tiếng Trung</div>
+      <div class="brand-sub"><span data-count="lessons"></span> buổi · <span data-count="words"></span> từ</div>
+    </div>
+    <button class="drawer-close" onclick="closeDrawer()" aria-label="Đóng menu" data-icon="close"></button>
+  </div>
+
+  <nav id="mainNav" aria-label="Điều hướng chính">
+<div class="nav-group"><div class="nav-label">HỌC</div>
+<button class="nav-item active" data-section="s-phonetics" onclick="showSection('s-phonetics', this)"><span class="nav-ic c-purple" data-icon="wave"></span><span class="nav-text">Ngữ âm</span></button>
+<button class="nav-item" data-section="s-vocab" onclick="showSection('s-vocab', this)"><span class="nav-ic c-red" data-icon="book"></span><span class="nav-text">Từ vựng</span><span class="nav-count" data-count="words"></span></button>
+<button class="nav-item" data-section="s-grammar" onclick="showSection('s-grammar', this)"><span class="nav-ic c-blue" data-icon="layers"></span><span class="nav-text">Ngữ pháp</span><span class="nav-count" data-count="grammar"></span></button>
+<button class="nav-item" data-section="s-sentences" onclick="showSection('s-sentences', this)"><span class="nav-ic c-teal" data-icon="quote"></span><span class="nav-text">Câu mẫu</span><span class="nav-count" data-count="phrases"></span></button>
+<button class="nav-item" data-section="s-dialogue" onclick="showSection('s-dialogue', this)"><span class="nav-ic c-orange" data-icon="chat"></span><span class="nav-text">Hội thoại</span><span class="nav-count" data-count="dialogues"></span></button>
+<button class="nav-item" data-section="s-reading" onclick="showSection('s-reading', this)"><span class="nav-ic c-green" data-icon="read"></span><span class="nav-text">Bài đọc</span><span class="nav-count" data-count="reading"></span></button>
+</div>
+<div class="nav-group"><div class="nav-label">LUYỆN TẬP</div>
+<button class="nav-item" data-section="s-flashcard" onclick="showSection('s-flashcard', this)"><span class="nav-ic c-amber" data-icon="cards"></span><span class="nav-text">Flashcard</span></button>
+<button class="nav-item" data-section="s-exercise" onclick="showSection('s-exercise', this)"><span class="nav-ic c-sky" data-icon="target"></span><span class="nav-text">Bài tập</span></button>
+<button class="nav-item" data-section="s-speak" onclick="showSection('s-speak', this)"><span class="nav-ic c-pink" data-icon="mic"></span><span class="nav-text">Tập nói</span></button>
+<button class="nav-item" data-section="s-write" onclick="showSection('s-write', this); onWriteTabOpen()"><span class="nav-ic c-indigo" data-icon="pen"></span><span class="nav-text">Luyện viết</span></button>
+</div>
+<div class="nav-group"><div class="nav-label">KHÁC</div>
+<button class="nav-item" data-section="s-tips" onclick="showSection('s-tips', this)"><span class="nav-ic c-yellow" data-icon="bulb"></span><span class="nav-text">Lời khuyên</span></button>
+<button class="nav-item" data-section="s-claude" onclick="showSection('s-claude', this); onClaudeTabOpen()"><span class="nav-ic c-violet" data-icon="spark"></span><span class="nav-text">Trợ lý AI</span></button>
+</div>
+  </nav>
+
+  <div class="speed-card">
+    <div class="speed-head">
+      <span class="nav-ic c-blue" data-icon="speaker"></span>
+      <label for="speedRange">Tốc độ đọc</label>
+      <span class="speed-val">0.9×</span>
+    </div>
+    <input id="speedRange" class="speed-range" type="range" min="1" max="8" step="1" value="4" oninput="onSpeedSlide(this.value)">
+    <div class="speed-scale"><span>Chậm</span><span id="speedDesc">🎯 Bình thường</span><span>Nhanh</span></div>
+    <label for="voiceSel" class="sr-only">Giọng đọc</label>
+    <select id="voiceSel" onchange="setVoice(this.value)">
+      <option value="">🎙 Giọng mặc định</option>
+    </select>
+    <button class="btn btn-ghost btn-sm btn-block" onclick="previewSpeed()"><span data-icon="play" data-icon-size="14"></span>Nghe thử giọng</button>
+  </div>
   <div class="tts-status" id="ttsStatus" style="display:none"></div>
+</aside>
+<div class="drawer-scrim" onclick="closeDrawer()"></div>
+
+<div class="app-main">
+<header class="topbar">
+  <div class="brand-mark sm">汉</div>
+  <div class="topbar-title">Ôn Tập Tiếng Trung</div>
+  <button class="icon-btn" onclick="openDrawer()" aria-label="Tốc độ và giọng đọc" data-icon="speaker" data-icon-size="20"></button>
 </header>
 
-<div id="stickyWrap">
-<nav id="mainNav">
-  <button class="active" onclick="showSection('s-phonetics', this)">🎵 Ngữ Âm</button>
-  <button onclick="showSection('s-vocab', this)">📚 Từ Vựng</button>
-  <button onclick="showSection('s-grammar', this)">✏️ Ngữ Pháp</button>
-  <button onclick="showSection('s-sentences', this)">💬 Câu Mẫu 30</button>
-  <button onclick="showSection('s-dialogue', this)">🗣️ Hội Thoại</button>
-  <button onclick="showSection('s-reading', this)">📖 Bài Đọc</button>
-  <button onclick="showSection('s-speak', this)">🎤 Tập Nói</button>
-  <button onclick="showSection('s-flashcard', this)">🃏 Flashcard</button>
-  <button onclick="showSection('s-exercise', this)">📝 Bài Tập</button>
-  <button onclick="showSection('s-tips', this)">💡 Lời Khuyên</button>
-  <button onclick="showSection('s-write', this); onWriteTabOpen()">✍️ Luyện Viết</button>
-  <button onclick="showSection('s-claude', this); onClaudeTabOpen()">🤖 Trợ Lý</button>
-</nav>
-
-<div id="ttsBar">
-  <span class="speed-label">🔊 Phát âm:</span>
-  <div class="speed-btns">
-    <button class="speed-btn" data-speed="1" onclick="setSpeed(1,this)" title="0.3x – Siêu chậm">1</button>
-    <button class="speed-btn" data-speed="2" onclick="setSpeed(2,this)" title="0.5x – Rất chậm">2</button>
-    <button class="speed-btn" data-speed="3" onclick="setSpeed(3,this)" title="0.7x – Chậm">3</button>
-    <button class="speed-btn active" data-speed="4" onclick="setSpeed(4,this)" title="0.9x – Bình thường">4</button>
-    <button class="speed-btn" data-speed="5" onclick="setSpeed(5,this)" title="1.0x – Tự nhiên">5</button>
-    <button class="speed-btn" data-speed="6" onclick="setSpeed(6,this)" title="1.2x – Nhanh">6</button>
-    <button class="speed-btn" data-speed="7" onclick="setSpeed(7,this)" title="1.5x – Rất nhanh">7</button>
-    <button class="speed-btn" data-speed="8" onclick="setSpeed(8,this)" title="2.0x – Tối đa">8</button>
-  </div>
-  <span class="speed-desc" id="speedDesc">🎯 Bình thường</span>
-  <select id="voiceSel" onchange="setVoice(this.value)" title="Chọn giọng đọc">
-    <option value="">🎙 Giọng mặc định</option>
-  </select>
-  <button class="speed-preview-btn" onclick="previewSpeed()">▶ Nghe thử</button>
-  <select id="vocabLessonSelect" onchange="setVocabLesson(this.value)" title="Lọc theo bài học" style="display:none">
-    <option value="all">📖 Tất cả bài</option>
-  </select>
-  <select id="vocabTypeSelect" onchange="setVocabType(this.value)" title="Lọc theo loại từ" style="display:none">
-    <option value="all">📂 Tất cả loại từ</option>
-    <option value="Động từ">🔵 Động từ</option>
-    <option value="Danh từ">🟢 Danh từ</option>
-    <option value="Tính từ">🟠 Tính từ</option>
-    <option value="Phó từ">🟣 Phó từ</option>
-    <option value="Đại từ">🟡 Đại từ</option>
-    <option value="Lượng từ">⚪ Lượng từ</option>
-    <option value="Số đếm">🔢 Số đếm</option>
-    <option value="Trợ từ">🔸 Trợ từ</option>
-    <option value="Cụm từ">💬 Cụm từ</option>
-  </select>
-</div>
-</div><!-- /stickyWrap -->
-
 <main>
+
 
 <!-- ============================================================ -->
 <!--  PHẦN I: NGỮ ÂM                                             -->
@@ -77,15 +85,38 @@
 <!--  PHẦN II: TỪ VỰNG                                           -->
 <!-- ============================================================ -->
 <div class="section" id="s-vocab">
-  <div class="card">
-    <h2>📚 Từ Vựng Theo Buổi Học (Buổi 1 – 17)</h2>
-    <div class="alert alert-info">Bấm 🔊 để nghe phát âm. Nhấp vào ô từ vựng bất kỳ cũng có thể nghe.</div>
-    <input type="text" id="vocabSearch" placeholder="🔍 Tìm từ (tiếng Trung / pinyin / tiếng Việt)..." style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid #ddd;font-size:0.95rem;margin-bottom:8px;font-family:inherit" oninput="filterVocab(this.value)">
+  <div class="page-head">
+    <span class="ph-ic c-red" data-icon="book" data-icon-size="28"></span>
+    <div class="ph-text">
+      <h1>Từ vựng</h1>
+      <p id="vocabGreeting">Chào Thắng!</p>
+    </div>
+    <div class="tone-legend" aria-label="Màu thanh điệu">
+      <b>Màu thanh điệu</b><span class="t1">ā 1</span><span class="t2">á 2</span><span class="t3">ǎ 3</span><span class="t4">à 4</span>
+    </div>
   </div>
 
-  <div id="vocabContainer">
-    <!-- Generated by JS -->
+  <div class="filter-bar" role="search">
+    <div class="fb-field fb-wide fb-search">
+      <label for="vocabSearch">Tìm từ</label>
+      <div class="fb-input-wrap">
+        <span class="fb-search-ic" data-icon="search"></span>
+        <input type="search" id="vocabSearch" placeholder="Chữ Hán, pinyin hoặc nghĩa" oninput="filterVocab(this.value)">
+      </div>
+    </div>
+    <div class="fb-field fb-wide">
+      <label for="vocabLessonSelect">Buổi học</label>
+      <select id="vocabLessonSelect" onchange="setVocabLesson(this.value)"></select>
+    </div>
+    <div class="fb-field">
+      <label for="vocabTypeSelect">Loại từ</label>
+      <select id="vocabTypeSelect" onchange="setVocabType(this.value)"></select>
+    </div>
   </div>
+
+  <div id="vocabHero"></div>
+  <div class="result-row" id="vocabResult"></div>
+  <div id="vocabContainer"></div>
 </div>
 
 <!-- ============================================================ -->
@@ -93,7 +124,7 @@
 <!-- ============================================================ -->
 <div class="section" id="s-grammar">
   <div class="card">
-    <h2>✏️ Ngữ Pháp Tiếng Trung Trọng Tâm</h2>
+    <h2><span class="h-ic c-blue" data-icon="layers"></span>Ngữ pháp trọng tâm</h2>
     <div class="alert alert-info">Nhấp vào từng mục để mở rộng. Nhấn 🔊 để nghe phát âm ví dụ.</div>
     <div class="gram-filter" id="gramFilter">
       <button class="gram-filter-btn active" onclick="filterGram('all',this)">Tất cả</button>
@@ -115,7 +146,7 @@
 <!-- ============================================================ -->
 <div class="section" id="s-dialogue">
   <div class="card">
-    <h2>🗣️ Hội Thoại Theo Bài (Bài 1 – 8)</h2>
+    <h2><span class="h-ic c-orange" data-icon="chat"></span>Hội thoại theo bài</h2>
     <div class="alert alert-info">Nhấp vào từng câu để nghe phát âm. Nhấn <strong>🎤 Luyện nói</strong> để tập phát âm có chấm điểm.</div>
   </div>
   <div id="dialogueContainer"></div>
@@ -126,7 +157,7 @@
 <!-- ============================================================ -->
 <div class="section" id="s-reading">
   <div class="card">
-    <h2>📖 Bài Đọc</h2>
+    <h2><span class="h-ic c-green" data-icon="read"></span>Bài đọc</h2>
     <div class="alert alert-info">Mỗi dòng có phiên âm và bản dịch tiếng Việt. Nhấn 🔊 để nghe từng câu, hoặc <strong>▶ Đọc cả bài</strong> để nghe liên tục cả đoạn văn.</div>
   </div>
   <div id="readingContainer"></div>
@@ -137,7 +168,7 @@
 <!-- ============================================================ -->
 <div class="section" id="s-speak">
   <div class="card">
-    <h2>🎤 Tập Nói & Chấm Điểm Phát Âm</h2>
+    <h2><span class="h-ic c-pink" data-icon="mic"></span>Tập nói &amp; chấm điểm phát âm</h2>
     <div class="alert alert-info" id="srStatus">⏳ Đang kiểm tra hỗ trợ nhận diện giọng nói...</div>
     <div class="speak-filter" id="speakFilter">
       <button class="speak-filter-btn active" onclick="filterSpeakCards('all',this)">Tất cả</button>
@@ -160,8 +191,8 @@
 <!-- ============================================================ -->
 <div class="section" id="s-sentences">
   <div class="card">
-    <h2>💬 30 Câu Mẫu Giao Tiếp Thường Dùng</h2>
-    <div class="alert alert-info">Nhấp vào bất kỳ câu nào để nghe phát âm! Học thuộc 30 câu này để tự tin giao tiếp cơ bản.</div>
+    <h2><span class="h-ic c-teal" data-icon="quote"></span><span data-count="phrases"></span> câu mẫu giao tiếp thường dùng</h2>
+    <div class="alert alert-info">Nhấp vào bất kỳ câu nào để nghe phát âm! Học thuộc các câu này để tự tin giao tiếp cơ bản.</div>
     <div id="phraseGrid">
       <!-- Generated by JS -->
     </div>
@@ -172,54 +203,81 @@
 <!--  FLASHCARD                                                    -->
 <!-- ============================================================ -->
 <div class="section" id="s-flashcard">
-  <div class="card">
-    <h2>🃏 Luyện Flashcard Từ Vựng</h2>
-    <div class="alert alert-info">Nhấp vào thẻ để lật và xem nghĩa. Luyện mỗi ngày 5–10 phút!</div>
-
-    <div style="display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap">
-      <select id="fcLesson" style="padding:8px 12px;border-radius:8px;border:1px solid #ddd;font-size:0.9rem;font-family:inherit" onchange="initFlashcard()">
+  <div class="page-head">
+    <span class="ph-ic c-amber" data-icon="cards" data-icon-size="28"></span>
+    <div class="ph-text">
+      <h1>Flashcard</h1>
+      <p>Mỗi ngày 5–10 phút là đủ nhớ lâu.</p>
+    </div>
+    <div class="fb-field fc-deck">
+      <label for="fcLesson">Bộ thẻ</label>
+      <select id="fcLesson" onchange="initFlashcard()">
         <option value="all">Tất cả buổi học</option>
-        <option value="0">Buổi 1: Phát âm cơ bản</option>
-        <option value="1">Buổi 2: 忙不忙？</option>
-        <option value="2">Buổi 3: 明天见</option>
-        <option value="3">Buổi 4: Ngày tháng & Thứ</option>
-        <option value="4">Buổi 5: 这是王老师</option>
-        <option value="5">Buổi 6: 请问贵姓？</option>
-        <option value="6">Buổi 7: 你是哪国人？</option>
-        <option value="7">Buổi 8: 年龄与家庭</option>
-        <option value="8">Buổi 9: 你吃什么？</option>
-        <option value="9">Buổi 10: 苹果多少钱？</option>
-        <option value="10">Buổi 11: 我换人民币</option>
-        <option value="11">Buổi 12: 他住哪儿？</option>
-        <option value="12">Buổi 13: 今天中午我要吃面条</option>
-        <option value="16">Buổi 17: 这是不是中药</option>
       </select>
-      <button class="check-btn" onclick="shuffleFlashcard()" style="margin:0">🔀 Xáo trộn</button>
     </div>
+  </div>
 
-    <div class="flashcard-wrap" id="flashcardWrap" onclick="flipCard()">
-      <div class="flashcard-inner" id="flashcardInner">
-        <div class="flashcard-face flashcard-front">
-          <div class="fc-label">Nhấp để lật — xem nghĩa</div>
-          <div class="fc-zh" id="fcZh">你好</div>
-        </div>
-        <div class="flashcard-face flashcard-back">
-          <div class="fc-py" id="fcPy">nǐ hǎo</div>
-          <div class="fc-zh" id="fcZh2" style="font-size:2rem;color:var(--dark)">你好</div>
-          <div class="fc-vi" id="fcVi">Xin chào!</div>
-          <div style="display:flex;gap:8px;margin-top:10px">
-            <button class="speak-btn" id="fcSpeakBtn" onclick="event.stopPropagation();speakFC()" style="font-size:0.9rem;padding:6px 14px">🔊 Phát âm</button>
-            <button class="speak-btn" onclick="event.stopPropagation();showStrokeModalFC()" style="font-size:0.9rem;padding:6px 14px;border-color:var(--red);color:var(--red)">✍️ Xem nét viết</button>
-          </div>
-        </div>
+  <div class="fc-layout">
+    <section class="fc-main" aria-label="Thẻ hiện tại">
+      <div class="fc-progress-row">
+        <span id="fcProgress">1 / 1</span>
+        <div class="progress"><div class="progress-fill" id="fcProgressFill" style="width:0%"></div></div>
       </div>
-    </div>
-    <div class="fc-progress" id="fcProgress">1 / 1</div>
-    <div class="fc-controls">
-      <button class="fc-btn prev" onclick="prevCard()">◀ Trước</button>
-      <button class="fc-btn flip" onclick="flipCard()">🔄 Lật thẻ</button>
-      <button class="fc-btn next" onclick="nextCard()">Sau ▶</button>
-    </div>
+
+      <button class="fc-card" id="flashcardWrap" onclick="flipCard()" aria-label="Lật thẻ">
+        <span class="fc-face fc-front-zh">
+          <span class="pill pill-red">CHỮ HÁN</span>
+          <span class="fc-zh-big" id="fcZh" lang="zh">你好</span>
+          <span class="fc-hint"><span data-icon="flip" data-icon-size="15"></span>Nhấn vào thẻ để xem pinyin và nghĩa</span>
+        </span>
+        <span class="fc-face fc-front-vi">
+          <span class="fc-art" id="fcArtFront"></span>
+          <span class="pill pill-blue">NGHĨA TIẾNG VIỆT</span>
+          <span class="fc-vi-big" id="fcViFront"></span>
+          <span class="fc-hint">Nhớ chữ Hán, rồi nhấn để kiểm tra</span>
+        </span>
+        <span class="fc-face fc-back">
+          <span class="fc-art" id="fcArt"></span>
+          <span class="fc-zh-mid" id="fcZh2" lang="zh">你好</span>
+          <span class="fc-py" id="fcPy">nǐ hǎo</span>
+          <span class="fc-meaning"><span class="type-pill" id="fcType"></span><span id="fcVi">Xin chào!</span></span>
+          <span class="fc-ex" id="fcEx"></span>
+        </span>
+      </button>
+
+      <div class="fc-controls fc-when-front">
+        <button class="btn btn-ghost btn-lg" onclick="prevCard()"><span data-icon="left"></span>Thẻ trước</button>
+        <button class="btn btn-dark btn-lg" onclick="flipCard()"><span class="ic-gold" data-icon="flip"></span>Lật thẻ</button>
+        <button class="btn btn-ghost btn-lg" onclick="nextCard()">Thẻ sau<span data-icon="right"></span></button>
+      </div>
+      <div class="fc-controls fc-when-back">
+        <button class="btn btn-tint-blue btn-lg" id="fcSpeakBtn" onclick="speakFC()"><span data-icon="speaker"></span>Nghe</button>
+        <button class="btn btn-tint-indigo btn-lg" onclick="showStrokeModalFC()"><span data-icon="pen"></span>Nét viết</button>
+        <button class="btn btn-tint-red btn-lg grow" onclick="rateCard(false)"><span data-icon="redo"></span>Chưa nhớ</button>
+        <button class="btn btn-green btn-lg grow" onclick="rateCard(true)"><span data-icon="check"></span>Đã nhớ</button>
+      </div>
+    </section>
+
+    <aside class="fc-side" aria-label="Phiên ôn tập">
+      <div class="panel">
+        <h2 class="panel-title">Phiên ôn tập</h2>
+        <div class="stat-grid">
+          <div class="stat stat-green"><span data-icon="check" data-icon-size="20"></span><b id="fcKnown">0</b><small>Đã nhớ</small></div>
+          <div class="stat stat-red"><span data-icon="redo" data-icon-size="20"></span><b id="fcAgain">0</b><small>Ôn lại</small></div>
+          <div class="stat"><span data-icon="cards" data-icon-size="20"></span><b id="fcLeft">0</b><small>Còn lại</small></div>
+        </div>
+        <p class="muted small">Thẻ “Chưa nhớ” sẽ quay lại cuối bộ để ôn thêm một lần.</p>
+      </div>
+      <div class="panel">
+        <h2 class="panel-title">Tuỳ chọn</h2>
+        <div class="seg" role="group" aria-label="Chiều thẻ">
+          <button class="seg-btn active" data-dir="zh" onclick="setFcDir('zh', this)">Hán → Việt</button>
+          <button class="seg-btn" data-dir="vi" onclick="setFcDir('vi', this)">Việt → Hán</button>
+        </div>
+        <label class="check-row"><input type="checkbox" id="fcAutoSpeak" checked> Tự đọc phát âm khi lật thẻ</label>
+        <button class="btn btn-ghost btn-block" onclick="shuffleFlashcard()"><span class="ic-violet" data-icon="shuffle"></span>Xáo trộn bộ thẻ</button>
+      </div>
+    </aside>
   </div>
 </div>
 
@@ -228,7 +286,7 @@
 <!-- ============================================================ -->
 <div class="section" id="s-exercise">
   <div class="card">
-    <h2>📝 Bài Tập Ôn Luyện</h2>
+    <h2><span class="h-ic c-sky" data-icon="target"></span>Bài tập ôn luyện</h2>
     <p style="color:var(--text-light);font-size:0.88rem;margin-bottom:16px">Luyện tập từ vựng qua nhiều hình thức — chọn bài để bắt đầu:</p>
 
     <!-- TAB BAR -->
@@ -386,7 +444,7 @@
 <!-- ============================================================ -->
 <div class="section" id="s-tips">
   <div class="card">
-    <h2>💡 Lời Khuyên Học Tập</h2>
+    <h2><span class="h-ic c-yellow" data-icon="bulb"></span>Lời khuyên học tập</h2>
     <div class="tip-card">
       <div class="tip-icon">🔊</div>
       <div><p><strong>Đọc to mỗi ngày 15–30 phút.</strong> Luyện thanh điệu là yếu tố quyết định thành công khi học tiếng Trung. Dùng nút 🔊 để nghe rồi bắt chước.</p></div>
@@ -419,7 +477,7 @@
   </div>
 </div>
 
-<button id="totop" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
+<button id="totop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Lên đầu trang">▲</button>
 
 <!-- ============================================================ -->
 <!--  SPEAKING PRACTICE MODAL                                     -->
@@ -512,7 +570,7 @@
 <!-- ============================================================ -->
 <div class="section" id="s-write">
   <div class="card">
-    <h2>✍️ Luyện Viết Chữ Hán</h2>
+    <h2><span class="h-ic c-indigo" data-icon="pen"></span>Luyện viết chữ Hán</h2>
 
     <!-- Top bar: lesson selector + progress -->
     <div class="ww-topbar">
@@ -691,6 +749,18 @@
 </div><!-- /#s-claude -->
 
 </main>
+</div><!-- /.app-main -->
+
+<!-- ===== THANH ĐIỀU HƯỚNG DƯỚI (điện thoại) ===== -->
+<nav class="bottom-nav" aria-label="Điều hướng nhanh">
+  <button class="bn-item" data-section="s-vocab" onclick="showSection('s-vocab')"><span class="bn-ic c-red" data-icon="book"></span>Từ vựng</button>
+  <button class="bn-item" data-section="s-flashcard" onclick="showSection('s-flashcard')"><span class="bn-ic c-amber" data-icon="cards"></span>Flashcard</button>
+  <button class="bn-item" data-section="s-exercise" onclick="showSection('s-exercise')"><span class="bn-ic c-sky" data-icon="target"></span>Bài tập</button>
+  <button class="bn-item" data-section="s-speak" onclick="showSection('s-speak')"><span class="bn-ic c-pink" data-icon="mic"></span>Tập nói</button>
+  <button class="bn-item" onclick="openDrawer()"><span class="bn-ic c-violet" data-icon="grid"></span>Thêm</button>
+</nav>
+</div><!-- /.app -->
+
 
   <!-- External libraries -->
   <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
@@ -698,22 +768,24 @@
   <!-- Data (must load before render/feature scripts) -->
   <script src="js/data/vocab-data.js?v=10"></script>
   <script src="js/data/reading-data.js?v=1"></script>
+  <script src="js/data/word-icons.js?v=1"></script>
 
   <!-- Core utilities -->
   <script src="js/tts.js?v=2"></script>
-  <script src="js/navigation.js?v=4"></script>
+  <script src="js/ui.js?v=1"></script>
+  <script src="js/navigation.js?v=5"></script>
 
   <!-- Render functions -->
-  <script src="js/render-vocab.js?v=3"></script>
+  <script src="js/render-vocab.js?v=4"></script>
   <script src="js/render-phrases.js?v=2"></script>
   <script src="js/render-dialogues.js?v=2"></script>
   <script src="js/render-reading.js?v=1"></script>
-  <script src="js/render-speak.js?v=2"></script>
+  <script src="js/render-speak.js?v=3"></script>
   <script src="js/phonetics.js?v=2"></script>
   <script src="js/grammar.js?v=5"></script>
 
   <!-- Feature modules -->
-  <script src="js/flashcard.js?v=2"></script>
+  <script src="js/flashcard.js?v=3"></script>
   <script src="js/stroke.js?v=2"></script>
   <script src="js/speech.js?v=2"></script>
   <script src="js/speak-modal.js?v=2"></script>
@@ -721,7 +793,7 @@
   <script src="js/render-write.js?v=2"></script>
 
   <!-- App init -->
-  <script src="js/main.js?v=2"></script>
+  <script src="js/main.js?v=3"></script>
   <script src="js/claude-chat.js?v=9"></script>
 
 </body>
