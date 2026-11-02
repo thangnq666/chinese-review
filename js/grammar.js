@@ -626,93 +626,199 @@ const GRAMMAR_DATA = [
   },
 ];
 
+// ---------- Gộp điểm ngữ pháp mới + phần mở rộng (js/data/grammar-lessons.js) ----------
+(function mergeGrammarLessons() {
+  if (typeof GRAMMAR_NEW !== 'undefined') {
+    GRAMMAR_NEW.forEach(g => { if (!GRAMMAR_DATA.some(x => x.num === g.num)) GRAMMAR_DATA.push(g); });
+  }
+  if (typeof GRAMMAR_EXTRA !== 'undefined') {
+    GRAMMAR_DATA.forEach(g => {
+      const ex = GRAMMAR_EXTRA[g.num];
+      if (!ex) return;
+      if (ex.lesson) g.lesson = ex.lesson;
+      if (ex.explain) g.explain = ex.explain;
+      if (ex.note) g.note = ex.note;
+      if (ex.mistakes) g.mistakes = ex.mistakes;
+      if (ex.quiz) g.quiz = ex.quiz;
+      if (ex.more) {
+        const have = new Set(g.rows.map(r => r.zh));
+        ex.more.forEach(r => { if (!have.has(r.zh)) { g.rows.push(r); have.add(r.zh); } });
+      }
+    });
+  }
+})();
+
+const GRAM_CATS = {
+  'co-ban':      { label: 'Cơ bản',       color: 'c-blue' },
+  'phu-dinh':    { label: 'Phủ định',     color: 'c-red' },
+  'cau-hoi':     { label: 'Câu hỏi',      color: 'c-orange' },
+  'tro-tu':      { label: 'Trợ từ',       color: 'c-purple' },
+  'dong-tu-tro': { label: 'Động từ trợ',  color: 'c-teal' },
+  'bo-ngu':      { label: 'Bổ ngữ',       color: 'c-green' },
+  'so-sanh':     { label: 'So sánh',      color: 'c-pink' },
+  'cau-phuc':    { label: 'Câu phức',     color: 'c-indigo' },
+  'trang-tu':    { label: 'Trạng từ',     color: 'c-amber' }
+};
+
+let _gramCat = 'all';
+let _gramQuery = '';
+
+function _gq(s) { return escHtml(String(s).replace(/\\/g, '\\\\').replace(/'/g, "\\'")); }
+
 function filterGram(id, btn) {
-  document.querySelectorAll('.gram-filter-btn').forEach(b => b.classList.remove('active'));
-  if (btn) btn.classList.add('active');
+  _gramCat = id;
+  document.querySelectorAll('.gram-filter-btn').forEach(b => b.classList.toggle('active', b === btn));
+  _applyGramFilter();
+}
+
+function searchGram(q) {
+  _gramQuery = (q || '').trim().toLowerCase();
+  _applyGramFilter();
+}
+
+function _applyGramFilter() {
+  let shown = 0;
   document.querySelectorAll('.gram-section').forEach(sec => {
-    if (id === 'all' || sec.dataset.gramId === id) {
-      sec.style.display = '';
-    } else {
-      sec.style.display = 'none';
-    }
+    const okCat = _gramCat === 'all' || sec.dataset.gramId === _gramCat;
+    const okQ = !_gramQuery || sec.dataset.search.indexOf(_gramQuery) >= 0;
+    const ok = okCat && okQ;
+    sec.style.display = ok ? '' : 'none';
+    if (ok) shown++;
   });
+  const empty = document.getElementById('gramEmpty');
+  if (empty) empty.hidden = shown > 0;
+  const cnt = document.getElementById('gramShown');
+  if (cnt) cnt.textContent = shown;
 }
 
 function toggleGram(n) {
+  const sec = document.getElementById('gram-sec-' + n);
   const body = document.getElementById('gram-body-' + n);
-  const hdr  = document.getElementById('gram-hdr-' + n);
-  if (!body) return;
-  const hidden = body.classList.toggle('hidden');
-  hdr.classList.toggle('collapsed', hidden);
+  if (!sec || !body) return;
+  if (!body.dataset.built) { body.innerHTML = gramBodyHtml(GRAMMAR_DATA.find(g => g.num === n)); body.dataset.built = '1'; }
+  const open = sec.classList.toggle('open');
+  body.hidden = !open;
+  sec.querySelector('.gl-hdr').setAttribute('aria-expanded', open);
+}
+
+function gramExampleHtml(r) {
+  return '<div class="gl-ex">' +
+    '<button class="gl-speak" title="Nghe" aria-label="Nghe câu ví dụ" onclick="speak(\'' + _gq(r.zh) + '\')">' + icon('speaker', 16) + '</button>' +
+    '<div class="gl-ex-main">' +
+      '<div class="gl-ex-zh">' + escHtml(r.zh) + '</div>' +
+      '<div class="gl-ex-py">' + toneHtml(r.py) + '</div>' +
+      '<div class="gl-ex-vi">' + escHtml(r.vi) + '</div>' +
+    '</div>' +
+    (r.form ? '<span class="gl-ex-form">' + escHtml(r.form) + '</span>' : '') +
+  '</div>';
+}
+
+function gramBodyHtml(g) {
+  if (!g) return '';
+  let h = '';
+  if (g.explain) h += '<div class="gl-block gl-explain"><div class="gl-label">' + icon('book', 15) + ' Giải thích</div><p>' + escHtml(g.explain) + '</p></div>';
+  if (g.formula) h += '<div class="gl-formula"><span class="gl-label-sm">Công thức</span><code>' + escHtml(g.formula) + '</code></div>';
+  if (g.note || g.tip) {
+    h += '<div class="gl-notes">';
+    if (g.note) h += '<div class="gl-note">' + escHtml(g.note) + '</div>';
+    if (g.tip) h += '<div class="gl-tip">' + escHtml(g.tip) + '</div>';
+    h += '</div>';
+  }
+  h += '<div class="gl-block"><div class="gl-label">' + icon('quote', 15) + ' Ví dụ <span class="gl-count">' + g.rows.length + ' câu</span>' +
+       '<button class="btn btn-ghost btn-sm gl-playall" onclick="speakGramAll(' + g.num + ')">' + icon('play', 14) + ' Nghe tất cả</button></div>' +
+       '<div class="gl-exs">' + g.rows.map(gramExampleHtml).join('') + '</div></div>';
+  if (g.mistakes && g.mistakes.length) {
+    h += '<div class="gl-block"><div class="gl-label">' + icon('target', 15) + ' Lỗi hay gặp</div><div class="gl-mistakes">' +
+      g.mistakes.map(m =>
+        '<div class="gl-mis">' +
+          '<div class="gl-wrong"><span class="gl-mark">✗</span><span>' + escHtml(m.w) + '</span></div>' +
+          '<div class="gl-right"><span class="gl-mark">✓</span><span>' + escHtml(m.r) + '</span></div>' +
+          '<div class="gl-why">' + escHtml(m.why) + '</div>' +
+        '</div>').join('') + '</div></div>';
+  }
+  if (g.quiz && g.quiz.length) {
+    h += '<div class="gl-block"><div class="gl-label">' + icon('spark', 15) + ' Luyện nhanh</div><div class="gl-quiz">' +
+      g.quiz.map((q, qi) =>
+        '<div class="gl-q" id="gq-' + g.num + '-' + qi + '">' +
+          '<div class="gl-q-text"><span class="gl-q-num">' + (qi + 1) + '</span>' + escHtml(q.q).replace(/___/g, '<span class="gl-blank">＿＿</span>') + '</div>' +
+          '<div class="gl-opts">' + q.o.map((o, oi) =>
+            '<button class="gl-opt" onclick="answerGram(' + g.num + ',' + qi + ',' + oi + ')">' + escHtml(o) + '</button>').join('') + '</div>' +
+          '<div class="gl-fb" hidden></div>' +
+        '</div>').join('') + '</div></div>';
+  }
+  return h;
+}
+
+function answerGram(num, qi, oi) {
+  const g = GRAMMAR_DATA.find(x => x.num === num);
+  const q = g && g.quiz && g.quiz[qi];
+  const box = document.getElementById('gq-' + num + '-' + qi);
+  if (!q || !box || box.dataset.done) return;
+  box.dataset.done = '1';
+  const ok = oi === q.a;
+  box.querySelectorAll('.gl-opt').forEach((b, i) => {
+    b.disabled = true;
+    if (i === q.a) b.classList.add('is-right');
+    else if (i === oi) b.classList.add('is-wrong');
+  });
+  const blank = box.querySelector('.gl-blank');
+  if (blank) { blank.textContent = q.o[q.a]; blank.classList.add('filled'); }
+  const fb = box.querySelector('.gl-fb');
+  fb.hidden = false;
+  fb.className = 'gl-fb ' + (ok ? 'ok' : 'no');
+  fb.innerHTML = '<strong>' + (ok ? 'Chính xác!' : 'Chưa đúng.') + '</strong> ' + escHtml(q.e || '') +
+    ' <button class="gl-retry" onclick="resetGramQuiz(' + num + ',' + qi + ')">Làm lại</button>';
+}
+
+function resetGramQuiz(num, qi) {
+  const box = document.getElementById('gq-' + num + '-' + qi);
+  const g = GRAMMAR_DATA.find(x => x.num === num);
+  if (!box || !g) return;
+  const tmp = document.createElement('div');
+  tmp.innerHTML = gramBodyHtml({ num: num, rows: [], quiz: g.quiz });
+  const fresh = tmp.querySelector('#gq-' + num + '-' + qi);
+  if (fresh) box.replaceWith(fresh);
+}
+
+function speakGramAll(num) {
+  const g = GRAMMAR_DATA.find(x => x.num === num);
+  if (!g) return;
+  if (typeof speakSequence === 'function') speakSequence(g.rows.map(r => r.zh));
+  else if (g.rows[0]) speak(g.rows[0].zh);
 }
 
 function renderGrammar() {
   const container = document.getElementById('gramContainer');
   if (!container) return;
-  container.innerHTML = '';
-
-  GRAMMAR_DATA.forEach((g, idx) => {
-    const sec = document.createElement('div');
-    sec.className = 'gram-section';
-    sec.dataset.gramId = g.id;
-
-    // Header
-    const hdr = document.createElement('div');
-    hdr.className = 'gram-hdr' + (idx > 0 ? ' collapsed' : '');
-    hdr.id = 'gram-hdr-' + g.num;
-    hdr.onclick = () => toggleGram(g.num);
-    hdr.innerHTML =
-      '<span class="gram-num">' + g.num + '</span>' +
-      '<div class="gram-hdr-text">' +
-        '<strong>' + g.title + '</strong>' +
-        (g.tag ? '<span class="gram-tag">' + g.tag + '</span>' : '') +
-      '</div>' +
-      '<span class="toggle-icon">▼</span>';
-    sec.appendChild(hdr);
-
-    // Body
-    const body = document.createElement('div');
-    body.className = 'gram-body' + (idx > 0 ? ' hidden' : '');
-    body.id = 'gram-body-' + g.num;
-
-    if (g.formula) {
-      body.innerHTML += '<div class="gram-formula">📐 ' + g.formula + '</div>';
-    }
-    if (g.note) {
-      body.innerHTML += '<div class="gram-note">' + g.note + '</div>';
-    }
-
-    // Examples table
-    const table = document.createElement('table');
-    table.className = 'gram-table';
-    table.innerHTML = '<thead><tr>' +
-      '<th style="min-width:170px">Chữ Hán</th>' +
-      '<th style="min-width:180px">Pinyin</th>' +
-      '<th>Nghĩa tiếng Việt</th>' +
-      '<th style="min-width:100px">Cấu trúc</th>' +
-      '<th style="width:44px"></th>' +
-      '</tr></thead>';
-    const tbody = document.createElement('tbody');
-    g.rows.forEach(row => {
-      const tr = document.createElement('tr');
-      const zhEsc = row.zh.replace(/'/g, "\\'");
-      tr.innerHTML =
-        '<td class="gt-zh">' + row.zh + '</td>' +
-        '<td class="gt-py">' + row.py + '</td>' +
-        '<td class="gt-vi">' + row.vi + '</td>' +
-        '<td class="gt-form">' + row.form + '</td>' +
-        '<td><button class="dl-btn dl-btn-speak" onclick="speak(\'' + zhEsc + '\')">🔊</button></td>';
-      tbody.appendChild(tr);
-    });
-    table.appendChild(tbody);
-    body.appendChild(table);
-
-    if (g.tip) {
-      body.innerHTML += '<div class="gram-tip">' + g.tip + '</div>';
-    }
-
-    sec.appendChild(body);
-    container.appendChild(sec);
+  GRAMMAR_DATA.sort((a, b) => a.num - b.num);
+  let html = '';
+  GRAMMAR_DATA.forEach(g => {
+    const cat = GRAM_CATS[g.id] || { label: g.id, color: 'c-blue' };
+    const search = [g.num, g.title, g.tag, g.formula, g.lesson, cat.label].concat(g.rows.map(r => r.zh + ' ' + r.vi)).join(' ').toLowerCase();
+    const isNew = typeof GRAMMAR_NEW !== 'undefined' && GRAMMAR_NEW.some(x => x.num === g.num);
+    html +=
+      '<section class="gram-section gl-card ' + cat.color + '" id="gram-sec-' + g.num + '" data-gram-id="' + escHtml(g.id) + '" data-search="' + escHtml(search) + '">' +
+        '<button class="gl-hdr" aria-expanded="false" onclick="toggleGram(' + g.num + ')">' +
+          '<span class="gl-num">' + g.num + '</span>' +
+          '<span class="gl-hdr-text">' +
+            '<span class="gl-title">' + escHtml(g.title) + '</span>' +
+            (g.tag ? '<span class="gl-tag">' + escHtml(g.tag) + '</span>' : '') +
+            '<span class="gl-meta">' +
+              '<span class="gl-cat">' + escHtml(cat.label) + '</span>' +
+              (g.lesson ? '<span class="gl-lesson">' + escHtml(g.lesson) + '</span>' : '') +
+              '<span class="gl-mini">' + g.rows.length + ' ví dụ' + (g.quiz ? ' · ' + g.quiz.length + ' bài tập' : '') + '</span>' +
+              (isNew ? '<span class="gl-new">Mới</span>' : '') +
+            '</span>' +
+          '</span>' +
+          '<span class="gl-chev">' + icon('chevron', 18) + '</span>' +
+        '</button>' +
+        '<div class="gl-body" id="gram-body-' + g.num + '" hidden></div>' +
+      '</section>';
   });
+  html += '<div class="empty-state" id="gramEmpty" hidden>Không tìm thấy điểm ngữ pháp phù hợp.</div>';
+  container.innerHTML = html;
+  const total = document.getElementById('gramTotal');
+  if (total) total.textContent = GRAMMAR_DATA.length;
+  _applyGramFilter();
+  toggleGram(GRAMMAR_DATA[0].num);
 }
-

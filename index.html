@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=4">
-  <link rel="stylesheet" href="css/theme.css?v=1">
+  <link rel="stylesheet" href="css/theme.css?v=2">
 </head>
 <body>
 
@@ -125,17 +125,21 @@
 <div class="section" id="s-grammar">
   <div class="card">
     <h2><span class="h-ic c-blue" data-icon="layers"></span>Ngữ pháp trọng tâm</h2>
-    <div class="alert alert-info">Nhấp vào từng mục để mở rộng. Nhấn 🔊 để nghe phát âm ví dụ.</div>
+    <p class="gram-total"><strong id="gramShown">0</strong> / <span id="gramTotal">0</span> điểm ngữ pháp · Mỗi bài gồm giải thích, công thức, ví dụ có phát âm, lỗi hay gặp và bài luyện nhanh.</p>
+    <div class="gram-tools">
+      <div class="fb-field fb-search"><div class="fb-input-wrap"><span class="fb-search-ic" data-icon="search" data-icon-size="18"></span><input id="gramSearch" type="search" placeholder="Tìm: 把, so sánh, 了, Buổi 19…" oninput="searchGram(this.value)" aria-label="Tìm điểm ngữ pháp"></div></div>
+    </div>
     <div class="gram-filter" id="gramFilter">
       <button class="gram-filter-btn active" onclick="filterGram('all',this)">Tất cả</button>
-      <button class="gram-filter-btn" onclick="filterGram('co-ban',this)">Cơ Bản</button>
-      <button class="gram-filter-btn" onclick="filterGram('phu-dinh',this)">Phủ Định</button>
-      <button class="gram-filter-btn" onclick="filterGram('cau-hoi',this)">Câu Hỏi</button>
-      <button class="gram-filter-btn" onclick="filterGram('tro-tu',this)">Trợ Từ</button>
-      <button class="gram-filter-btn" onclick="filterGram('dong-tu-tro',this)">Động Từ Trợ</button>
-      <button class="gram-filter-btn" onclick="filterGram('bo-ngu',this)">Bổ Ngữ</button>
-      <button class="gram-filter-btn" onclick="filterGram('so-sanh',this)">So Sánh</button>
-      <button class="gram-filter-btn" onclick="filterGram('cau-phuc',this)">Câu Phức</button>
+      <button class="gram-filter-btn" onclick="filterGram('co-ban',this)">Cơ bản</button>
+      <button class="gram-filter-btn" onclick="filterGram('phu-dinh',this)">Phủ định</button>
+      <button class="gram-filter-btn" onclick="filterGram('cau-hoi',this)">Câu hỏi</button>
+      <button class="gram-filter-btn" onclick="filterGram('tro-tu',this)">Trợ từ</button>
+      <button class="gram-filter-btn" onclick="filterGram('dong-tu-tro',this)">Động từ trợ</button>
+      <button class="gram-filter-btn" onclick="filterGram('bo-ngu',this)">Bổ ngữ</button>
+      <button class="gram-filter-btn" onclick="filterGram('so-sanh',this)">So sánh</button>
+      <button class="gram-filter-btn" onclick="filterGram('cau-phuc',this)">Câu phức</button>
+      <button class="gram-filter-btn" onclick="filterGram('trang-tu',this)">Trạng từ</button>
     </div>
   </div>
   <div id="gramContainer"></div>
@@ -766,7 +770,7 @@
   <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
 
   <!-- Data (must load before render/feature scripts) -->
-  <script src="js/data/vocab-data.js?v=10"></script>
+  <script src="js/data/vocab-data.js?v=11"></script>
   <script src="js/data/reading-data.js?v=1"></script>
   <script src="js/data/word-icons.js?v=1"></script>
 
@@ -782,7 +786,8 @@
   <script src="js/render-reading.js?v=1"></script>
   <script src="js/render-speak.js?v=3"></script>
   <script src="js/phonetics.js?v=2"></script>
-  <script src="js/grammar.js?v=5"></script>
+  <script src="js/data/grammar-lessons.js?v=1"></script>
+  <script src="js/grammar.js?v=6"></script>
 
   <!-- Feature modules -->
   <script src="js/flashcard.js?v=3"></script>
