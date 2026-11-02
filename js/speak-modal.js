@@ -37,8 +37,8 @@ function updateSpeakCounter() {
 function openSpeakModal(zh, py, vi, lessonIdx, lineIdx) {
   currentSpeak = {zh, py, vi, lessonIdx, lineIdx};
   // Build queue from same lesson
-  speakQueue = currentSpeakFilter === 'all'
-    ? allSpeakItems
+  speakQueue = typeof getSpeakVisibleItems === 'function'
+    ? getSpeakVisibleItems()
     : allSpeakItems.filter(i => i.lessonIdx === lessonIdx);
   speakQueueIdx = speakQueue.findIndex(i => i.zh === zh);
   if (speakQueueIdx < 0) speakQueueIdx = 0;

@@ -553,3 +553,11 @@ select, .ex-lesson-select, .ww-lesson-sel { border-radius: 10px; }
   .gl-ex-form { max-width: none; margin-left: 46px; }
   .gl-ex-zh { font-size: 18px; }
 }
+
+/* ===== TẬP NÓI — bộ lọc dạng danh sách ===== */
+.speak-tools { display: flex; flex-wrap: wrap; gap: 12px; margin: 4px 0 18px; }
+.speak-tools .fb-field { flex: 1 1 200px; }
+.speak-tools .fb-wide { flex: 2 1 280px; }
+@media (max-width: 640px) {
+  .speak-tools { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 10px; }
+}

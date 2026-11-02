@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=4">
-  <link rel="stylesheet" href="css/theme.css?v=2">
+  <link rel="stylesheet" href="css/theme.css?v=3">
 </head>
 <body>
 
@@ -174,17 +174,15 @@
   <div class="card">
     <h2><span class="h-ic c-pink" data-icon="mic"></span>Tập nói &amp; chấm điểm phát âm</h2>
     <div class="alert alert-info" id="srStatus">⏳ Đang kiểm tra hỗ trợ nhận diện giọng nói...</div>
-    <div class="speak-filter" id="speakFilter">
-      <button class="speak-filter-btn active" onclick="filterSpeakCards('all',this)">Tất cả</button>
-      <button class="speak-filter-btn" onclick="filterSpeakCards(0,this)">Bài 1</button>
-      <button class="speak-filter-btn" onclick="filterSpeakCards(1,this)">Bài 2</button>
-      <button class="speak-filter-btn" onclick="filterSpeakCards(2,this)">Bài 3</button>
-      <button class="speak-filter-btn" onclick="filterSpeakCards(3,this)">Bài 4</button>
-      <button class="speak-filter-btn" onclick="filterSpeakCards(4,this)">Bài 5</button>
-      <button class="speak-filter-btn" onclick="filterSpeakCards(5,this)">Bài 6</button>
-      <button class="speak-filter-btn" onclick="filterSpeakCards(6,this)">Bài 7</button>
-      <button class="speak-filter-btn" onclick="filterSpeakCards(7,this)">Bài 8</button>
-      <button class="speak-filter-btn" onclick="filterSpeakCards(8,this)">Bài 9</button>
+    <div class="speak-tools">
+      <div class="fb-field fb-wide">
+        <label for="speakLessonSelect">Buổi học</label>
+        <select id="speakLessonSelect" onchange="setSpeakLesson(this.value)"></select>
+      </div>
+      <div class="fb-field">
+        <label for="speakKindSelect">Loại câu</label>
+        <select id="speakKindSelect" onchange="setSpeakKind(this.value)"></select>
+      </div>
     </div>
     <div id="speakCardsContainer"></div>
   </div>
@@ -784,7 +782,7 @@
   <script src="js/render-phrases.js?v=2"></script>
   <script src="js/render-dialogues.js?v=2"></script>
   <script src="js/render-reading.js?v=1"></script>
-  <script src="js/render-speak.js?v=3"></script>
+  <script src="js/render-speak.js?v=4"></script>
   <script src="js/phonetics.js?v=2"></script>
   <script src="js/data/grammar-lessons.js?v=1"></script>
   <script src="js/grammar.js?v=6"></script>
@@ -793,7 +791,7 @@
   <script src="js/flashcard.js?v=3"></script>
   <script src="js/stroke.js?v=2"></script>
   <script src="js/speech.js?v=2"></script>
-  <script src="js/speak-modal.js?v=2"></script>
+  <script src="js/speak-modal.js?v=3"></script>
   <script src="js/exercises.js?v=3"></script>
   <script src="js/render-write.js?v=2"></script>
 
